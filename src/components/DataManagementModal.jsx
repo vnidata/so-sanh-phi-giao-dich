@@ -32,7 +32,9 @@ import {
   Link2,
   Coins,
   Briefcase,
-  Award
+  Award,
+  Play,
+  RefreshCw
 } from 'lucide-react';
 import scanReport from '../../scan-report.json';
 import manualOverridesTemplate from '../data/manualOverrides.json';
@@ -57,6 +59,7 @@ export default function DataManagementModal({
   currentUser,
   onOpenLoginModal,
   onLogoutAdmin,
+  onOpenCrawler,
   feedbacks: externalFeedbacks = [],
   onFeedbacksChange
 }) {
@@ -1443,6 +1446,33 @@ export default function DataManagementModal({
                     Thời gian: {scanReport?.summary?.timestamp ? new Date(scanReport.summary.timestamp).toLocaleString('vi-VN') : '17/09/2026'} • <strong>{scanReport?.summary?.unscannable || 4} CTCK</strong> cần đối chiếu thủ công.
                   </span>
                 </p>
+              </div>
+            </div>
+
+            {/* Live Crawler CTA Card */}
+            <div className="rounded-2xl border border-indigo-200 dark:border-indigo-900 bg-gradient-to-r from-blue-600 via-indigo-600 to-indigo-700 p-4 text-white shadow-md">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <div>
+                  <div className="flex items-center gap-2 text-sm font-extrabold">
+                    <RefreshCw className="h-4.5 w-4.5" />
+                    <span>Cần quét & crawl cập nhật biểu phí ngay lập tức?</span>
+                  </div>
+                  <p className="text-xs text-blue-100 mt-1">
+                    Khởi chạy công cụ Live Crawler để tự động quét 30 CTCK, theo dõi tiến trình trực tiếp và đồng bộ kết quả mới nhất vào hệ thống.
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => {
+                    onClose();
+                    if (onOpenCrawler) onOpenCrawler();
+                  }}
+                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-4 py-2.5 text-xs font-black text-blue-900 shadow-md hover:bg-blue-50 transition-all shrink-0 hover:scale-105 active:scale-95"
+                >
+                  <Play className="h-3.5 w-3.5 fill-current" />
+                  <span>Mở Bảng Quét Live</span>
+                  <ArrowRight className="h-3.5 w-3.5" />
+                </button>
               </div>
             </div>
 

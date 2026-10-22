@@ -13,7 +13,8 @@ import {
   LogOut,
   UserCheck,
   Menu,
-  X
+  X,
+  RefreshCw
 } from 'lucide-react';
 
 export default function Header({ 
@@ -22,6 +23,7 @@ export default function Header({
   scrollToSection, 
   onOpenFeedback, 
   onOpenDataManager,
+  onOpenCrawler,
   currentUser,
   onLogoutAdmin,
   isMobileMenuOpen,
@@ -86,6 +88,17 @@ export default function Header({
           >
             <ShieldCheck className="h-3.5 w-3.5 text-amber-500 shrink-0" />
             <span>Tiêu Chí</span>
+          </button>
+
+          {/* Live Web Crawler & Fee Sync Button */}
+          <button
+            type="button"
+            onClick={onOpenCrawler}
+            className="transition-all flex items-center gap-1.5 whitespace-nowrap py-1 px-2.5 rounded-lg text-xs font-bold border border-blue-200 dark:border-blue-900/60 bg-blue-50/80 dark:bg-blue-950/50 text-blue-700 dark:text-blue-300 hover:bg-blue-100 dark:hover:bg-blue-900/70 shadow-2xs hover:scale-105 active:scale-95"
+            title="Mở bảng điều khiển quét & crawl dữ liệu biểu phí live 30 CTCK"
+          >
+            <RefreshCw className="h-3.5 w-3.5 text-blue-600 dark:text-blue-400" />
+            <span>Quét Dữ Liệu</span>
           </button>
 
           {/* Data Management with Admin Auth Badge */}

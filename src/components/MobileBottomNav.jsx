@@ -14,7 +14,8 @@ import {
   Lock,
   MessageSquare,
   UserCheck,
-  LogOut
+  LogOut,
+  RefreshCw
 } from 'lucide-react';
 
 export default function MobileBottomNav({
@@ -25,6 +26,7 @@ export default function MobileBottomNav({
   setDarkMode,
   onOpenFeedback,
   onOpenDataManager,
+  onOpenCrawler,
   currentUser,
   onLogoutAdmin,
   selectedForCompare = [],
@@ -86,6 +88,22 @@ export default function MobileBottomNav({
               <ArrowUpRight className="h-4 w-4" />
             </button>
           )}
+
+          {/* Live Web Crawler */}
+          <button
+            type="button"
+            onClick={() => {
+              setIsMenuOpen(false);
+              if (onOpenCrawler) onOpenCrawler();
+            }}
+            className="flex w-full items-center justify-between rounded-xl p-3 font-bold transition-all border border-blue-200 bg-blue-50/80 text-blue-800 dark:border-blue-900/60 dark:bg-blue-950/40 dark:text-blue-300"
+          >
+            <div className="flex items-center gap-2.5">
+              <RefreshCw className="h-4 w-4 text-blue-600 dark:text-blue-400" />
+              <span>Quét & Crawl Dữ Liệu Live (30 CTCK)</span>
+            </div>
+            <ArrowUpRight className="h-4 w-4" />
+          </button>
 
           {/* Data Manager (Admin) */}
           <button

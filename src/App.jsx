@@ -14,6 +14,7 @@ import CriteriaGuide from './components/CriteriaGuide';
 import KeyPointSynthesis from './components/KeyPointSynthesis';
 import AIAdvisor from './components/AIAdvisor';
 import DataManagementModal from './components/DataManagementModal';
+import LiveCrawlerModal from './components/LiveCrawlerModal';
 import GoogleAuthModal from './components/GoogleAuthModal';
 import MobileBottomNav from './components/MobileBottomNav';
 import Footer from './components/Footer';
@@ -87,6 +88,7 @@ export default function App() {
   const [activeCompanyDetail, setActiveCompanyDetail] = useState(null);
   const [isFeedbackModalOpen, setIsFeedbackModalOpen] = useState(false);
   const [isDataManagerOpen, setIsDataManagerOpen] = useState(false);
+  const [isCrawlerModalOpen, setIsCrawlerModalOpen] = useState(false);
 
   // Feedback Inbox state (quản lý tập trung & đồng bộ thời gian thực)
   const [feedbacks, setFeedbacks] = useState(() => getStoredFeedbacks());
@@ -228,6 +230,7 @@ export default function App() {
         scrollToSection={scrollToSection}
         onOpenFeedback={() => setIsFeedbackModalOpen(true)}
         onOpenDataManager={handleOpenDataManager}
+        onOpenCrawler={() => setIsCrawlerModalOpen(true)}
         currentUser={currentUser}
         onLogoutAdmin={handleLogoutAdmin}
         isMobileMenuOpen={isMobileMenuOpen}
@@ -393,8 +396,16 @@ export default function App() {
         currentUser={currentUser}
         onOpenLoginModal={() => setIsAuthModalOpen(true)}
         onLogoutAdmin={handleLogoutAdmin}
+        onOpenCrawler={() => setIsCrawlerModalOpen(true)}
         feedbacks={feedbacks}
         onFeedbacksChange={setFeedbacks}
+      />
+
+      <LiveCrawlerModal
+        isOpen={isCrawlerModalOpen}
+        onClose={() => setIsCrawlerModalOpen(false)}
+        currentCompanies={companiesData}
+        onApplyData={handleApplyOverrides}
       />
 
       <GoogleAuthModal
@@ -418,6 +429,7 @@ export default function App() {
         setDarkMode={setDarkMode}
         onOpenFeedback={() => setIsFeedbackModalOpen(true)}
         onOpenDataManager={handleOpenDataManager}
+        onOpenCrawler={() => setIsCrawlerModalOpen(true)}
         currentUser={currentUser}
         onLogoutAdmin={handleLogoutAdmin}
         selectedForCompare={selectedForCompare}
