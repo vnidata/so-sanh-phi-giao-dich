@@ -512,6 +512,9 @@ export default function CompanyDetailModal({ company, onClose }) {
                               <span className="text-[11px] text-slate-200 truncate font-medium" title={art.title}>
                                 {art.title}
                               </span>
+                              <span className="text-[9px] font-black text-emerald-400 bg-emerald-950/80 px-1.5 py-0.5 rounded border border-emerald-800 shrink-0">
+                                🟢 Active
+                              </span>
                             </div>
                             <a
                               href={art.url}
@@ -668,10 +671,17 @@ export default function CompanyDetailModal({ company, onClose }) {
                               <span className="text-xs font-bold text-slate-900 dark:text-white line-clamp-1">
                                 {art.title}
                               </span>
+                              <span className="inline-flex items-center gap-1 rounded-full bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 px-2 py-0.5 text-[9px] font-black border border-emerald-300 dark:border-emerald-800">
+                                🟢 Còn hiệu lực (Active)
+                              </span>
                             </div>
-                            <p className="font-mono text-[10px] text-slate-400 truncate max-w-full sm:max-w-md">
-                              {art.url}
-                            </p>
+                            <div className="flex items-center gap-2 flex-wrap text-[10px] text-slate-400">
+                              <span>Thời gian: ≤ 1 năm gần nhất</span>
+                              <span>•</span>
+                              <span className="font-mono truncate max-w-full sm:max-w-md">
+                                {art.url}
+                              </span>
+                            </div>
                           </div>
 
                           <a

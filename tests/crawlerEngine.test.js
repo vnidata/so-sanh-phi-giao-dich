@@ -147,4 +147,66 @@ describe('Crawler & Web Scraper Utility Suite', () => {
       expect(nullResult.hasZeroFee).toBe(false);
     });
   });
+
+  describe('Deep Crawl & Multi-Tab Scanner Suite', () => {
+    it('should execute deep crawl on BSC and return scanned sub-tabs and active promos within 1 year', async () => {
+      const bsc = TARGET_BROKERS.find(b => b.id === 'bsc');
+      const bscComp = SECURITIES_COMPANIES.find(c => c.id === 'bsc');
+
+      const progressSteps = [];
+      const result = await crawlSingleBroker(bsc, {
+        mode: 'deep',
+        companyData: bscComp,
+        onProgress: (info) => progressSteps.push(info)
+      });
+
+      expect(result).toBeDefined();
+      expect(result.mode).toBe('deep');
+      expect(result.id).toBe('bsc');
+      expect(result.totalTabsScanned).toBeGreaterThanOrEqual(3);
+      expect(result.subTabsResults).toHaveLength(result.totalTabsScanned);
+      expect(result.isAccessible).toBe(true);
+      expect(Array.isArray(result.activePromos)).toBe(true);
+      expect(result.activePromos.length).toBeGreaterThan(0);
+
+      // Verify that all active promos are within 1 year and active
+      result.activePromos.forEach(promo => {
+        expect(promo.isActive).toBe(true);
+        expect(promo.isWithinOneYear).toBe(true);
+        expect(promo.url).toMatch(/^https?:\/\//);
+      });
+
+      // Verify progress callback was invoked
+      expect(progressSteps.length).toBe(result.totalTabsScanned);
+    }, 20000);
+
+    it('should calculate deep crawl summary statistics correctly', () => {
+      const mockDeepResults = [
+        {
+          id: 'bsc',
+          isAccessible: true,
+          mode: 'deep',
+          totalTabsScanned: 4,
+          activePromos: [{ title: 'Promo 1' }, { title: 'Promo 2' }],
+          filteredPromos: [{ title: 'Old promo 2024' }],
+          signals: { hasZeroFee: true, hasMargin: true, ratesFound: ['7.5%'] }
+        },
+        {
+          id: 'tcbs',
+          isAccessible: true,
+          mode: 'deep',
+          totalTabsScanned: 3,
+          activePromos: [{ title: 'Zero Fee Promo' }],
+          filteredPromos: [],
+          signals: { hasZeroFee: true, hasMargin: false, ratesFound: [] }
+        }
+      ];
+
+      const summary = calculateScanSummary(mockDeepResults);
+      expect(summary.total).toBe(2);
+      expect(summary.totalSubTabsScanned).toBe(7);
+      expect(summary.totalActivePromos).toBe(3);
+      expect(summary.totalFilteredPromos).toBe(1);
+    });
+  });
 });

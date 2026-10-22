@@ -336,3 +336,82 @@ export const TARGET_BROKERS = [
     knownIssue: null
   }
 ];
+
+
+/**
+ * Trích xuất danh sách toàn bộ các sub-tabs chuyên sâu cần quét cho một công ty chứng khoán
+ * Bao gồm: Biểu phí giao dịch, Lãi suất ký quỹ Margin, Ưu đãi mở mới và các bài viết tin tức liên quan
+ * @param {Object} broker Thông tin cơ bản từ TARGET_BROKERS
+ * @param {Object} companyData Dữ liệu chi tiết từ SECURITIES_COMPANIES
+ * @returns {Array<Object>} Danh sách các sub-tabs chuyên đề
+ */
+export function getBrokerSubTabs(broker, companyData = null) {
+  if (!broker) return [];
+  const tabs = [];
+  const seen = new Set();
+
+  const addTab = (id, type, title, url, badge, description) => {
+    if (!url || url === '#' || seen.has(url)) return;
+    seen.add(url);
+    tabs.push({
+      id,
+      type: type || 'fee',
+      title: title || 'Nguồn dữ liệu',
+      url,
+      badge: badge || (type === 'fee' ? 'Biểu phí' : type === 'margin' ? 'Lãi suất Margin' : 'Ưu đãi'),
+      description: description || ''
+    });
+  };
+
+  // 1. Tab Biểu phí giao dịch chính thức
+  addTab(
+    'official_fee',
+    'fee',
+    'Biểu phí giao dịch chính thức',
+    broker.officialSource || broker.url,
+    'Biểu Phí Chuẩn',
+    'Văn bản / bài viết biểu phí giao dịch cổ phiếu và phái sinh công bố công khai'
+  );
+
+  // 2. Tab Gói Margin / Lãi suất vay ký quỹ
+  if (companyData?.margin?.sourceUrl) {
+    addTab(
+      'margin_policy',
+      'margin',
+      'Chính sách & Gói vay Margin',
+      companyData.margin.sourceUrl,
+      'Lãi Suất Margin',
+      'Bài viết công bố chính thức về gói lãi suất margin, miễn lãi T+ hoặc ưu đãi lãi vay'
+    );
+  }
+
+  // 3. Tab Chính sách ưu đãi mở tài khoản eKYC
+  if (companyData?.welcomePromo?.sourceUrl) {
+    addTab(
+      'welcome_promo',
+      'promo',
+      'Chính sách ưu đãi mở tài khoản eKYC',
+      companyData.welcomePromo.sourceUrl,
+      'Ưu Đãi Mở Mới',
+      'Bài viết công bố về gói quà tặng, miễn phí giao dịch hoặc hoàn tiền mở tài khoản'
+    );
+  }
+
+  // 4. Toàn bộ các bài viết tin tức / khuyến mại chuyên đề đã quét được từ website CTCK
+  if (Array.isArray(companyData?.promoArticles)) {
+    companyData.promoArticles.forEach((art, idx) => {
+      if (art?.url) {
+        addTab(
+          `article_${idx}`,
+          art.type || 'promo',
+          art.title || `Bài viết công bố ${broker.shortName}`,
+          art.url,
+          art.badge || (art.type === 'fee' ? 'Ưu Đãi Phí' : art.type === 'margin' ? 'Lãi Suất Margin' : 'Khuyến Mại'),
+          `Bài viết tin tức chính thức công bố trên website ${broker.shortName}`
+        );
+      }
+    });
+  }
+
+  return tabs;
+}
