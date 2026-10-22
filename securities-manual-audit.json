@@ -2,7 +2,7 @@
   "metadata": {
     "title": "Cơ Sở Dữ Liệu Hiệu Chỉnh Thủ Công 30 Công Ty Chứng Khoán Việt Nam",
     "version": "2.2.1",
-    "updatedAt": "2026-10-22T07:11:54.363Z",
+    "updatedAt": "2026-10-22T07:49:31.479Z",
     "totalBrokers": 30,
     "accessibleBrokers": 29,
     "unscannableBrokers": 1,
@@ -84,7 +84,7 @@
         "isListed": false,
         "listingStatus": "Chưa niêm yết"
       },
-      "sourceUrl": "https://vps.com.vn",
+      "sourceUrl": "https://vps.com.vn/ca-nhan/ho-tro?view=bieu-phi-bieu-mau-va-chinh-sach&nav=bieu-phi--chinh-sach",
       "accountOpeningUrl": "https://openaccount.vps.com.vn/"
     },
     "ssi": {
@@ -110,8 +110,8 @@
         "isListed": true,
         "listingStatus": "Niêm yết HOSE"
       },
-      "sourceUrl": "https://www.ssi.com.vn",
-      "accountOpeningUrl": "https://www.ssi.com.vn/khach-hang-ca-nhan/mo-tai-khoan"
+      "sourceUrl": "https://www.ssi.com.vn/khach-hang-ca-nhan/bieu-phi/bieu-gia-dich-vu-giao-dich-chung-khoan",
+      "accountOpeningUrl": "https://www.ssi.com.vn/khach-hang-ca-nhan/gioi-thieu-mo-tai-khoan"
     },
     "vndirect": {
       "tradingFee": {
@@ -215,7 +215,7 @@
         "listingStatus": "Chưa niêm yết (Thuộc VPBank)"
       },
       "sourceUrl": "https://www.vpbanks.com.vn/bieu-phi",
-      "accountOpeningUrl": "https://www.vpbanks.com.vn/mo-tai-khoan"
+      "accountOpeningUrl": "https://hdsd.vpbanks.com.vn/mo-tai-khoan/mo-tai-khoan-ekyc"
     },
     "fpts": {
       "tradingFee": {
@@ -240,7 +240,7 @@
         "isListed": true,
         "listingStatus": "Niêm yết HOSE"
       },
-      "sourceUrl": "https://www.fpts.com.vn",
+      "sourceUrl": "https://new.eztrade.fpts.com.vn/customers/promotion/linh-hoat-lua-chon-goi-phi-giao-dich-tai-fpts",
       "accountOpeningUrl": "https://ezopen.fpts.com.vn/"
     },
     "hsc": {
@@ -266,7 +266,7 @@
         "isListed": true,
         "listingStatus": "Niêm yết HOSE"
       },
-      "sourceUrl": "https://www.hsc.com.vn/bieu-phi",
+      "sourceUrl": "https://www.hsc.com.vn/vi/bieu-phi",
       "accountOpeningUrl": "https://register.hsc.com.vn/"
     },
     "vietcap": {
@@ -318,8 +318,8 @@
         "isListed": false,
         "listingStatus": "Chưa niêm yết"
       },
-      "sourceUrl": "https://kafi.vn",
-      "accountOpeningUrl": "https://kafi.vn/mo-tai-khoan"
+      "sourceUrl": "https://kafi.vn/stock-trading?tab=bpgd",
+      "accountOpeningUrl": "https://kafi.vn/support/detail?tab=dk_mtk"
     },
     "mbs": {
       "tradingFee": {
@@ -344,7 +344,7 @@
         "isListed": true,
         "listingStatus": "Niêm yết HNX"
       },
-      "sourceUrl": "https://mbs.com.vn/bieu-phi/",
+      "sourceUrl": "https://mbs.com.vn/bieu-phi-giao-dich/",
       "accountOpeningUrl": "https://mbs.com.vn/mo-tai-khoan/"
     },
     "shs": {
@@ -371,7 +371,7 @@
         "listingStatus": "Niêm yết HNX"
       },
       "sourceUrl": "https://www.shs.com.vn/Pages/BieuPhiDichVu.aspx",
-      "accountOpeningUrl": "https://openaccount.shs.com.vn/"
+      "accountOpeningUrl": "https://www.shs.com.vn/Pages/MoTaiKhoan.aspx"
     },
     "vix": {
       "tradingFee": {
@@ -396,8 +396,8 @@
         "isListed": true,
         "listingStatus": "Niêm yết HOSE"
       },
-      "sourceUrl": "https://vixs.vn",
-      "accountOpeningUrl": "https://vixs.vn/mo-tai-khoan"
+      "sourceUrl": "https://vixs.vn/ho-tro/bieu-phi-giao-dich",
+      "accountOpeningUrl": "https://xpower.vixs.vn/account-register"
     },
     "kis": {
       "tradingFee": {
@@ -422,8 +422,8 @@
         "isListed": false,
         "listingStatus": "Chưa niêm yết (FDI Hàn Quốc)"
       },
-      "sourceUrl": "https://kisvn.vn",
-      "accountOpeningUrl": "https://kisvn.vn/mo-tai-khoan"
+      "sourceUrl": "https://kisvn.vn/san-pham-dich-vu/dich-vu-chung-khoan/bieu-phi-4206",
+      "accountOpeningUrl": "https://kisvn.vn/hoc-dau-tu/mo-tai-khoan-chung-khoan-kis-online-ekyc"
     },
     "acbs": {
       "tradingFee": {
@@ -448,8 +448,8 @@
         "isListed": false,
         "listingStatus": "Chưa niêm yết (Thuộc ACB)"
       },
-      "sourceUrl": "https://acbs.com.vn/bieu-phi",
-      "accountOpeningUrl": "https://acbs.com.vn/mo-tai-khoan"
+      "sourceUrl": "https://acbs.com.vn/bieu-phi-giao-dich-chung-khoan-niem-yet",
+      "accountOpeningUrl": "https://acbs.com.vn/blog/chi-phi-giao-dich-chung-khoan"
     },
     "vcbs": {
       "tradingFee": {
@@ -475,7 +475,7 @@
         "listingStatus": "Chưa niêm yết (Thuộc Vietcombank)"
       },
       "sourceUrl": "https://vcbs.com.vn/bieu-phi",
-      "accountOpeningUrl": "https://vcbs.com.vn/mo-tai-khoan"
+      "accountOpeningUrl": "https://www.vcbs.com.vn/chi-tiet-ho-tro-giao-dich/mo-tai-khoan-giao-dich-chung-khoan"
     },
     "kbsv": {
       "tradingFee": {
@@ -501,7 +501,7 @@
         "listingStatus": "Chưa niêm yết (FDI Hàn Quốc)"
       },
       "sourceUrl": "https://www.kbsec.com.vn/vi/bieu-phi.html",
-      "accountOpeningUrl": "https://kbsec.com.vn/mo-tai-khoan"
+      "accountOpeningUrl": "https://www.kbsec.com.vn/vi/huong-dan-mo-tai-khoan.html"
     },
     "cts": {
       "tradingFee": {
@@ -526,8 +526,8 @@
         "isListed": true,
         "listingStatus": "Niêm yết HOSE"
       },
-      "sourceUrl": "https://cts.vn/bieu-phi",
-      "accountOpeningUrl": "https://cts.vn/mo-tai-khoan"
+      "sourceUrl": "https://www.vbse.vn/khach-hang-ca-nhan/bieu-phi/",
+      "accountOpeningUrl": "https://www.vbse.vn/huong-dan-mo-tai-khoan-chung-khoan-truc-tuyen-qua-webmobi-gia-tang-trai-nghiem-dau-tu-so/"
     },
     "bvsc": {
       "tradingFee": {
@@ -552,8 +552,8 @@
         "isListed": true,
         "listingStatus": "Niêm yết HNX"
       },
-      "sourceUrl": "https://bvsc.com.vn/bieu-phi",
-      "accountOpeningUrl": "https://bvsc.com.vn/mo-tai-khoan"
+      "sourceUrl": "https://www.bvsc.com.vn/danhmuc/dich-vu/khach-hang-ca-nhan/ho-tro/huong-dan-su-dung-dich-vu/bieu-lai-phi-giao-dich/",
+      "accountOpeningUrl": "https://www.bvsc.com.vn/danhmuc/dich-vu/khach-hang-ca-nhan/"
     },
     "tps": {
       "tradingFee": {
@@ -579,7 +579,7 @@
         "listingStatus": "Niêm yết HOSE"
       },
       "sourceUrl": "https://tpbs.com.vn",
-      "accountOpeningUrl": "https://tpbs.com.vn/mo-tai-khoan"
+      "accountOpeningUrl": "https://ekyc.tpbs.com.vn"
     },
     "yuanta": {
       "tradingFee": {
@@ -604,7 +604,7 @@
         "isListed": false,
         "listingStatus": "Chưa niêm yết (FDI Đài Loan)"
       },
-      "sourceUrl": "https://yuanta.com.vn/bieu-phi",
+      "sourceUrl": "https://support.yuanta.com.vn/bieu-phi-va-lai-suat/",
       "accountOpeningUrl": "https://yuanta.com.vn/mo-tai-khoan"
     },
     "shinhan": {
@@ -630,8 +630,8 @@
         "isListed": false,
         "listingStatus": "Chưa niêm yết (FDI Hàn Quốc)"
       },
-      "sourceUrl": "https://shinhansec.com.vn",
-      "accountOpeningUrl": "https://shinhansec.com.vn/mo-tai-khoan"
+      "sourceUrl": "https://shinhansec.com.vn/vi/ho-tro-khach-hang/phi-giao-dich.html",
+      "accountOpeningUrl": "https://shinhansec.com.vn/vi/ho-tro-khach-hang/chuong-trinh-uu-dai/135/mo-tai-khoan-shinhan-bank-truc-tuyen-ngay-tren-ung-dung-san-xin-ha.html"
     },
     "agriseco": {
       "tradingFee": {
@@ -656,8 +656,8 @@
         "isListed": true,
         "listingStatus": "Niêm yết HOSE"
       },
-      "sourceUrl": "https://agriseco.com.vn",
-      "accountOpeningUrl": "https://agriseco.com.vn/mo-tai-khoan"
+      "sourceUrl": "https://agriseco.com.vn/News/NewsDetail/2057993/vi-VN",
+      "accountOpeningUrl": "https://agriseco.com.vn/Training/Lesson/A/5/vi-VN"
     },
     "hdbs": {
       "tradingFee": {
@@ -682,8 +682,8 @@
         "isListed": false,
         "listingStatus": "Chưa niêm yết (Thuộc HDBank)"
       },
-      "sourceUrl": "https://hdbs.vn",
-      "accountOpeningUrl": "https://hdbs.com.vn/mo-tai-khoan"
+      "sourceUrl": "https://hdbs.vn/bieu-phi/",
+      "accountOpeningUrl": "https://hdbs.vn"
     },
     "dsc": {
       "tradingFee": {
@@ -708,8 +708,8 @@
         "isListed": true,
         "listingStatus": "Niêm yết HOSE"
       },
-      "sourceUrl": "https://dsc.com.vn/bieu-phi",
-      "accountOpeningUrl": "https://dsc.com.vn/mo-tai-khoan"
+      "sourceUrl": "https://www.dsc.com.vn/bieu-phi",
+      "accountOpeningUrl": "https://www.dsc.com.vn/kien-thuc/cach-mo-tai-khoan-chung-khoan"
     },
     "phs": {
       "tradingFee": {
@@ -734,8 +734,8 @@
         "isListed": true,
         "listingStatus": "Đăng ký GD UPCoM"
       },
-      "sourceUrl": "https://phs.vn",
-      "accountOpeningUrl": "https://phs.vn/mo-tai-khoan"
+      "sourceUrl": "https://www.phs.vn/san-pham-dich-vu/bieu-phi-giao-dich-chung-khoan-co-so-26",
+      "accountOpeningUrl": "https://www.phs.vn/mo-tai-khoan"
     },
     "tvsi": {
       "tradingFee": {
@@ -760,8 +760,8 @@
         "isListed": false,
         "listingStatus": "Chưa niêm yết"
       },
-      "sourceUrl": "https://tvsi.com.vn",
-      "accountOpeningUrl": "https://tvsi.com.vn/mo-tai-khoan"
+      "sourceUrl": "https://www.tvsi.com.vn/fee-stock.html",
+      "accountOpeningUrl": "https://www.tvsi.com.vn/help-open-account.html"
     },
     "evs": {
       "tradingFee": {
@@ -786,8 +786,8 @@
         "isListed": true,
         "listingStatus": "Niêm yết HNX"
       },
-      "sourceUrl": "https://eves.com.vn",
-      "accountOpeningUrl": "https://eves.com.vn/mo-tai-khoan"
+      "sourceUrl": "https://www.eves.com.vn/san-pham-dich-vu/bieu-phi/bieu-phi-dich-vu/",
+      "accountOpeningUrl": "https://trade.eves.com.vn"
     }
   },
   "auditBrokers": [
@@ -880,7 +880,7 @@
       "stockCode": null,
       "isListed": false,
       "listingStatus": "Chưa niêm yết",
-      "sourceUrl": "https://vps.com.vn",
+      "sourceUrl": "https://vps.com.vn/ca-nhan/ho-tro?view=bieu-phi-bieu-mau-va-chinh-sach&nav=bieu-phi--chinh-sach",
       "scanStatus": "ACCESSIBLE_HTTP_200",
       "httpStatus": 200,
       "unscannableReason": null,
@@ -910,7 +910,7 @@
           "isListed": false,
           "listingStatus": "Chưa niêm yết"
         },
-        "sourceUrl": "https://vps.com.vn",
+        "sourceUrl": "https://vps.com.vn/ca-nhan/ho-tro?view=bieu-phi-bieu-mau-va-chinh-sach&nav=bieu-phi--chinh-sach",
         "accountOpeningUrl": "https://openaccount.vps.com.vn/"
       }
     },
@@ -921,7 +921,7 @@
       "stockCode": "SSI",
       "isListed": true,
       "listingStatus": "Niêm yết HOSE",
-      "sourceUrl": "https://www.ssi.com.vn",
+      "sourceUrl": "https://www.ssi.com.vn/khach-hang-ca-nhan/bieu-phi/bieu-gia-dich-vu-giao-dich-chung-khoan",
       "scanStatus": "ACCESSIBLE_HTTP_200",
       "httpStatus": 200,
       "unscannableReason": null,
@@ -951,8 +951,8 @@
           "isListed": true,
           "listingStatus": "Niêm yết HOSE"
         },
-        "sourceUrl": "https://www.ssi.com.vn",
-        "accountOpeningUrl": "https://www.ssi.com.vn/khach-hang-ca-nhan/mo-tai-khoan"
+        "sourceUrl": "https://www.ssi.com.vn/khach-hang-ca-nhan/bieu-phi/bieu-gia-dich-vu-giao-dich-chung-khoan",
+        "accountOpeningUrl": "https://www.ssi.com.vn/khach-hang-ca-nhan/gioi-thieu-mo-tai-khoan"
       }
     },
     {
@@ -1116,7 +1116,7 @@
           "listingStatus": "Chưa niêm yết (Thuộc VPBank)"
         },
         "sourceUrl": "https://www.vpbanks.com.vn/bieu-phi",
-        "accountOpeningUrl": "https://www.vpbanks.com.vn/mo-tai-khoan"
+        "accountOpeningUrl": "https://hdsd.vpbanks.com.vn/mo-tai-khoan/mo-tai-khoan-ekyc"
       }
     },
     {
@@ -1126,7 +1126,7 @@
       "stockCode": "FTS",
       "isListed": true,
       "listingStatus": "Niêm yết HOSE",
-      "sourceUrl": "https://www.fpts.com.vn",
+      "sourceUrl": "https://new.eztrade.fpts.com.vn/customers/promotion/linh-hoat-lua-chon-goi-phi-giao-dich-tai-fpts",
       "scanStatus": "ACCESSIBLE_HTTP_200",
       "httpStatus": 200,
       "unscannableReason": null,
@@ -1156,7 +1156,7 @@
           "isListed": true,
           "listingStatus": "Niêm yết HOSE"
         },
-        "sourceUrl": "https://www.fpts.com.vn",
+        "sourceUrl": "https://new.eztrade.fpts.com.vn/customers/promotion/linh-hoat-lua-chon-goi-phi-giao-dich-tai-fpts",
         "accountOpeningUrl": "https://ezopen.fpts.com.vn/"
       }
     },
@@ -1167,7 +1167,7 @@
       "stockCode": "HCM",
       "isListed": true,
       "listingStatus": "Niêm yết HOSE",
-      "sourceUrl": "https://www.hsc.com.vn/bieu-phi",
+      "sourceUrl": "https://www.hsc.com.vn/vi/bieu-phi",
       "scanStatus": "ACCESSIBLE_HTTP_200",
       "httpStatus": 200,
       "unscannableReason": null,
@@ -1197,7 +1197,7 @@
           "isListed": true,
           "listingStatus": "Niêm yết HOSE"
         },
-        "sourceUrl": "https://www.hsc.com.vn/bieu-phi",
+        "sourceUrl": "https://www.hsc.com.vn/vi/bieu-phi",
         "accountOpeningUrl": "https://register.hsc.com.vn/"
       }
     },
@@ -1249,7 +1249,7 @@
       "stockCode": null,
       "isListed": false,
       "listingStatus": "Chưa niêm yết",
-      "sourceUrl": "https://kafi.vn",
+      "sourceUrl": "https://kafi.vn/stock-trading?tab=bpgd",
       "scanStatus": "ACCESSIBLE_HTTP_200",
       "httpStatus": 200,
       "unscannableReason": null,
@@ -1279,8 +1279,8 @@
           "isListed": false,
           "listingStatus": "Chưa niêm yết"
         },
-        "sourceUrl": "https://kafi.vn",
-        "accountOpeningUrl": "https://kafi.vn/mo-tai-khoan"
+        "sourceUrl": "https://kafi.vn/stock-trading?tab=bpgd",
+        "accountOpeningUrl": "https://kafi.vn/support/detail?tab=dk_mtk"
       }
     },
     {
@@ -1290,7 +1290,7 @@
       "stockCode": "MBS",
       "isListed": true,
       "listingStatus": "Niêm yết HNX",
-      "sourceUrl": "https://mbs.com.vn/bieu-phi/",
+      "sourceUrl": "https://mbs.com.vn/bieu-phi-giao-dich/",
       "scanStatus": "ACCESSIBLE_HTTP_200",
       "httpStatus": 200,
       "unscannableReason": null,
@@ -1320,7 +1320,7 @@
           "isListed": true,
           "listingStatus": "Niêm yết HNX"
         },
-        "sourceUrl": "https://mbs.com.vn/bieu-phi/",
+        "sourceUrl": "https://mbs.com.vn/bieu-phi-giao-dich/",
         "accountOpeningUrl": "https://mbs.com.vn/mo-tai-khoan/"
       }
     },
@@ -1362,7 +1362,7 @@
           "listingStatus": "Niêm yết HNX"
         },
         "sourceUrl": "https://www.shs.com.vn/Pages/BieuPhiDichVu.aspx",
-        "accountOpeningUrl": "https://openaccount.shs.com.vn/"
+        "accountOpeningUrl": "https://www.shs.com.vn/Pages/MoTaiKhoan.aspx"
       }
     },
     {
@@ -1372,11 +1372,11 @@
       "stockCode": "VIX",
       "isListed": true,
       "listingStatus": "Niêm yết HOSE",
-      "sourceUrl": "https://vixs.vn",
-      "scanStatus": "ACCESSIBLE_HTTP_200",
-      "httpStatus": 200,
-      "unscannableReason": null,
-      "manualCheckInstruction": null,
+      "sourceUrl": "https://vixs.vn/ho-tro/bieu-phi-giao-dich",
+      "scanStatus": "UNSCANNABLE_MANUAL_AUDIT_REQUIRED",
+      "httpStatus": 403,
+      "unscannableReason": "Bảo vệ bởi Cloudflare WAF Bot-Protection hoặc Tường lửa máy chủ (HTTP 403). Cần đối chiếu thủ công qua trình duyệt.",
+      "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://vixs.vn/ho-tro/bieu-phi-giao-dich",
       "lastVerified": "Tháng 09/2026",
       "verifiedBy": "Web Scanner & Kiểm định viên độc lập",
       "data": {
@@ -1402,8 +1402,8 @@
           "isListed": true,
           "listingStatus": "Niêm yết HOSE"
         },
-        "sourceUrl": "https://vixs.vn",
-        "accountOpeningUrl": "https://vixs.vn/mo-tai-khoan"
+        "sourceUrl": "https://vixs.vn/ho-tro/bieu-phi-giao-dich",
+        "accountOpeningUrl": "https://xpower.vixs.vn/account-register"
       }
     },
     {
@@ -1413,7 +1413,7 @@
       "stockCode": null,
       "isListed": false,
       "listingStatus": "Chưa niêm yết (FDI Hàn Quốc)",
-      "sourceUrl": "https://kisvn.vn",
+      "sourceUrl": "https://kisvn.vn/san-pham-dich-vu/dich-vu-chung-khoan/bieu-phi-4206",
       "scanStatus": "ACCESSIBLE_HTTP_200",
       "httpStatus": 200,
       "unscannableReason": null,
@@ -1443,8 +1443,8 @@
           "isListed": false,
           "listingStatus": "Chưa niêm yết (FDI Hàn Quốc)"
         },
-        "sourceUrl": "https://kisvn.vn",
-        "accountOpeningUrl": "https://kisvn.vn/mo-tai-khoan"
+        "sourceUrl": "https://kisvn.vn/san-pham-dich-vu/dich-vu-chung-khoan/bieu-phi-4206",
+        "accountOpeningUrl": "https://kisvn.vn/hoc-dau-tu/mo-tai-khoan-chung-khoan-kis-online-ekyc"
       }
     },
     {
@@ -1454,7 +1454,7 @@
       "stockCode": null,
       "isListed": false,
       "listingStatus": "Chưa niêm yết (Thuộc ACB)",
-      "sourceUrl": "https://acbs.com.vn/bieu-phi",
+      "sourceUrl": "https://acbs.com.vn/bieu-phi-giao-dich-chung-khoan-niem-yet",
       "scanStatus": "ACCESSIBLE_HTTP_200",
       "httpStatus": 200,
       "unscannableReason": null,
@@ -1484,8 +1484,8 @@
           "isListed": false,
           "listingStatus": "Chưa niêm yết (Thuộc ACB)"
         },
-        "sourceUrl": "https://acbs.com.vn/bieu-phi",
-        "accountOpeningUrl": "https://acbs.com.vn/mo-tai-khoan"
+        "sourceUrl": "https://acbs.com.vn/bieu-phi-giao-dich-chung-khoan-niem-yet",
+        "accountOpeningUrl": "https://acbs.com.vn/blog/chi-phi-giao-dich-chung-khoan"
       }
     },
     {
@@ -1526,7 +1526,7 @@
           "listingStatus": "Chưa niêm yết (Thuộc Vietcombank)"
         },
         "sourceUrl": "https://vcbs.com.vn/bieu-phi",
-        "accountOpeningUrl": "https://vcbs.com.vn/mo-tai-khoan"
+        "accountOpeningUrl": "https://www.vcbs.com.vn/chi-tiet-ho-tro-giao-dich/mo-tai-khoan-giao-dich-chung-khoan"
       }
     },
     {
@@ -1567,7 +1567,7 @@
           "listingStatus": "Chưa niêm yết (FDI Hàn Quốc)"
         },
         "sourceUrl": "https://www.kbsec.com.vn/vi/bieu-phi.html",
-        "accountOpeningUrl": "https://kbsec.com.vn/mo-tai-khoan"
+        "accountOpeningUrl": "https://www.kbsec.com.vn/vi/huong-dan-mo-tai-khoan.html"
       }
     },
     {
@@ -1577,7 +1577,7 @@
       "stockCode": "CTS",
       "isListed": true,
       "listingStatus": "Niêm yết HOSE",
-      "sourceUrl": "https://cts.vn/bieu-phi",
+      "sourceUrl": "https://www.vbse.vn/khach-hang-ca-nhan/bieu-phi/",
       "scanStatus": "ACCESSIBLE_HTTP_200",
       "httpStatus": 200,
       "unscannableReason": null,
@@ -1607,8 +1607,8 @@
           "isListed": true,
           "listingStatus": "Niêm yết HOSE"
         },
-        "sourceUrl": "https://cts.vn/bieu-phi",
-        "accountOpeningUrl": "https://cts.vn/mo-tai-khoan"
+        "sourceUrl": "https://www.vbse.vn/khach-hang-ca-nhan/bieu-phi/",
+        "accountOpeningUrl": "https://www.vbse.vn/huong-dan-mo-tai-khoan-chung-khoan-truc-tuyen-qua-webmobi-gia-tang-trai-nghiem-dau-tu-so/"
       }
     },
     {
@@ -1618,7 +1618,7 @@
       "stockCode": "BVS",
       "isListed": true,
       "listingStatus": "Niêm yết HNX",
-      "sourceUrl": "https://bvsc.com.vn/bieu-phi",
+      "sourceUrl": "https://www.bvsc.com.vn/danhmuc/dich-vu/khach-hang-ca-nhan/ho-tro/huong-dan-su-dung-dich-vu/bieu-lai-phi-giao-dich/",
       "scanStatus": "ACCESSIBLE_HTTP_200",
       "httpStatus": 200,
       "unscannableReason": null,
@@ -1648,8 +1648,8 @@
           "isListed": true,
           "listingStatus": "Niêm yết HNX"
         },
-        "sourceUrl": "https://bvsc.com.vn/bieu-phi",
-        "accountOpeningUrl": "https://bvsc.com.vn/mo-tai-khoan"
+        "sourceUrl": "https://www.bvsc.com.vn/danhmuc/dich-vu/khach-hang-ca-nhan/ho-tro/huong-dan-su-dung-dich-vu/bieu-lai-phi-giao-dich/",
+        "accountOpeningUrl": "https://www.bvsc.com.vn/danhmuc/dich-vu/khach-hang-ca-nhan/"
       }
     },
     {
@@ -1660,10 +1660,10 @@
       "isListed": true,
       "listingStatus": "Niêm yết HOSE",
       "sourceUrl": "https://tpbs.com.vn",
-      "scanStatus": "UNSCANNABLE_MANUAL_AUDIT_REQUIRED",
-      "httpStatus": "Timeout (8s)",
-      "unscannableReason": "Hết thời gian chờ phản hồi (Timeout > 8s). Máy chủ phản hồi chậm hoặc chặn crawler tự động.",
-      "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://tpbs.com.vn",
+      "scanStatus": "ACCESSIBLE_HTTP_200",
+      "httpStatus": 200,
+      "unscannableReason": null,
+      "manualCheckInstruction": null,
       "lastVerified": "Tháng 09/2026",
       "verifiedBy": "Web Scanner & Kiểm định viên độc lập",
       "data": {
@@ -1690,7 +1690,7 @@
           "listingStatus": "Niêm yết HOSE"
         },
         "sourceUrl": "https://tpbs.com.vn",
-        "accountOpeningUrl": "https://tpbs.com.vn/mo-tai-khoan"
+        "accountOpeningUrl": "https://ekyc.tpbs.com.vn"
       }
     },
     {
@@ -1700,7 +1700,7 @@
       "stockCode": null,
       "isListed": false,
       "listingStatus": "Chưa niêm yết (FDI Đài Loan)",
-      "sourceUrl": "https://yuanta.com.vn/bieu-phi",
+      "sourceUrl": "https://support.yuanta.com.vn/bieu-phi-va-lai-suat/",
       "scanStatus": "ACCESSIBLE_HTTP_200",
       "httpStatus": 200,
       "unscannableReason": null,
@@ -1730,7 +1730,7 @@
           "isListed": false,
           "listingStatus": "Chưa niêm yết (FDI Đài Loan)"
         },
-        "sourceUrl": "https://yuanta.com.vn/bieu-phi",
+        "sourceUrl": "https://support.yuanta.com.vn/bieu-phi-va-lai-suat/",
         "accountOpeningUrl": "https://yuanta.com.vn/mo-tai-khoan"
       }
     },
@@ -1741,7 +1741,7 @@
       "stockCode": null,
       "isListed": false,
       "listingStatus": "Chưa niêm yết (FDI Hàn Quốc)",
-      "sourceUrl": "https://shinhansec.com.vn",
+      "sourceUrl": "https://shinhansec.com.vn/vi/ho-tro-khach-hang/phi-giao-dich.html",
       "scanStatus": "ACCESSIBLE_HTTP_200",
       "httpStatus": 200,
       "unscannableReason": null,
@@ -1771,8 +1771,8 @@
           "isListed": false,
           "listingStatus": "Chưa niêm yết (FDI Hàn Quốc)"
         },
-        "sourceUrl": "https://shinhansec.com.vn",
-        "accountOpeningUrl": "https://shinhansec.com.vn/mo-tai-khoan"
+        "sourceUrl": "https://shinhansec.com.vn/vi/ho-tro-khach-hang/phi-giao-dich.html",
+        "accountOpeningUrl": "https://shinhansec.com.vn/vi/ho-tro-khach-hang/chuong-trinh-uu-dai/135/mo-tai-khoan-shinhan-bank-truc-tuyen-ngay-tren-ung-dung-san-xin-ha.html"
       }
     },
     {
@@ -1782,7 +1782,7 @@
       "stockCode": "AGR",
       "isListed": true,
       "listingStatus": "Niêm yết HOSE",
-      "sourceUrl": "https://agriseco.com.vn",
+      "sourceUrl": "https://agriseco.com.vn/News/NewsDetail/2057993/vi-VN",
       "scanStatus": "ACCESSIBLE_HTTP_200",
       "httpStatus": 200,
       "unscannableReason": null,
@@ -1812,8 +1812,8 @@
           "isListed": true,
           "listingStatus": "Niêm yết HOSE"
         },
-        "sourceUrl": "https://agriseco.com.vn",
-        "accountOpeningUrl": "https://agriseco.com.vn/mo-tai-khoan"
+        "sourceUrl": "https://agriseco.com.vn/News/NewsDetail/2057993/vi-VN",
+        "accountOpeningUrl": "https://agriseco.com.vn/Training/Lesson/A/5/vi-VN"
       }
     },
     {
@@ -1823,7 +1823,7 @@
       "stockCode": null,
       "isListed": false,
       "listingStatus": "Chưa niêm yết (Thuộc HDBank)",
-      "sourceUrl": "https://hdbs.vn",
+      "sourceUrl": "https://hdbs.vn/bieu-phi/",
       "scanStatus": "ACCESSIBLE_HTTP_200",
       "httpStatus": 200,
       "unscannableReason": null,
@@ -1853,8 +1853,8 @@
           "isListed": false,
           "listingStatus": "Chưa niêm yết (Thuộc HDBank)"
         },
-        "sourceUrl": "https://hdbs.vn",
-        "accountOpeningUrl": "https://hdbs.com.vn/mo-tai-khoan"
+        "sourceUrl": "https://hdbs.vn/bieu-phi/",
+        "accountOpeningUrl": "https://hdbs.vn"
       }
     },
     {
@@ -1864,7 +1864,7 @@
       "stockCode": "DSC",
       "isListed": true,
       "listingStatus": "Niêm yết HOSE",
-      "sourceUrl": "https://dsc.com.vn/bieu-phi",
+      "sourceUrl": "https://www.dsc.com.vn/bieu-phi",
       "scanStatus": "ACCESSIBLE_HTTP_200",
       "httpStatus": 200,
       "unscannableReason": null,
@@ -1894,8 +1894,8 @@
           "isListed": true,
           "listingStatus": "Niêm yết HOSE"
         },
-        "sourceUrl": "https://dsc.com.vn/bieu-phi",
-        "accountOpeningUrl": "https://dsc.com.vn/mo-tai-khoan"
+        "sourceUrl": "https://www.dsc.com.vn/bieu-phi",
+        "accountOpeningUrl": "https://www.dsc.com.vn/kien-thuc/cach-mo-tai-khoan-chung-khoan"
       }
     },
     {
@@ -1905,7 +1905,7 @@
       "stockCode": "PHS",
       "isListed": true,
       "listingStatus": "Đăng ký GD UPCoM",
-      "sourceUrl": "https://phs.vn",
+      "sourceUrl": "https://www.phs.vn/san-pham-dich-vu/bieu-phi-giao-dich-chung-khoan-co-so-26",
       "scanStatus": "ACCESSIBLE_HTTP_200",
       "httpStatus": 200,
       "unscannableReason": null,
@@ -1935,8 +1935,8 @@
           "isListed": true,
           "listingStatus": "Đăng ký GD UPCoM"
         },
-        "sourceUrl": "https://phs.vn",
-        "accountOpeningUrl": "https://phs.vn/mo-tai-khoan"
+        "sourceUrl": "https://www.phs.vn/san-pham-dich-vu/bieu-phi-giao-dich-chung-khoan-co-so-26",
+        "accountOpeningUrl": "https://www.phs.vn/mo-tai-khoan"
       }
     },
     {
@@ -1946,7 +1946,7 @@
       "stockCode": null,
       "isListed": false,
       "listingStatus": "Chưa niêm yết",
-      "sourceUrl": "https://tvsi.com.vn",
+      "sourceUrl": "https://www.tvsi.com.vn/fee-stock.html",
       "scanStatus": "ACCESSIBLE_HTTP_200",
       "httpStatus": 200,
       "unscannableReason": null,
@@ -1976,8 +1976,8 @@
           "isListed": false,
           "listingStatus": "Chưa niêm yết"
         },
-        "sourceUrl": "https://tvsi.com.vn",
-        "accountOpeningUrl": "https://tvsi.com.vn/mo-tai-khoan"
+        "sourceUrl": "https://www.tvsi.com.vn/fee-stock.html",
+        "accountOpeningUrl": "https://www.tvsi.com.vn/help-open-account.html"
       }
     },
     {
@@ -1987,7 +1987,7 @@
       "stockCode": "EVS",
       "isListed": true,
       "listingStatus": "Niêm yết HNX",
-      "sourceUrl": "https://eves.com.vn",
+      "sourceUrl": "https://www.eves.com.vn/san-pham-dich-vu/bieu-phi/bieu-phi-dich-vu/",
       "scanStatus": "ACCESSIBLE_HTTP_200",
       "httpStatus": 200,
       "unscannableReason": null,
@@ -2017,8 +2017,8 @@
           "isListed": true,
           "listingStatus": "Niêm yết HNX"
         },
-        "sourceUrl": "https://eves.com.vn",
-        "accountOpeningUrl": "https://eves.com.vn/mo-tai-khoan"
+        "sourceUrl": "https://www.eves.com.vn/san-pham-dich-vu/bieu-phi/bieu-phi-dich-vu/",
+        "accountOpeningUrl": "https://trade.eves.com.vn"
       }
     }
   ]

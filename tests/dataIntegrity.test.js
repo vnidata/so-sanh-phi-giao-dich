@@ -393,6 +393,11 @@ describe('Securities Data Integrity & Anti-Hallucination Suite', () => {
       // Verify no speculative 404 paths like /khuyen-mai or /margin-deal
       expect(links.feeSourceUrl).not.toContain('/khuyen-mai');
       expect(links.feeSourceUrl).not.toContain('/margin-deal');
+      expect(links.accountOpeningUrl).not.toBe('https://kafi.vn/mo-tai-khoan');
+      expect(links.accountOpeningUrl).not.toBe('https://vixs.vn/mo-tai-khoan');
+      expect(company.website).toMatch(/^https?:\/\//);
+      expect(company.sourceUrl).toMatch(/^https?:\/\//);
+      expect(company.accountOpeningUrl).toMatch(/^https?:\/\//);
 
       links.scannedSources.forEach(s => {
         expect(s.url).toMatch(/^https?:\/\//);

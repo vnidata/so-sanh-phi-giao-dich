@@ -32,7 +32,7 @@ export const SECURITIES_COMPANIES = [
     },
     "margin": {
       "minRate": 7.5,
-      "maxRate": 12.0,
+      "maxRate": 12,
       "medianRate": 10.5,
       "baseRate": 10.5,
       "promoRate": 7.5,
@@ -111,9 +111,9 @@ export const SECURITIES_COMPANIES = [
     },
     "margin": {
       "minRate": 7.99,
-      "maxRate": 14.0,
-      "medianRate": 14.0,
-      "baseRate": 14.0,
+      "maxRate": 14,
+      "medianRate": 14,
+      "baseRate": 14,
       "promoRate": 7.99,
       "promoDuration": "Gói vay deal mã có điều kiện",
       "maxLeverage": "1:1 (Ký quỹ 50% chuẩn UBCK)",
@@ -122,7 +122,7 @@ export const SECURITIES_COMPANIES = [
       "shortTermRate": 7.99,
       "shortTermTenor": "Gói deal mã có điều kiện (từ 7.99%)",
       "shortTermDisplay": "7.99% - 10.5%/năm (Gói deal có điều kiện)",
-      "standardRate90d": 14.0,
+      "standardRate90d": 14,
       "standardRateDisplay": "14.0%/năm (Phổ thông hiện hữu)",
       "isShortTermDealOnly": false
     },
@@ -190,7 +190,7 @@ export const SECURITIES_COMPANIES = [
     },
     "margin": {
       "minRate": 8.6,
-      "maxRate": 14.0,
+      "maxRate": 14,
       "medianRate": 13.5,
       "baseRate": 13.5,
       "promoRate": 7.5,
@@ -243,7 +243,7 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://vps.com.vn",
-    "sourceUrl": "https://vps.com.vn"
+    "sourceUrl": "https://vps.com.vn/ca-nhan/ho-tro?view=bieu-phi-bieu-mau-va-chinh-sach&nav=bieu-phi--chinh-sach"
   },
   {
     "id": "ssi",
@@ -302,7 +302,7 @@ export const SECURITIES_COMPANIES = [
       "Hạn mức vay margin siêu lớn cho khách hàng NAV cao",
       "Hệ thống phân tích SSI Research uy tín hàng đầu khu vực"
     ],
-    "accountOpeningUrl": "https://www.ssi.com.vn/khach-hang-ca-nhan/mo-tai-khoan",
+    "accountOpeningUrl": "https://www.ssi.com.vn/khach-hang-ca-nhan/gioi-thieu-mo-tai-khoan",
     "referralCode": "SSI_PARTNER",
     "pros": [
       "Thương hiệu chứng khoán uy tín lâu đời nhất Việt Nam, tiềm lực vốn chủ sở hữu lớn",
@@ -321,7 +321,7 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://www.ssi.com.vn",
-    "sourceUrl": "https://www.ssi.com.vn"
+    "sourceUrl": "https://www.ssi.com.vn/khach-hang-ca-nhan/bieu-phi/bieu-gia-dich-vu-giao-dich-chung-khoan"
   },
   {
     "id": "vndirect",
@@ -614,7 +614,7 @@ export const SECURITIES_COMPANIES = [
       "Lãi suất vay Margin kích cầu từ 8.6%/năm",
       "Tích hợp luồng tiền linh hoạt với tài khoản VPBank NEO"
     ],
-    "accountOpeningUrl": "https://www.vpbanks.com.vn/mo-tai-khoan",
+    "accountOpeningUrl": "https://hdsd.vpbanks.com.vn/mo-tai-khoan/mo-tai-khoan-ekyc",
     "referralCode": "VPB_PRO",
     "pros": [
       "Vốn điều lệ nằm trong nhóm cao nhất thị trường chứng khoán Việt Nam",
@@ -709,7 +709,7 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://www.fpts.com.vn",
-    "sourceUrl": "https://www.fpts.com.vn"
+    "sourceUrl": "https://new.eztrade.fpts.com.vn/customers/promotion/linh-hoat-lua-chon-goi-phi-giao-dich-tai-fpts"
   },
   {
     "id": "hsc",
@@ -785,7 +785,7 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://www.hsc.com.vn",
-    "sourceUrl": "https://www.hsc.com.vn/bieu-phi"
+    "sourceUrl": "https://www.hsc.com.vn/vi/bieu-phi"
   },
   {
     "id": "vietcap",
@@ -919,7 +919,7 @@ export const SECURITIES_COMPANIES = [
       "Lãi suất margin ưu đãi kích cầu chỉ từ 7.8%/năm",
       "Ứng dụng Kafi Wealth tích hợp quản lý tài sản linh hoạt"
     ],
-    "accountOpeningUrl": "https://kafi.vn/mo-tai-khoan",
+    "accountOpeningUrl": "https://kafi.vn/support/detail?tab=dk_mtk",
     "referralCode": "KAFI_COMMUNITY",
     "pros": [
       "Chính sách biểu phí và lãi margin cực kỳ cạnh tranh, nhiều ưu đãi hấp dẫn",
@@ -936,7 +936,7 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://kafi.vn",
-    "sourceUrl": "https://kafi.vn"
+    "sourceUrl": "https://kafi.vn/stock-trading?tab=bpgd"
   },
   {
     "id": "mbs",
@@ -1013,7 +1013,7 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://mbs.com.vn",
-    "sourceUrl": "https://mbs.com.vn/bieu-phi/"
+    "sourceUrl": "https://mbs.com.vn/bieu-phi-giao-dich/"
   },
   {
     "id": "shs",
@@ -1072,7 +1072,7 @@ export const SECURITIES_COMPANIES = [
       "Tích hợp luồng tiền nạp rút siêu tốc với ngân hàng SHB",
       "Báo cáo chiến lược tuần và danh mục cổ phiếu khuyến nghị độc quyền"
     ],
-    "accountOpeningUrl": "https://openaccount.shs.com.vn/",
+    "accountOpeningUrl": "https://www.shs.com.vn/Pages/MoTaiKhoan.aspx",
     "referralCode": "SHS_INVEST",
     "pros": [
       "Quy mô vốn tự có lớn trong nhóm dẫn đầu thị trường",
@@ -1147,7 +1147,7 @@ export const SECURITIES_COMPANIES = [
       "Hạn mức cho vay margin lớn cho trader năng động",
       "Nâng cấp hệ thống VIX Trading với tốc độ khớp lệnh siêu tốc"
     ],
-    "accountOpeningUrl": "https://vixs.vn/mo-tai-khoan",
+    "accountOpeningUrl": "https://xpower.vixs.vn/account-register",
     "referralCode": "VIX_PRO",
     "pros": [
       "Tốc độ xử lý lệnh cực nhanh trong các phiên biến động lớn",
@@ -1164,7 +1164,7 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://vixs.vn",
-    "sourceUrl": "https://vixs.vn"
+    "sourceUrl": "https://vixs.vn/ho-tro/bieu-phi-giao-dich"
   },
   {
     "id": "kis",
@@ -1222,7 +1222,7 @@ export const SECURITIES_COMPANIES = [
       "Lãi suất vay margin ưu đãi từ 7.99%/năm",
       "Nhà phát hành chứng quyền có bảo đảm (CW) quy mô lớn nhất thị trường"
     ],
-    "accountOpeningUrl": "https://kisvn.vn/mo-tai-khoan",
+    "accountOpeningUrl": "https://kisvn.vn/hoc-dau-tu/mo-tai-khoan-chung-khoan-kis-online-ekyc",
     "referralCode": "KIS_VIP",
     "pros": [
       "Tổ chức phát hành và tạo lập thị trường chứng quyền (CW) hàng đầu",
@@ -1239,7 +1239,7 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://kisvn.vn",
-    "sourceUrl": "https://kisvn.vn"
+    "sourceUrl": "https://kisvn.vn/san-pham-dich-vu/dich-vu-chung-khoan/bieu-phi-4206"
   },
   {
     "id": "acbs",
@@ -1297,7 +1297,7 @@ export const SECURITIES_COMPANIES = [
       "Tích hợp nạp rút tức thời với tài khoản số ACB ONE",
       "Gói vay Margin lãi suất ưu đãi cho khách hàng ACB Privilege"
     ],
-    "accountOpeningUrl": "https://acbs.com.vn/mo-tai-khoan",
+    "accountOpeningUrl": "https://acbs.com.vn/blog/chi-phi-giao-dich-chung-khoan",
     "referralCode": "ACB_INVEST",
     "pros": [
       "Thương hiệu ngân hàng ACB uy tín hàng đầu, quản trị rủi ro mẫu mực",
@@ -1314,7 +1314,7 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://acbs.com.vn",
-    "sourceUrl": "https://acbs.com.vn/bieu-phi"
+    "sourceUrl": "https://acbs.com.vn/bieu-phi-giao-dich-chung-khoan-niem-yet"
   },
   {
     "id": "vcbs",
@@ -1372,7 +1372,7 @@ export const SECURITIES_COMPANIES = [
       "Liên kết trực tiếp nạp rút tức thì với VCB Digibank",
       "Gói ưu đãi đặc quyền cho khách hàng Vietcombank Priority"
     ],
-    "accountOpeningUrl": "https://vcbs.com.vn/mo-tai-khoan",
+    "accountOpeningUrl": "https://www.vcbs.com.vn/chi-tiet-ho-tro-giao-dich/mo-tai-khoan-giao-dich-chung-khoan",
     "referralCode": "VCB_COMMUNITY",
     "pros": [
       "Bảo chứng an toàn cao nhất toàn ngành từ Ngân hàng Vietcombank",
@@ -1447,7 +1447,7 @@ export const SECURITIES_COMPANIES = [
       "Lãi suất vay Margin cạnh tranh chỉ từ 7.9%/năm",
       "Nền tảng KB Buddy tích hợp mạng xã hội đầu tư và kiến thức trực quan"
     ],
-    "accountOpeningUrl": "https://kbsec.com.vn/mo-tai-khoan",
+    "accountOpeningUrl": "https://www.kbsec.com.vn/vi/huong-dan-mo-tai-khoan.html",
     "referralCode": "KB_INVEST",
     "pros": [
       "Hậu thuẫn vốn quy mô lớn từ KB Financial Group",
@@ -1463,7 +1463,7 @@ export const SECURITIES_COMPANIES = [
       "KB-Trade Web"
     ],
     "lastUpdated": "2026-09-01",
-    "website": "https://kbsec.com.vn",
+    "website": "https://www.kbsec.com.vn",
     "sourceUrl": "https://www.kbsec.com.vn/vi/bieu-phi.html"
   },
   {
@@ -1522,7 +1522,7 @@ export const SECURITIES_COMPANIES = [
       "Ưu đãi kết nối luồng tiền với VietinBank iPay",
       "Gói lãi suất Margin kích cầu chỉ từ 8.5%/năm"
     ],
-    "accountOpeningUrl": "https://cts.vn/mo-tai-khoan",
+    "accountOpeningUrl": "https://www.vbse.vn/huong-dan-mo-tai-khoan-chung-khoan-truc-tuyen-qua-webmobi-gia-tang-trai-nghiem-dau-tu-so/",
     "referralCode": "CTS_COMMUNITY",
     "pros": [
       "Bảo chứng uy tín từ một trong 4 ngân hàng quốc doanh lớn nhất Việt Nam",
@@ -1538,8 +1538,8 @@ export const SECURITIES_COMPANIES = [
       "CTS Web Trading"
     ],
     "lastUpdated": "2026-09-01",
-    "website": "https://cts.vn",
-    "sourceUrl": "https://cts.vn/bieu-phi"
+    "website": "https://www.vbse.vn",
+    "sourceUrl": "https://www.vbse.vn/khach-hang-ca-nhan/bieu-phi/"
   },
   {
     "id": "bvsc",
@@ -1597,7 +1597,7 @@ export const SECURITIES_COMPANIES = [
       "Gói dịch vụ tài chính kết hợp giải pháp bảo hiểm tích sản Bảo Việt",
       "Hội thảo trực tuyến và báo cáo chiến lược doanh nghiệp độc quyền"
     ],
-    "accountOpeningUrl": "https://bvsc.com.vn/mo-tai-khoan",
+    "accountOpeningUrl": "https://www.bvsc.com.vn/danhmuc/dich-vu/khach-hang-ca-nhan/",
     "referralCode": "BVSC_PARTNER",
     "pros": [
       "Công ty chứng khoán đầu tiên thành lập tại Việt Nam, bề dày lịch sử và kinh nghiệm",
@@ -1613,8 +1613,8 @@ export const SECURITIES_COMPANIES = [
       "B-Web Trading"
     ],
     "lastUpdated": "2026-09-01",
-    "website": "https://bvsc.com.vn",
-    "sourceUrl": "https://bvsc.com.vn/bieu-phi"
+    "website": "https://www.bvsc.com.vn",
+    "sourceUrl": "https://www.bvsc.com.vn/danhmuc/dich-vu/khach-hang-ca-nhan/ho-tro/huong-dan-su-dung-dich-vu/bieu-lai-phi-giao-dich/"
   },
   {
     "id": "tps",
@@ -1672,7 +1672,7 @@ export const SECURITIES_COMPANIES = [
       "Miễn phí chuyển nộp tiền tức thời qua App TPBank",
       "Lãi suất Margin ưu đãi kích cầu chỉ từ 8.6%/năm"
     ],
-    "accountOpeningUrl": "https://tpbs.com.vn/mo-tai-khoan",
+    "accountOpeningUrl": "https://ekyc.tpbs.com.vn",
     "referralCode": "TPS_DIGITAL",
     "pros": [
       "Công nghệ số hiện đại kết nối trực tiếp với ứng dụng ngân hàng TPBank",
@@ -1765,7 +1765,7 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://yuanta.com.vn",
-    "sourceUrl": "https://yuanta.com.vn/bieu-phi"
+    "sourceUrl": "https://support.yuanta.com.vn/bieu-phi-va-lai-suat/"
   },
   {
     "id": "shinhan",
@@ -1823,7 +1823,7 @@ export const SECURITIES_COMPANIES = [
       "Tích hợp tài khoản thanh toán Shinhan Bank",
       "Lãi suất vay margin cạnh tranh chỉ từ 8.0%/năm"
     ],
-    "accountOpeningUrl": "https://shinhansec.com.vn/mo-tai-khoan",
+    "accountOpeningUrl": "https://shinhansec.com.vn/vi/ho-tro-khach-hang/chuong-trinh-uu-dai/135/mo-tai-khoan-shinhan-bank-truc-tuyen-ngay-tren-ung-dung-san-xin-ha.html",
     "referralCode": "SHINHAN_SOL",
     "pros": [
       "Tiềm lực tài chính từ Tập đoàn Shinhan hàng đầu Hàn Quốc",
@@ -1840,7 +1840,7 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://shinhansec.com.vn",
-    "sourceUrl": "https://shinhansec.com.vn"
+    "sourceUrl": "https://shinhansec.com.vn/vi/ho-tro-khach-hang/phi-giao-dich.html"
   },
   {
     "id": "agriseco",
@@ -1898,7 +1898,7 @@ export const SECURITIES_COMPANIES = [
       "Ưu đãi nộp rút tiền tức thời qua hệ thống ngân hàng Agribank",
       "Báo cáo phân tích ngành nông nghiệp và hàng hóa chuyên sâu"
     ],
-    "accountOpeningUrl": "https://agriseco.com.vn/mo-tai-khoan",
+    "accountOpeningUrl": "https://agriseco.com.vn/Training/Lesson/A/5/vi-VN",
     "referralCode": "AGR_COMMUNITY",
     "pros": [
       "Mạng lưới chi nhánh hỗ trợ rộng khắp 63 tỉnh thành qua hệ thống Agribank",
@@ -1915,7 +1915,7 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://agriseco.com.vn",
-    "sourceUrl": "https://agriseco.com.vn"
+    "sourceUrl": "https://agriseco.com.vn/News/NewsDetail/2057993/vi-VN"
   },
   {
     "id": "hdbs",
@@ -1973,7 +1973,7 @@ export const SECURITIES_COMPANIES = [
       "Tích hợp điểm thưởng và tài khoản ngân hàng HDBank",
       "Lãi suất margin ưu đãi 8.5%/năm"
     ],
-    "accountOpeningUrl": "https://hdbs.com.vn/mo-tai-khoan",
+    "accountOpeningUrl": "https://hdbs.vn",
     "referralCode": "HDBS_PRO",
     "pros": [
       "Hệ sinh thái tài chính và tiêu dùng đa dạng cùng HDBank, Vietjet",
@@ -1990,7 +1990,7 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://hdbs.vn",
-    "sourceUrl": "https://hdbs.vn"
+    "sourceUrl": "https://hdbs.vn/bieu-phi/"
   },
   {
     "id": "dsc",
@@ -2048,7 +2048,7 @@ export const SECURITIES_COMPANIES = [
       "Ứng dụng DSC Trading thế hệ mới",
       "Gói tư vấn đầu tư chuyên sâu cùng chuyên gia DSC"
     ],
-    "accountOpeningUrl": "https://dsc.com.vn/mo-tai-khoan",
+    "accountOpeningUrl": "https://www.dsc.com.vn/kien-thuc/cach-mo-tai-khoan-chung-khoan",
     "referralCode": "DSC_SMART",
     "pros": [
       "Được đầu tư bài bản về công nghệ từ Tập đoàn Thành Công",
@@ -2064,8 +2064,8 @@ export const SECURITIES_COMPANIES = [
       "DSC Web Trading"
     ],
     "lastUpdated": "2026-09-01",
-    "website": "https://dsc.com.vn",
-    "sourceUrl": "https://dsc.com.vn/bieu-phi"
+    "website": "https://www.dsc.com.vn",
+    "sourceUrl": "https://www.dsc.com.vn/bieu-phi"
   },
   {
     "id": "phs",
@@ -2123,7 +2123,7 @@ export const SECURITIES_COMPANIES = [
       "Báo cáo chiến lược đầu tư hàng quý chất lượng cao",
       "Hỗ trợ dịch vụ giao dịch trực tuyến đa nền tảng"
     ],
-    "accountOpeningUrl": "https://phs.vn/mo-tai-khoan",
+    "accountOpeningUrl": "https://www.phs.vn/mo-tai-khoan",
     "referralCode": "PHS_INVEST",
     "pros": [
       "Kinh nghiệm lâu năm phục vụ nhà đầu tư nước ngoài và tổ chức",
@@ -2139,8 +2139,8 @@ export const SECURITIES_COMPANIES = [
       "PHS Web Trading"
     ],
     "lastUpdated": "2026-09-01",
-    "website": "https://phs.vn",
-    "sourceUrl": "https://phs.vn"
+    "website": "https://www.phs.vn",
+    "sourceUrl": "https://www.phs.vn/san-pham-dich-vu/bieu-phi-giao-dich-chung-khoan-co-so-26"
   },
   {
     "id": "tvsi",
@@ -2198,7 +2198,7 @@ export const SECURITIES_COMPANIES = [
       "Hỗ trợ dịch vụ giao dịch trực tuyến i-Trade Home",
       "Báo cáo nhận định thị trường hàng ngày"
     ],
-    "accountOpeningUrl": "https://tvsi.com.vn/mo-tai-khoan",
+    "accountOpeningUrl": "https://www.tvsi.com.vn/help-open-account.html",
     "referralCode": "TVSI_PRO",
     "pros": [
       "Hệ thống đặt lệnh i-Trade ổn định",
@@ -2214,8 +2214,8 @@ export const SECURITIES_COMPANIES = [
       "i-Trade Web"
     ],
     "lastUpdated": "2026-09-01",
-    "website": "https://tvsi.com.vn",
-    "sourceUrl": "https://tvsi.com.vn"
+    "website": "https://www.tvsi.com.vn",
+    "sourceUrl": "https://www.tvsi.com.vn/fee-stock.html"
   },
   {
     "id": "evs",
@@ -2273,7 +2273,7 @@ export const SECURITIES_COMPANIES = [
       "Ưu đãi lãi suất margin tài khoản mới",
       "Ứng dụng EVS Trading cải tiến giao diện mượt mà"
     ],
-    "accountOpeningUrl": "https://eves.com.vn/mo-tai-khoan",
+    "accountOpeningUrl": "https://trade.eves.com.vn",
     "referralCode": "EVS_VIP",
     "pros": [
       "Tập trung phục vụ khách hàng cá nhân chuyên biệt",
@@ -2289,8 +2289,8 @@ export const SECURITIES_COMPANIES = [
       "EVS Web Trading"
     ],
     "lastUpdated": "2026-09-01",
-    "website": "https://eves.com.vn",
-    "sourceUrl": "https://eves.com.vn"
+    "website": "https://www.eves.com.vn",
+    "sourceUrl": "https://www.eves.com.vn/san-pham-dich-vu/bieu-phi/bieu-phi-dich-vu/"
   }
 ];
 

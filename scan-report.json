@@ -4,16 +4,16 @@
     "accessible": 29,
     "unscannable": 1,
     "keywordStats": {
-      "tradingFee": 16,
-      "zeroFee": 11,
-      "interestRate": 11,
-      "loanInterest": 1,
-      "margin": 21,
-      "creditLimit": 4,
-      "debtBalance": 3,
-      "promoRate": 8
+      "tradingFee": 22,
+      "zeroFee": 15,
+      "interestRate": 13,
+      "loanInterest": 0,
+      "margin": 24,
+      "creditLimit": 5,
+      "debtBalance": 1,
+      "promoRate": 9
     },
-    "timestamp": "2026-10-22T07:11:54.357Z",
+    "timestamp": "2026-10-22T07:49:31.475Z",
     "note": "Dữ liệu được quét tự động từ các trang web biểu phí công khai của 30 CTCK."
   },
   "brokers": [
@@ -23,7 +23,7 @@
       "shortName": "BSC",
       "stockCode": "BSI",
       "isListed": true,
-      "url": "https://www.bsc.com.vn/bieu-phi",
+      "url": "https://www.bsc.com.vn/phi-giao-dich-qua-san/",
       "officialSource": "https://www.bsc.com.vn/phi-giao-dich-qua-san/",
       "httpStatus": 200,
       "isAccessible": true,
@@ -33,7 +33,7 @@
       "manualCheckInstruction": null,
       "signals": {
         "hasTradingFee": true,
-        "hasZeroFee": false,
+        "hasZeroFee": true,
         "hasInterestRate": true,
         "hasLoanInterest": false,
         "hasMargin": true,
@@ -41,26 +41,26 @@
         "hasDebtBalance": false,
         "matchedList": [
           "Phí giao dịch",
+          "Zero-Fee / Miễn phí",
           "Lãi suất",
           "Ký quỹ / Margin"
         ],
         "matchedKeys": [
           "tradingFee",
+          "zeroFee",
           "interestRate",
           "margin"
         ],
         "ratesFound": [
           "6.72%",
-          "5.93%",
-          "7.5%",
-          "12.5%"
+          "5.93%"
         ],
-        "hasZeroFeeMention": false,
+        "hasZeroFeeMention": true,
         "hasMarginMention": true,
         "hasPromoRateMention": true
       },
-      "contentLength": 151634,
-      "scannedAt": "2026-10-22T07:10:34.482Z"
+      "contentLength": 153177,
+      "scannedAt": "2026-10-22T07:49:07.842Z"
     },
     {
       "id": "tcbs",
@@ -104,7 +104,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 24828,
-      "scannedAt": "2026-10-22T07:10:35.196Z"
+      "scannedAt": "2026-10-22T07:49:08.440Z"
     },
     {
       "id": "vps",
@@ -112,8 +112,8 @@
       "shortName": "VPS",
       "stockCode": null,
       "isListed": false,
-      "url": "https://vps.com.vn",
-      "officialSource": "https://vps.com.vn",
+      "url": "https://vps.com.vn/ca-nhan/ho-tro?view=bieu-phi-bieu-mau-va-chinh-sach&nav=bieu-phi--chinh-sach",
+      "officialSource": "https://vps.com.vn/ca-nhan/ho-tro?view=bieu-phi-bieu-mau-va-chinh-sach&nav=bieu-phi--chinh-sach",
       "httpStatus": 200,
       "isAccessible": true,
       "sourceType": "direct",
@@ -126,25 +126,28 @@
         "hasInterestRate": false,
         "hasLoanInterest": false,
         "hasMargin": true,
-        "hasCreditLimit": false,
+        "hasCreditLimit": true,
         "hasDebtBalance": false,
         "matchedList": [
           "Phí giao dịch",
-          "Ký quỹ / Margin"
+          "Ký quỹ / Margin",
+          "Hạn mức"
         ],
         "matchedKeys": [
           "tradingFee",
-          "margin"
+          "margin",
+          "creditLimit"
         ],
         "ratesFound": [
-          "6,7%"
+          "6.14%",
+          "5.07%"
         ],
         "hasZeroFeeMention": false,
         "hasMarginMention": true,
         "hasPromoRateMention": true
       },
-      "contentLength": 59053,
-      "scannedAt": "2026-10-22T07:10:36.798Z"
+      "contentLength": 125268,
+      "scannedAt": "2026-10-22T07:49:08.732Z"
     },
     {
       "id": "ssi",
@@ -152,8 +155,8 @@
       "shortName": "SSI",
       "stockCode": "SSI",
       "isListed": true,
-      "url": "https://r.jina.ai/https://www.ssi.com.vn/khach-hang-ca-nhan/bieu-phi",
-      "officialSource": "https://www.ssi.com.vn",
+      "url": "https://www.ssi.com.vn/khach-hang-ca-nhan/bieu-phi/bieu-gia-dich-vu-giao-dich-chung-khoan",
+      "officialSource": "https://www.ssi.com.vn/khach-hang-ca-nhan/bieu-phi/bieu-gia-dich-vu-giao-dich-chung-khoan",
       "httpStatus": 200,
       "isAccessible": true,
       "sourceType": "direct",
@@ -161,22 +164,30 @@
       "unscannableReason": null,
       "manualCheckInstruction": null,
       "signals": {
-        "hasTradingFee": false,
-        "hasZeroFee": false,
+        "hasTradingFee": true,
+        "hasZeroFee": true,
         "hasInterestRate": false,
         "hasLoanInterest": false,
-        "hasMargin": false,
+        "hasMargin": true,
         "hasCreditLimit": false,
         "hasDebtBalance": false,
-        "matchedList": [],
-        "matchedKeys": [],
+        "matchedList": [
+          "Phí giao dịch",
+          "Zero-Fee / Miễn phí",
+          "Ký quỹ / Margin"
+        ],
+        "matchedKeys": [
+          "tradingFee",
+          "zeroFee",
+          "margin"
+        ],
         "ratesFound": [],
-        "hasZeroFeeMention": false,
-        "hasMarginMention": false,
+        "hasZeroFeeMention": true,
+        "hasMarginMention": true,
         "hasPromoRateMention": false
       },
-      "contentLength": 10345,
-      "scannedAt": "2026-10-22T07:10:37.227Z"
+      "contentLength": 76214,
+      "scannedAt": "2026-10-22T07:49:10.068Z"
     },
     {
       "id": "vndirect",
@@ -208,7 +219,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 3376,
-      "scannedAt": "2026-10-22T07:10:38.577Z"
+      "scannedAt": "2026-10-22T07:49:10.541Z"
     },
     {
       "id": "mirae-asset",
@@ -254,7 +265,7 @@
         "hasPromoRateMention": true
       },
       "contentLength": 141271,
-      "scannedAt": "2026-10-22T07:10:40.883Z"
+      "scannedAt": "2026-10-22T07:49:10.857Z"
     },
     {
       "id": "dnse",
@@ -301,7 +312,7 @@
         "hasPromoRateMention": true
       },
       "contentLength": 547677,
-      "scannedAt": "2026-10-22T07:10:42.373Z"
+      "scannedAt": "2026-10-22T07:49:11.362Z"
     },
     {
       "id": "vpbanks",
@@ -309,7 +320,7 @@
       "shortName": "VPBankS",
       "stockCode": null,
       "isListed": false,
-      "url": "https://r.jina.ai/https://www.vpbanks.com.vn",
+      "url": "https://www.vpbanks.com.vn/bieu-phi",
       "officialSource": "https://www.vpbanks.com.vn/bieu-phi",
       "httpStatus": 200,
       "isAccessible": true,
@@ -318,28 +329,30 @@
       "unscannableReason": null,
       "manualCheckInstruction": null,
       "signals": {
-        "hasTradingFee": false,
+        "hasTradingFee": true,
         "hasZeroFee": false,
-        "hasInterestRate": false,
+        "hasInterestRate": true,
         "hasLoanInterest": false,
         "hasMargin": true,
         "hasCreditLimit": false,
-        "hasDebtBalance": true,
+        "hasDebtBalance": false,
         "matchedList": [
-          "Ký quỹ / Margin",
-          "Dư nợ"
+          "Phí giao dịch",
+          "Lãi suất",
+          "Ký quỹ / Margin"
         ],
         "matchedKeys": [
-          "margin",
-          "debtBalance"
+          "tradingFee",
+          "interestRate",
+          "margin"
         ],
         "ratesFound": [],
         "hasZeroFeeMention": false,
         "hasMarginMention": true,
         "hasPromoRateMention": false
       },
-      "contentLength": 17177,
-      "scannedAt": "2026-10-22T07:10:42.738Z"
+      "contentLength": 146486,
+      "scannedAt": "2026-10-22T07:49:11.901Z"
     },
     {
       "id": "fpts",
@@ -347,46 +360,8 @@
       "shortName": "FPTS",
       "stockCode": "FTS",
       "isListed": true,
-      "url": "https://www.fpts.com.vn",
-      "officialSource": "https://www.fpts.com.vn",
-      "httpStatus": 200,
-      "isAccessible": true,
-      "sourceType": "direct",
-      "sourceCategory": "Direct",
-      "unscannableReason": null,
-      "manualCheckInstruction": null,
-      "signals": {
-        "hasTradingFee": false,
-        "hasZeroFee": true,
-        "hasInterestRate": false,
-        "hasLoanInterest": false,
-        "hasMargin": true,
-        "hasCreditLimit": false,
-        "hasDebtBalance": false,
-        "matchedList": [
-          "Zero-Fee / Miễn phí",
-          "Ký quỹ / Margin"
-        ],
-        "matchedKeys": [
-          "zeroFee",
-          "margin"
-        ],
-        "ratesFound": [],
-        "hasZeroFeeMention": true,
-        "hasMarginMention": true,
-        "hasPromoRateMention": false
-      },
-      "contentLength": 193049,
-      "scannedAt": "2026-10-22T07:10:44.893Z"
-    },
-    {
-      "id": "hsc",
-      "name": "Công ty Cổ phần Chứng khoán TP.Hồ Chí Minh",
-      "shortName": "HSC",
-      "stockCode": "HCM",
-      "isListed": true,
-      "url": "https://r.jina.ai/https://www.hsc.com.vn",
-      "officialSource": "https://www.hsc.com.vn/bieu-phi",
+      "url": "https://new.eztrade.fpts.com.vn/customers/promotion/linh-hoat-lua-chon-goi-phi-giao-dich-tai-fpts",
+      "officialSource": "https://new.eztrade.fpts.com.vn/customers/promotion/linh-hoat-lua-chon-goi-phi-giao-dich-tai-fpts",
       "httpStatus": 200,
       "isAccessible": true,
       "sourceType": "direct",
@@ -408,8 +383,48 @@
         "hasMarginMention": false,
         "hasPromoRateMention": false
       },
-      "contentLength": 3064,
-      "scannedAt": "2026-10-22T07:10:45.278Z"
+      "contentLength": 6925,
+      "scannedAt": "2026-10-22T07:49:11.935Z"
+    },
+    {
+      "id": "hsc",
+      "name": "Công ty Cổ phần Chứng khoán TP.Hồ Chí Minh",
+      "shortName": "HSC",
+      "stockCode": "HCM",
+      "isListed": true,
+      "url": "https://www.hsc.com.vn/vi/bieu-phi",
+      "officialSource": "https://www.hsc.com.vn/vi/bieu-phi",
+      "httpStatus": 200,
+      "isAccessible": true,
+      "sourceType": "direct",
+      "sourceCategory": "Direct",
+      "unscannableReason": null,
+      "manualCheckInstruction": null,
+      "signals": {
+        "hasTradingFee": true,
+        "hasZeroFee": false,
+        "hasInterestRate": false,
+        "hasLoanInterest": false,
+        "hasMargin": true,
+        "hasCreditLimit": false,
+        "hasDebtBalance": false,
+        "matchedList": [
+          "Phí giao dịch",
+          "Ký quỹ / Margin"
+        ],
+        "matchedKeys": [
+          "tradingFee",
+          "margin"
+        ],
+        "ratesFound": [
+          "6.65%"
+        ],
+        "hasZeroFeeMention": false,
+        "hasMarginMention": true,
+        "hasPromoRateMention": true
+      },
+      "contentLength": 108489,
+      "scannedAt": "2026-10-22T07:49:12.144Z"
     },
     {
       "id": "vietcap",
@@ -445,7 +460,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 62637,
-      "scannedAt": "2026-10-22T07:10:47.408Z"
+      "scannedAt": "2026-10-22T07:49:12.324Z"
     },
     {
       "id": "kafi",
@@ -453,8 +468,8 @@
       "shortName": "Kafi",
       "stockCode": null,
       "isListed": false,
-      "url": "https://kafi.vn",
-      "officialSource": "https://kafi.vn",
+      "url": "https://kafi.vn/stock-trading?tab=bpgd",
+      "officialSource": "https://kafi.vn/stock-trading?tab=bpgd",
       "httpStatus": 200,
       "isAccessible": true,
       "sourceType": "direct",
@@ -463,33 +478,31 @@
       "manualCheckInstruction": null,
       "signals": {
         "hasTradingFee": true,
-        "hasZeroFee": false,
+        "hasZeroFee": true,
         "hasInterestRate": true,
-        "hasLoanInterest": true,
+        "hasLoanInterest": false,
         "hasMargin": true,
         "hasCreditLimit": false,
-        "hasDebtBalance": true,
+        "hasDebtBalance": false,
         "matchedList": [
           "Phí giao dịch",
+          "Zero-Fee / Miễn phí",
           "Lãi suất",
-          "Lãi vay",
-          "Ký quỹ / Margin",
-          "Dư nợ"
+          "Ký quỹ / Margin"
         ],
         "matchedKeys": [
           "tradingFee",
+          "zeroFee",
           "interestRate",
-          "loanInterest",
-          "margin",
-          "debtBalance"
+          "margin"
         ],
         "ratesFound": [],
-        "hasZeroFeeMention": false,
+        "hasZeroFeeMention": true,
         "hasMarginMention": true,
         "hasPromoRateMention": false
       },
-      "contentLength": 79246,
-      "scannedAt": "2026-10-22T07:10:49.180Z"
+      "contentLength": 74452,
+      "scannedAt": "2026-10-22T07:49:12.645Z"
     },
     {
       "id": "mbs",
@@ -497,8 +510,8 @@
       "shortName": "MBS",
       "stockCode": "MBS",
       "isListed": true,
-      "url": "https://mbs.com.vn/bieu-phi/",
-      "officialSource": "https://mbs.com.vn/bieu-phi/",
+      "url": "https://mbs.com.vn/bieu-phi-giao-dich/",
+      "officialSource": "https://mbs.com.vn/bieu-phi-giao-dich/",
       "httpStatus": 200,
       "isAccessible": true,
       "sourceType": "direct",
@@ -531,7 +544,7 @@
         "hasPromoRateMention": true
       },
       "contentLength": 132575,
-      "scannedAt": "2026-10-22T07:10:54.602Z"
+      "scannedAt": "2026-10-22T07:49:13.299Z"
     },
     {
       "id": "shs",
@@ -563,7 +576,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 0,
-      "scannedAt": "2026-10-22T07:10:58.239Z"
+      "scannedAt": "2026-10-22T07:49:13.676Z"
     },
     {
       "id": "vix",
@@ -571,41 +584,17 @@
       "shortName": "VIX",
       "stockCode": "VIX",
       "isListed": true,
-      "url": "https://r.jina.ai/https://vixs.vn",
-      "officialSource": "https://vixs.vn",
-      "httpStatus": 200,
-      "isAccessible": true,
+      "url": "https://vixs.vn/ho-tro/bieu-phi-giao-dich",
+      "officialSource": "https://vixs.vn/ho-tro/bieu-phi-giao-dich",
+      "httpStatus": 403,
+      "isAccessible": false,
       "sourceType": "direct",
       "sourceCategory": "Direct",
-      "unscannableReason": null,
-      "manualCheckInstruction": null,
-      "signals": {
-        "hasTradingFee": true,
-        "hasZeroFee": true,
-        "hasInterestRate": true,
-        "hasLoanInterest": false,
-        "hasMargin": true,
-        "hasCreditLimit": false,
-        "hasDebtBalance": false,
-        "matchedList": [
-          "Phí giao dịch",
-          "Zero-Fee / Miễn phí",
-          "Lãi suất",
-          "Ký quỹ / Margin"
-        ],
-        "matchedKeys": [
-          "tradingFee",
-          "zeroFee",
-          "interestRate",
-          "margin"
-        ],
-        "ratesFound": [],
-        "hasZeroFeeMention": true,
-        "hasMarginMention": true,
-        "hasPromoRateMention": false
-      },
-      "contentLength": 20756,
-      "scannedAt": "2026-10-22T07:10:58.727Z"
+      "unscannableReason": "Bảo vệ bởi Cloudflare WAF Bot-Protection hoặc Tường lửa máy chủ (HTTP 403). Cần đối chiếu thủ công qua trình duyệt.",
+      "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://vixs.vn/ho-tro/bieu-phi-giao-dich",
+      "signals": null,
+      "contentLength": 0,
+      "scannedAt": "2026-10-22T07:49:20.758Z"
     },
     {
       "id": "kis",
@@ -613,8 +602,8 @@
       "shortName": "KIS",
       "stockCode": null,
       "isListed": false,
-      "url": "https://kisvn.vn",
-      "officialSource": "https://kisvn.vn",
+      "url": "https://kisvn.vn/san-pham-dich-vu/dich-vu-chung-khoan/bieu-phi-4206",
+      "officialSource": "https://kisvn.vn/san-pham-dich-vu/dich-vu-chung-khoan/bieu-phi-4206",
       "httpStatus": 200,
       "isAccessible": true,
       "sourceType": "direct",
@@ -644,19 +633,17 @@
           "creditLimit"
         ],
         "ratesFound": [
-          "5.5%",
-          "7.8%",
-          "8.7%",
           "8.8%",
           "8.9%",
-          "8,4%"
+          "8,4%",
+          "5.5%"
         ],
         "hasZeroFeeMention": true,
         "hasMarginMention": true,
         "hasPromoRateMention": true
       },
-      "contentLength": 1061879,
-      "scannedAt": "2026-10-22T07:11:00.258Z"
+      "contentLength": 876525,
+      "scannedAt": "2026-10-22T07:49:21.109Z"
     },
     {
       "id": "acbs",
@@ -664,8 +651,8 @@
       "shortName": "ACBS",
       "stockCode": null,
       "isListed": false,
-      "url": "https://acbs.com.vn/bieu-phi",
-      "officialSource": "https://acbs.com.vn/bieu-phi",
+      "url": "https://acbs.com.vn/bieu-phi-giao-dich-chung-khoan-niem-yet",
+      "officialSource": "https://acbs.com.vn/bieu-phi-giao-dich-chung-khoan-niem-yet",
       "httpStatus": 200,
       "isAccessible": true,
       "sourceType": "direct",
@@ -674,7 +661,7 @@
       "manualCheckInstruction": null,
       "signals": {
         "hasTradingFee": true,
-        "hasZeroFee": true,
+        "hasZeroFee": false,
         "hasInterestRate": false,
         "hasLoanInterest": false,
         "hasMargin": true,
@@ -682,21 +669,19 @@
         "hasDebtBalance": false,
         "matchedList": [
           "Phí giao dịch",
-          "Zero-Fee / Miễn phí",
           "Ký quỹ / Margin"
         ],
         "matchedKeys": [
           "tradingFee",
-          "zeroFee",
           "margin"
         ],
         "ratesFound": [],
-        "hasZeroFeeMention": true,
+        "hasZeroFeeMention": false,
         "hasMarginMention": true,
         "hasPromoRateMention": false
       },
-      "contentLength": 159693,
-      "scannedAt": "2026-10-22T07:11:07.781Z"
+      "contentLength": 163369,
+      "scannedAt": "2026-10-22T07:49:22.677Z"
     },
     {
       "id": "vcbs",
@@ -727,8 +712,8 @@
         "hasMarginMention": false,
         "hasPromoRateMention": false
       },
-      "contentLength": 11982,
-      "scannedAt": "2026-10-22T07:11:09.676Z"
+      "contentLength": 11980,
+      "scannedAt": "2026-10-22T07:49:22.832Z"
     },
     {
       "id": "kbsv",
@@ -770,7 +755,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 169805,
-      "scannedAt": "2026-10-22T07:11:14.124Z"
+      "scannedAt": "2026-10-22T07:49:23.371Z"
     },
     {
       "id": "cts",
@@ -778,8 +763,8 @@
       "shortName": "VietinBank Sec (CTS)",
       "stockCode": "CTS",
       "isListed": true,
-      "url": "https://cts.vn/bieu-phi",
-      "officialSource": "https://cts.vn/bieu-phi",
+      "url": "https://www.vbse.vn/khach-hang-ca-nhan/bieu-phi/",
+      "officialSource": "https://www.vbse.vn/khach-hang-ca-nhan/bieu-phi/",
       "httpStatus": 200,
       "isAccessible": true,
       "sourceType": "direct",
@@ -812,7 +797,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 75863,
-      "scannedAt": "2026-10-22T07:11:19.721Z"
+      "scannedAt": "2026-10-22T07:49:23.607Z"
     },
     {
       "id": "bvsc",
@@ -820,8 +805,8 @@
       "shortName": "BVSC",
       "stockCode": "BVS",
       "isListed": true,
-      "url": "https://bvsc.com.vn/bieu-phi",
-      "officialSource": "https://bvsc.com.vn/bieu-phi",
+      "url": "https://www.bvsc.com.vn/danhmuc/dich-vu/khach-hang-ca-nhan/ho-tro/huong-dan-su-dung-dich-vu/bieu-lai-phi-giao-dich/",
+      "officialSource": "https://www.bvsc.com.vn/danhmuc/dich-vu/khach-hang-ca-nhan/ho-tro/huong-dan-su-dung-dich-vu/bieu-lai-phi-giao-dich/",
       "httpStatus": 200,
       "isAccessible": true,
       "sourceType": "direct",
@@ -829,22 +814,32 @@
       "unscannableReason": null,
       "manualCheckInstruction": null,
       "signals": {
-        "hasTradingFee": false,
-        "hasZeroFee": false,
-        "hasInterestRate": false,
+        "hasTradingFee": true,
+        "hasZeroFee": true,
+        "hasInterestRate": true,
         "hasLoanInterest": false,
-        "hasMargin": false,
+        "hasMargin": true,
         "hasCreditLimit": false,
         "hasDebtBalance": false,
-        "matchedList": [],
-        "matchedKeys": [],
+        "matchedList": [
+          "Phí giao dịch",
+          "Zero-Fee / Miễn phí",
+          "Lãi suất",
+          "Ký quỹ / Margin"
+        ],
+        "matchedKeys": [
+          "tradingFee",
+          "zeroFee",
+          "interestRate",
+          "margin"
+        ],
         "ratesFound": [],
-        "hasZeroFeeMention": false,
-        "hasMarginMention": false,
+        "hasZeroFeeMention": true,
+        "hasMarginMention": true,
         "hasPromoRateMention": false
       },
-      "contentLength": 191,
-      "scannedAt": "2026-10-22T07:11:23.056Z"
+      "contentLength": 218029,
+      "scannedAt": "2026-10-22T07:49:24.064Z"
     },
     {
       "id": "tps",
@@ -854,122 +849,6 @@
       "isListed": true,
       "url": "https://tpbs.com.vn",
       "officialSource": "https://tpbs.com.vn",
-      "httpStatus": "Timeout (8s)",
-      "isAccessible": false,
-      "unscannableReason": "Hết thời gian chờ phản hồi (Timeout > 8s). Máy chủ phản hồi chậm hoặc chặn crawler tự động.",
-      "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://tpbs.com.vn",
-      "signals": null,
-      "contentLength": 0,
-      "scannedAt": "2026-10-22T07:11:31.057Z"
-    },
-    {
-      "id": "yuanta",
-      "name": "Công ty TNHH Chứng khoán Yuanta Việt Nam",
-      "shortName": "Yuanta",
-      "stockCode": null,
-      "isListed": false,
-      "url": "https://yuanta.com.vn/bieu-phi",
-      "officialSource": "https://yuanta.com.vn/bieu-phi",
-      "httpStatus": 200,
-      "isAccessible": true,
-      "sourceType": "direct",
-      "sourceCategory": "Direct",
-      "unscannableReason": null,
-      "manualCheckInstruction": null,
-      "signals": {
-        "hasTradingFee": false,
-        "hasZeroFee": false,
-        "hasInterestRate": false,
-        "hasLoanInterest": false,
-        "hasMargin": false,
-        "hasCreditLimit": false,
-        "hasDebtBalance": false,
-        "matchedList": [],
-        "matchedKeys": [],
-        "ratesFound": [],
-        "hasZeroFeeMention": false,
-        "hasMarginMention": false,
-        "hasPromoRateMention": false
-      },
-      "contentLength": 199,
-      "scannedAt": "2026-10-22T07:11:32.154Z"
-    },
-    {
-      "id": "shinhan",
-      "name": "Công ty TNHH Chứng khoán Shinhan Việt Nam",
-      "shortName": "Shinhan Sec",
-      "stockCode": null,
-      "isListed": false,
-      "url": "https://r.jina.ai/https://shinhansec.com.vn",
-      "officialSource": "https://shinhansec.com.vn",
-      "httpStatus": 200,
-      "isAccessible": true,
-      "sourceType": "anti_waf_gateway",
-      "sourceCategory": "Anti-WAF Gateway",
-      "unscannableReason": null,
-      "manualCheckInstruction": null,
-      "signals": {
-        "hasTradingFee": false,
-        "hasZeroFee": false,
-        "hasInterestRate": false,
-        "hasLoanInterest": false,
-        "hasMargin": false,
-        "hasCreditLimit": false,
-        "hasDebtBalance": false,
-        "matchedList": [],
-        "matchedKeys": [],
-        "ratesFound": [],
-        "hasZeroFeeMention": false,
-        "hasMarginMention": false,
-        "hasPromoRateMention": false
-      },
-      "contentLength": 1599,
-      "scannedAt": "2026-10-22T07:11:38.870Z"
-    },
-    {
-      "id": "agriseco",
-      "name": "Công ty Cổ phần Chứng khoán Agribank",
-      "shortName": "Agriseco",
-      "stockCode": "AGR",
-      "isListed": true,
-      "url": "https://agriseco.com.vn",
-      "officialSource": "https://agriseco.com.vn",
-      "httpStatus": 200,
-      "isAccessible": true,
-      "sourceType": "direct",
-      "sourceCategory": "Direct",
-      "unscannableReason": null,
-      "manualCheckInstruction": null,
-      "signals": {
-        "hasTradingFee": false,
-        "hasZeroFee": false,
-        "hasInterestRate": false,
-        "hasLoanInterest": false,
-        "hasMargin": true,
-        "hasCreditLimit": false,
-        "hasDebtBalance": false,
-        "matchedList": [
-          "Ký quỹ / Margin"
-        ],
-        "matchedKeys": [
-          "margin"
-        ],
-        "ratesFound": [],
-        "hasZeroFeeMention": false,
-        "hasMarginMention": true,
-        "hasPromoRateMention": false
-      },
-      "contentLength": 65200,
-      "scannedAt": "2026-10-22T07:11:40.598Z"
-    },
-    {
-      "id": "hdbs",
-      "name": "Công ty Cổ phần Chứng khoán HD",
-      "shortName": "HDBS",
-      "stockCode": null,
-      "isListed": false,
-      "url": "https://hdbs.vn",
-      "officialSource": "https://hdbs.vn",
       "httpStatus": 200,
       "isAccessible": true,
       "sourceType": "direct",
@@ -992,15 +871,171 @@
           "tradingFee",
           "margin"
         ],
-        "ratesFound": [
-          "6.25%"
-        ],
+        "ratesFound": [],
         "hasZeroFeeMention": false,
+        "hasMarginMention": true,
+        "hasPromoRateMention": false
+      },
+      "contentLength": 71582,
+      "scannedAt": "2026-10-22T07:49:25.025Z"
+    },
+    {
+      "id": "yuanta",
+      "name": "Công ty TNHH Chứng khoán Yuanta Việt Nam",
+      "shortName": "Yuanta",
+      "stockCode": null,
+      "isListed": false,
+      "url": "https://support.yuanta.com.vn/bieu-phi-va-lai-suat/",
+      "officialSource": "https://support.yuanta.com.vn/bieu-phi-va-lai-suat/",
+      "httpStatus": 200,
+      "isAccessible": true,
+      "sourceType": "direct",
+      "sourceCategory": "Direct",
+      "unscannableReason": null,
+      "manualCheckInstruction": null,
+      "signals": {
+        "hasTradingFee": true,
+        "hasZeroFee": false,
+        "hasInterestRate": true,
+        "hasLoanInterest": false,
+        "hasMargin": true,
+        "hasCreditLimit": false,
+        "hasDebtBalance": false,
+        "matchedList": [
+          "Phí giao dịch",
+          "Lãi suất",
+          "Ký quỹ / Margin"
+        ],
+        "matchedKeys": [
+          "tradingFee",
+          "interestRate",
+          "margin"
+        ],
+        "ratesFound": [],
+        "hasZeroFeeMention": false,
+        "hasMarginMention": true,
+        "hasPromoRateMention": false
+      },
+      "contentLength": 66872,
+      "scannedAt": "2026-10-22T07:49:25.856Z"
+    },
+    {
+      "id": "shinhan",
+      "name": "Công ty TNHH Chứng khoán Shinhan Việt Nam",
+      "shortName": "Shinhan Sec",
+      "stockCode": null,
+      "isListed": false,
+      "url": "https://shinhansec.com.vn/vi/ho-tro-khach-hang/phi-giao-dich.html",
+      "officialSource": "https://shinhansec.com.vn/vi/ho-tro-khach-hang/phi-giao-dich.html",
+      "httpStatus": 200,
+      "isAccessible": true,
+      "sourceType": "direct",
+      "sourceCategory": "Direct",
+      "unscannableReason": null,
+      "manualCheckInstruction": null,
+      "signals": {
+        "hasTradingFee": true,
+        "hasZeroFee": true,
+        "hasInterestRate": false,
+        "hasLoanInterest": false,
+        "hasMargin": true,
+        "hasCreditLimit": false,
+        "hasDebtBalance": false,
+        "matchedList": [
+          "Phí giao dịch",
+          "Zero-Fee / Miễn phí",
+          "Ký quỹ / Margin"
+        ],
+        "matchedKeys": [
+          "tradingFee",
+          "zeroFee",
+          "margin"
+        ],
+        "ratesFound": [
+          "12,5%"
+        ],
+        "hasZeroFeeMention": true,
         "hasMarginMention": true,
         "hasPromoRateMention": true
       },
-      "contentLength": 145261,
-      "scannedAt": "2026-10-22T07:11:45.954Z"
+      "contentLength": 95440,
+      "scannedAt": "2026-10-22T07:49:26.952Z"
+    },
+    {
+      "id": "agriseco",
+      "name": "Công ty Cổ phần Chứng khoán Agribank",
+      "shortName": "Agriseco",
+      "stockCode": "AGR",
+      "isListed": true,
+      "url": "https://agriseco.com.vn/News/NewsDetail/2057993/vi-VN",
+      "officialSource": "https://agriseco.com.vn/News/NewsDetail/2057993/vi-VN",
+      "httpStatus": 200,
+      "isAccessible": true,
+      "sourceType": "direct",
+      "sourceCategory": "Direct",
+      "unscannableReason": null,
+      "manualCheckInstruction": null,
+      "signals": {
+        "hasTradingFee": false,
+        "hasZeroFee": false,
+        "hasInterestRate": false,
+        "hasLoanInterest": false,
+        "hasMargin": true,
+        "hasCreditLimit": false,
+        "hasDebtBalance": false,
+        "matchedList": [
+          "Ký quỹ / Margin"
+        ],
+        "matchedKeys": [
+          "margin"
+        ],
+        "ratesFound": [],
+        "hasZeroFeeMention": false,
+        "hasMarginMention": true,
+        "hasPromoRateMention": false
+      },
+      "contentLength": 140739,
+      "scannedAt": "2026-10-22T07:49:27.261Z"
+    },
+    {
+      "id": "hdbs",
+      "name": "Công ty Cổ phần Chứng khoán HD",
+      "shortName": "HDBS",
+      "stockCode": null,
+      "isListed": false,
+      "url": "https://hdbs.vn/bieu-phi/",
+      "officialSource": "https://hdbs.vn/bieu-phi/",
+      "httpStatus": 200,
+      "isAccessible": true,
+      "sourceType": "direct",
+      "sourceCategory": "Direct",
+      "unscannableReason": null,
+      "manualCheckInstruction": null,
+      "signals": {
+        "hasTradingFee": true,
+        "hasZeroFee": true,
+        "hasInterestRate": false,
+        "hasLoanInterest": false,
+        "hasMargin": true,
+        "hasCreditLimit": false,
+        "hasDebtBalance": false,
+        "matchedList": [
+          "Phí giao dịch",
+          "Zero-Fee / Miễn phí",
+          "Ký quỹ / Margin"
+        ],
+        "matchedKeys": [
+          "tradingFee",
+          "zeroFee",
+          "margin"
+        ],
+        "ratesFound": [],
+        "hasZeroFeeMention": true,
+        "hasMarginMention": true,
+        "hasPromoRateMention": false
+      },
+      "contentLength": 74294,
+      "scannedAt": "2026-10-22T07:49:30.994Z"
     },
     {
       "id": "dsc",
@@ -1008,8 +1043,8 @@
       "shortName": "DSC",
       "stockCode": "DSC",
       "isListed": true,
-      "url": "https://dsc.com.vn/bieu-phi",
-      "officialSource": "https://dsc.com.vn/bieu-phi",
+      "url": "https://www.dsc.com.vn/bieu-phi",
+      "officialSource": "https://www.dsc.com.vn/bieu-phi",
       "httpStatus": 200,
       "isAccessible": true,
       "sourceType": "direct",
@@ -1049,7 +1084,7 @@
         "hasPromoRateMention": true
       },
       "contentLength": 160012,
-      "scannedAt": "2026-10-22T07:11:47.698Z"
+      "scannedAt": "2026-10-22T07:49:31.223Z"
     },
     {
       "id": "phs",
@@ -1057,86 +1092,8 @@
       "shortName": "PHS",
       "stockCode": "PHS",
       "isListed": true,
-      "url": "https://phs.vn",
-      "officialSource": "https://phs.vn",
-      "httpStatus": 200,
-      "isAccessible": true,
-      "sourceType": "direct",
-      "sourceCategory": "Direct",
-      "unscannableReason": null,
-      "manualCheckInstruction": null,
-      "signals": {
-        "hasTradingFee": true,
-        "hasZeroFee": false,
-        "hasInterestRate": true,
-        "hasLoanInterest": false,
-        "hasMargin": true,
-        "hasCreditLimit": false,
-        "hasDebtBalance": false,
-        "matchedList": [
-          "Phí giao dịch",
-          "Lãi suất",
-          "Ký quỹ / Margin"
-        ],
-        "matchedKeys": [
-          "tradingFee",
-          "interestRate",
-          "margin"
-        ],
-        "ratesFound": [],
-        "hasZeroFeeMention": false,
-        "hasMarginMention": true,
-        "hasPromoRateMention": false
-      },
-      "contentLength": 321944,
-      "scannedAt": "2026-10-22T07:11:50.730Z"
-    },
-    {
-      "id": "tvsi",
-      "name": "Công ty Cổ phần Chứng khoán Tân Việt",
-      "shortName": "TVSI",
-      "stockCode": null,
-      "isListed": false,
-      "url": "https://tvsi.com.vn",
-      "officialSource": "https://tvsi.com.vn",
-      "httpStatus": 200,
-      "isAccessible": true,
-      "sourceType": "direct",
-      "sourceCategory": "Direct",
-      "unscannableReason": null,
-      "manualCheckInstruction": null,
-      "signals": {
-        "hasTradingFee": false,
-        "hasZeroFee": false,
-        "hasInterestRate": true,
-        "hasLoanInterest": false,
-        "hasMargin": true,
-        "hasCreditLimit": false,
-        "hasDebtBalance": false,
-        "matchedList": [
-          "Lãi suất",
-          "Ký quỹ / Margin"
-        ],
-        "matchedKeys": [
-          "interestRate",
-          "margin"
-        ],
-        "ratesFound": [],
-        "hasZeroFeeMention": false,
-        "hasMarginMention": true,
-        "hasPromoRateMention": false
-      },
-      "contentLength": 110436,
-      "scannedAt": "2026-10-22T07:11:52.953Z"
-    },
-    {
-      "id": "evs",
-      "name": "Công ty Cổ phần Chứng khoán Everest",
-      "shortName": "EVS",
-      "stockCode": "EVS",
-      "isListed": true,
-      "url": "https://eves.com.vn",
-      "officialSource": "https://eves.com.vn",
+      "url": "https://www.phs.vn/san-pham-dich-vu/bieu-phi-giao-dich-chung-khoan-co-so-26",
+      "officialSource": "https://www.phs.vn/san-pham-dich-vu/bieu-phi-giao-dich-chung-khoan-co-so-26",
       "httpStatus": 200,
       "isAccessible": true,
       "sourceType": "direct",
@@ -1146,7 +1103,7 @@
       "signals": {
         "hasTradingFee": true,
         "hasZeroFee": true,
-        "hasInterestRate": false,
+        "hasInterestRate": true,
         "hasLoanInterest": false,
         "hasMargin": true,
         "hasCreditLimit": false,
@@ -1154,11 +1111,13 @@
         "matchedList": [
           "Phí giao dịch",
           "Zero-Fee / Miễn phí",
+          "Lãi suất",
           "Ký quỹ / Margin"
         ],
         "matchedKeys": [
           "tradingFee",
           "zeroFee",
+          "interestRate",
           "margin"
         ],
         "ratesFound": [],
@@ -1166,8 +1125,82 @@
         "hasMarginMention": true,
         "hasPromoRateMention": false
       },
-      "contentLength": 79452,
-      "scannedAt": "2026-10-22T07:11:54.356Z"
+      "contentLength": 246724,
+      "scannedAt": "2026-10-22T07:49:31.408Z"
+    },
+    {
+      "id": "tvsi",
+      "name": "Công ty Cổ phần Chứng khoán Tân Việt",
+      "shortName": "TVSI",
+      "stockCode": null,
+      "isListed": false,
+      "url": "https://www.tvsi.com.vn/fee-stock.html",
+      "officialSource": "https://www.tvsi.com.vn/fee-stock.html",
+      "httpStatus": 200,
+      "isAccessible": true,
+      "sourceType": "direct",
+      "sourceCategory": "Direct",
+      "unscannableReason": null,
+      "manualCheckInstruction": null,
+      "signals": {
+        "hasTradingFee": false,
+        "hasZeroFee": false,
+        "hasInterestRate": false,
+        "hasLoanInterest": false,
+        "hasMargin": false,
+        "hasCreditLimit": false,
+        "hasDebtBalance": false,
+        "matchedList": [],
+        "matchedKeys": [],
+        "ratesFound": [],
+        "hasZeroFeeMention": false,
+        "hasMarginMention": false,
+        "hasPromoRateMention": false
+      },
+      "contentLength": 177,
+      "scannedAt": "2026-10-22T07:49:31.429Z"
+    },
+    {
+      "id": "evs",
+      "name": "Công ty Cổ phần Chứng khoán Everest",
+      "shortName": "EVS",
+      "stockCode": "EVS",
+      "isListed": true,
+      "url": "https://www.eves.com.vn/san-pham-dich-vu/bieu-phi/bieu-phi-dich-vu/",
+      "officialSource": "https://www.eves.com.vn/san-pham-dich-vu/bieu-phi/bieu-phi-dich-vu/",
+      "httpStatus": 200,
+      "isAccessible": true,
+      "sourceType": "direct",
+      "sourceCategory": "Direct",
+      "unscannableReason": null,
+      "manualCheckInstruction": null,
+      "signals": {
+        "hasTradingFee": true,
+        "hasZeroFee": true,
+        "hasInterestRate": true,
+        "hasLoanInterest": false,
+        "hasMargin": true,
+        "hasCreditLimit": false,
+        "hasDebtBalance": false,
+        "matchedList": [
+          "Phí giao dịch",
+          "Zero-Fee / Miễn phí",
+          "Lãi suất",
+          "Ký quỹ / Margin"
+        ],
+        "matchedKeys": [
+          "tradingFee",
+          "zeroFee",
+          "interestRate",
+          "margin"
+        ],
+        "ratesFound": [],
+        "hasZeroFeeMention": true,
+        "hasMarginMention": true,
+        "hasPromoRateMention": false
+      },
+      "contentLength": 74428,
+      "scannedAt": "2026-10-22T07:49:31.474Z"
     }
   ]
 }

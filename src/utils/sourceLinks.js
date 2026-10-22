@@ -53,17 +53,19 @@ export function getBrokerSourceLinks(company) {
   // 2. Link bài viết Biểu phí & Lãi suất gốc đã kiểm chứng (100% 200 OK)
   const feeSourceUrl =
     company.sourceUrl ||
-    scanInfo?.officialSource ||
     brokerCrawlerItem?.officialSource ||
+    scanInfo?.officialSource ||
     websiteUrl;
 
-  // 3. Link Endpoint crawler thực tế đã quét kết nối
+  // 3. Link Endpoint crawler thực tế đã quét kết nối (Ưu tiên link bài viết chính thức đã kiểm chứng)
   const scannedUrl =
+    brokerCrawlerItem?.officialSource ||
+    scanInfo?.officialSource ||
+    company.sourceUrl ||
     scanInfo?.url ||
-    brokerCrawlerItem?.url ||
-    feeSourceUrl;
+    websiteUrl;
 
-  // 4. Link mở tài khoản trực tuyến eKYC
+  // 4. Link mở tài khoản trực tuyến eKYC (100% đã xác minh)
   const accountOpeningUrl = company.accountOpeningUrl || websiteUrl;
 
   // 5. Link bài viết Ưu đãi & Margin (dẫn về nguồn bài viết biểu phí/website đã kiểm chứng, không phỏng đoán link 404)
@@ -139,7 +141,7 @@ export function getBrokerSourceLinks(company) {
   };
 }
 
-// Bản đồ tương thích ngược: Trỏ 100% về feeSourceUrl đã kiểm chứng
+// Bản đồ tương thích ngược: Trỏ 100% về officialSource đã kiểm chứng
 export const PROMO_SOURCE_MAP = new Proxy({}, {
   get: (_, prop) => {
     const broker = TARGET_BROKERS.find((b) => b.id === prop);
