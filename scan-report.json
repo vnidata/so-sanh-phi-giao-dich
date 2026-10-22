@@ -7,16 +7,16 @@
     "totalActivePromos": 90,
     "totalFilteredPromos": 1,
     "keywordStats": {
-      "tradingFee": 25,
-      "zeroFee": 20,
-      "interestRate": 24,
+      "tradingFee": 23,
+      "zeroFee": 19,
+      "interestRate": 23,
       "loanInterest": 11,
       "margin": 27,
-      "creditLimit": 19,
-      "debtBalance": 12,
-      "promoRate": 20
+      "creditLimit": 18,
+      "debtBalance": 13,
+      "promoRate": 19
     },
-    "timestamp": "2026-10-22T14:03:00.910Z",
+    "timestamp": "2026-10-22T14:09:09.412Z",
     "note": "Dữ liệu được quét chuyên sâu đa tab từ các trang biểu phí, lãi suất margin và ưu đãi công khai của 30 CTCK trong vòng 1 năm gần nhất."
   },
   "brokers": [
@@ -314,7 +314,7 @@
       "sourceCategory": "Deep Crawler",
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://www.bsc.com.vn/phi-giao-dich-qua-san/",
-      "scannedAt": "2026-10-22T14:00:56.732Z"
+      "scannedAt": "2026-10-22T14:05:28.357Z"
     },
     {
       "id": "tcbs",
@@ -328,19 +328,54 @@
       "isAccessible": true,
       "mode": "deep",
       "totalTabsScanned": 4,
-      "accessibleTabsCount": 3,
+      "accessibleTabsCount": 4,
       "subTabsResults": [
         {
           "id": "official_fee",
           "title": "Biểu phí giao dịch chính thức",
           "type": "fee",
           "url": "https://www.tcbs.com.vn",
-          "httpStatus": 403,
-          "isAccessible": false,
-          "sourceType": "direct",
-          "signals": null,
-          "validity": null,
-          "contentLength": 0
+          "httpStatus": 200,
+          "isAccessible": true,
+          "sourceType": "anti_waf_gateway",
+          "signals": {
+            "hasTradingFee": true,
+            "hasZeroFee": true,
+            "hasInterestRate": true,
+            "hasLoanInterest": false,
+            "hasMargin": true,
+            "hasCreditLimit": true,
+            "hasDebtBalance": false,
+            "matchedList": [
+              "Phí giao dịch",
+              "Zero-Fee / Miễn phí",
+              "Lãi suất",
+              "Ký quỹ / Margin",
+              "Hạn mức"
+            ],
+            "matchedKeys": [
+              "tradingFee",
+              "zeroFee",
+              "interestRate",
+              "margin",
+              "creditLimit"
+            ],
+            "ratesFound": [],
+            "hasZeroFeeMention": true,
+            "hasMarginMention": true,
+            "hasPromoRateMention": false
+          },
+          "validity": {
+            "isActive": true,
+            "status": "active",
+            "reason": "Ưu đãi còn hiệu lực và nằm trong khung thời gian 1 năm gần nhất.",
+            "isWithinOneYear": true,
+            "publishedDate": null,
+            "expiryDate": null,
+            "formattedPublishedDate": "Hiện hành",
+            "formattedExpiryDate": "Đến khi có thông báo mới"
+          },
+          "contentLength": 24828
         },
         {
           "id": "margin_policy",
@@ -397,7 +432,7 @@
             "formattedPublishedDate": "Hiện hành",
             "formattedExpiryDate": "Đến khi có thông báo mới"
           },
-          "contentLength": 30074
+          "contentLength": 30150
         },
         {
           "id": "welcome_promo",
@@ -483,10 +518,24 @@
             "formattedPublishedDate": "Hiện hành",
             "formattedExpiryDate": "Đến khi có thông báo mới"
           },
-          "contentLength": 1276
+          "contentLength": 1323
         }
       ],
       "activePromos": [
+        {
+          "title": "Biểu phí giao dịch chính thức",
+          "url": "https://www.tcbs.com.vn",
+          "type": "fee",
+          "badge": "Biểu Phí Chuẩn",
+          "publishedDate": null,
+          "expiryDate": null,
+          "formattedPublishedDate": "Hiện hành",
+          "formattedExpiryDate": "Đến khi có thông báo mới",
+          "isActive": true,
+          "isWithinOneYear": true,
+          "status": "active",
+          "validityReason": "Ưu đãi còn hiệu lực và nằm trong khung thời gian 1 năm gần nhất."
+        },
         {
           "title": "Chính sách & Gói vay Margin",
           "url": "https://www.tcbs.com.vn/ca-nhan/uu-dai/gom-co-ve-nha/",
@@ -543,9 +592,9 @@
           "Phí giao dịch",
           "Zero-Fee / Miễn phí",
           "Lãi suất",
-          "Lãi vay",
           "Ký quỹ / Margin",
           "Hạn mức",
+          "Lãi vay",
           "Dư nợ"
         ],
         "ratesFound": [
@@ -559,12 +608,12 @@
         "hasMarginMention": true,
         "hasPromoRateMention": true
       },
-      "contentLength": 56313,
+      "contentLength": 81264,
       "sourceType": "deep_crawler",
       "sourceCategory": "Deep Crawler",
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://www.tcbs.com.vn",
-      "scannedAt": "2026-10-22T14:01:25.133Z"
+      "scannedAt": "2026-10-22T14:05:32.417Z"
     },
     {
       "id": "vps",
@@ -733,7 +782,7 @@
       "sourceCategory": "Deep Crawler",
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://vps.com.vn/ca-nhan/ho-tro?view=bieu-phi-bieu-mau-va-chinh-sach&nav=bieu-phi--chinh-sach",
-      "scannedAt": "2026-10-22T14:01:25.716Z"
+      "scannedAt": "2026-10-22T14:05:34.301Z"
     },
     {
       "id": "ssi",
@@ -790,7 +839,7 @@
             "formattedPublishedDate": "Hiện hành",
             "formattedExpiryDate": "Đến khi có thông báo mới"
           },
-          "contentLength": 76214
+          "contentLength": 16163
         },
         {
           "id": "margin_policy",
@@ -799,7 +848,7 @@
           "url": "https://www.ssi.com.vn/tin-tuc/tin-tuc-chung/dieu-chinh-goi-nhap-cuoc-voi-lai-suat-799-danh-cho-khach-hang-moi-va-kich-hoat-tro-lai",
           "httpStatus": 200,
           "isAccessible": true,
-          "sourceType": "direct",
+          "sourceType": "anti_waf_gateway",
           "signals": {
             "hasTradingFee": false,
             "hasZeroFee": false,
@@ -822,11 +871,7 @@
             ],
             "ratesFound": [
               "7.99%",
-              "11.63%",
-              "5.53%",
-              "4.08%",
-              "5.66%",
-              "4.76%"
+              "13.5%"
             ],
             "hasZeroFeeMention": false,
             "hasMarginMention": true,
@@ -842,7 +887,7 @@
             "formattedPublishedDate": "Hiện hành",
             "formattedExpiryDate": "Đến khi có thông báo mới"
           },
-          "contentLength": 97770
+          "contentLength": 17321
         },
         {
           "id": "welcome_promo",
@@ -851,7 +896,7 @@
           "url": "https://www.ssi.com.vn/tin-tuc/tin-tuc-su-kien-ssi/ra-mat-chuong-trinh-khuyen-mai-ssi-margin-0-0",
           "httpStatus": 200,
           "isAccessible": true,
-          "sourceType": "direct",
+          "sourceType": "anti_waf_gateway",
           "signals": {
             "hasTradingFee": false,
             "hasZeroFee": true,
@@ -877,12 +922,7 @@
               "debtBalance"
             ],
             "ratesFound": [
-              "11.63%",
-              "5.53%",
-              "4.08%",
-              "5.66%",
-              "4.76%",
-              "4.19%"
+              "13.5%"
             ],
             "hasZeroFeeMention": true,
             "hasMarginMention": true,
@@ -898,7 +938,7 @@
             "formattedPublishedDate": "Hiện hành",
             "formattedExpiryDate": "Đến khi có thông báo mới"
           },
-          "contentLength": 97288
+          "contentLength": 16653
         }
       ],
       "activePromos": [
@@ -965,23 +1005,18 @@
         ],
         "ratesFound": [
           "7.99%",
-          "11.63%",
-          "5.53%",
-          "4.08%",
-          "5.66%",
-          "4.76%",
-          "4.19%"
+          "13.5%"
         ],
         "hasZeroFeeMention": true,
         "hasMarginMention": true,
         "hasPromoRateMention": true
       },
-      "contentLength": 271272,
+      "contentLength": 50137,
       "sourceType": "deep_crawler",
       "sourceCategory": "Deep Crawler",
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://www.ssi.com.vn/khach-hang-ca-nhan/bieu-phi/bieu-gia-dich-vu-giao-dich-chung-khoan",
-      "scannedAt": "2026-10-22T14:01:29.267Z"
+      "scannedAt": "2026-10-22T14:05:53.250Z"
     },
     {
       "id": "vndirect",
@@ -1093,7 +1128,7 @@
       "sourceCategory": "Deep Crawler",
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://banggia.vndirect.com.vn",
-      "scannedAt": "2026-10-22T14:01:31.801Z"
+      "scannedAt": "2026-10-22T14:05:56.531Z"
     },
     {
       "id": "mirae-asset",
@@ -1407,7 +1442,7 @@
       "sourceCategory": "Deep Crawler",
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://masvn.com/bieu-phi",
-      "scannedAt": "2026-10-22T14:01:44.666Z"
+      "scannedAt": "2026-10-22T14:06:12.675Z"
     },
     {
       "id": "dnse",
@@ -1731,7 +1766,7 @@
       "sourceCategory": "Deep Crawler",
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://www.dnse.com.vn/bieu-phi",
-      "scannedAt": "2026-10-22T14:01:46.750Z"
+      "scannedAt": "2026-10-22T14:06:15.420Z"
     },
     {
       "id": "vpbanks",
@@ -1745,50 +1780,19 @@
       "isAccessible": true,
       "mode": "deep",
       "totalTabsScanned": 3,
-      "accessibleTabsCount": 3,
+      "accessibleTabsCount": 2,
       "subTabsResults": [
         {
           "id": "official_fee",
           "title": "Biểu phí giao dịch chính thức",
           "type": "fee",
           "url": "https://www.vpbanks.com.vn/bieu-phi",
-          "httpStatus": 200,
-          "isAccessible": true,
-          "sourceType": "direct",
-          "signals": {
-            "hasTradingFee": true,
-            "hasZeroFee": false,
-            "hasInterestRate": true,
-            "hasLoanInterest": false,
-            "hasMargin": true,
-            "hasCreditLimit": false,
-            "hasDebtBalance": false,
-            "matchedList": [
-              "Phí giao dịch",
-              "Lãi suất",
-              "Ký quỹ / Margin"
-            ],
-            "matchedKeys": [
-              "tradingFee",
-              "interestRate",
-              "margin"
-            ],
-            "ratesFound": [],
-            "hasZeroFeeMention": false,
-            "hasMarginMention": true,
-            "hasPromoRateMention": false
-          },
-          "validity": {
-            "isActive": true,
-            "status": "active",
-            "reason": "Ưu đãi còn hiệu lực và nằm trong khung thời gian 1 năm gần nhất.",
-            "isWithinOneYear": true,
-            "publishedDate": null,
-            "expiryDate": null,
-            "formattedPublishedDate": "Hiện hành",
-            "formattedExpiryDate": "Đến khi có thông báo mới"
-          },
-          "contentLength": 146486
+          "httpStatus": 408,
+          "isAccessible": false,
+          "sourceType": "error",
+          "signals": null,
+          "validity": null,
+          "contentLength": 0
         },
         {
           "id": "margin_policy",
@@ -1797,9 +1801,9 @@
           "url": "https://www.vpbanks.com.vn/dich-vu-tai-chinh",
           "httpStatus": 200,
           "isAccessible": true,
-          "sourceType": "direct",
+          "sourceType": "anti_waf_gateway",
           "signals": {
-            "hasTradingFee": true,
+            "hasTradingFee": false,
             "hasZeroFee": false,
             "hasInterestRate": false,
             "hasLoanInterest": false,
@@ -1807,11 +1811,9 @@
             "hasCreditLimit": false,
             "hasDebtBalance": false,
             "matchedList": [
-              "Phí giao dịch",
               "Ký quỹ / Margin"
             ],
             "matchedKeys": [
-              "tradingFee",
               "margin"
             ],
             "ratesFound": [],
@@ -1829,7 +1831,7 @@
             "formattedPublishedDate": "Hiện hành",
             "formattedExpiryDate": "Đến khi có thông báo mới"
           },
-          "contentLength": 94061
+          "contentLength": 4222
         },
         {
           "id": "welcome_promo",
@@ -1838,9 +1840,9 @@
           "url": "https://www.vpbanks.com.vn/khuyen-mai",
           "httpStatus": 200,
           "isAccessible": true,
-          "sourceType": "direct",
+          "sourceType": "anti_waf_gateway",
           "signals": {
-            "hasTradingFee": true,
+            "hasTradingFee": false,
             "hasZeroFee": false,
             "hasInterestRate": false,
             "hasLoanInterest": false,
@@ -1848,11 +1850,9 @@
             "hasCreditLimit": false,
             "hasDebtBalance": false,
             "matchedList": [
-              "Phí giao dịch",
               "Ký quỹ / Margin"
             ],
             "matchedKeys": [
-              "tradingFee",
               "margin"
             ],
             "ratesFound": [],
@@ -1870,24 +1870,10 @@
             "formattedPublishedDate": "Hiện hành",
             "formattedExpiryDate": "Đến khi có thông báo mới"
           },
-          "contentLength": 94040
+          "contentLength": 4215
         }
       ],
       "activePromos": [
-        {
-          "title": "Biểu phí giao dịch chính thức",
-          "url": "https://www.vpbanks.com.vn/bieu-phi",
-          "type": "fee",
-          "badge": "Biểu Phí Chuẩn",
-          "publishedDate": null,
-          "expiryDate": null,
-          "formattedPublishedDate": "Hiện hành",
-          "formattedExpiryDate": "Đến khi có thông báo mới",
-          "isActive": true,
-          "isWithinOneYear": true,
-          "status": "active",
-          "validityReason": "Ưu đãi còn hiệu lực và nằm trong khung thời gian 1 năm gần nhất."
-        },
         {
           "title": "Chính sách & Gói vay Margin",
           "url": "https://www.vpbanks.com.vn/dich-vu-tai-chinh",
@@ -1919,16 +1905,14 @@
       ],
       "filteredPromos": [],
       "signals": {
-        "hasTradingFee": true,
+        "hasTradingFee": false,
         "hasZeroFee": false,
-        "hasInterestRate": true,
+        "hasInterestRate": false,
         "hasLoanInterest": false,
         "hasMargin": true,
         "hasCreditLimit": false,
         "hasDebtBalance": false,
         "matchedList": [
-          "Phí giao dịch",
-          "Lãi suất",
           "Ký quỹ / Margin"
         ],
         "ratesFound": [],
@@ -1936,12 +1920,12 @@
         "hasMarginMention": true,
         "hasPromoRateMention": false
       },
-      "contentLength": 334587,
+      "contentLength": 8437,
       "sourceType": "deep_crawler",
       "sourceCategory": "Deep Crawler",
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://www.vpbanks.com.vn/bieu-phi",
-      "scannedAt": "2026-10-22T14:01:49.683Z"
+      "scannedAt": "2026-10-22T14:06:38.047Z"
     },
     {
       "id": "fpts",
@@ -2156,7 +2140,7 @@
       "sourceCategory": "Deep Crawler",
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://new.eztrade.fpts.com.vn/customers/promotion/linh-hoat-lua-chon-goi-phi-giao-dich-tai-fpts",
-      "scannedAt": "2026-10-22T14:01:50.218Z"
+      "scannedAt": "2026-10-22T14:06:43.255Z"
     },
     {
       "id": "hsc",
@@ -2170,7 +2154,7 @@
       "isAccessible": true,
       "mode": "deep",
       "totalTabsScanned": 4,
-      "accessibleTabsCount": 4,
+      "accessibleTabsCount": 2,
       "subTabsResults": [
         {
           "id": "official_fee",
@@ -2179,29 +2163,25 @@
           "url": "https://www.hsc.com.vn/vi/bieu-phi",
           "httpStatus": 200,
           "isAccessible": true,
-          "sourceType": "direct",
+          "sourceType": "anti_waf_gateway",
           "signals": {
             "hasTradingFee": true,
             "hasZeroFee": false,
             "hasInterestRate": false,
             "hasLoanInterest": false,
-            "hasMargin": true,
+            "hasMargin": false,
             "hasCreditLimit": false,
             "hasDebtBalance": false,
             "matchedList": [
-              "Phí giao dịch",
-              "Ký quỹ / Margin"
+              "Phí giao dịch"
             ],
             "matchedKeys": [
-              "tradingFee",
-              "margin"
+              "tradingFee"
             ],
-            "ratesFound": [
-              "6.65%"
-            ],
+            "ratesFound": [],
             "hasZeroFeeMention": false,
-            "hasMarginMention": true,
-            "hasPromoRateMention": true
+            "hasMarginMention": false,
+            "hasPromoRateMention": false
           },
           "validity": {
             "isActive": true,
@@ -2213,7 +2193,7 @@
             "formattedPublishedDate": "Hiện hành",
             "formattedExpiryDate": "Đến khi có thông báo mới"
           },
-          "contentLength": 108447
+          "contentLength": 3900
         },
         {
           "id": "margin_policy",
@@ -2222,7 +2202,7 @@
           "url": "https://www.hsc.com.vn/vi/lai-suat-giao-dich-ky-quy",
           "httpStatus": 200,
           "isAccessible": true,
-          "sourceType": "direct",
+          "sourceType": "anti_waf_gateway",
           "signals": {
             "hasTradingFee": false,
             "hasZeroFee": false,
@@ -2239,12 +2219,10 @@
               "interestRate",
               "margin"
             ],
-            "ratesFound": [
-              "6.65%"
-            ],
+            "ratesFound": [],
             "hasZeroFeeMention": false,
             "hasMarginMention": true,
-            "hasPromoRateMention": true
+            "hasPromoRateMention": false
           },
           "validity": {
             "isActive": true,
@@ -2256,95 +2234,31 @@
             "formattedPublishedDate": "Hiện hành",
             "formattedExpiryDate": "Đến khi có thông báo mới"
           },
-          "contentLength": 109976
+          "contentLength": 4223
         },
         {
           "id": "welcome_promo",
           "title": "Chính sách ưu đãi mở tài khoản eKYC",
           "type": "promo",
           "url": "https://www.hsc.com.vn/vi/thong-bao-ve-viec-cap-nhat-bieu-phi-dich-vu-chung-khoan",
-          "httpStatus": 200,
-          "isAccessible": true,
+          "httpStatus": 403,
+          "isAccessible": false,
           "sourceType": "direct",
-          "signals": {
-            "hasTradingFee": true,
-            "hasZeroFee": false,
-            "hasInterestRate": false,
-            "hasLoanInterest": false,
-            "hasMargin": true,
-            "hasCreditLimit": false,
-            "hasDebtBalance": false,
-            "matchedList": [
-              "Phí giao dịch",
-              "Ký quỹ / Margin"
-            ],
-            "matchedKeys": [
-              "tradingFee",
-              "margin"
-            ],
-            "ratesFound": [
-              "6.65%"
-            ],
-            "hasZeroFeeMention": false,
-            "hasMarginMention": true,
-            "hasPromoRateMention": true
-          },
-          "validity": {
-            "isActive": true,
-            "status": "active",
-            "reason": "Ưu đãi còn hiệu lực và nằm trong khung thời gian 1 năm gần nhất.",
-            "isWithinOneYear": true,
-            "publishedDate": null,
-            "expiryDate": null,
-            "formattedPublishedDate": "Hiện hành",
-            "formattedExpiryDate": "Đến khi có thông báo mới"
-          },
-          "contentLength": 122275
+          "signals": null,
+          "validity": null,
+          "contentLength": 0
         },
         {
           "id": "article_2",
           "title": "Dịch vụ giao dịch ký quỹ trực tuyến HSC ONE",
           "type": "margin",
           "url": "https://www.hsc.com.vn/vi/dich-vu-giao-dich-ky-quy-1",
-          "httpStatus": 200,
-          "isAccessible": true,
+          "httpStatus": 403,
+          "isAccessible": false,
           "sourceType": "direct",
-          "signals": {
-            "hasTradingFee": false,
-            "hasZeroFee": false,
-            "hasInterestRate": false,
-            "hasLoanInterest": true,
-            "hasMargin": true,
-            "hasCreditLimit": true,
-            "hasDebtBalance": false,
-            "matchedList": [
-              "Lãi vay",
-              "Ký quỹ / Margin",
-              "Hạn mức"
-            ],
-            "matchedKeys": [
-              "loanInterest",
-              "margin",
-              "creditLimit"
-            ],
-            "ratesFound": [
-              "6.65%"
-            ],
-            "hasZeroFeeMention": false,
-            "hasMarginMention": true,
-            "hasPromoRateMention": true
-          },
-          "validity": {
-            "isActive": true,
-            "status": "active",
-            "reason": "Ưu đãi còn hiệu lực và nằm trong khung thời gian 1 năm gần nhất.",
-            "isWithinOneYear": true,
-            "publishedDate": null,
-            "expiryDate": null,
-            "formattedPublishedDate": "Hiện hành",
-            "formattedExpiryDate": "Đến khi có thông báo mới"
-          },
-          "contentLength": 138673
+          "signals": null,
+          "validity": null,
+          "contentLength": 0
         }
       ],
       "activePromos": [
@@ -2375,34 +2289,6 @@
           "isWithinOneYear": true,
           "status": "active",
           "validityReason": "Ưu đãi còn hiệu lực và nằm trong khung thời gian 1 năm gần nhất."
-        },
-        {
-          "title": "Chính sách ưu đãi mở tài khoản eKYC",
-          "url": "https://www.hsc.com.vn/vi/thong-bao-ve-viec-cap-nhat-bieu-phi-dich-vu-chung-khoan",
-          "type": "promo",
-          "badge": "Ưu Đãi Mở Mới",
-          "publishedDate": null,
-          "expiryDate": null,
-          "formattedPublishedDate": "Hiện hành",
-          "formattedExpiryDate": "Đến khi có thông báo mới",
-          "isActive": true,
-          "isWithinOneYear": true,
-          "status": "active",
-          "validityReason": "Ưu đãi còn hiệu lực và nằm trong khung thời gian 1 năm gần nhất."
-        },
-        {
-          "title": "Dịch vụ giao dịch ký quỹ trực tuyến HSC ONE",
-          "url": "https://www.hsc.com.vn/vi/dich-vu-giao-dich-ky-quy-1",
-          "type": "margin",
-          "badge": "Dịch Vụ Margin",
-          "publishedDate": null,
-          "expiryDate": null,
-          "formattedPublishedDate": "Hiện hành",
-          "formattedExpiryDate": "Đến khi có thông báo mới",
-          "isActive": true,
-          "isWithinOneYear": true,
-          "status": "active",
-          "validityReason": "Ưu đãi còn hiệu lực và nằm trong khung thời gian 1 năm gần nhất."
         }
       ],
       "filteredPromos": [],
@@ -2410,30 +2296,26 @@
         "hasTradingFee": true,
         "hasZeroFee": false,
         "hasInterestRate": true,
-        "hasLoanInterest": true,
+        "hasLoanInterest": false,
         "hasMargin": true,
-        "hasCreditLimit": true,
+        "hasCreditLimit": false,
         "hasDebtBalance": false,
         "matchedList": [
           "Phí giao dịch",
-          "Ký quỹ / Margin",
           "Lãi suất",
-          "Lãi vay",
-          "Hạn mức"
+          "Ký quỹ / Margin"
         ],
-        "ratesFound": [
-          "6.65%"
-        ],
+        "ratesFound": [],
         "hasZeroFeeMention": false,
         "hasMarginMention": true,
-        "hasPromoRateMention": true
+        "hasPromoRateMention": false
       },
-      "contentLength": 479371,
+      "contentLength": 8123,
       "sourceType": "deep_crawler",
       "sourceCategory": "Deep Crawler",
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://www.hsc.com.vn/vi/bieu-phi",
-      "scannedAt": "2026-10-22T14:01:52.631Z"
+      "scannedAt": "2026-10-22T14:07:05.218Z"
     },
     {
       "id": "vietcap",
@@ -2722,7 +2604,7 @@
       "sourceCategory": "Deep Crawler",
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://www.vietcap.com.vn/bieu-phi",
-      "scannedAt": "2026-10-22T14:01:53.417Z"
+      "scannedAt": "2026-10-22T14:07:08.522Z"
     },
     {
       "id": "kafi",
@@ -2991,7 +2873,7 @@
       "sourceCategory": "Deep Crawler",
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://kafi.vn/stock-trading?tab=bpgd",
-      "scannedAt": "2026-10-22T14:01:55.230Z"
+      "scannedAt": "2026-10-22T14:07:13.499Z"
     },
     {
       "id": "mbs",
@@ -3291,7 +3173,7 @@
       "sourceCategory": "Deep Crawler",
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://mbs.com.vn/bieu-phi-giao-dich/",
-      "scannedAt": "2026-10-22T14:01:57.466Z"
+      "scannedAt": "2026-10-22T14:07:20.367Z"
     },
     {
       "id": "shs",
@@ -3460,7 +3342,7 @@
       "sourceCategory": "Deep Crawler",
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://www.shs.com.vn/Pages/BieuPhiDichVu.aspx",
-      "scannedAt": "2026-10-22T14:01:58.045Z"
+      "scannedAt": "2026-10-22T14:07:24.531Z"
     },
     {
       "id": "vix",
@@ -3474,31 +3356,108 @@
       "isAccessible": true,
       "mode": "deep",
       "totalTabsScanned": 3,
-      "accessibleTabsCount": 1,
+      "accessibleTabsCount": 3,
       "subTabsResults": [
         {
           "id": "official_fee",
           "title": "Biểu phí giao dịch chính thức",
           "type": "fee",
           "url": "https://vixs.vn/ho-tro/bieu-phi-giao-dich",
-          "httpStatus": 403,
-          "isAccessible": false,
-          "sourceType": "direct",
-          "signals": null,
-          "validity": null,
-          "contentLength": 0
+          "httpStatus": 200,
+          "isAccessible": true,
+          "sourceType": "anti_waf_gateway",
+          "signals": {
+            "hasTradingFee": true,
+            "hasZeroFee": true,
+            "hasInterestRate": false,
+            "hasLoanInterest": false,
+            "hasMargin": true,
+            "hasCreditLimit": false,
+            "hasDebtBalance": true,
+            "matchedList": [
+              "Phí giao dịch",
+              "Zero-Fee / Miễn phí",
+              "Ký quỹ / Margin",
+              "Dư nợ"
+            ],
+            "matchedKeys": [
+              "tradingFee",
+              "zeroFee",
+              "margin",
+              "debtBalance"
+            ],
+            "ratesFound": [],
+            "hasZeroFeeMention": true,
+            "hasMarginMention": true,
+            "hasPromoRateMention": false
+          },
+          "validity": {
+            "isActive": true,
+            "status": "active",
+            "reason": "Ưu đãi còn hiệu lực và nằm trong khung thời gian 1 năm gần nhất.",
+            "isWithinOneYear": true,
+            "publishedDate": "2026-07-13",
+            "expiryDate": null,
+            "formattedPublishedDate": "13/7/2026",
+            "formattedExpiryDate": "Đến khi có thông báo mới"
+          },
+          "contentLength": 4218
         },
         {
           "id": "margin_policy",
           "title": "Chính sách & Gói vay Margin",
           "type": "margin",
           "url": "https://vixs.vn/chuong-trinh-uu-dai-lai-suat-theo-danh-muc.html",
-          "httpStatus": 403,
-          "isAccessible": false,
-          "sourceType": "direct",
-          "signals": null,
-          "validity": null,
-          "contentLength": 0
+          "httpStatus": 200,
+          "isAccessible": true,
+          "sourceType": "anti_waf_gateway",
+          "signals": {
+            "hasTradingFee": true,
+            "hasZeroFee": false,
+            "hasInterestRate": true,
+            "hasLoanInterest": true,
+            "hasMargin": true,
+            "hasCreditLimit": true,
+            "hasDebtBalance": true,
+            "matchedList": [
+              "Phí giao dịch",
+              "Lãi suất",
+              "Lãi vay",
+              "Ký quỹ / Margin",
+              "Hạn mức",
+              "Dư nợ"
+            ],
+            "matchedKeys": [
+              "tradingFee",
+              "interestRate",
+              "loanInterest",
+              "margin",
+              "creditLimit",
+              "debtBalance"
+            ],
+            "ratesFound": [
+              "9.9%",
+              "9,9%",
+              "10.19%",
+              "6.3%",
+              "9.90%",
+              "5.8%"
+            ],
+            "hasZeroFeeMention": false,
+            "hasMarginMention": true,
+            "hasPromoRateMention": true
+          },
+          "validity": {
+            "isActive": true,
+            "status": "active",
+            "reason": "Ưu đãi còn hiệu lực và nằm trong khung thời gian 1 năm gần nhất.",
+            "isWithinOneYear": true,
+            "publishedDate": null,
+            "expiryDate": null,
+            "formattedPublishedDate": "Hiện hành",
+            "formattedExpiryDate": "Đến khi có thông báo mới"
+          },
+          "contentLength": 28656
         },
         {
           "id": "article_1",
@@ -3548,6 +3507,34 @@
       ],
       "activePromos": [
         {
+          "title": "Biểu phí giao dịch chính thức",
+          "url": "https://vixs.vn/ho-tro/bieu-phi-giao-dich",
+          "type": "fee",
+          "badge": "Biểu Phí Chuẩn",
+          "publishedDate": "2026-07-13",
+          "expiryDate": null,
+          "formattedPublishedDate": "13/7/2026",
+          "formattedExpiryDate": "Đến khi có thông báo mới",
+          "isActive": true,
+          "isWithinOneYear": true,
+          "status": "active",
+          "validityReason": "Ưu đãi còn hiệu lực và nằm trong khung thời gian 1 năm gần nhất."
+        },
+        {
+          "title": "Chính sách & Gói vay Margin",
+          "url": "https://vixs.vn/chuong-trinh-uu-dai-lai-suat-theo-danh-muc.html",
+          "type": "margin",
+          "badge": "Lãi Suất Margin",
+          "publishedDate": null,
+          "expiryDate": null,
+          "formattedPublishedDate": "Hiện hành",
+          "formattedExpiryDate": "Đến khi có thông báo mới",
+          "isActive": true,
+          "isWithinOneYear": true,
+          "status": "active",
+          "validityReason": "Ưu đãi còn hiệu lực và nằm trong khung thời gian 1 năm gần nhất."
+        },
+        {
           "title": "Cổng thông tin giao dịch chính thức Chứng khoán VIX",
           "url": "https://vixs.vn",
           "type": "promo",
@@ -3567,27 +3554,37 @@
         "hasTradingFee": true,
         "hasZeroFee": true,
         "hasInterestRate": true,
-        "hasLoanInterest": false,
+        "hasLoanInterest": true,
         "hasMargin": true,
-        "hasCreditLimit": false,
-        "hasDebtBalance": false,
+        "hasCreditLimit": true,
+        "hasDebtBalance": true,
         "matchedList": [
           "Phí giao dịch",
           "Zero-Fee / Miễn phí",
+          "Ký quỹ / Margin",
+          "Dư nợ",
           "Lãi suất",
-          "Ký quỹ / Margin"
+          "Lãi vay",
+          "Hạn mức"
         ],
-        "ratesFound": [],
+        "ratesFound": [
+          "9.9%",
+          "9,9%",
+          "10.19%",
+          "6.3%",
+          "9.90%",
+          "5.8%"
+        ],
         "hasZeroFeeMention": true,
         "hasMarginMention": true,
-        "hasPromoRateMention": false
+        "hasPromoRateMention": true
       },
-      "contentLength": 21948,
+      "contentLength": 54822,
       "sourceType": "deep_crawler",
       "sourceCategory": "Deep Crawler",
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://vixs.vn/ho-tro/bieu-phi-giao-dich",
-      "scannedAt": "2026-10-22T14:02:17.266Z"
+      "scannedAt": "2026-10-22T14:07:27.907Z"
     },
     {
       "id": "kis",
@@ -3653,7 +3650,7 @@
             "formattedPublishedDate": "Hiện hành",
             "formattedExpiryDate": "Đến khi có thông báo mới"
           },
-          "contentLength": 876525
+          "contentLength": 876527
         },
         {
           "id": "margin_policy",
@@ -3763,7 +3760,7 @@
             "formattedPublishedDate": "Hiện hành",
             "formattedExpiryDate": "Đến khi có thông báo mới"
           },
-          "contentLength": 1061877
+          "contentLength": 1061876
         }
       ],
       "activePromos": [
@@ -3845,12 +3842,12 @@
         "hasMarginMention": true,
         "hasPromoRateMention": true
       },
-      "contentLength": 2770176,
+      "contentLength": 2770177,
       "sourceType": "deep_crawler",
       "sourceCategory": "Deep Crawler",
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://kisvn.vn/san-pham-dich-vu/dich-vu-chung-khoan/bieu-phi-4206",
-      "scannedAt": "2026-10-22T14:02:21.116Z"
+      "scannedAt": "2026-10-22T14:07:30.824Z"
     },
     {
       "id": "acbs",
@@ -4065,7 +4062,7 @@
       "sourceCategory": "Deep Crawler",
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://acbs.com.vn/bieu-phi-giao-dich-chung-khoan-niem-yet",
-      "scannedAt": "2026-10-22T14:02:25.498Z"
+      "scannedAt": "2026-10-22T14:07:43.890Z"
     },
     {
       "id": "vcbs",
@@ -4114,7 +4111,7 @@
             "formattedPublishedDate": "Hiện hành",
             "formattedExpiryDate": "Đến khi có thông báo mới"
           },
-          "contentLength": 11982
+          "contentLength": 11940
         },
         {
           "id": "margin_policy",
@@ -4149,7 +4146,7 @@
             "formattedPublishedDate": "Hiện hành",
             "formattedExpiryDate": "Đến khi có thông báo mới"
           },
-          "contentLength": 11982
+          "contentLength": 11981
         },
         {
           "id": "welcome_promo",
@@ -4184,7 +4181,7 @@
             "formattedPublishedDate": "Hiện hành",
             "formattedExpiryDate": "Đến khi có thông báo mới"
           },
-          "contentLength": 11982
+          "contentLength": 11981
         },
         {
           "id": "article_2",
@@ -4219,7 +4216,7 @@
             "formattedPublishedDate": "Hiện hành",
             "formattedExpiryDate": "Đến khi có thông báo mới"
           },
-          "contentLength": 11982
+          "contentLength": 11981
         }
       ],
       "activePromos": [
@@ -4295,12 +4292,12 @@
         "hasMarginMention": false,
         "hasPromoRateMention": false
       },
-      "contentLength": 47928,
+      "contentLength": 47883,
       "sourceType": "deep_crawler",
       "sourceCategory": "Deep Crawler",
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://vcbs.com.vn/bieu-phi",
-      "scannedAt": "2026-10-22T14:02:26.916Z"
+      "scannedAt": "2026-10-22T14:07:48.061Z"
     },
     {
       "id": "kbsv",
@@ -4528,7 +4525,7 @@
       "sourceCategory": "Deep Crawler",
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://www.kbsec.com.vn/vi/bieu-phi.html",
-      "scannedAt": "2026-10-22T14:02:28.637Z"
+      "scannedAt": "2026-10-22T14:07:54.739Z"
     },
     {
       "id": "cts",
@@ -4798,7 +4795,7 @@
       "sourceCategory": "Deep Crawler",
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://www.vbse.vn/khach-hang-ca-nhan/bieu-phi/",
-      "scannedAt": "2026-10-22T14:02:30.282Z"
+      "scannedAt": "2026-10-22T14:08:03.024Z"
     },
     {
       "id": "bvsc",
@@ -4823,28 +4820,18 @@
           "isAccessible": true,
           "sourceType": "direct",
           "signals": {
-            "hasTradingFee": true,
-            "hasZeroFee": true,
-            "hasInterestRate": true,
+            "hasTradingFee": false,
+            "hasZeroFee": false,
+            "hasInterestRate": false,
             "hasLoanInterest": false,
-            "hasMargin": true,
+            "hasMargin": false,
             "hasCreditLimit": false,
             "hasDebtBalance": false,
-            "matchedList": [
-              "Phí giao dịch",
-              "Zero-Fee / Miễn phí",
-              "Lãi suất",
-              "Ký quỹ / Margin"
-            ],
-            "matchedKeys": [
-              "tradingFee",
-              "zeroFee",
-              "interestRate",
-              "margin"
-            ],
+            "matchedList": [],
+            "matchedKeys": [],
             "ratesFound": [],
-            "hasZeroFeeMention": true,
-            "hasMarginMention": true,
+            "hasZeroFeeMention": false,
+            "hasMarginMention": false,
             "hasPromoRateMention": false
           },
           "validity": {
@@ -4857,70 +4844,13 @@
             "formattedPublishedDate": "Hiện hành",
             "formattedExpiryDate": "Đến khi có thông báo mới"
           },
-          "contentLength": 218029
+          "contentLength": 280
         },
         {
           "id": "margin_policy",
           "title": "Chính sách & Gói vay Margin",
           "type": "margin",
           "url": "https://www.bvsc.com.vn/danhsachbaiviet/chung-khoan-bao-viet-bvsc-trien-khai-chuong-trinh-uu-dai-margin-va-mo-tai-khoan-moi-den-het-nam-2026/",
-          "httpStatus": 200,
-          "isAccessible": true,
-          "sourceType": "direct",
-          "signals": {
-            "hasTradingFee": true,
-            "hasZeroFee": true,
-            "hasInterestRate": true,
-            "hasLoanInterest": true,
-            "hasMargin": true,
-            "hasCreditLimit": true,
-            "hasDebtBalance": true,
-            "matchedList": [
-              "Phí giao dịch",
-              "Zero-Fee / Miễn phí",
-              "Lãi suất",
-              "Lãi vay",
-              "Ký quỹ / Margin",
-              "Hạn mức",
-              "Dư nợ"
-            ],
-            "matchedKeys": [
-              "tradingFee",
-              "zeroFee",
-              "interestRate",
-              "loanInterest",
-              "margin",
-              "creditLimit",
-              "debtBalance"
-            ],
-            "ratesFound": [
-              "7,5%",
-              "14.5%",
-              "13.5%",
-              "10.7%",
-              "10.5%"
-            ],
-            "hasZeroFeeMention": true,
-            "hasMarginMention": true,
-            "hasPromoRateMention": true
-          },
-          "validity": {
-            "isActive": true,
-            "status": "active",
-            "reason": "Ưu đãi còn hiệu lực và nằm trong khung thời gian 1 năm gần nhất.",
-            "isWithinOneYear": true,
-            "publishedDate": null,
-            "expiryDate": null,
-            "formattedPublishedDate": "Hiện hành",
-            "formattedExpiryDate": "Đến khi có thông báo mới"
-          },
-          "contentLength": 98960
-        },
-        {
-          "id": "article_1",
-          "title": "Biểu phí dịch vụ giao dịch chứng khoán BVSC",
-          "type": "fee",
-          "url": "https://bvsc.com.vn/bang-dich-vu/bieu-lai-phi-giao-dich/",
           "httpStatus": 200,
           "isAccessible": true,
           "sourceType": "direct",
@@ -4953,7 +4883,42 @@
             "formattedPublishedDate": "Hiện hành",
             "formattedExpiryDate": "Đến khi có thông báo mới"
           },
-          "contentLength": 123256
+          "contentLength": 306
+        },
+        {
+          "id": "article_1",
+          "title": "Biểu phí dịch vụ giao dịch chứng khoán BVSC",
+          "type": "fee",
+          "url": "https://bvsc.com.vn/bang-dich-vu/bieu-lai-phi-giao-dich/",
+          "httpStatus": 200,
+          "isAccessible": true,
+          "sourceType": "direct",
+          "signals": {
+            "hasTradingFee": false,
+            "hasZeroFee": false,
+            "hasInterestRate": false,
+            "hasLoanInterest": false,
+            "hasMargin": false,
+            "hasCreditLimit": false,
+            "hasDebtBalance": false,
+            "matchedList": [],
+            "matchedKeys": [],
+            "ratesFound": [],
+            "hasZeroFeeMention": false,
+            "hasMarginMention": false,
+            "hasPromoRateMention": false
+          },
+          "validity": {
+            "isActive": true,
+            "status": "active",
+            "reason": "Ưu đãi còn hiệu lực và nằm trong khung thời gian 1 năm gần nhất.",
+            "isWithinOneYear": true,
+            "publishedDate": null,
+            "expiryDate": null,
+            "formattedPublishedDate": "Hiện hành",
+            "formattedExpiryDate": "Đến khi có thông báo mới"
+          },
+          "contentLength": 191
         }
       ],
       "activePromos": [
@@ -5002,39 +4967,27 @@
       ],
       "filteredPromos": [],
       "signals": {
-        "hasTradingFee": true,
-        "hasZeroFee": true,
-        "hasInterestRate": true,
-        "hasLoanInterest": true,
+        "hasTradingFee": false,
+        "hasZeroFee": false,
+        "hasInterestRate": false,
+        "hasLoanInterest": false,
         "hasMargin": true,
-        "hasCreditLimit": true,
-        "hasDebtBalance": true,
+        "hasCreditLimit": false,
+        "hasDebtBalance": false,
         "matchedList": [
-          "Phí giao dịch",
-          "Zero-Fee / Miễn phí",
-          "Lãi suất",
-          "Ký quỹ / Margin",
-          "Lãi vay",
-          "Hạn mức",
-          "Dư nợ"
+          "Ký quỹ / Margin"
         ],
-        "ratesFound": [
-          "7,5%",
-          "14.5%",
-          "13.5%",
-          "10.7%",
-          "10.5%"
-        ],
-        "hasZeroFeeMention": true,
+        "ratesFound": [],
+        "hasZeroFeeMention": false,
         "hasMarginMention": true,
-        "hasPromoRateMention": true
+        "hasPromoRateMention": false
       },
-      "contentLength": 440245,
+      "contentLength": 777,
       "sourceType": "deep_crawler",
       "sourceCategory": "Deep Crawler",
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://www.bvsc.com.vn/danhmuc/dich-vu/khach-hang-ca-nhan/ho-tro/huong-dan-su-dung-dich-vu/bieu-lai-phi-giao-dich/",
-      "scannedAt": "2026-10-22T14:02:32.349Z"
+      "scannedAt": "2026-10-22T14:08:07.212Z"
     },
     {
       "id": "tps",
@@ -5138,7 +5091,7 @@
             "formattedPublishedDate": "Hiện hành",
             "formattedExpiryDate": "Đến khi có thông báo mới"
           },
-          "contentLength": 74091
+          "contentLength": 74092
         }
       ],
       "activePromos": [
@@ -5194,12 +5147,12 @@
         "hasMarginMention": true,
         "hasPromoRateMention": true
       },
-      "contentLength": 145673,
+      "contentLength": 145674,
       "sourceType": "deep_crawler",
       "sourceCategory": "Deep Crawler",
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://tpbs.com.vn",
-      "scannedAt": "2026-10-22T14:02:35.702Z"
+      "scannedAt": "2026-10-22T14:08:11.868Z"
     },
     {
       "id": "yuanta",
@@ -5267,35 +5220,23 @@
           "isAccessible": true,
           "sourceType": "direct",
           "signals": {
-            "hasTradingFee": true,
-            "hasZeroFee": true,
-            "hasInterestRate": true,
+            "hasTradingFee": false,
+            "hasZeroFee": false,
+            "hasInterestRate": false,
             "hasLoanInterest": false,
             "hasMargin": true,
-            "hasCreditLimit": true,
-            "hasDebtBalance": true,
+            "hasCreditLimit": false,
+            "hasDebtBalance": false,
             "matchedList": [
-              "Phí giao dịch",
-              "Zero-Fee / Miễn phí",
-              "Lãi suất",
-              "Ký quỹ / Margin",
-              "Hạn mức",
-              "Dư nợ"
+              "Ký quỹ / Margin"
             ],
             "matchedKeys": [
-              "tradingFee",
-              "zeroFee",
-              "interestRate",
-              "margin",
-              "creditLimit",
-              "debtBalance"
+              "margin"
             ],
-            "ratesFound": [
-              "6.8%"
-            ],
-            "hasZeroFeeMention": true,
+            "ratesFound": [],
+            "hasZeroFeeMention": false,
             "hasMarginMention": true,
-            "hasPromoRateMention": true
+            "hasPromoRateMention": false
           },
           "validity": {
             "isActive": true,
@@ -5307,7 +5248,7 @@
             "formattedPublishedDate": "Hiện hành",
             "formattedExpiryDate": "Đến khi có thông báo mới"
           },
-          "contentLength": 149618
+          "contentLength": 259
         },
         {
           "id": "welcome_promo",
@@ -5372,31 +5313,19 @@
           "isAccessible": true,
           "sourceType": "direct",
           "signals": {
-            "hasTradingFee": true,
-            "hasZeroFee": true,
-            "hasInterestRate": true,
+            "hasTradingFee": false,
+            "hasZeroFee": false,
+            "hasInterestRate": false,
             "hasLoanInterest": false,
-            "hasMargin": true,
+            "hasMargin": false,
             "hasCreditLimit": false,
             "hasDebtBalance": false,
-            "matchedList": [
-              "Phí giao dịch",
-              "Zero-Fee / Miễn phí",
-              "Lãi suất",
-              "Ký quỹ / Margin"
-            ],
-            "matchedKeys": [
-              "tradingFee",
-              "zeroFee",
-              "interestRate",
-              "margin"
-            ],
-            "ratesFound": [
-              "6.8%"
-            ],
-            "hasZeroFeeMention": true,
-            "hasMarginMention": true,
-            "hasPromoRateMention": true
+            "matchedList": [],
+            "matchedKeys": [],
+            "ratesFound": [],
+            "hasZeroFeeMention": false,
+            "hasMarginMention": false,
+            "hasPromoRateMention": false
           },
           "validity": {
             "isActive": true,
@@ -5408,7 +5337,7 @@
             "formattedPublishedDate": "Hiện hành",
             "formattedExpiryDate": "Đến khi có thông báo mới"
           },
-          "contentLength": 158873
+          "contentLength": 191
         }
       ],
       "activePromos": [
@@ -5483,12 +5412,11 @@
           "Lãi suất",
           "Ký quỹ / Margin",
           "Zero-Fee / Miễn phí",
+          "Lãi vay",
           "Hạn mức",
-          "Dư nợ",
-          "Lãi vay"
+          "Dư nợ"
         ],
         "ratesFound": [
-          "6.8%",
           "8.0%",
           "7.99%",
           "8.99%",
@@ -5498,12 +5426,12 @@
         "hasMarginMention": true,
         "hasPromoRateMention": true
       },
-      "contentLength": 636304,
+      "contentLength": 328263,
       "sourceType": "deep_crawler",
       "sourceCategory": "Deep Crawler",
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://support.yuanta.com.vn/bieu-phi-va-lai-suat/",
-      "scannedAt": "2026-10-22T14:02:37.450Z"
+      "scannedAt": "2026-10-22T14:08:19.493Z"
     },
     {
       "id": "shinhan",
@@ -5526,66 +5454,17 @@
           "url": "https://shinhansec.com.vn/vi/ho-tro-khach-hang/phi-giao-dich.html",
           "httpStatus": 200,
           "isAccessible": true,
-          "sourceType": "direct",
+          "sourceType": "anti_waf_gateway",
           "signals": {
-            "hasTradingFee": true,
-            "hasZeroFee": true,
-            "hasInterestRate": false,
-            "hasLoanInterest": false,
-            "hasMargin": true,
-            "hasCreditLimit": false,
-            "hasDebtBalance": false,
-            "matchedList": [
-              "Phí giao dịch",
-              "Zero-Fee / Miễn phí",
-              "Ký quỹ / Margin"
-            ],
-            "matchedKeys": [
-              "tradingFee",
-              "zeroFee",
-              "margin"
-            ],
-            "ratesFound": [
-              "12,5%"
-            ],
-            "hasZeroFeeMention": true,
-            "hasMarginMention": true,
-            "hasPromoRateMention": true
-          },
-          "validity": {
-            "isActive": true,
-            "status": "active",
-            "reason": "Ưu đãi còn hiệu lực và nằm trong khung thời gian 1 năm gần nhất.",
-            "isWithinOneYear": true,
-            "publishedDate": null,
-            "expiryDate": null,
-            "formattedPublishedDate": "Hiện hành",
-            "formattedExpiryDate": "Đến khi có thông báo mới"
-          },
-          "contentLength": 95440
-        },
-        {
-          "id": "margin_policy",
-          "title": "Chính sách & Gói vay Margin",
-          "type": "margin",
-          "url": "https://shinhansec.com.vn",
-          "httpStatus": 200,
-          "isAccessible": true,
-          "sourceType": "direct",
-          "signals": {
-            "hasTradingFee": true,
+            "hasTradingFee": false,
             "hasZeroFee": false,
             "hasInterestRate": false,
             "hasLoanInterest": false,
             "hasMargin": false,
             "hasCreditLimit": false,
             "hasDebtBalance": false,
-            "matchedList": [
-              "Phí giao dịch"
-            ],
-            "matchedKeys": [
-              "tradingFee"
-            ],
+            "matchedList": [],
+            "matchedKeys": [],
             "ratesFound": [],
             "hasZeroFeeMention": false,
             "hasMarginMention": false,
@@ -5601,37 +5480,29 @@
             "formattedPublishedDate": "Hiện hành",
             "formattedExpiryDate": "Đến khi có thông báo mới"
           },
-          "contentLength": 74533
+          "contentLength": 1604
         },
         {
-          "id": "welcome_promo",
-          "title": "Chính sách ưu đãi mở tài khoản eKYC",
-          "type": "promo",
-          "url": "https://shinhansec.com.vn/vi/ho-tro-khach-hang/chuong-trinh-uu-dai/135/mo-tai-khoan-shinhan-bank-truc-tuyen-ngay-tren-ung-dung-san-xin-ha.html",
+          "id": "margin_policy",
+          "title": "Chính sách & Gói vay Margin",
+          "type": "margin",
+          "url": "https://shinhansec.com.vn",
           "httpStatus": 200,
           "isAccessible": true,
-          "sourceType": "direct",
+          "sourceType": "anti_waf_gateway",
           "signals": {
-            "hasTradingFee": true,
+            "hasTradingFee": false,
             "hasZeroFee": false,
             "hasInterestRate": false,
             "hasLoanInterest": false,
-            "hasMargin": true,
-            "hasCreditLimit": true,
+            "hasMargin": false,
+            "hasCreditLimit": false,
             "hasDebtBalance": false,
-            "matchedList": [
-              "Phí giao dịch",
-              "Ký quỹ / Margin",
-              "Hạn mức"
-            ],
-            "matchedKeys": [
-              "tradingFee",
-              "margin",
-              "creditLimit"
-            ],
+            "matchedList": [],
+            "matchedKeys": [],
             "ratesFound": [],
             "hasZeroFeeMention": false,
-            "hasMarginMention": true,
+            "hasMarginMention": false,
             "hasPromoRateMention": false
           },
           "validity": {
@@ -5644,7 +5515,42 @@
             "formattedPublishedDate": "Hiện hành",
             "formattedExpiryDate": "Đến khi có thông báo mới"
           },
-          "contentLength": 91455
+          "contentLength": 1604
+        },
+        {
+          "id": "welcome_promo",
+          "title": "Chính sách ưu đãi mở tài khoản eKYC",
+          "type": "promo",
+          "url": "https://shinhansec.com.vn/vi/ho-tro-khach-hang/chuong-trinh-uu-dai/135/mo-tai-khoan-shinhan-bank-truc-tuyen-ngay-tren-ung-dung-san-xin-ha.html",
+          "httpStatus": 200,
+          "isAccessible": true,
+          "sourceType": "anti_waf_gateway",
+          "signals": {
+            "hasTradingFee": false,
+            "hasZeroFee": false,
+            "hasInterestRate": false,
+            "hasLoanInterest": false,
+            "hasMargin": false,
+            "hasCreditLimit": false,
+            "hasDebtBalance": false,
+            "matchedList": [],
+            "matchedKeys": [],
+            "ratesFound": [],
+            "hasZeroFeeMention": false,
+            "hasMarginMention": false,
+            "hasPromoRateMention": false
+          },
+          "validity": {
+            "isActive": true,
+            "status": "active",
+            "reason": "Ưu đãi còn hiệu lực và nằm trong khung thời gian 1 năm gần nhất.",
+            "isWithinOneYear": true,
+            "publishedDate": null,
+            "expiryDate": null,
+            "formattedPublishedDate": "Hiện hành",
+            "formattedExpiryDate": "Đến khi có thông báo mới"
+          },
+          "contentLength": 1720
         }
       ],
       "activePromos": [
@@ -5693,32 +5599,25 @@
       ],
       "filteredPromos": [],
       "signals": {
-        "hasTradingFee": true,
-        "hasZeroFee": true,
+        "hasTradingFee": false,
+        "hasZeroFee": false,
         "hasInterestRate": false,
         "hasLoanInterest": false,
-        "hasMargin": true,
-        "hasCreditLimit": true,
+        "hasMargin": false,
+        "hasCreditLimit": false,
         "hasDebtBalance": false,
-        "matchedList": [
-          "Phí giao dịch",
-          "Zero-Fee / Miễn phí",
-          "Ký quỹ / Margin",
-          "Hạn mức"
-        ],
-        "ratesFound": [
-          "12,5%"
-        ],
-        "hasZeroFeeMention": true,
-        "hasMarginMention": true,
-        "hasPromoRateMention": true
+        "matchedList": [],
+        "ratesFound": [],
+        "hasZeroFeeMention": false,
+        "hasMarginMention": false,
+        "hasPromoRateMention": false
       },
-      "contentLength": 261428,
+      "contentLength": 4928,
       "sourceType": "deep_crawler",
       "sourceCategory": "Deep Crawler",
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://shinhansec.com.vn/vi/ho-tro-khach-hang/phi-giao-dich.html",
-      "scannedAt": "2026-10-22T14:02:40.734Z"
+      "scannedAt": "2026-10-22T14:08:38.517Z"
     },
     {
       "id": "agriseco",
@@ -5865,7 +5764,7 @@
       "sourceCategory": "Deep Crawler",
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://agriseco.com.vn/News/NewsDetail/2057993/vi-VN",
-      "scannedAt": "2026-10-22T14:02:41.649Z"
+      "scannedAt": "2026-10-22T14:08:41.298Z"
     },
     {
       "id": "hdbs",
@@ -5922,7 +5821,7 @@
             "formattedPublishedDate": "Hiện hành",
             "formattedExpiryDate": "Đến khi có thông báo mới"
           },
-          "contentLength": 74301
+          "contentLength": 74293
         },
         {
           "id": "margin_policy",
@@ -5972,7 +5871,7 @@
             "formattedPublishedDate": "Hiện hành",
             "formattedExpiryDate": "Đến khi có thông báo mới"
           },
-          "contentLength": 74197
+          "contentLength": 74188
         },
         {
           "id": "article_1",
@@ -6015,7 +5914,7 @@
             "formattedPublishedDate": "Hiện hành",
             "formattedExpiryDate": "Đến khi có thông báo mới"
           },
-          "contentLength": 145281
+          "contentLength": 145272
         }
       ],
       "activePromos": [
@@ -6087,12 +5986,12 @@
         "hasMarginMention": true,
         "hasPromoRateMention": true
       },
-      "contentLength": 293779,
+      "contentLength": 293753,
       "sourceType": "deep_crawler",
       "sourceCategory": "Deep Crawler",
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://hdbs.vn/bieu-phi/",
-      "scannedAt": "2026-10-22T14:02:52.906Z"
+      "scannedAt": "2026-10-22T14:08:54.067Z"
     },
     {
       "id": "dsc",
@@ -6356,7 +6255,7 @@
       "sourceCategory": "Deep Crawler",
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://www.dsc.com.vn/bieu-phi",
-      "scannedAt": "2026-10-22T14:02:56.040Z"
+      "scannedAt": "2026-10-22T14:08:58.898Z"
     },
     {
       "id": "phs",
@@ -6583,7 +6482,7 @@
       "sourceCategory": "Deep Crawler",
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://www.phs.vn/san-pham-dich-vu/bieu-phi-giao-dich-chung-khoan-co-so-26",
-      "scannedAt": "2026-10-22T14:03:00.339Z"
+      "scannedAt": "2026-10-22T14:09:02.681Z"
     },
     {
       "id": "tvsi",
@@ -6608,18 +6507,24 @@
           "isAccessible": true,
           "sourceType": "direct",
           "signals": {
-            "hasTradingFee": false,
+            "hasTradingFee": true,
             "hasZeroFee": false,
             "hasInterestRate": false,
             "hasLoanInterest": false,
-            "hasMargin": false,
+            "hasMargin": true,
             "hasCreditLimit": false,
             "hasDebtBalance": false,
-            "matchedList": [],
-            "matchedKeys": [],
+            "matchedList": [
+              "Phí giao dịch",
+              "Ký quỹ / Margin"
+            ],
+            "matchedKeys": [
+              "tradingFee",
+              "margin"
+            ],
             "ratesFound": [],
             "hasZeroFeeMention": false,
-            "hasMarginMention": false,
+            "hasMarginMention": true,
             "hasPromoRateMention": false
           },
           "validity": {
@@ -6632,7 +6537,7 @@
             "formattedPublishedDate": "Hiện hành",
             "formattedExpiryDate": "Đến khi có thông báo mới"
           },
-          "contentLength": 177
+          "contentLength": 82513
         },
         {
           "id": "margin_policy",
@@ -6643,19 +6548,41 @@
           "isAccessible": true,
           "sourceType": "direct",
           "signals": {
-            "hasTradingFee": false,
-            "hasZeroFee": false,
-            "hasInterestRate": false,
-            "hasLoanInterest": false,
-            "hasMargin": false,
-            "hasCreditLimit": false,
-            "hasDebtBalance": false,
-            "matchedList": [],
-            "matchedKeys": [],
-            "ratesFound": [],
-            "hasZeroFeeMention": false,
-            "hasMarginMention": false,
-            "hasPromoRateMention": false
+            "hasTradingFee": true,
+            "hasZeroFee": true,
+            "hasInterestRate": true,
+            "hasLoanInterest": true,
+            "hasMargin": true,
+            "hasCreditLimit": true,
+            "hasDebtBalance": true,
+            "matchedList": [
+              "Phí giao dịch",
+              "Zero-Fee / Miễn phí",
+              "Lãi suất",
+              "Lãi vay",
+              "Ký quỹ / Margin",
+              "Hạn mức",
+              "Dư nợ"
+            ],
+            "matchedKeys": [
+              "tradingFee",
+              "zeroFee",
+              "interestRate",
+              "loanInterest",
+              "margin",
+              "creditLimit",
+              "debtBalance"
+            ],
+            "ratesFound": [
+              "9.9%",
+              "9,9%",
+              "8,8%",
+              "12.4%",
+              "9.8%"
+            ],
+            "hasZeroFeeMention": true,
+            "hasMarginMention": true,
+            "hasPromoRateMention": true
           },
           "validity": {
             "isActive": true,
@@ -6667,7 +6594,7 @@
             "formattedPublishedDate": "Hiện hành",
             "formattedExpiryDate": "Đến khi có thông báo mới"
           },
-          "contentLength": 177
+          "contentLength": 61781
         },
         {
           "id": "article_1",
@@ -6682,14 +6609,18 @@
             "hasZeroFee": false,
             "hasInterestRate": false,
             "hasLoanInterest": false,
-            "hasMargin": false,
+            "hasMargin": true,
             "hasCreditLimit": false,
             "hasDebtBalance": false,
-            "matchedList": [],
-            "matchedKeys": [],
+            "matchedList": [
+              "Ký quỹ / Margin"
+            ],
+            "matchedKeys": [
+              "margin"
+            ],
             "ratesFound": [],
             "hasZeroFeeMention": false,
-            "hasMarginMention": false,
+            "hasMarginMention": true,
             "hasPromoRateMention": false
           },
           "validity": {
@@ -6702,7 +6633,7 @@
             "formattedPublishedDate": "Hiện hành",
             "formattedExpiryDate": "Đến khi có thông báo mới"
           },
-          "contentLength": 177
+          "contentLength": 78112
         }
       ],
       "activePromos": [
@@ -6751,25 +6682,39 @@
       ],
       "filteredPromos": [],
       "signals": {
-        "hasTradingFee": false,
-        "hasZeroFee": false,
-        "hasInterestRate": false,
-        "hasLoanInterest": false,
-        "hasMargin": false,
-        "hasCreditLimit": false,
-        "hasDebtBalance": false,
-        "matchedList": [],
-        "ratesFound": [],
-        "hasZeroFeeMention": false,
-        "hasMarginMention": false,
-        "hasPromoRateMention": false
+        "hasTradingFee": true,
+        "hasZeroFee": true,
+        "hasInterestRate": true,
+        "hasLoanInterest": true,
+        "hasMargin": true,
+        "hasCreditLimit": true,
+        "hasDebtBalance": true,
+        "matchedList": [
+          "Phí giao dịch",
+          "Ký quỹ / Margin",
+          "Zero-Fee / Miễn phí",
+          "Lãi suất",
+          "Lãi vay",
+          "Hạn mức",
+          "Dư nợ"
+        ],
+        "ratesFound": [
+          "9.9%",
+          "9,9%",
+          "8,8%",
+          "12.4%",
+          "9.8%"
+        ],
+        "hasZeroFeeMention": true,
+        "hasMarginMention": true,
+        "hasPromoRateMention": true
       },
-      "contentLength": 531,
+      "contentLength": 222406,
       "sourceType": "deep_crawler",
       "sourceCategory": "Deep Crawler",
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://www.tvsi.com.vn/fee-stock.html",
-      "scannedAt": "2026-10-22T14:03:00.640Z"
+      "scannedAt": "2026-10-22T14:09:07.525Z"
     },
     {
       "id": "evs",
@@ -6933,7 +6878,7 @@
       "sourceCategory": "Deep Crawler",
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://www.eves.com.vn/san-pham-dich-vu/bieu-phi/bieu-phi-dich-vu/",
-      "scannedAt": "2026-10-22T14:03:00.906Z"
+      "scannedAt": "2026-10-22T14:09:09.412Z"
     }
   ]
 }
