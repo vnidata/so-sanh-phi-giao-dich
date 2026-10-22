@@ -4,16 +4,16 @@
     "accessible": 28,
     "unscannable": 2,
     "keywordStats": {
-      "tradingFee": 19,
+      "tradingFee": 20,
       "zeroFee": 13,
       "interestRate": 12,
       "loanInterest": 0,
-      "margin": 20,
-      "creditLimit": 4,
+      "margin": 21,
+      "creditLimit": 5,
       "debtBalance": 1,
       "promoRate": 6
     },
-    "timestamp": "2026-10-22T09:54:40.272Z",
+    "timestamp": "2026-10-22T10:05:14.890Z",
     "note": "Dữ liệu được quét tự động từ các trang web biểu phí công khai của 30 CTCK."
   },
   "brokers": [
@@ -25,42 +25,13 @@
       "isListed": true,
       "url": "https://www.bsc.com.vn/phi-giao-dich-qua-san/",
       "officialSource": "https://www.bsc.com.vn/phi-giao-dich-qua-san/",
-      "httpStatus": 200,
-      "isAccessible": true,
-      "sourceType": "direct",
-      "sourceCategory": "Direct",
-      "unscannableReason": null,
-      "manualCheckInstruction": null,
-      "signals": {
-        "hasTradingFee": true,
-        "hasZeroFee": true,
-        "hasInterestRate": true,
-        "hasLoanInterest": false,
-        "hasMargin": true,
-        "hasCreditLimit": false,
-        "hasDebtBalance": false,
-        "matchedList": [
-          "Phí giao dịch",
-          "Zero-Fee / Miễn phí",
-          "Lãi suất",
-          "Ký quỹ / Margin"
-        ],
-        "matchedKeys": [
-          "tradingFee",
-          "zeroFee",
-          "interestRate",
-          "margin"
-        ],
-        "ratesFound": [
-          "6.72%",
-          "5.93%"
-        ],
-        "hasZeroFeeMention": true,
-        "hasMarginMention": true,
-        "hasPromoRateMention": true
-      },
-      "contentLength": 153177,
-      "scannedAt": "2026-10-22T09:53:17.018Z"
+      "httpStatus": "Timeout (8s)",
+      "isAccessible": false,
+      "unscannableReason": "Hết thời gian chờ phản hồi (Timeout > 8s). Máy chủ phản hồi chậm hoặc chặn crawler tự động.",
+      "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://www.bsc.com.vn/phi-giao-dich-qua-san/",
+      "signals": null,
+      "contentLength": 0,
+      "scannedAt": "2026-10-22T10:03:57.220Z"
     },
     {
       "id": "tcbs",
@@ -104,7 +75,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 24828,
-      "scannedAt": "2026-10-22T09:53:24.251Z"
+      "scannedAt": "2026-10-22T10:03:58.007Z"
     },
     {
       "id": "vps",
@@ -114,13 +85,40 @@
       "isListed": false,
       "url": "https://vps.com.vn/ca-nhan/ho-tro?view=bieu-phi-bieu-mau-va-chinh-sach&nav=bieu-phi--chinh-sach",
       "officialSource": "https://vps.com.vn/ca-nhan/ho-tro?view=bieu-phi-bieu-mau-va-chinh-sach&nav=bieu-phi--chinh-sach",
-      "httpStatus": "Timeout (8s)",
-      "isAccessible": false,
-      "unscannableReason": "Hết thời gian chờ phản hồi (Timeout > 8s). Máy chủ phản hồi chậm hoặc chặn crawler tự động.",
-      "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://vps.com.vn/ca-nhan/ho-tro?view=bieu-phi-bieu-mau-va-chinh-sach&nav=bieu-phi--chinh-sach",
-      "signals": null,
-      "contentLength": 0,
-      "scannedAt": "2026-10-22T09:53:32.251Z"
+      "httpStatus": 200,
+      "isAccessible": true,
+      "sourceType": "direct",
+      "sourceCategory": "Direct",
+      "unscannableReason": null,
+      "manualCheckInstruction": null,
+      "signals": {
+        "hasTradingFee": true,
+        "hasZeroFee": false,
+        "hasInterestRate": false,
+        "hasLoanInterest": false,
+        "hasMargin": true,
+        "hasCreditLimit": true,
+        "hasDebtBalance": false,
+        "matchedList": [
+          "Phí giao dịch",
+          "Ký quỹ / Margin",
+          "Hạn mức"
+        ],
+        "matchedKeys": [
+          "tradingFee",
+          "margin",
+          "creditLimit"
+        ],
+        "ratesFound": [
+          "6.14%",
+          "5.07%"
+        ],
+        "hasZeroFeeMention": false,
+        "hasMarginMention": true,
+        "hasPromoRateMention": true
+      },
+      "contentLength": 125268,
+      "scannedAt": "2026-10-22T10:03:59.819Z"
     },
     {
       "id": "ssi",
@@ -160,7 +158,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 16339,
-      "scannedAt": "2026-10-22T09:53:33.853Z"
+      "scannedAt": "2026-10-22T10:04:01.422Z"
     },
     {
       "id": "vndirect",
@@ -192,7 +190,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 3376,
-      "scannedAt": "2026-10-22T09:53:35.172Z"
+      "scannedAt": "2026-10-22T10:04:02.944Z"
     },
     {
       "id": "mirae-asset",
@@ -238,7 +236,7 @@
         "hasPromoRateMention": true
       },
       "contentLength": 141271,
-      "scannedAt": "2026-10-22T09:53:37.498Z"
+      "scannedAt": "2026-10-22T10:04:05.360Z"
     },
     {
       "id": "dnse",
@@ -285,7 +283,7 @@
         "hasPromoRateMention": true
       },
       "contentLength": 547677,
-      "scannedAt": "2026-10-22T09:53:38.845Z"
+      "scannedAt": "2026-10-22T10:04:06.916Z"
     },
     {
       "id": "vpbanks",
@@ -325,7 +323,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 5375,
-      "scannedAt": "2026-10-22T09:53:39.641Z"
+      "scannedAt": "2026-10-22T10:04:07.991Z"
     },
     {
       "id": "fpts",
@@ -357,7 +355,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 6925,
-      "scannedAt": "2026-10-22T09:53:41.039Z"
+      "scannedAt": "2026-10-22T10:04:09.504Z"
     },
     {
       "id": "hsc",
@@ -393,7 +391,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 3900,
-      "scannedAt": "2026-10-22T09:53:42.144Z"
+      "scannedAt": "2026-10-22T10:04:15.175Z"
     },
     {
       "id": "vietcap",
@@ -429,7 +427,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 62637,
-      "scannedAt": "2026-10-22T09:53:43.942Z"
+      "scannedAt": "2026-10-22T10:04:17.118Z"
     },
     {
       "id": "kafi",
@@ -471,7 +469,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 74452,
-      "scannedAt": "2026-10-22T09:53:44.459Z"
+      "scannedAt": "2026-10-22T10:04:18.368Z"
     },
     {
       "id": "mbs",
@@ -513,7 +511,7 @@
         "hasPromoRateMention": true
       },
       "contentLength": 132575,
-      "scannedAt": "2026-10-22T09:53:47.379Z"
+      "scannedAt": "2026-10-22T10:04:21.731Z"
     },
     {
       "id": "shs",
@@ -523,29 +521,13 @@
       "isListed": true,
       "url": "https://www.shs.com.vn/Pages/BieuPhiDichVu.aspx",
       "officialSource": "https://www.shs.com.vn/Pages/BieuPhiDichVu.aspx",
-      "httpStatus": 200,
-      "isAccessible": true,
-      "sourceType": "direct",
-      "sourceCategory": "Direct",
-      "unscannableReason": null,
-      "manualCheckInstruction": null,
-      "signals": {
-        "hasTradingFee": false,
-        "hasZeroFee": false,
-        "hasInterestRate": false,
-        "hasLoanInterest": false,
-        "hasMargin": false,
-        "hasCreditLimit": false,
-        "hasDebtBalance": false,
-        "matchedList": [],
-        "matchedKeys": [],
-        "ratesFound": [],
-        "hasZeroFeeMention": false,
-        "hasMarginMention": false,
-        "hasPromoRateMention": false
-      },
+      "httpStatus": "Fetch Error",
+      "isAccessible": false,
+      "unscannableReason": "Lỗi kết nối mạng: fetch failed",
+      "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://www.shs.com.vn/Pages/BieuPhiDichVu.aspx",
+      "signals": null,
       "contentLength": 0,
-      "scannedAt": "2026-10-22T09:53:50.201Z"
+      "scannedAt": "2026-10-22T10:04:22.932Z"
     },
     {
       "id": "vix",
@@ -553,17 +535,41 @@
       "shortName": "VIX",
       "stockCode": "VIX",
       "isListed": true,
-      "url": "https://vixs.vn/ho-tro/bieu-phi-giao-dich",
+      "url": "https://r.jina.ai/https://vixs.vn",
       "officialSource": "https://vixs.vn/ho-tro/bieu-phi-giao-dich",
-      "httpStatus": 403,
-      "isAccessible": false,
-      "sourceType": "direct",
-      "sourceCategory": "Direct",
-      "unscannableReason": "Bảo vệ bởi Cloudflare WAF Bot-Protection hoặc Tường lửa máy chủ (HTTP 403). Cần đối chiếu thủ công qua trình duyệt.",
-      "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://vixs.vn/ho-tro/bieu-phi-giao-dich",
-      "signals": null,
-      "contentLength": 0,
-      "scannedAt": "2026-10-22T09:53:59.722Z"
+      "httpStatus": 200,
+      "isAccessible": true,
+      "sourceType": "anti_waf_gateway",
+      "sourceCategory": "Anti-WAF Gateway",
+      "unscannableReason": null,
+      "manualCheckInstruction": null,
+      "signals": {
+        "hasTradingFee": true,
+        "hasZeroFee": true,
+        "hasInterestRate": true,
+        "hasLoanInterest": false,
+        "hasMargin": true,
+        "hasCreditLimit": false,
+        "hasDebtBalance": false,
+        "matchedList": [
+          "Phí giao dịch",
+          "Zero-Fee / Miễn phí",
+          "Lãi suất",
+          "Ký quỹ / Margin"
+        ],
+        "matchedKeys": [
+          "tradingFee",
+          "zeroFee",
+          "interestRate",
+          "margin"
+        ],
+        "ratesFound": [],
+        "hasZeroFeeMention": true,
+        "hasMarginMention": true,
+        "hasPromoRateMention": false
+      },
+      "contentLength": 21948,
+      "scannedAt": "2026-10-22T10:04:26.734Z"
     },
     {
       "id": "kis",
@@ -612,7 +618,7 @@
         "hasPromoRateMention": true
       },
       "contentLength": 876525,
-      "scannedAt": "2026-10-22T09:54:01.293Z"
+      "scannedAt": "2026-10-22T10:04:28.282Z"
     },
     {
       "id": "acbs",
@@ -650,7 +656,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 163369,
-      "scannedAt": "2026-10-22T09:54:04.035Z"
+      "scannedAt": "2026-10-22T10:04:31.311Z"
     },
     {
       "id": "vcbs",
@@ -681,8 +687,8 @@
         "hasMarginMention": false,
         "hasPromoRateMention": false
       },
-      "contentLength": 11938,
-      "scannedAt": "2026-10-22T09:54:06.646Z"
+      "contentLength": 11941,
+      "scannedAt": "2026-10-22T10:04:33.789Z"
     },
     {
       "id": "kbsv",
@@ -724,7 +730,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 169805,
-      "scannedAt": "2026-10-22T09:54:09.708Z"
+      "scannedAt": "2026-10-22T10:04:38.688Z"
     },
     {
       "id": "cts",
@@ -766,7 +772,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 76112,
-      "scannedAt": "2026-10-22T09:54:12.065Z"
+      "scannedAt": "2026-10-22T10:04:41.578Z"
     },
     {
       "id": "bvsc",
@@ -798,7 +804,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 282,
-      "scannedAt": "2026-10-22T09:54:15.107Z"
+      "scannedAt": "2026-10-22T10:04:44.544Z"
     },
     {
       "id": "tps",
@@ -836,7 +842,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 71582,
-      "scannedAt": "2026-10-22T09:54:17.112Z"
+      "scannedAt": "2026-10-22T10:04:47.067Z"
     },
     {
       "id": "yuanta",
@@ -875,8 +881,8 @@
         "hasMarginMention": true,
         "hasPromoRateMention": false
       },
-      "contentLength": 66874,
-      "scannedAt": "2026-10-22T09:54:20.611Z"
+      "contentLength": 66872,
+      "scannedAt": "2026-10-22T10:04:53.878Z"
     },
     {
       "id": "shinhan",
@@ -908,7 +914,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 1598,
-      "scannedAt": "2026-10-22T09:54:23.774Z"
+      "scannedAt": "2026-10-22T10:04:57.152Z"
     },
     {
       "id": "agriseco",
@@ -944,7 +950,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 140739,
-      "scannedAt": "2026-10-22T09:54:26.147Z"
+      "scannedAt": "2026-10-22T10:04:59.690Z"
     },
     {
       "id": "hdbs",
@@ -983,8 +989,8 @@
         "hasMarginMention": true,
         "hasPromoRateMention": false
       },
-      "contentLength": 74295,
-      "scannedAt": "2026-10-22T09:54:31.151Z"
+      "contentLength": 74290,
+      "scannedAt": "2026-10-22T10:05:05.312Z"
     },
     {
       "id": "dsc",
@@ -1033,7 +1039,7 @@
         "hasPromoRateMention": true
       },
       "contentLength": 160012,
-      "scannedAt": "2026-10-22T09:54:32.829Z"
+      "scannedAt": "2026-10-22T10:05:07.587Z"
     },
     {
       "id": "phs",
@@ -1075,7 +1081,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 246724,
-      "scannedAt": "2026-10-22T09:54:34.983Z"
+      "scannedAt": "2026-10-22T10:05:09.595Z"
     },
     {
       "id": "tvsi",
@@ -1107,7 +1113,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 177,
-      "scannedAt": "2026-10-22T09:54:38.906Z"
+      "scannedAt": "2026-10-22T10:05:12.978Z"
     },
     {
       "id": "evs",
@@ -1149,7 +1155,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 74428,
-      "scannedAt": "2026-10-22T09:54:40.271Z"
+      "scannedAt": "2026-10-22T10:05:14.889Z"
     }
   ]
 }
