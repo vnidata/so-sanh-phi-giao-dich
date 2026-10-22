@@ -1,19 +1,19 @@
 {
   "summary": {
     "total": 30,
-    "accessible": 26,
-    "unscannable": 4,
+    "accessible": 23,
+    "unscannable": 7,
     "keywordStats": {
-      "tradingFee": 16,
+      "tradingFee": 14,
       "zeroFee": 8,
-      "interestRate": 9,
+      "interestRate": 7,
       "loanInterest": 1,
-      "margin": 21,
+      "margin": 17,
       "creditLimit": 3,
       "debtBalance": 2,
-      "promoRate": 8
+      "promoRate": 7
     },
-    "timestamp": "2026-10-22T03:45:14.374Z",
+    "timestamp": "2026-10-22T03:48:35.206Z",
     "note": "Dữ liệu được quét tự động từ các trang web biểu phí công khai của 30 CTCK."
   },
   "brokers": [
@@ -58,7 +58,7 @@
         "hasPromoRateMention": true
       },
       "contentLength": 151634,
-      "scannedAt": "2026-10-22T03:44:38.678Z"
+      "scannedAt": "2026-10-22T03:47:15.911Z"
     },
     {
       "id": "tcbs",
@@ -74,7 +74,7 @@
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://www.tcbs.com.vn/bieu-phi",
       "signals": null,
       "contentLength": 0,
-      "scannedAt": "2026-10-22T03:44:38.992Z"
+      "scannedAt": "2026-10-22T03:47:16.357Z"
     },
     {
       "id": "vps",
@@ -112,7 +112,7 @@
         "hasPromoRateMention": true
       },
       "contentLength": 59052,
-      "scannedAt": "2026-10-22T03:44:39.411Z"
+      "scannedAt": "2026-10-22T03:47:19.119Z"
     },
     {
       "id": "ssi",
@@ -120,42 +120,15 @@
       "shortName": "SSI",
       "stockCode": "SSI",
       "isListed": true,
-      "url": "https://www.ssi.com.vn",
+      "url": "https://www.ssi.com.vn/khach-hang-ca-nhan/bieu-phi",
       "officialSource": "https://www.ssi.com.vn/khach-hang-ca-nhan/bieu-phi",
-      "httpStatus": 200,
-      "isAccessible": true,
-      "unscannableReason": null,
-      "manualCheckInstruction": null,
-      "signals": {
-        "hasTradingFee": false,
-        "hasZeroFee": false,
-        "hasInterestRate": true,
-        "hasLoanInterest": false,
-        "hasMargin": true,
-        "hasCreditLimit": false,
-        "hasDebtBalance": false,
-        "matchedList": [
-          "Lãi suất",
-          "Ký quỹ / Margin"
-        ],
-        "matchedKeys": [
-          "interestRate",
-          "margin"
-        ],
-        "ratesFound": [
-          "11.63%",
-          "5.53%",
-          "4.08%",
-          "5.66%",
-          "4.76%",
-          "4.19%"
-        ],
-        "hasZeroFeeMention": false,
-        "hasMarginMention": true,
-        "hasPromoRateMention": true
-      },
-      "contentLength": 89412,
-      "scannedAt": "2026-10-22T03:44:41.361Z"
+      "httpStatus": 403,
+      "isAccessible": false,
+      "unscannableReason": "Bảo vệ bởi Cloudflare WAF Bot-Protection hoặc Tường lửa máy chủ (HTTP 403). Cần đối chiếu thủ công qua trình duyệt.",
+      "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://www.ssi.com.vn/khach-hang-ca-nhan/bieu-phi",
+      "signals": null,
+      "contentLength": 0,
+      "scannedAt": "2026-10-22T03:47:19.958Z"
     },
     {
       "id": "vndirect",
@@ -171,7 +144,7 @@
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://www.vndirect.com.vn/bieu-phi-dich-vu-chung-khoan/",
       "signals": null,
       "contentLength": 0,
-      "scannedAt": "2026-10-22T03:44:41.653Z"
+      "scannedAt": "2026-10-22T03:47:20.343Z"
     },
     {
       "id": "mirae-asset",
@@ -215,7 +188,7 @@
         "hasPromoRateMention": true
       },
       "contentLength": 141271,
-      "scannedAt": "2026-10-22T03:44:42.001Z"
+      "scannedAt": "2026-10-22T03:47:22.624Z"
     },
     {
       "id": "dnse",
@@ -260,7 +233,7 @@
         "hasPromoRateMention": true
       },
       "contentLength": 547677,
-      "scannedAt": "2026-10-22T03:44:45.633Z"
+      "scannedAt": "2026-10-22T03:47:24.007Z"
     },
     {
       "id": "vpbanks",
@@ -270,35 +243,13 @@
       "isListed": false,
       "url": "https://www.vpbanks.com.vn/bieu-phi",
       "officialSource": "https://www.vpbanks.com.vn/bieu-phi",
-      "httpStatus": 200,
-      "isAccessible": true,
-      "unscannableReason": null,
-      "manualCheckInstruction": null,
-      "signals": {
-        "hasTradingFee": true,
-        "hasZeroFee": false,
-        "hasInterestRate": true,
-        "hasLoanInterest": false,
-        "hasMargin": true,
-        "hasCreditLimit": false,
-        "hasDebtBalance": false,
-        "matchedList": [
-          "Phí giao dịch",
-          "Lãi suất",
-          "Ký quỹ / Margin"
-        ],
-        "matchedKeys": [
-          "tradingFee",
-          "interestRate",
-          "margin"
-        ],
-        "ratesFound": [],
-        "hasZeroFeeMention": false,
-        "hasMarginMention": true,
-        "hasPromoRateMention": false
-      },
-      "contentLength": 146577,
-      "scannedAt": "2026-10-22T03:44:46.259Z"
+      "httpStatus": 403,
+      "isAccessible": false,
+      "unscannableReason": "Bảo vệ bởi Cloudflare WAF Bot-Protection hoặc Tường lửa máy chủ (HTTP 403). Cần đối chiếu thủ công qua trình duyệt.",
+      "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://www.vpbanks.com.vn/bieu-phi",
+      "signals": null,
+      "contentLength": 0,
+      "scannedAt": "2026-10-22T03:47:24.634Z"
     },
     {
       "id": "fpts",
@@ -333,8 +284,8 @@
         "hasMarginMention": true,
         "hasPromoRateMention": false
       },
-      "contentLength": 193048,
-      "scannedAt": "2026-10-22T03:44:46.579Z"
+      "contentLength": 193049,
+      "scannedAt": "2026-10-22T03:47:28.407Z"
     },
     {
       "id": "hsc",
@@ -344,35 +295,13 @@
       "isListed": true,
       "url": "https://www.hsc.com.vn/bieu-phi",
       "officialSource": "https://www.hsc.com.vn/bieu-phi",
-      "httpStatus": 200,
-      "isAccessible": true,
-      "unscannableReason": null,
-      "manualCheckInstruction": null,
-      "signals": {
-        "hasTradingFee": true,
-        "hasZeroFee": false,
-        "hasInterestRate": false,
-        "hasLoanInterest": false,
-        "hasMargin": true,
-        "hasCreditLimit": false,
-        "hasDebtBalance": false,
-        "matchedList": [
-          "Phí giao dịch",
-          "Ký quỹ / Margin"
-        ],
-        "matchedKeys": [
-          "tradingFee",
-          "margin"
-        ],
-        "ratesFound": [
-          "6.65%"
-        ],
-        "hasZeroFeeMention": false,
-        "hasMarginMention": true,
-        "hasPromoRateMention": true
-      },
-      "contentLength": 108489,
-      "scannedAt": "2026-10-22T03:44:47.198Z"
+      "httpStatus": 403,
+      "isAccessible": false,
+      "unscannableReason": "Bảo vệ bởi Cloudflare WAF Bot-Protection hoặc Tường lửa máy chủ (HTTP 403). Cần đối chiếu thủ công qua trình duyệt.",
+      "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://www.hsc.com.vn/bieu-phi",
+      "signals": null,
+      "contentLength": 0,
+      "scannedAt": "2026-10-22T03:47:29.224Z"
     },
     {
       "id": "vietcap",
@@ -406,7 +335,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 62637,
-      "scannedAt": "2026-10-22T03:44:47.413Z"
+      "scannedAt": "2026-10-22T03:47:30.896Z"
     },
     {
       "id": "kafi",
@@ -448,7 +377,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 79246,
-      "scannedAt": "2026-10-22T03:44:48.131Z"
+      "scannedAt": "2026-10-22T03:47:32.105Z"
     },
     {
       "id": "mbs",
@@ -458,13 +387,37 @@
       "isListed": true,
       "url": "https://mbs.com.vn/bieu-phi/",
       "officialSource": "https://mbs.com.vn/bieu-phi/",
-      "httpStatus": "Timeout (8s)",
-      "isAccessible": false,
-      "unscannableReason": "Hết thời gian chờ phản hồi (Timeout > 8s). Máy chủ phản hồi chậm hoặc chặn crawler tự động.",
-      "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://mbs.com.vn/bieu-phi/",
-      "signals": null,
-      "contentLength": 0,
-      "scannedAt": "2026-10-22T03:44:56.144Z"
+      "httpStatus": 200,
+      "isAccessible": true,
+      "unscannableReason": null,
+      "manualCheckInstruction": null,
+      "signals": {
+        "hasTradingFee": true,
+        "hasZeroFee": true,
+        "hasInterestRate": false,
+        "hasLoanInterest": false,
+        "hasMargin": true,
+        "hasCreditLimit": false,
+        "hasDebtBalance": false,
+        "matchedList": [
+          "Phí giao dịch",
+          "Zero-Fee / Miễn phí",
+          "Ký quỹ / Margin"
+        ],
+        "matchedKeys": [
+          "tradingFee",
+          "zeroFee",
+          "margin"
+        ],
+        "ratesFound": [
+          "8.75%"
+        ],
+        "hasZeroFeeMention": true,
+        "hasMarginMention": true,
+        "hasPromoRateMention": true
+      },
+      "contentLength": 132575,
+      "scannedAt": "2026-10-22T03:47:35.958Z"
     },
     {
       "id": "shs",
@@ -494,7 +447,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 0,
-      "scannedAt": "2026-10-22T03:44:56.400Z"
+      "scannedAt": "2026-10-22T03:47:38.620Z"
     },
     {
       "id": "vix",
@@ -510,7 +463,7 @@
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://vixs.vn/bieu-phi",
       "signals": null,
       "contentLength": 0,
-      "scannedAt": "2026-10-22T03:44:56.505Z"
+      "scannedAt": "2026-10-22T03:47:40.882Z"
     },
     {
       "id": "kis",
@@ -559,7 +512,7 @@
         "hasPromoRateMention": true
       },
       "contentLength": 1061877,
-      "scannedAt": "2026-10-22T03:44:57.891Z"
+      "scannedAt": "2026-10-22T03:47:43.458Z"
     },
     {
       "id": "acbs",
@@ -597,7 +550,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 159693,
-      "scannedAt": "2026-10-22T03:44:59.709Z"
+      "scannedAt": "2026-10-22T03:47:49.091Z"
     },
     {
       "id": "vcbs",
@@ -626,8 +579,8 @@
         "hasMarginMention": false,
         "hasPromoRateMention": false
       },
-      "contentLength": 11981,
-      "scannedAt": "2026-10-22T03:44:59.919Z"
+      "contentLength": 11941,
+      "scannedAt": "2026-10-22T03:47:51.300Z"
     },
     {
       "id": "kbsv",
@@ -657,7 +610,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 552,
-      "scannedAt": "2026-10-22T03:45:00.129Z"
+      "scannedAt": "2026-10-22T03:47:52.970Z"
     },
     {
       "id": "cts",
@@ -697,7 +650,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 75863,
-      "scannedAt": "2026-10-22T03:45:00.611Z"
+      "scannedAt": "2026-10-22T03:47:58.475Z"
     },
     {
       "id": "bvsc",
@@ -716,22 +669,18 @@
         "hasZeroFee": false,
         "hasInterestRate": false,
         "hasLoanInterest": false,
-        "hasMargin": true,
+        "hasMargin": false,
         "hasCreditLimit": false,
         "hasDebtBalance": false,
-        "matchedList": [
-          "Ký quỹ / Margin"
-        ],
-        "matchedKeys": [
-          "margin"
-        ],
+        "matchedList": [],
+        "matchedKeys": [],
         "ratesFound": [],
         "hasZeroFeeMention": false,
-        "hasMarginMention": true,
+        "hasMarginMention": false,
         "hasPromoRateMention": false
       },
-      "contentLength": 123128,
-      "scannedAt": "2026-10-22T03:45:01.551Z"
+      "contentLength": 189,
+      "scannedAt": "2026-10-22T03:48:02.221Z"
     },
     {
       "id": "tps",
@@ -767,7 +716,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 72142,
-      "scannedAt": "2026-10-22T03:45:02.808Z"
+      "scannedAt": "2026-10-22T03:48:06.156Z"
     },
     {
       "id": "yuanta",
@@ -796,8 +745,8 @@
         "hasMarginMention": false,
         "hasPromoRateMention": false
       },
-      "contentLength": 1479,
-      "scannedAt": "2026-10-22T03:45:03.450Z"
+      "contentLength": 197,
+      "scannedAt": "2026-10-22T03:48:07.400Z"
     },
     {
       "id": "shinhan",
@@ -831,7 +780,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 74534,
-      "scannedAt": "2026-10-22T03:45:05.307Z"
+      "scannedAt": "2026-10-22T03:48:11.534Z"
     },
     {
       "id": "agriseco",
@@ -865,7 +814,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 65195,
-      "scannedAt": "2026-10-22T03:45:05.728Z"
+      "scannedAt": "2026-10-22T03:48:14.742Z"
     },
     {
       "id": "hdbs",
@@ -875,35 +824,13 @@
       "isListed": false,
       "url": "https://hdbs.vn/bieu-phi",
       "officialSource": "https://hdbs.vn/bieu-phi",
-      "httpStatus": 200,
-      "isAccessible": true,
-      "unscannableReason": null,
-      "manualCheckInstruction": null,
-      "signals": {
-        "hasTradingFee": true,
-        "hasZeroFee": true,
-        "hasInterestRate": false,
-        "hasLoanInterest": false,
-        "hasMargin": true,
-        "hasCreditLimit": false,
-        "hasDebtBalance": false,
-        "matchedList": [
-          "Phí giao dịch",
-          "Zero-Fee / Miễn phí",
-          "Ký quỹ / Margin"
-        ],
-        "matchedKeys": [
-          "tradingFee",
-          "zeroFee",
-          "margin"
-        ],
-        "ratesFound": [],
-        "hasZeroFeeMention": true,
-        "hasMarginMention": true,
-        "hasPromoRateMention": false
-      },
-      "contentLength": 74303,
-      "scannedAt": "2026-10-22T03:45:12.469Z"
+      "httpStatus": "Timeout (8s)",
+      "isAccessible": false,
+      "unscannableReason": "Hết thời gian chờ phản hồi (Timeout > 8s). Máy chủ phản hồi chậm hoặc chặn crawler tự động.",
+      "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://hdbs.vn/bieu-phi",
+      "signals": null,
+      "contentLength": 0,
+      "scannedAt": "2026-10-22T03:48:22.742Z"
     },
     {
       "id": "dsc",
@@ -950,7 +877,7 @@
         "hasPromoRateMention": true
       },
       "contentLength": 160012,
-      "scannedAt": "2026-10-22T03:45:12.748Z"
+      "scannedAt": "2026-10-22T03:48:25.118Z"
     },
     {
       "id": "phs",
@@ -988,7 +915,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 320701,
-      "scannedAt": "2026-10-22T03:45:13.450Z"
+      "scannedAt": "2026-10-22T03:48:29.953Z"
     },
     {
       "id": "tvsi",
@@ -1022,7 +949,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 78112,
-      "scannedAt": "2026-10-22T03:45:14.221Z"
+      "scannedAt": "2026-10-22T03:48:32.657Z"
     },
     {
       "id": "evs",
@@ -1060,7 +987,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 79452,
-      "scannedAt": "2026-10-22T03:45:14.372Z"
+      "scannedAt": "2026-10-22T03:48:35.205Z"
     }
   ]
 }
