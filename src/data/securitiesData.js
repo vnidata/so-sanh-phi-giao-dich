@@ -84,6 +84,7 @@ export const SECURITIES_COMPANIES = [
       "Bảng giá BSC Pro"
     ],
     "lastUpdated": "2026-09-01",
+    "website": "https://www.bsc.com.vn",
     "sourceUrl": "https://www.bsc.com.vn/phi-giao-dich-qua-san/"
   },
   {
@@ -162,6 +163,7 @@ export const SECURITIES_COMPANIES = [
       "iCopy"
     ],
     "lastUpdated": "2026-09-01",
+    "website": "https://www.tcbs.com.vn",
     "sourceUrl": "https://www.tcbs.com.vn/bieu-phi"
   },
   {
@@ -240,6 +242,7 @@ export const SECURITIES_COMPANIES = [
       "Web Trading"
     ],
     "lastUpdated": "2026-09-01",
+    "website": "https://vps.com.vn",
     "sourceUrl": "https://vps.com.vn/bieu-phi"
   },
   {
@@ -317,6 +320,7 @@ export const SECURITIES_COMPANIES = [
       "ProTrading"
     ],
     "lastUpdated": "2026-09-01",
+    "website": "https://www.ssi.com.vn",
     "sourceUrl": "https://www.ssi.com.vn/bieu-phi"
   },
   {
@@ -394,6 +398,7 @@ export const SECURITIES_COMPANIES = [
       "DWealth"
     ],
     "lastUpdated": "2026-09-01",
+    "website": "https://www.vndirect.com.vn",
     "sourceUrl": "https://www.vndirect.com.vn/bieu-phi"
   },
   {
@@ -471,6 +476,7 @@ export const SECURITIES_COMPANIES = [
       "Bảng giá MAS"
     ],
     "lastUpdated": "2026-09-01",
+    "website": "https://masvn.com",
     "sourceUrl": "https://masvn.com/bieu-phi"
   },
   {
@@ -548,6 +554,7 @@ export const SECURITIES_COMPANIES = [
       "Ensa AI"
     ],
     "lastUpdated": "2026-09-01",
+    "website": "https://www.dnse.com.vn",
     "sourceUrl": "https://www.dnse.com.vn/bieu-phi"
   },
   {
@@ -623,6 +630,7 @@ export const SECURITIES_COMPANIES = [
       "VPBankS Web Trading"
     ],
     "lastUpdated": "2026-09-01",
+    "website": "https://www.vpbanks.com.vn",
     "sourceUrl": "https://www.vpbanks.com.vn/bieu-phi"
   },
   {
@@ -700,6 +708,7 @@ export const SECURITIES_COMPANIES = [
       "EzSearch"
     ],
     "lastUpdated": "2026-09-01",
+    "website": "https://www.fpts.com.vn",
     "sourceUrl": "https://www.fpts.com.vn/bieu-phi"
   },
   {
@@ -775,6 +784,7 @@ export const SECURITIES_COMPANIES = [
       "HSC iTrade"
     ],
     "lastUpdated": "2026-09-01",
+    "website": "https://www.hsc.com.vn",
     "sourceUrl": "https://www.hsc.com.vn/bieu-phi"
   },
   {
@@ -849,6 +859,7 @@ export const SECURITIES_COMPANIES = [
       "VCI Web Trading"
     ],
     "lastUpdated": "2026-09-01",
+    "website": "https://www.vietcap.com.vn",
     "sourceUrl": "https://www.vietcap.com.vn/bieu-phi"
   },
   {
@@ -924,6 +935,7 @@ export const SECURITIES_COMPANIES = [
       "Kafi Trade Web"
     ],
     "lastUpdated": "2026-09-01",
+    "website": "https://kafi.vn",
     "sourceUrl": "https://kafi.vn/bieu-phi"
   },
   {
@@ -1000,6 +1012,7 @@ export const SECURITIES_COMPANIES = [
       "Bảng giá MB"
     ],
     "lastUpdated": "2026-09-01",
+    "website": "https://mbs.com.vn",
     "sourceUrl": "https://mbs.com.vn/bieu-phi/"
   },
   {
@@ -1075,6 +1088,7 @@ export const SECURITIES_COMPANIES = [
       "SHS Web Trading"
     ],
     "lastUpdated": "2026-09-01",
+    "website": "https://www.shs.com.vn",
     "sourceUrl": "https://www.shs.com.vn/bieu-phi"
   },
   {
@@ -1149,6 +1163,7 @@ export const SECURITIES_COMPANIES = [
       "VIX Web Trading"
     ],
     "lastUpdated": "2026-09-01",
+    "website": "https://vixs.vn",
     "sourceUrl": "https://vixs.vn/bieu-phi"
   },
   {
@@ -1223,6 +1238,7 @@ export const SECURITIES_COMPANIES = [
       "KIS WTS Web"
     ],
     "lastUpdated": "2026-09-01",
+    "website": "https://kisvn.vn",
     "sourceUrl": "https://kisvn.vn/bieu-phi"
   },
   {
@@ -1297,6 +1313,7 @@ export const SECURITIES_COMPANIES = [
       "ACBS Trade Web"
     ],
     "lastUpdated": "2026-09-01",
+    "website": "https://acbs.com.vn",
     "sourceUrl": "https://acbs.com.vn/bieu-phi"
   },
   {
@@ -1371,6 +1388,7 @@ export const SECURITIES_COMPANIES = [
       "VCBS Web Trading"
     ],
     "lastUpdated": "2026-09-01",
+    "website": "https://vcbs.com.vn",
     "sourceUrl": "https://vcbs.com.vn/bieu-phi"
   },
   {
@@ -1445,6 +1463,7 @@ export const SECURITIES_COMPANIES = [
       "KB-Trade Web"
     ],
     "lastUpdated": "2026-09-01",
+    "website": "https://kbsec.com.vn",
     "sourceUrl": "https://kbsec.com.vn/bieu-phi"
   },
   {
@@ -1519,6 +1538,7 @@ export const SECURITIES_COMPANIES = [
       "CTS Web Trading"
     ],
     "lastUpdated": "2026-09-01",
+    "website": "https://cts.vn",
     "sourceUrl": "https://cts.vn/bieu-phi"
   },
   {
@@ -1593,6 +1613,7 @@ export const SECURITIES_COMPANIES = [
       "B-Web Trading"
     ],
     "lastUpdated": "2026-09-01",
+    "website": "https://bvsc.com.vn",
     "sourceUrl": "https://bvsc.com.vn/bieu-phi"
   },
   {
@@ -1667,6 +1688,7 @@ export const SECURITIES_COMPANIES = [
       "TPS Trade Web"
     ],
     "lastUpdated": "2026-09-01",
+    "website": "https://tpbs.com.vn",
     "sourceUrl": "https://tpbs.com.vn/bieu-phi"
   },
   {
@@ -1742,6 +1764,7 @@ export const SECURITIES_COMPANIES = [
       "YSRadar"
     ],
     "lastUpdated": "2026-09-01",
+    "website": "https://yuanta.com.vn",
     "sourceUrl": "https://yuanta.com.vn/bieu-phi"
   },
   {
@@ -1816,6 +1839,7 @@ export const SECURITIES_COMPANIES = [
       "Shinhan Web Trading"
     ],
     "lastUpdated": "2026-09-01",
+    "website": "https://shinhansec.com.vn",
     "sourceUrl": "https://shinhansec.com.vn/bieu-phi"
   },
   {
@@ -1890,6 +1914,7 @@ export const SECURITIES_COMPANIES = [
       "Agriseco Web Trading"
     ],
     "lastUpdated": "2026-09-01",
+    "website": "https://agriseco.com.vn",
     "sourceUrl": "https://agriseco.com.vn/bieu-phi"
   },
   {
@@ -1964,6 +1989,7 @@ export const SECURITIES_COMPANIES = [
       "HDBS Web Trading"
     ],
     "lastUpdated": "2026-09-01",
+    "website": "https://hdbs.vn",
     "sourceUrl": "https://hdbs.vn/bieu-phi"
   },
   {
@@ -2038,6 +2064,7 @@ export const SECURITIES_COMPANIES = [
       "DSC Web Trading"
     ],
     "lastUpdated": "2026-09-01",
+    "website": "https://dsc.com.vn",
     "sourceUrl": "https://dsc.com.vn/bieu-phi"
   },
   {
@@ -2112,6 +2139,7 @@ export const SECURITIES_COMPANIES = [
       "PHS Web Trading"
     ],
     "lastUpdated": "2026-09-01",
+    "website": "https://phs.vn",
     "sourceUrl": "https://phs.vn/bieu-phi"
   },
   {
@@ -2186,6 +2214,7 @@ export const SECURITIES_COMPANIES = [
       "i-Trade Web"
     ],
     "lastUpdated": "2026-09-01",
+    "website": "https://tvsi.com.vn",
     "sourceUrl": "https://tvsi.com.vn/bieu-phi"
   },
   {
@@ -2260,6 +2289,7 @@ export const SECURITIES_COMPANIES = [
       "EVS Web Trading"
     ],
     "lastUpdated": "2026-09-01",
+    "website": "https://eves.com.vn",
     "sourceUrl": "https://eves.com.vn/bieu-phi"
   }
 ];

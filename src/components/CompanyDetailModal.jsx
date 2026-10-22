@@ -12,7 +12,8 @@ import {
   TrendingDown,
   ShieldCheck, 
   Layers,
-  ExternalLink
+  ExternalLink,
+  Globe
 } from 'lucide-react';
 
 export default function CompanyDetailModal({ company, onClose }) {
@@ -20,6 +21,13 @@ export default function CompanyDetailModal({ company, onClose }) {
 
   const [activeTab, setActiveTab] = useState('fee_margin');
   const isBsc = company.id === 'bsc' || company.isRecommended;
+  const companyWebsiteUrl = company.website || (company.sourceUrl ? (() => {
+    try {
+      return new URL(company.sourceUrl).origin;
+    } catch (_) {
+      return company.sourceUrl;
+    }
+  })() : '#');
 
   const tabs = [
     { id: 'fee_margin', label: 'Biểu Phí & Margin', icon: DollarSign },
@@ -64,14 +72,15 @@ export default function CompanyDetailModal({ company, onClose }) {
                   </span>
                 )}
                 <a
-                  href="https://congbothongtin.ssc.gov.vn/faces/CompanyProfilesSearch"
+                  href={companyWebsiteUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 rounded-md bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 px-1.5 py-0.5 text-[10px] font-semibold text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700 transition-colors"
-                  title="Kiểm tra thông tin công ty niêm yết & công ty đại chúng tại Cổng thông tin UBCKNN (SSC)"
+                  className="inline-flex items-center gap-1 rounded-md bg-blue-50 hover:bg-blue-100 dark:bg-blue-950/60 dark:hover:bg-blue-900/60 px-2 py-0.5 text-[10px] font-bold text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800 transition-colors"
+                  title={`Truy cập trang web chính thức của ${company.shortName} (${companyWebsiteUrl})`}
                 >
-                  <span>Hồ sơ UBCKNN</span>
-                  <ExternalLink className="h-2.5 w-2.5" />
+                  <Globe className="h-2.5 w-2.5" />
+                  <span>Website công ty</span>
+                  <ExternalLink className="h-2 w-2 opacity-70" />
                 </a>
                 {isBsc && (
                   <span className="rounded bg-gradient-to-r from-amber-500 to-orange-500 px-2 py-0.5 text-[10px] font-black text-white uppercase tracking-wider shadow-xs">
@@ -408,21 +417,21 @@ export default function CompanyDetailModal({ company, onClose }) {
                 </div>
               </div>
 
-              {/* Official SSC Verification Portal Callout */}
-              <div className="rounded-2xl border border-slate-200 dark:border-slate-700 bg-slate-50/70 dark:bg-slate-800/80 p-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+              {/* Website Chính Thức & Cổng Tra Cứu Thông Tin */}
+              <div className="rounded-2xl border border-blue-200 dark:border-blue-900/60 bg-blue-50/50 dark:bg-blue-950/30 p-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
                 <div className="flex items-start sm:items-center gap-2.5 text-slate-700 dark:text-slate-200">
-                  <ShieldCheck className="h-4 w-4 text-blue-600 dark:text-blue-400 shrink-0 mt-0.5 sm:mt-0" />
+                  <Globe className="h-4 w-4 text-blue-600 dark:text-blue-400 shrink-0 mt-0.5 sm:mt-0" />
                   <span>
-                    Thông tin công ty niêm yết & hồ sơ công ty đại chúng được quản lý và công bố chính thức tại <strong>Cổng thông tin UBCKNN (SSC)</strong>.
+                    Truy cập cổng thông tin và dịch vụ trực tuyến chính thức của <strong>{company.name}</strong>.
                   </span>
                 </div>
                 <a
-                  href="https://congbothongtin.ssc.gov.vn/faces/CompanyProfilesSearch"
+                  href={companyWebsiteUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="shrink-0 inline-flex items-center gap-1.5 rounded-xl bg-white dark:bg-slate-800 px-3 py-1.5 text-xs font-bold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 border border-slate-200 dark:border-slate-700 shadow-xs transition-all"
+                  className="shrink-0 inline-flex items-center gap-1.5 rounded-xl bg-blue-600 hover:bg-blue-700 px-3.5 py-1.5 text-xs font-bold text-white shadow-xs transition-all"
                 >
-                  <span>Tra cứu hồ sơ SSC</span>
+                  <span>Mở Website {company.shortName}</span>
                   <ExternalLink className="h-3.5 w-3.5" />
                 </a>
               </div>
