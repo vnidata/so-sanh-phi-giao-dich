@@ -2,10 +2,10 @@
   "metadata": {
     "title": "Cơ Sở Dữ Liệu Hiệu Chỉnh Thủ Công 30 Công Ty Chứng Khoán Việt Nam",
     "version": "2.2.1",
-    "updatedAt": "2026-10-22T03:58:54.846Z",
+    "updatedAt": "2026-10-22T04:02:54.078Z",
     "totalBrokers": 30,
-    "accessibleBrokers": 30,
-    "unscannableBrokers": 0,
+    "accessibleBrokers": 28,
+    "unscannableBrokers": 2,
     "instruction": "Người dùng có thể chỉnh sửa các giá trị phí, lãi suất vay margin, mã niêm yết hoặc link nguồn trong file này, sau đó nạp trực tiếp qua nút Tải lên file JSON tại Modal Quản Lý Dữ Liệu."
   },
   "overrides": {
@@ -881,10 +881,10 @@
       "isListed": false,
       "listingStatus": "Chưa niêm yết",
       "sourceUrl": "https://vps.com.vn/bieu-phi",
-      "scanStatus": "ACCESSIBLE_HTTP_200",
-      "httpStatus": 200,
-      "unscannableReason": null,
-      "manualCheckInstruction": null,
+      "scanStatus": "UNSCANNABLE_MANUAL_AUDIT_REQUIRED",
+      "httpStatus": "Timeout (8s)",
+      "unscannableReason": "Hết thời gian chờ phản hồi (Timeout > 8s). Máy chủ phản hồi chậm hoặc chặn crawler tự động.",
+      "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://vps.com.vn/bieu-phi-dich-vu/",
       "lastVerified": "Tháng 09/2026",
       "verifiedBy": "Web Scanner & Kiểm định viên độc lập",
       "data": {
@@ -1947,10 +1947,10 @@
       "isListed": false,
       "listingStatus": "Chưa niêm yết",
       "sourceUrl": "https://tvsi.com.vn/bieu-phi",
-      "scanStatus": "ACCESSIBLE_HTTP_200",
-      "httpStatus": 200,
-      "unscannableReason": null,
-      "manualCheckInstruction": null,
+      "scanStatus": "UNSCANNABLE_MANUAL_AUDIT_REQUIRED",
+      "httpStatus": "Timeout (8s)",
+      "unscannableReason": "Hết thời gian chờ phản hồi (Timeout > 8s). Máy chủ phản hồi chậm hoặc chặn crawler tự động.",
+      "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://tvsi.com.vn/bieu-phi",
       "lastVerified": "Tháng 09/2026",
       "verifiedBy": "Web Scanner & Kiểm định viên độc lập",
       "data": {
