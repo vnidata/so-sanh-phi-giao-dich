@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest';
 import { SECURITIES_COMPANIES, FILTER_CATEGORIES } from '../src/data/securitiesData.js';
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
-import { getBrokerSourceLinks } from '../src/utils/sourceLinks.js';
+import { getBrokerSourceLinks, getPromotionArticleLink } from '../src/utils/sourceLinks.js';
 import CompanyDetailModal from '../src/components/CompanyDetailModal.jsx';
 
 describe('Securities Data Integrity & Anti-Hallucination Suite', () => {
@@ -438,6 +438,20 @@ describe('Securities Data Integrity & Anti-Hallucination Suite', () => {
         expect(typeof art.badge).toBe('string');
         expect(art.badge.trim().length).toBeGreaterThan(0);
       });
+    });
+  });
+
+  it('should verify getPromotionArticleLink returns authentic articles for company promotions', () => {
+    SECURITIES_COMPANIES.forEach(company => {
+      if (Array.isArray(company.promotions)) {
+        company.promotions.forEach(promo => {
+          const link = getPromotionArticleLink(promo, company);
+          if (link) {
+            expect(link.url).toMatch(/^https?:\/\//);
+            expect(link.title).toBeTruthy();
+          }
+        });
+      }
     });
   });
 });

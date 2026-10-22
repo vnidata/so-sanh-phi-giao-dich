@@ -20,7 +20,7 @@ import {
   Database,
   Newspaper
 } from 'lucide-react';
-import { getBrokerSourceLinks } from '../utils/sourceLinks';
+import { getBrokerSourceLinks, getPromotionArticleLink } from '../utils/sourceLinks';
 
 export default function CompanyDetailModal({ company, onClose }) {
   if (!company) return null;
@@ -480,6 +480,54 @@ export default function CompanyDetailModal({ company, onClose }) {
                       </div>
                     </div>
                   )}
+
+                  {/* Danh sách link bài viết tìm được từ crawler để truy cập nhanh kiểm tra */}
+                  {validPromoArticles.length > 0 && (
+                    <div className="pt-3 border-t border-slate-800 space-y-2">
+                      <div className="flex items-center justify-between text-[11px] text-slate-300">
+                        <span className="font-bold flex items-center gap-1.5 text-emerald-400">
+                          <Newspaper className="h-3.5 w-3.5" />
+                          <span>Các bài viết & link tài liệu tìm thấy từ phiên quét ({validPromoArticles.length}):</span>
+                        </span>
+                        <span className="text-[10px] text-slate-400">Truy cập nhanh kiểm tra</span>
+                      </div>
+                      <div className="grid grid-cols-1 gap-1.5">
+                        {validPromoArticles.map((art, idx) => (
+                          <div
+                            key={idx}
+                            className="flex items-center justify-between gap-2 p-2 rounded-lg bg-slate-800/90 hover:bg-slate-800 border border-slate-700/80 transition-colors"
+                          >
+                            <div className="flex items-center gap-2 min-w-0">
+                              <span
+                                className={`px-1.5 py-0.5 rounded text-[9px] font-black shrink-0 ${
+                                  art.type === 'fee'
+                                    ? 'bg-emerald-950 text-emerald-300 border border-emerald-800'
+                                    : art.type === 'margin'
+                                    ? 'bg-blue-950 text-blue-300 border border-blue-800'
+                                    : 'bg-amber-950 text-amber-300 border border-amber-800'
+                                }`}
+                              >
+                                {art.badge || (art.type === 'fee' ? 'Biểu Phí' : art.type === 'margin' ? 'Margin' : 'Ưu Đãi')}
+                              </span>
+                              <span className="text-[11px] text-slate-200 truncate font-medium" title={art.title}>
+                                {art.title}
+                              </span>
+                            </div>
+                            <a
+                              href={art.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-[10px] font-bold text-emerald-400 hover:text-emerald-300 bg-emerald-950/60 hover:bg-emerald-900/80 border border-emerald-800/60 shrink-0 transition-colors"
+                              title={`Mở nhanh bài viết: ${art.title}`}
+                            >
+                              <span>Mở kiểm tra</span>
+                              <ExternalLink className="h-2.5 w-2.5" />
+                            </a>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
 
@@ -648,16 +696,46 @@ export default function CompanyDetailModal({ company, onClose }) {
                   <Sparkles className="h-3.5 w-3.5 text-blue-600" />
                   <span>Chương Trình Ưu Đãi Đang Áp Dụng</span>
                 </h3>
-                <ul className="space-y-2">
-                  {(company.promotions || []).map((promo, idx) => (
-                    <li
-                      key={idx}
-                      className="flex items-start gap-2.5 rounded-xl bg-slate-50 dark:bg-slate-800/60 p-3 text-xs text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700/60"
-                    >
-                      <Sparkles className="h-4 w-4 text-blue-600 dark:text-blue-400 mt-0.5 shrink-0" />
-                      <span className="font-medium leading-relaxed">{promo}</span>
-                    </li>
-                  ))}
+                <ul className="space-y-2.5">
+                  {(company.promotions || []).map((promo, idx) => {
+                    const promoLink = getPromotionArticleLink(promo, company);
+                    return (
+                      <li
+                        key={idx}
+                        className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 rounded-xl bg-slate-50 dark:bg-slate-800/60 p-3.5 text-xs text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700/60 hover:border-blue-300 dark:hover:border-blue-700 transition-colors shadow-2xs"
+                      >
+                        <div className="flex items-start gap-2.5 min-w-0">
+                          <Sparkles className="h-4 w-4 text-blue-600 dark:text-blue-400 mt-0.5 shrink-0" />
+                          <div className="space-y-1 min-w-0">
+                            <span className="font-semibold leading-relaxed block text-slate-900 dark:text-white">
+                              {promo}
+                            </span>
+                            {promoLink && (
+                              <div className="flex items-center gap-1.5 text-[10px] text-slate-500 dark:text-slate-400">
+                                <span className="font-medium">Nguồn bài viết:</span>
+                                <span className="font-mono text-blue-600 dark:text-blue-400 truncate max-w-[280px] sm:max-w-md">
+                                  {promoLink.title}
+                                </span>
+                              </div>
+                            )}
+                          </div>
+                        </div>
+
+                        {promoLink && (
+                          <a
+                            href={promoLink.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1 rounded-lg bg-blue-50 hover:bg-blue-100 dark:bg-blue-950/70 dark:hover:bg-blue-900 text-blue-700 dark:text-blue-300 font-bold px-3 py-1.5 text-[11px] transition-colors shrink-0 self-start sm:self-auto border border-blue-200 dark:border-blue-800 shadow-2xs"
+                            title={`Xem bài viết chi tiết: ${promoLink.title}`}
+                          >
+                            <span>Xem bài viết</span>
+                            <ExternalLink className="h-3 w-3" />
+                          </a>
+                        )}
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
 

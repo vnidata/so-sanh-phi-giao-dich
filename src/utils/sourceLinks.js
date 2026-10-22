@@ -213,3 +213,71 @@ export const MARGIN_PRODUCT_SOURCE_MAP = new Proxy({}, {
     return broker ? broker.officialSource : '#';
   }
 });
+
+
+/**
+ * Tìm kiếm bài viết nguồn tương ứng cho từng chương trình ưu đãi của CTCK
+ * @param {string} promoText Nội dung chương trình ưu đãi
+ * @param {Object} company Đối tượng công ty chứng khoán
+ * @returns {Object|null} Thông tin bài viết gồm url, title, type, badge
+ */
+export function getPromotionArticleLink(promoText, company) {
+  if (!promoText || !company) return null;
+  const textLower = promoText.toLowerCase();
+  const articles = Array.isArray(company.promoArticles) ? company.promoArticles : [];
+
+  // Match 1: Margin / Lãi suất / Gói vay / T+
+  if (textLower.includes('margin') || textLower.includes('lãi suất') || textLower.includes('lãi vay') || textLower.includes('mr10') || textLower.includes('t+')) {
+    const marginArt = articles.find(a => a.type === 'margin' || a.title.toLowerCase().includes('margin') || a.title.toLowerCase().includes('lãi'));
+    if (marginArt?.url) {
+      return { url: marginArt.url, title: marginArt.title, type: 'margin', badge: marginArt.badge || 'Lãi Suất Margin' };
+    }
+    if (company.margin?.sourceUrl && company.margin.sourceUrl !== company.website) {
+      return { url: company.margin.sourceUrl, title: `Chính sách Margin ${company.shortName}`, type: 'margin', badge: 'Lãi Suất Margin' };
+    }
+  }
+
+  // Match 2: Phí giao dịch / Zero-Fee / Miễn phí / Inactive
+  if (textLower.includes('phí') || textLower.includes('0.08%') || textLower.includes('zero-fee') || textLower.includes('miễn phí') || textLower.includes('inactive') || textLower.includes('1 tỷ') || textLower.includes('giao dịch')) {
+    const feeArt = articles.find(a => a.type === 'fee' || a.title.toLowerCase().includes('phí') || a.title.toLowerCase().includes('miễn'));
+    if (feeArt?.url) {
+      return { url: feeArt.url, title: feeArt.title, type: 'fee', badge: feeArt.badge || 'Ưu Đãi Phí' };
+    }
+    if (company.welcomePromo?.sourceUrl && company.welcomePromo.sourceUrl !== company.website) {
+      return { url: company.welcomePromo.sourceUrl, title: `Ưu đãi biểu phí ${company.shortName}`, type: 'fee', badge: 'Ưu Đãi Phí' };
+    }
+    if (company.sourceUrl) {
+      return { url: company.sourceUrl, title: `Biểu phí ${company.shortName}`, type: 'fee', badge: 'Biểu Phí Chuẩn' };
+    }
+  }
+
+  // Match 3: Mở tài khoản / eKYC / Quà tặng / Quay số / Thưởng
+  if (textLower.includes('mở') || textLower.includes('tài khoản') || textLower.includes('ekyc') || textLower.includes('quà') || textLower.includes('thưởng') || textLower.includes('quay số')) {
+    const promoArt = articles.find(a => a.type === 'promo' || a.title.toLowerCase().includes('ưu đãi') || a.title.toLowerCase().includes('mở'));
+    if (promoArt?.url) {
+      return { url: promoArt.url, title: promoArt.title, type: 'promo', badge: promoArt.badge || 'Ưu Đãi Mở Mới' };
+    }
+    if (company.welcomePromo?.sourceUrl) {
+      return { url: company.welcomePromo.sourceUrl, title: `Thể lệ ưu đãi mở mới ${company.shortName}`, type: 'promo', badge: 'Ưu Đãi Mở Mới' };
+    }
+  }
+
+  // Match 4: Đối sánh từ khóa cụ thể từ tiêu đề các bài viết
+  for (const art of articles) {
+    const words = art.title.toLowerCase().split(/[\s,–-]+/).filter(w => w.length >= 4);
+    if (words.some(w => textLower.includes(w))) {
+      return { url: art.url, title: art.title, type: art.type || 'promo', badge: art.badge || 'Bài Viết Gốc' };
+    }
+  }
+
+  // Match 5: Fallback ưu tiên bài viết ưu đãi của công ty nếu có
+  if (articles.length > 0 && articles[0]?.url) {
+    return { url: articles[0].url, title: articles[0].title, type: articles[0].type || 'promo', badge: articles[0].badge || 'Chương Trình Ưu Đãi' };
+  }
+
+  if (company.welcomePromo?.sourceUrl && company.welcomePromo.sourceUrl !== company.website) {
+    return { url: company.welcomePromo.sourceUrl, title: `Chương trình ưu đãi ${company.shortName}`, type: 'promo', badge: 'Chương Trình Ưu Đãi' };
+  }
+
+  return null;
+}
