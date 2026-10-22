@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build && node -e \"import('fs').then(fs => fs.copyFileSync('dist/index.html', 'dist/404.html'))\"",
     "preview": "vite preview",
-    "test": "vitest run"
+    "test": "vitest run",
+    "scan": "node scripts/scan-securities.mjs",
+    "update": "node scripts/scan-securities.mjs && vitest run && npm run build"
   },
   "dependencies": {
     "lucide-react": "^0.454.0",

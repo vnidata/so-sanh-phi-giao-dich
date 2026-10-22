@@ -1,12 +1,15 @@
-name: Deploy to GitHub Pages
+name: Deploy & Scheduled Fee Sync to GitHub Pages
 
 on:
   push:
     branches: ['main', 'master']
+  schedule:
+    # Tự động quét cập nhật biểu phí định kỳ vào lúc 01:00 UTC (08:00 sáng Thứ Hai VN) hàng tuần
+    - cron: '0 1 * * 1'
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -20,6 +23,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -30,8 +35,25 @@ jobs:
       - name: Install dependencies
         run: npm ci || npm install
 
+      - name: Run automated broker scanner & audit update
+        run: npm run scan
+
       - name: Run automated test suite
         run: npm test
+
+      - name: Commit and push updated audit reports if changed
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add scan-report.json securities-manual-audit.json src/data/manualOverrides.json
+          if ! git diff --staged --quiet; then
+            git commit -m "chore(auto-update): tự động cập nhật dữ liệu quét biểu phí định kỳ [skip ci]"
+            git push
+          else
+            echo "No data changes detected."
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build production bundle
         run: npm run build

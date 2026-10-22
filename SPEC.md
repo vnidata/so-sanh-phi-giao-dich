@@ -20,8 +20,8 @@ VietSec Fee Comparator là nền tảng số độc lập, minh bạch và toàn
 
 ### 1.2. Danh sách 30 CTCK trong hệ thống
 1. BSC (Chứng khoán BIDV) - Mã CK: BSI (HOSE)
-2. TCBS (Chứng khoán Techcombank) - Mã CK: TCX (HOSE)
-3. VPS (Chứng khoán VPS) - Mã CK: VCK (HOSE)
+2. TCBS (Chứng khoán Techcombank) - Chưa niêm yết (Thuộc Techcombank - TCB)
+3. VPS (Chứng khoán VPS) - Chưa niêm yết
 4. SSI (Chứng khoán SSI) - Mã CK: SSI (HOSE)
 5. VNDIRECT (Chứng khoán VNDIRECT) - Mã CK: VND (HOSE)
 6. Mirae Asset (Chứng khoán Mirae Asset)

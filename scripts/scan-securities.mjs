@@ -32,8 +32,8 @@ export const TARGET_BROKERS = [
     id: 'tcbs',
     name: 'Công ty Cổ phần Chứng khoán Kỹ Thương',
     shortName: 'TCBS',
-    stockCode: 'TCX',
-    isListed: true,
+    stockCode: null,
+    isListed: false,
     url: 'https://www.tcbs.com.vn/bieu-phi',
     fallbackUrl: 'https://www.tcbs.com.vn',
     officialSource: 'https://www.tcbs.com.vn/bieu-phi',
@@ -43,8 +43,8 @@ export const TARGET_BROKERS = [
     id: 'vps',
     name: 'Công ty Cổ phần Chứng khoán VPS',
     shortName: 'VPS',
-    stockCode: 'VCK',
-    isListed: true,
+    stockCode: null,
+    isListed: false,
     url: 'https://vps.com.vn/bieu-phi-dich-vu/',
     fallbackUrl: 'https://vps.com.vn',
     officialSource: 'https://vps.com.vn/bieu-phi-dich-vu/',
@@ -158,7 +158,7 @@ export const TARGET_BROKERS = [
     url: 'https://mbs.com.vn/bieu-phi/',
     fallbackUrl: 'https://mbs.com.vn',
     officialSource: 'https://mbs.com.vn/bieu-phi/',
-    knownIssue: 'Tường lửa máy chủ chặn kết nối tự động (HTTP 403). Cần đối chiếu thủ công qua liên kết chính thức.'
+    knownIssue: null
   },
   {
     id: 'shs',
@@ -222,8 +222,8 @@ export const TARGET_BROKERS = [
     stockCode: null,
     isListed: false,
     url: 'https://kbsec.com.vn/bieu-phi',
-    fallbackUrl: 'https://kbsec.com.vn',
-    officialSource: 'https://kbsec.com.vn/bieu-phi',
+    fallbackUrl: 'https://www.kbsec.com.vn/vi/bieu-phi.html',
+    officialSource: 'https://www.kbsec.com.vn/vi/bieu-phi.html',
     knownIssue: null
   },
   {
@@ -318,8 +318,8 @@ export const TARGET_BROKERS = [
     id: 'phs',
     name: 'Công ty Cổ phần Chứng khoán Phú Hưng',
     shortName: 'PHS',
-    stockCode: null,
-    isListed: false,
+    stockCode: 'PHS',
+    isListed: true,
     url: 'https://phs.vn/bieu-phi',
     fallbackUrl: 'https://phs.vn',
     officialSource: 'https://phs.vn/bieu-phi',
@@ -588,6 +588,12 @@ async function runScanner() {
   const rootAuditPath = path.join(__dirname, '..', 'securities-manual-audit.json');
   fs.writeFileSync(rootAuditPath, JSON.stringify(manualOverridesData, null, 2), 'utf-8');
   console.log(`📄 Bản sao lưu root: ${rootAuditPath}\n`);
+  return { reportData, manualOverridesData };
 }
 
-runScanner().catch(console.error);
+export { runScanner };
+
+// Chỉ tự động chạy khi file được thực thi trực tiếp qua dòng lệnh
+if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1])) {
+  runScanner().catch(console.error);
+}

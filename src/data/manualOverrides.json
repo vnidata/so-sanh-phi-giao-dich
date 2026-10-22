@@ -2,10 +2,10 @@
   "metadata": {
     "title": "Cơ Sở Dữ Liệu Hiệu Chỉnh Thủ Công 30 Công Ty Chứng Khoán Việt Nam",
     "version": "2.2.1",
-    "updatedAt": "2026-09-17T01:49:07.029Z",
+    "updatedAt": "2026-10-22T03:17:26.052Z",
     "totalBrokers": 30,
-    "accessibleBrokers": 26,
-    "unscannableBrokers": 4,
+    "accessibleBrokers": 27,
+    "unscannableBrokers": 3,
     "instruction": "Người dùng có thể chỉnh sửa các giá trị phí, lãi suất vay margin, mã niêm yết hoặc link nguồn trong file này, sau đó nạp trực tiếp qua nút Tải lên file JSON tại Modal Quản Lý Dữ Liệu."
   },
   "overrides": {
@@ -53,10 +53,10 @@
         "notes": "Lãi suất vay margin phổ thông cho khách hàng hiện hữu là 14.0%/năm (không yêu cầu điều kiện dư nợ tối thiểu). Các mức 7.99% - 10.5% chỉ áp dụng theo danh mục deal hạn chế hoặc có điều kiện dư nợ lớn/kỳ hạn ngắn hạn."
       },
       "listingInfo": {
-        "stockCode": "TCX",
-        "listingExchange": "HOSE",
-        "isListed": true,
-        "listingStatus": "Niêm yết HOSE"
+        "stockCode": null,
+        "listingExchange": null,
+        "isListed": false,
+        "listingStatus": "Chưa niêm yết (Thuộc Techcombank)"
       },
       "sourceUrl": "https://www.tcbs.com.vn/bieu-phi",
       "accountOpeningUrl": "https://tcinvest.tcbs.com.vn/"
@@ -79,10 +79,10 @@
         "notes": "LƯU Ý: Lãi suất thấp 8.6% - 9.8% chỉ áp dụng cho giao dịch lướt sóng ngắn hạn (gói T+5, T+10 hoặc miễn lãi T+2). Lãi suất vay tiêu chuẩn 90 ngày lên tới 13.5% - 14.0%/năm (thuộc nhóm cao nhất thị trường)."
       },
       "listingInfo": {
-        "stockCode": "VCK",
-        "listingExchange": "HOSE",
-        "isListed": true,
-        "listingStatus": "Niêm yết HOSE"
+        "stockCode": null,
+        "listingExchange": null,
+        "isListed": false,
+        "listingStatus": "Chưa niêm yết"
       },
       "sourceUrl": "https://vps.com.vn/bieu-phi",
       "accountOpeningUrl": "https://openaccount.vps.com.vn/"
@@ -836,9 +836,9 @@
       "id": "tcbs",
       "shortName": "TCBS",
       "name": "Công ty Cổ phần Chứng khoán Kỹ Thương",
-      "stockCode": "TCX",
-      "isListed": true,
-      "listingStatus": "Niêm yết HOSE",
+      "stockCode": null,
+      "isListed": false,
+      "listingStatus": "Chưa niêm yết (Thuộc Techcombank)",
       "sourceUrl": "https://www.tcbs.com.vn/bieu-phi",
       "scanStatus": "UNSCANNABLE_MANUAL_AUDIT_REQUIRED",
       "httpStatus": 403,
@@ -864,10 +864,10 @@
           "notes": "Lãi suất vay margin phổ thông cho khách hàng hiện hữu là 14.0%/năm (không yêu cầu điều kiện dư nợ tối thiểu). Các mức 7.99% - 10.5% chỉ áp dụng theo danh mục deal hạn chế hoặc có điều kiện dư nợ lớn/kỳ hạn ngắn hạn."
         },
         "listingInfo": {
-          "stockCode": "TCX",
-          "listingExchange": "HOSE",
-          "isListed": true,
-          "listingStatus": "Niêm yết HOSE"
+          "stockCode": null,
+          "listingExchange": null,
+          "isListed": false,
+          "listingStatus": "Chưa niêm yết (Thuộc Techcombank)"
         },
         "sourceUrl": "https://www.tcbs.com.vn/bieu-phi",
         "accountOpeningUrl": "https://tcinvest.tcbs.com.vn/"
@@ -877,9 +877,9 @@
       "id": "vps",
       "shortName": "VPS",
       "name": "Công ty Cổ phần Chứng khoán VPS",
-      "stockCode": "VCK",
-      "isListed": true,
-      "listingStatus": "Niêm yết HOSE",
+      "stockCode": null,
+      "isListed": false,
+      "listingStatus": "Chưa niêm yết",
       "sourceUrl": "https://vps.com.vn/bieu-phi",
       "scanStatus": "ACCESSIBLE_HTTP_200",
       "httpStatus": 200,
@@ -905,10 +905,10 @@
           "notes": "LƯU Ý: Lãi suất thấp 8.6% - 9.8% chỉ áp dụng cho giao dịch lướt sóng ngắn hạn (gói T+5, T+10 hoặc miễn lãi T+2). Lãi suất vay tiêu chuẩn 90 ngày lên tới 13.5% - 14.0%/năm (thuộc nhóm cao nhất thị trường)."
         },
         "listingInfo": {
-          "stockCode": "VCK",
-          "listingExchange": "HOSE",
-          "isListed": true,
-          "listingStatus": "Niêm yết HOSE"
+          "stockCode": null,
+          "listingExchange": null,
+          "isListed": false,
+          "listingStatus": "Chưa niêm yết"
         },
         "sourceUrl": "https://vps.com.vn/bieu-phi",
         "accountOpeningUrl": "https://openaccount.vps.com.vn/"
@@ -1291,10 +1291,10 @@
       "isListed": true,
       "listingStatus": "Niêm yết HNX",
       "sourceUrl": "https://mbs.com.vn/bieu-phi/",
-      "scanStatus": "UNSCANNABLE_MANUAL_AUDIT_REQUIRED",
-      "httpStatus": 403,
-      "unscannableReason": "Tường lửa máy chủ chặn kết nối tự động (HTTP 403). Cần đối chiếu thủ công qua liên kết chính thức.",
-      "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://mbs.com.vn/bieu-phi/",
+      "scanStatus": "ACCESSIBLE_HTTP_200",
+      "httpStatus": 200,
+      "unscannableReason": null,
+      "manualCheckInstruction": null,
       "lastVerified": "Tháng 09/2026",
       "verifiedBy": "Web Scanner & Kiểm định viên độc lập",
       "data": {

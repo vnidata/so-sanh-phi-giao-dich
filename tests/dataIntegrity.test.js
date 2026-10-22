@@ -319,15 +319,16 @@ describe('Securities Data Integrity & Anti-Hallucination Suite', () => {
     expect(bsc.margin.standardRate90d).toBe(10.5);
 
     const tcbs = SECURITIES_COMPANIES.find(c => c.id === 'tcbs');
-    expect(tcbs.stockCode).toBe('TCX');
-    expect(tcbs.listingExchange).toBe('HOSE');
-    expect(tcbs.isListed).toBe(true);
+    expect(tcbs.stockCode).toBeNull();
+    expect(tcbs.listingExchange).toBeNull();
+    expect(tcbs.isListed).toBe(false);
+    expect(tcbs.parentStockCode).toBe('TCB');
     expect(tcbs.margin.standardRate90d).toBe(14.0);
 
     const vps = SECURITIES_COMPANIES.find(c => c.id === 'vps');
-    expect(vps.stockCode).toBe('VCK');
-    expect(vps.listingExchange).toBe('HOSE');
-    expect(vps.isListed).toBe(true);
+    expect(vps.stockCode).toBeNull();
+    expect(vps.listingExchange).toBeNull();
+    expect(vps.isListed).toBe(false);
   });
 
   it('should validate scan-report.json covers all 30 brokers with source links and status', async () => {

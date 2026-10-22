@@ -1,9 +1,9 @@
 {
   "summary": {
     "total": 30,
-    "accessible": 26,
-    "unscannable": 4,
-    "timestamp": "2026-09-17T01:49:07.018Z",
+    "accessible": 27,
+    "unscannable": 3,
+    "timestamp": "2026-10-22T03:17:26.036Z",
     "note": "Dữ liệu được quét tự động từ các trang web biểu phí công khai của 30 CTCK."
   },
   "brokers": [
@@ -25,14 +25,14 @@
         "hasPromoRateMention": true
       },
       "contentLength": 151634,
-      "scannedAt": "2026-09-17T01:48:44.765Z"
+      "scannedAt": "2026-10-22T03:16:56.938Z"
     },
     {
       "id": "tcbs",
       "name": "Công ty Cổ phần Chứng khoán Kỹ Thương",
       "shortName": "TCBS",
-      "stockCode": "TCX",
-      "isListed": true,
+      "stockCode": null,
+      "isListed": false,
       "url": "https://www.tcbs.com.vn/bieu-phi",
       "officialSource": "https://www.tcbs.com.vn/bieu-phi",
       "httpStatus": 403,
@@ -41,14 +41,14 @@
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://www.tcbs.com.vn/bieu-phi",
       "signals": null,
       "contentLength": 0,
-      "scannedAt": "2026-09-17T01:48:44.949Z"
+      "scannedAt": "2026-10-22T03:16:57.133Z"
     },
     {
       "id": "vps",
       "name": "Công ty Cổ phần Chứng khoán VPS",
       "shortName": "VPS",
-      "stockCode": "VCK",
-      "isListed": true,
+      "stockCode": null,
+      "isListed": false,
       "url": "https://vps.com.vn",
       "officialSource": "https://vps.com.vn/bieu-phi-dich-vu/",
       "httpStatus": 200,
@@ -58,10 +58,10 @@
       "signals": {
         "hasZeroFeeMention": true,
         "hasMarginMention": true,
-        "hasPromoRateMention": false
+        "hasPromoRateMention": true
       },
-      "contentLength": 58644,
-      "scannedAt": "2026-09-17T01:48:45.121Z"
+      "contentLength": 59052,
+      "scannedAt": "2026-10-22T03:16:57.465Z"
     },
     {
       "id": "ssi",
@@ -80,8 +80,8 @@
         "hasMarginMention": true,
         "hasPromoRateMention": true
       },
-      "contentLength": 89504,
-      "scannedAt": "2026-09-17T01:48:46.565Z"
+      "contentLength": 89412,
+      "scannedAt": "2026-10-22T03:16:58.906Z"
     },
     {
       "id": "vndirect",
@@ -97,7 +97,7 @@
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://www.vndirect.com.vn/bieu-phi-dich-vu-chung-khoan/",
       "signals": null,
       "contentLength": 0,
-      "scannedAt": "2026-09-17T01:48:46.769Z"
+      "scannedAt": "2026-10-22T03:16:59.179Z"
     },
     {
       "id": "mirae-asset",
@@ -116,8 +116,8 @@
         "hasMarginMention": true,
         "hasPromoRateMention": true
       },
-      "contentLength": 145400,
-      "scannedAt": "2026-09-17T01:48:47.403Z"
+      "contentLength": 141271,
+      "scannedAt": "2026-10-22T03:16:59.560Z"
     },
     {
       "id": "dnse",
@@ -136,8 +136,8 @@
         "hasMarginMention": true,
         "hasPromoRateMention": true
       },
-      "contentLength": 517969,
-      "scannedAt": "2026-09-17T01:48:47.658Z"
+      "contentLength": 547677,
+      "scannedAt": "2026-10-22T03:16:59.808Z"
     },
     {
       "id": "vpbanks",
@@ -156,8 +156,8 @@
         "hasMarginMention": true,
         "hasPromoRateMention": false
       },
-      "contentLength": 141976,
-      "scannedAt": "2026-09-17T01:48:48.626Z"
+      "contentLength": 146749,
+      "scannedAt": "2026-10-22T03:17:00.263Z"
     },
     {
       "id": "fpts",
@@ -176,8 +176,8 @@
         "hasMarginMention": true,
         "hasPromoRateMention": false
       },
-      "contentLength": 193078,
-      "scannedAt": "2026-09-17T01:48:48.955Z"
+      "contentLength": 193049,
+      "scannedAt": "2026-10-22T03:17:00.546Z"
     },
     {
       "id": "hsc",
@@ -196,8 +196,8 @@
         "hasMarginMention": true,
         "hasPromoRateMention": true
       },
-      "contentLength": 108488,
-      "scannedAt": "2026-09-17T01:48:49.387Z"
+      "contentLength": 108486,
+      "scannedAt": "2026-10-22T03:17:01.426Z"
     },
     {
       "id": "vietcap",
@@ -216,8 +216,8 @@
         "hasMarginMention": true,
         "hasPromoRateMention": false
       },
-      "contentLength": 63521,
-      "scannedAt": "2026-09-17T01:48:49.622Z"
+      "contentLength": 62637,
+      "scannedAt": "2026-10-22T03:17:01.639Z"
     },
     {
       "id": "kafi",
@@ -236,8 +236,8 @@
         "hasMarginMention": true,
         "hasPromoRateMention": false
       },
-      "contentLength": 87212,
-      "scannedAt": "2026-09-17T01:48:50.451Z"
+      "contentLength": 79246,
+      "scannedAt": "2026-10-22T03:17:02.528Z"
     },
     {
       "id": "mbs",
@@ -247,13 +247,17 @@
       "isListed": true,
       "url": "https://mbs.com.vn/bieu-phi/",
       "officialSource": "https://mbs.com.vn/bieu-phi/",
-      "httpStatus": 403,
-      "isAccessible": false,
-      "unscannableReason": "Tường lửa máy chủ chặn kết nối tự động (HTTP 403). Cần đối chiếu thủ công qua liên kết chính thức.",
-      "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://mbs.com.vn/bieu-phi/",
-      "signals": null,
-      "contentLength": 0,
-      "scannedAt": "2026-09-17T01:48:51.046Z"
+      "httpStatus": 200,
+      "isAccessible": true,
+      "unscannableReason": null,
+      "manualCheckInstruction": null,
+      "signals": {
+        "hasZeroFeeMention": true,
+        "hasMarginMention": true,
+        "hasPromoRateMention": true
+      },
+      "contentLength": 132575,
+      "scannedAt": "2026-10-22T03:17:03.286Z"
     },
     {
       "id": "shs",
@@ -273,7 +277,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 0,
-      "scannedAt": "2026-09-17T01:48:51.276Z"
+      "scannedAt": "2026-10-22T03:17:03.701Z"
     },
     {
       "id": "vix",
@@ -289,7 +293,7 @@
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://vixs.vn/bieu-phi",
       "signals": null,
       "contentLength": 0,
-      "scannedAt": "2026-09-17T01:48:51.333Z"
+      "scannedAt": "2026-10-22T03:17:03.758Z"
     },
     {
       "id": "kis",
@@ -308,8 +312,8 @@
         "hasMarginMention": true,
         "hasPromoRateMention": true
       },
-      "contentLength": 970593,
-      "scannedAt": "2026-09-17T01:48:51.979Z"
+      "contentLength": 1061877,
+      "scannedAt": "2026-10-22T03:17:05.793Z"
     },
     {
       "id": "acbs",
@@ -329,7 +333,7 @@
         "hasPromoRateMention": true
       },
       "contentLength": 159693,
-      "scannedAt": "2026-09-17T01:48:53.471Z"
+      "scannedAt": "2026-10-22T03:17:07.547Z"
     },
     {
       "id": "vcbs",
@@ -348,8 +352,8 @@
         "hasMarginMention": false,
         "hasPromoRateMention": false
       },
-      "contentLength": 11982,
-      "scannedAt": "2026-09-17T01:48:53.692Z"
+      "contentLength": 11978,
+      "scannedAt": "2026-10-22T03:17:07.781Z"
     },
     {
       "id": "kbsv",
@@ -358,7 +362,7 @@
       "stockCode": null,
       "isListed": false,
       "url": "https://kbsec.com.vn/bieu-phi",
-      "officialSource": "https://kbsec.com.vn/bieu-phi",
+      "officialSource": "https://www.kbsec.com.vn/vi/bieu-phi.html",
       "httpStatus": 200,
       "isAccessible": true,
       "unscannableReason": null,
@@ -369,7 +373,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 552,
-      "scannedAt": "2026-09-17T01:48:53.858Z"
+      "scannedAt": "2026-10-22T03:17:07.924Z"
     },
     {
       "id": "cts",
@@ -388,8 +392,8 @@
         "hasMarginMention": true,
         "hasPromoRateMention": false
       },
-      "contentLength": 75749,
-      "scannedAt": "2026-09-17T01:48:54.216Z"
+      "contentLength": 75863,
+      "scannedAt": "2026-10-22T03:17:08.312Z"
     },
     {
       "id": "bvsc",
@@ -408,8 +412,8 @@
         "hasMarginMention": true,
         "hasPromoRateMention": false
       },
-      "contentLength": 122844,
-      "scannedAt": "2026-09-17T01:48:55.110Z"
+      "contentLength": 123128,
+      "scannedAt": "2026-10-22T03:17:13.728Z"
     },
     {
       "id": "tps",
@@ -428,8 +432,8 @@
         "hasMarginMention": true,
         "hasPromoRateMention": false
       },
-      "contentLength": 71133,
-      "scannedAt": "2026-09-17T01:48:56.101Z"
+      "contentLength": 72142,
+      "scannedAt": "2026-10-22T03:17:14.897Z"
     },
     {
       "id": "yuanta",
@@ -449,7 +453,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 1479,
-      "scannedAt": "2026-09-17T01:48:56.827Z"
+      "scannedAt": "2026-10-22T03:17:15.601Z"
     },
     {
       "id": "shinhan",
@@ -468,8 +472,8 @@
         "hasMarginMention": false,
         "hasPromoRateMention": false
       },
-      "contentLength": 74533,
-      "scannedAt": "2026-09-17T01:48:58.596Z"
+      "contentLength": 74534,
+      "scannedAt": "2026-10-22T03:17:17.227Z"
     },
     {
       "id": "agriseco",
@@ -489,7 +493,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 65195,
-      "scannedAt": "2026-09-17T01:48:58.929Z"
+      "scannedAt": "2026-10-22T03:17:17.749Z"
     },
     {
       "id": "hdbs",
@@ -508,8 +512,8 @@
         "hasMarginMention": true,
         "hasPromoRateMention": false
       },
-      "contentLength": 74954,
-      "scannedAt": "2026-09-17T01:49:05.138Z"
+      "contentLength": 74292,
+      "scannedAt": "2026-10-22T03:17:24.560Z"
     },
     {
       "id": "dsc",
@@ -528,15 +532,15 @@
         "hasMarginMention": true,
         "hasPromoRateMention": true
       },
-      "contentLength": 160020,
-      "scannedAt": "2026-09-17T01:49:05.284Z"
+      "contentLength": 160012,
+      "scannedAt": "2026-10-22T03:17:24.768Z"
     },
     {
       "id": "phs",
       "name": "Công ty Cổ phần Chứng khoán Phú Hưng",
       "shortName": "PHS",
-      "stockCode": null,
-      "isListed": false,
+      "stockCode": "PHS",
+      "isListed": true,
       "url": "https://phs.vn",
       "officialSource": "https://phs.vn/bieu-phi",
       "httpStatus": 200,
@@ -548,8 +552,8 @@
         "hasMarginMention": true,
         "hasPromoRateMention": false
       },
-      "contentLength": 325438,
-      "scannedAt": "2026-09-17T01:49:05.730Z"
+      "contentLength": 320701,
+      "scannedAt": "2026-10-22T03:17:25.307Z"
     },
     {
       "id": "tvsi",
@@ -568,8 +572,8 @@
         "hasMarginMention": true,
         "hasPromoRateMention": false
       },
-      "contentLength": 76828,
-      "scannedAt": "2026-09-17T01:49:06.331Z"
+      "contentLength": 78112,
+      "scannedAt": "2026-10-22T03:17:25.913Z"
     },
     {
       "id": "evs",
@@ -588,8 +592,8 @@
         "hasMarginMention": true,
         "hasPromoRateMention": false
       },
-      "contentLength": 79853,
-      "scannedAt": "2026-09-17T01:49:07.018Z"
+      "contentLength": 79452,
+      "scannedAt": "2026-10-22T03:17:26.036Z"
     }
   ]
 }
