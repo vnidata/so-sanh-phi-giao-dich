@@ -399,7 +399,7 @@ export const SECURITIES_COMPANIES = [
       },
       {
         "title": "Biểu phí giao dịch và dịch vụ khách hàng cá nhân SSI",
-        "url": "https://www.ssi.com.vn/khach-hang-ca-nhan/bieu-phi-dich-vu",
+        "url": "https://www.ssi.com.vn/khach-hang-ca-nhan/bieu-phi/bieu-gia-dich-vu-giao-dich-chung-khoan",
         "type": "fee",
         "badge": "Biểu Phí Chuẩn"
       }
@@ -891,7 +891,7 @@ export const SECURITIES_COMPANIES = [
       },
       {
         "title": "Biểu phí dịch vụ khách hàng FPTS",
-        "url": "https://www.fpts.com.vn/ho-tro-khach-hang/bieu-phi-dich-vu/",
+        "url": "https://eztrade.fpts.com.vn/Shovel",
         "type": "fee",
         "badge": "Biểu Phí Chuẩn"
       }
@@ -2024,7 +2024,7 @@ export const SECURITIES_COMPANIES = [
       },
       {
         "title": "Biểu phí dịch vụ giao dịch chứng khoán BVSC",
-        "url": "https://www.bvsc.com.vn/bieu-phi",
+        "url": "https://bvsc.com.vn/bang-dich-vu/bieu-lai-phi-giao-dich/",
         "type": "fee",
         "badge": "Biểu Phí Chuẩn"
       }

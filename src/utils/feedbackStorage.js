@@ -226,7 +226,7 @@ export function seedSampleFeedbacks() {
       category: 'trading_fee',
       categoryLabel: 'Phí Giao Dịch',
       content: 'BSC vừa cập nhật chương trình ưu đãi phí giao dịch tiểu khoản phái sinh về 0.05% trong 3 tháng đầu.',
-      sourceUrl: 'https://bsc.com.vn/bieu-phi-moi',
+      sourceUrl: 'https://www.bsc.com.vn/phi-giao-dich-qua-san/',
       senderContact: 'nha-dau-tu-hn@gmail.com',
       status: 'new',
       adminNotes: ''
