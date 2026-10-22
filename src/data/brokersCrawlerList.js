@@ -21,9 +21,9 @@ export const TARGET_BROKERS = [
     shortName: 'TCBS',
     stockCode: null,
     isListed: false,
-    url: 'https://help.tcbs.com.vn/',
+    url: 'https://r.jina.ai/https://www.tcbs.com.vn',
     fallbackUrl: 'https://r.jina.ai/https://www.tcbs.com.vn',
-    officialSource: 'https://help.tcbs.com.vn/',
+    officialSource: 'https://www.tcbs.com.vn',
     knownIssue: 'Nền tảng SPA JavaScript & Cloudflare Bot Protection (Tự động kích hoạt Anti-WAF Gateway)'
   },
   {
@@ -43,9 +43,9 @@ export const TARGET_BROKERS = [
     shortName: 'SSI',
     stockCode: 'SSI',
     isListed: true,
-    url: 'https://www.ssi.com.vn',
+    url: 'https://r.jina.ai/https://www.ssi.com.vn/khach-hang-ca-nhan/bieu-phi',
     fallbackUrl: 'https://www.ssi.com.vn/khach-hang-ca-nhan/bieu-phi',
-    officialSource: 'https://www.ssi.com.vn/khach-hang-ca-nhan/bieu-phi',
+    officialSource: 'https://www.ssi.com.vn',
     knownIssue: null
   },
   {
@@ -56,7 +56,7 @@ export const TARGET_BROKERS = [
     isListed: true,
     url: 'https://banggia.vndirect.com.vn',
     fallbackUrl: 'https://r.jina.ai/https://banggia.vndirect.com.vn',
-    officialSource: 'https://www.vndirect.com.vn/bieu-phi-dich-vu-chung-khoan/',
+    officialSource: 'https://banggia.vndirect.com.vn',
     knownIssue: 'Bảo vệ bởi Cloudflare WAF Bot-Protection (Tự động kích hoạt Anti-WAF Gateway)'
   },
   {
@@ -87,7 +87,7 @@ export const TARGET_BROKERS = [
     shortName: 'VPBankS',
     stockCode: null,
     isListed: false,
-    url: 'https://www.vpbanks.com.vn/bieu-phi',
+    url: 'https://r.jina.ai/https://www.vpbanks.com.vn',
     fallbackUrl: 'https://www.vpbanks.com.vn',
     officialSource: 'https://www.vpbanks.com.vn/bieu-phi',
     knownIssue: null
@@ -98,9 +98,9 @@ export const TARGET_BROKERS = [
     shortName: 'FPTS',
     stockCode: 'FTS',
     isListed: true,
-    url: 'https://www.fpts.com.vn/ho-tro-khach-hang/bieu-phi-dich-vu/',
+    url: 'https://www.fpts.com.vn',
     fallbackUrl: 'https://www.fpts.com.vn',
-    officialSource: 'https://www.fpts.com.vn/ho-tro-khach-hang/bieu-phi-dich-vu/',
+    officialSource: 'https://www.fpts.com.vn',
     knownIssue: null
   },
   {
@@ -109,7 +109,7 @@ export const TARGET_BROKERS = [
     shortName: 'HSC',
     stockCode: 'HCM',
     isListed: true,
-    url: 'https://www.hsc.com.vn/bieu-phi',
+    url: 'https://r.jina.ai/https://www.hsc.com.vn',
     fallbackUrl: 'https://www.hsc.com.vn',
     officialSource: 'https://www.hsc.com.vn/bieu-phi',
     knownIssue: null
@@ -131,9 +131,9 @@ export const TARGET_BROKERS = [
     shortName: 'Kafi',
     stockCode: null,
     isListed: false,
-    url: 'https://kafi.vn/bieu-phi-dich-vu',
+    url: 'https://kafi.vn',
     fallbackUrl: 'https://kafi.vn',
-    officialSource: 'https://kafi.vn/bieu-phi-dich-vu',
+    officialSource: 'https://kafi.vn',
     knownIssue: null
   },
   {
@@ -164,7 +164,7 @@ export const TARGET_BROKERS = [
     shortName: 'VIX',
     stockCode: 'VIX',
     isListed: true,
-    url: 'https://vixs.vn',
+    url: 'https://r.jina.ai/https://vixs.vn',
     fallbackUrl: 'https://r.jina.ai/https://vixs.vn',
     officialSource: 'https://vixs.vn',
     knownIssue: null
@@ -175,9 +175,9 @@ export const TARGET_BROKERS = [
     shortName: 'KIS',
     stockCode: null,
     isListed: false,
-    url: 'https://kisvn.vn/bieu-phi-dich-vu/',
+    url: 'https://kisvn.vn',
     fallbackUrl: 'https://kisvn.vn',
-    officialSource: 'https://kisvn.vn/bieu-phi-dich-vu/',
+    officialSource: 'https://kisvn.vn',
     knownIssue: null
   },
   {
@@ -208,7 +208,7 @@ export const TARGET_BROKERS = [
     shortName: 'KBSV',
     stockCode: null,
     isListed: false,
-    url: 'https://kbsec.com.vn/bieu-phi',
+    url: 'https://www.kbsec.com.vn/vi/bieu-phi.html',
     fallbackUrl: 'https://www.kbsec.com.vn/vi/bieu-phi.html',
     officialSource: 'https://www.kbsec.com.vn/vi/bieu-phi.html',
     knownIssue: null
@@ -241,9 +241,9 @@ export const TARGET_BROKERS = [
     shortName: 'TPS',
     stockCode: 'ORS',
     isListed: true,
-    url: 'https://tpbs.com.vn/bieu-phi',
+    url: 'https://tpbs.com.vn',
     fallbackUrl: 'https://tpbs.com.vn',
-    officialSource: 'https://tpbs.com.vn/bieu-phi',
+    officialSource: 'https://tpbs.com.vn',
     knownIssue: null
   },
   {
@@ -263,9 +263,9 @@ export const TARGET_BROKERS = [
     shortName: 'Shinhan Sec',
     stockCode: null,
     isListed: false,
-    url: 'https://shinhansec.com.vn/bieu-phi',
+    url: 'https://shinhansec.com.vn',
     fallbackUrl: 'https://shinhansec.com.vn',
-    officialSource: 'https://shinhansec.com.vn/bieu-phi',
+    officialSource: 'https://shinhansec.com.vn',
     knownIssue: null
   },
   {
@@ -274,9 +274,9 @@ export const TARGET_BROKERS = [
     shortName: 'Agriseco',
     stockCode: 'AGR',
     isListed: true,
-    url: 'https://agriseco.com.vn/bieu-phi',
+    url: 'https://agriseco.com.vn',
     fallbackUrl: 'https://agriseco.com.vn',
-    officialSource: 'https://agriseco.com.vn/bieu-phi',
+    officialSource: 'https://agriseco.com.vn',
     knownIssue: null
   },
   {
@@ -307,9 +307,9 @@ export const TARGET_BROKERS = [
     shortName: 'PHS',
     stockCode: 'PHS',
     isListed: true,
-    url: 'https://phs.vn/bieu-phi',
+    url: 'https://phs.vn',
     fallbackUrl: 'https://phs.vn',
-    officialSource: 'https://phs.vn/bieu-phi',
+    officialSource: 'https://phs.vn',
     knownIssue: null
   },
   {
@@ -329,9 +329,9 @@ export const TARGET_BROKERS = [
     shortName: 'EVS',
     stockCode: 'EVS',
     isListed: true,
-    url: 'https://eves.com.vn/bieu-phi',
+    url: 'https://eves.com.vn',
     fallbackUrl: 'https://eves.com.vn',
-    officialSource: 'https://eves.com.vn/bieu-phi',
+    officialSource: 'https://eves.com.vn',
     knownIssue: null
   }
 ];

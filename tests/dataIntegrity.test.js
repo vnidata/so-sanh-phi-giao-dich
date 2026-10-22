@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { SECURITIES_COMPANIES, FILTER_CATEGORIES } from '../src/data/securitiesData.js';
+import { getBrokerSourceLinks } from '../src/utils/sourceLinks.js';
 
 describe('Securities Data Integrity & Anti-Hallucination Suite', () => {
   it('should contain exactly 30 securities companies', () => {
@@ -373,6 +374,28 @@ describe('Securities Data Integrity & Anti-Hallucination Suite', () => {
       expect(override.margin).toBeDefined();
       expect(typeof override.margin.standardRate90d).toBe('number');
       expect(override.sourceUrl).toMatch(/^https?:\/\//);
+    });
+  });
+
+  it('should verify getBrokerSourceLinks returns verified URLs and 4 scannedSources for all 30 brokers without speculative links', () => {
+    SECURITIES_COMPANIES.forEach(company => {
+      const links = getBrokerSourceLinks(company);
+      expect(links).toBeDefined();
+      expect(links.websiteUrl).toMatch(/^https?:\/\//);
+      expect(links.feeSourceUrl).toMatch(/^https?:\/\//);
+      expect(links.scannedUrl).toMatch(/^https?:\/\//);
+      expect(links.accountOpeningUrl).toMatch(/^https?:\/\//);
+      expect(links.scannedSources).toHaveLength(4);
+
+      // Verify no speculative 404 paths like /khuyen-mai or /margin-deal
+      expect(links.feeSourceUrl).not.toContain('/khuyen-mai');
+      expect(links.feeSourceUrl).not.toContain('/margin-deal');
+
+      links.scannedSources.forEach(s => {
+        expect(s.url).toMatch(/^https?:\/\//);
+        expect(s.title).toBeTruthy();
+        expect(s.status).toBeTruthy();
+      });
     });
   });
 });

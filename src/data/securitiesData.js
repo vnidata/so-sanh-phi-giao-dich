@@ -164,7 +164,7 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://www.tcbs.com.vn",
-    "sourceUrl": "https://www.tcbs.com.vn/bieu-phi"
+    "sourceUrl": "https://www.tcbs.com.vn"
   },
   {
     "id": "vps",
@@ -243,7 +243,7 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://vps.com.vn",
-    "sourceUrl": "https://vps.com.vn/bieu-phi"
+    "sourceUrl": "https://vps.com.vn"
   },
   {
     "id": "ssi",
@@ -321,7 +321,7 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://www.ssi.com.vn",
-    "sourceUrl": "https://www.ssi.com.vn/bieu-phi"
+    "sourceUrl": "https://www.ssi.com.vn"
   },
   {
     "id": "vndirect",
@@ -399,7 +399,7 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://www.vndirect.com.vn",
-    "sourceUrl": "https://www.vndirect.com.vn/bieu-phi"
+    "sourceUrl": "https://banggia.vndirect.com.vn"
   },
   {
     "id": "mirae-asset",
@@ -709,7 +709,7 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://www.fpts.com.vn",
-    "sourceUrl": "https://www.fpts.com.vn/bieu-phi"
+    "sourceUrl": "https://www.fpts.com.vn"
   },
   {
     "id": "hsc",
@@ -936,7 +936,7 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://kafi.vn",
-    "sourceUrl": "https://kafi.vn/bieu-phi"
+    "sourceUrl": "https://kafi.vn"
   },
   {
     "id": "mbs",
@@ -1089,7 +1089,7 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://www.shs.com.vn",
-    "sourceUrl": "https://www.shs.com.vn/bieu-phi"
+    "sourceUrl": "https://www.shs.com.vn/Pages/BieuPhiDichVu.aspx"
   },
   {
     "id": "vix",
@@ -1164,7 +1164,7 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://vixs.vn",
-    "sourceUrl": "https://vixs.vn/bieu-phi"
+    "sourceUrl": "https://vixs.vn"
   },
   {
     "id": "kis",
@@ -1239,7 +1239,7 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://kisvn.vn",
-    "sourceUrl": "https://kisvn.vn/bieu-phi"
+    "sourceUrl": "https://kisvn.vn"
   },
   {
     "id": "acbs",
@@ -1464,7 +1464,7 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://kbsec.com.vn",
-    "sourceUrl": "https://kbsec.com.vn/bieu-phi"
+    "sourceUrl": "https://www.kbsec.com.vn/vi/bieu-phi.html"
   },
   {
     "id": "cts",
@@ -1689,7 +1689,7 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://tpbs.com.vn",
-    "sourceUrl": "https://tpbs.com.vn/bieu-phi"
+    "sourceUrl": "https://tpbs.com.vn"
   },
   {
     "id": "yuanta",
@@ -1840,7 +1840,7 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://shinhansec.com.vn",
-    "sourceUrl": "https://shinhansec.com.vn/bieu-phi"
+    "sourceUrl": "https://shinhansec.com.vn"
   },
   {
     "id": "agriseco",
@@ -1915,7 +1915,7 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://agriseco.com.vn",
-    "sourceUrl": "https://agriseco.com.vn/bieu-phi"
+    "sourceUrl": "https://agriseco.com.vn"
   },
   {
     "id": "hdbs",
@@ -1990,7 +1990,7 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://hdbs.vn",
-    "sourceUrl": "https://hdbs.vn/bieu-phi"
+    "sourceUrl": "https://hdbs.vn"
   },
   {
     "id": "dsc",
@@ -2140,7 +2140,7 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://phs.vn",
-    "sourceUrl": "https://phs.vn/bieu-phi"
+    "sourceUrl": "https://phs.vn"
   },
   {
     "id": "tvsi",
@@ -2215,7 +2215,7 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://tvsi.com.vn",
-    "sourceUrl": "https://tvsi.com.vn/bieu-phi"
+    "sourceUrl": "https://tvsi.com.vn"
   },
   {
     "id": "evs",
@@ -2290,7 +2290,7 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://eves.com.vn",
-    "sourceUrl": "https://eves.com.vn/bieu-phi"
+    "sourceUrl": "https://eves.com.vn"
   }
 ];
 
