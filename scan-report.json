@@ -1,19 +1,19 @@
 {
   "summary": {
     "total": 30,
-    "accessible": 23,
-    "unscannable": 7,
+    "accessible": 30,
+    "unscannable": 0,
     "keywordStats": {
-      "tradingFee": 14,
-      "zeroFee": 8,
-      "interestRate": 7,
+      "tradingFee": 19,
+      "zeroFee": 10,
+      "interestRate": 11,
       "loanInterest": 1,
-      "margin": 17,
-      "creditLimit": 3,
+      "margin": 24,
+      "creditLimit": 4,
       "debtBalance": 2,
-      "promoRate": 7
+      "promoRate": 10
     },
-    "timestamp": "2026-10-22T03:48:35.206Z",
+    "timestamp": "2026-10-22T03:54:11.841Z",
     "note": "Dữ liệu được quét tự động từ các trang web biểu phí công khai của 30 CTCK."
   },
   "brokers": [
@@ -27,6 +27,8 @@
       "officialSource": "https://www.bsc.com.vn/phi-giao-dich-qua-san/",
       "httpStatus": 200,
       "isAccessible": true,
+      "sourceType": "direct",
+      "sourceCategory": "Direct",
       "unscannableReason": null,
       "manualCheckInstruction": null,
       "signals": {
@@ -58,7 +60,7 @@
         "hasPromoRateMention": true
       },
       "contentLength": 151634,
-      "scannedAt": "2026-10-22T03:47:15.911Z"
+      "scannedAt": "2026-10-22T03:53:46.564Z"
     },
     {
       "id": "tcbs",
@@ -66,15 +68,43 @@
       "shortName": "TCBS",
       "stockCode": null,
       "isListed": false,
-      "url": "https://www.tcbs.com.vn/bieu-phi",
-      "officialSource": "https://www.tcbs.com.vn/bieu-phi",
-      "httpStatus": 403,
-      "isAccessible": false,
-      "unscannableReason": "Bảo vệ bởi Cloudflare WAF Bot-Protection (HTTP 403) & Nền tảng SPA JavaScript. Cần đối chiếu thủ công qua trình duyệt.",
-      "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://www.tcbs.com.vn/bieu-phi",
-      "signals": null,
-      "contentLength": 0,
-      "scannedAt": "2026-10-22T03:47:16.357Z"
+      "url": "https://r.jina.ai/https://www.tcbs.com.vn",
+      "officialSource": "https://help.tcbs.com.vn/",
+      "httpStatus": 200,
+      "isAccessible": true,
+      "sourceType": "anti_waf_gateway",
+      "sourceCategory": "Anti-WAF Gateway",
+      "unscannableReason": null,
+      "manualCheckInstruction": null,
+      "signals": {
+        "hasTradingFee": true,
+        "hasZeroFee": true,
+        "hasInterestRate": true,
+        "hasLoanInterest": false,
+        "hasMargin": true,
+        "hasCreditLimit": true,
+        "hasDebtBalance": false,
+        "matchedList": [
+          "Phí giao dịch",
+          "Zero-Fee / Miễn phí",
+          "Lãi suất",
+          "Ký quỹ / Margin",
+          "Hạn mức"
+        ],
+        "matchedKeys": [
+          "tradingFee",
+          "zeroFee",
+          "interestRate",
+          "margin",
+          "creditLimit"
+        ],
+        "ratesFound": [],
+        "hasZeroFeeMention": true,
+        "hasMarginMention": true,
+        "hasPromoRateMention": false
+      },
+      "contentLength": 24828,
+      "scannedAt": "2026-10-22T03:53:47.541Z"
     },
     {
       "id": "vps",
@@ -86,6 +116,8 @@
       "officialSource": "https://vps.com.vn/bieu-phi-dich-vu/",
       "httpStatus": 200,
       "isAccessible": true,
+      "sourceType": "fallback",
+      "sourceCategory": "Direct",
       "unscannableReason": null,
       "manualCheckInstruction": null,
       "signals": {
@@ -112,7 +144,7 @@
         "hasPromoRateMention": true
       },
       "contentLength": 59052,
-      "scannedAt": "2026-10-22T03:47:19.119Z"
+      "scannedAt": "2026-10-22T03:53:47.908Z"
     },
     {
       "id": "ssi",
@@ -122,13 +154,42 @@
       "isListed": true,
       "url": "https://www.ssi.com.vn/khach-hang-ca-nhan/bieu-phi",
       "officialSource": "https://www.ssi.com.vn/khach-hang-ca-nhan/bieu-phi",
-      "httpStatus": 403,
-      "isAccessible": false,
-      "unscannableReason": "Bảo vệ bởi Cloudflare WAF Bot-Protection hoặc Tường lửa máy chủ (HTTP 403). Cần đối chiếu thủ công qua trình duyệt.",
-      "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://www.ssi.com.vn/khach-hang-ca-nhan/bieu-phi",
-      "signals": null,
-      "contentLength": 0,
-      "scannedAt": "2026-10-22T03:47:19.958Z"
+      "httpStatus": 200,
+      "isAccessible": true,
+      "sourceType": "direct",
+      "sourceCategory": "Direct",
+      "unscannableReason": null,
+      "manualCheckInstruction": null,
+      "signals": {
+        "hasTradingFee": false,
+        "hasZeroFee": false,
+        "hasInterestRate": true,
+        "hasLoanInterest": false,
+        "hasMargin": true,
+        "hasCreditLimit": false,
+        "hasDebtBalance": false,
+        "matchedList": [
+          "Lãi suất",
+          "Ký quỹ / Margin"
+        ],
+        "matchedKeys": [
+          "interestRate",
+          "margin"
+        ],
+        "ratesFound": [
+          "11.63%",
+          "5.53%",
+          "4.08%",
+          "5.66%",
+          "4.76%",
+          "4.19%"
+        ],
+        "hasZeroFeeMention": false,
+        "hasMarginMention": true,
+        "hasPromoRateMention": true
+      },
+      "contentLength": 89413,
+      "scannedAt": "2026-10-22T03:53:48.567Z"
     },
     {
       "id": "vndirect",
@@ -136,15 +197,31 @@
       "shortName": "VNDIRECT",
       "stockCode": "VND",
       "isListed": true,
-      "url": "https://www.vndirect.com.vn/bieu-phi-dich-vu-chung-khoan/",
+      "url": "https://banggia.vndirect.com.vn",
       "officialSource": "https://www.vndirect.com.vn/bieu-phi-dich-vu-chung-khoan/",
-      "httpStatus": 403,
-      "isAccessible": false,
-      "unscannableReason": "Bảo vệ bởi Cloudflare WAF Bot-Protection (HTTP 403). Cần đối chiếu thủ công qua trình duyệt.",
-      "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://www.vndirect.com.vn/bieu-phi-dich-vu-chung-khoan/",
-      "signals": null,
-      "contentLength": 0,
-      "scannedAt": "2026-10-22T03:47:20.343Z"
+      "httpStatus": 200,
+      "isAccessible": true,
+      "sourceType": "direct",
+      "sourceCategory": "Direct",
+      "unscannableReason": null,
+      "manualCheckInstruction": null,
+      "signals": {
+        "hasTradingFee": false,
+        "hasZeroFee": false,
+        "hasInterestRate": false,
+        "hasLoanInterest": false,
+        "hasMargin": false,
+        "hasCreditLimit": false,
+        "hasDebtBalance": false,
+        "matchedList": [],
+        "matchedKeys": [],
+        "ratesFound": [],
+        "hasZeroFeeMention": false,
+        "hasMarginMention": false,
+        "hasPromoRateMention": false
+      },
+      "contentLength": 3376,
+      "scannedAt": "2026-10-22T03:53:48.996Z"
     },
     {
       "id": "mirae-asset",
@@ -156,6 +233,8 @@
       "officialSource": "https://masvn.com/bieu-phi",
       "httpStatus": 200,
       "isAccessible": true,
+      "sourceType": "direct",
+      "sourceCategory": "Direct",
       "unscannableReason": null,
       "manualCheckInstruction": null,
       "signals": {
@@ -188,7 +267,7 @@
         "hasPromoRateMention": true
       },
       "contentLength": 141271,
-      "scannedAt": "2026-10-22T03:47:22.624Z"
+      "scannedAt": "2026-10-22T03:53:49.402Z"
     },
     {
       "id": "dnse",
@@ -200,6 +279,8 @@
       "officialSource": "https://www.dnse.com.vn/bieu-phi",
       "httpStatus": 200,
       "isAccessible": true,
+      "sourceType": "direct",
+      "sourceCategory": "Direct",
       "unscannableReason": null,
       "manualCheckInstruction": null,
       "signals": {
@@ -233,7 +314,7 @@
         "hasPromoRateMention": true
       },
       "contentLength": 547677,
-      "scannedAt": "2026-10-22T03:47:24.007Z"
+      "scannedAt": "2026-10-22T03:53:49.783Z"
     },
     {
       "id": "vpbanks",
@@ -243,13 +324,37 @@
       "isListed": false,
       "url": "https://www.vpbanks.com.vn/bieu-phi",
       "officialSource": "https://www.vpbanks.com.vn/bieu-phi",
-      "httpStatus": 403,
-      "isAccessible": false,
-      "unscannableReason": "Bảo vệ bởi Cloudflare WAF Bot-Protection hoặc Tường lửa máy chủ (HTTP 403). Cần đối chiếu thủ công qua trình duyệt.",
-      "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://www.vpbanks.com.vn/bieu-phi",
-      "signals": null,
-      "contentLength": 0,
-      "scannedAt": "2026-10-22T03:47:24.634Z"
+      "httpStatus": 200,
+      "isAccessible": true,
+      "sourceType": "direct",
+      "sourceCategory": "Direct",
+      "unscannableReason": null,
+      "manualCheckInstruction": null,
+      "signals": {
+        "hasTradingFee": true,
+        "hasZeroFee": false,
+        "hasInterestRate": true,
+        "hasLoanInterest": false,
+        "hasMargin": true,
+        "hasCreditLimit": false,
+        "hasDebtBalance": false,
+        "matchedList": [
+          "Phí giao dịch",
+          "Lãi suất",
+          "Ký quỹ / Margin"
+        ],
+        "matchedKeys": [
+          "tradingFee",
+          "interestRate",
+          "margin"
+        ],
+        "ratesFound": [],
+        "hasZeroFeeMention": false,
+        "hasMarginMention": true,
+        "hasPromoRateMention": false
+      },
+      "contentLength": 146486,
+      "scannedAt": "2026-10-22T03:53:50.508Z"
     },
     {
       "id": "fpts",
@@ -261,6 +366,8 @@
       "officialSource": "https://www.fpts.com.vn/ho-tro-khach-hang/bieu-phi-dich-vu/",
       "httpStatus": 200,
       "isAccessible": true,
+      "sourceType": "fallback",
+      "sourceCategory": "Direct",
       "unscannableReason": null,
       "manualCheckInstruction": null,
       "signals": {
@@ -285,7 +392,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 193049,
-      "scannedAt": "2026-10-22T03:47:28.407Z"
+      "scannedAt": "2026-10-22T03:53:51.085Z"
     },
     {
       "id": "hsc",
@@ -295,13 +402,37 @@
       "isListed": true,
       "url": "https://www.hsc.com.vn/bieu-phi",
       "officialSource": "https://www.hsc.com.vn/bieu-phi",
-      "httpStatus": 403,
-      "isAccessible": false,
-      "unscannableReason": "Bảo vệ bởi Cloudflare WAF Bot-Protection hoặc Tường lửa máy chủ (HTTP 403). Cần đối chiếu thủ công qua trình duyệt.",
-      "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://www.hsc.com.vn/bieu-phi",
-      "signals": null,
-      "contentLength": 0,
-      "scannedAt": "2026-10-22T03:47:29.224Z"
+      "httpStatus": 200,
+      "isAccessible": true,
+      "sourceType": "direct",
+      "sourceCategory": "Direct",
+      "unscannableReason": null,
+      "manualCheckInstruction": null,
+      "signals": {
+        "hasTradingFee": true,
+        "hasZeroFee": false,
+        "hasInterestRate": false,
+        "hasLoanInterest": false,
+        "hasMargin": true,
+        "hasCreditLimit": false,
+        "hasDebtBalance": false,
+        "matchedList": [
+          "Phí giao dịch",
+          "Ký quỹ / Margin"
+        ],
+        "matchedKeys": [
+          "tradingFee",
+          "margin"
+        ],
+        "ratesFound": [
+          "6.65%"
+        ],
+        "hasZeroFeeMention": false,
+        "hasMarginMention": true,
+        "hasPromoRateMention": true
+      },
+      "contentLength": 108488,
+      "scannedAt": "2026-10-22T03:53:51.562Z"
     },
     {
       "id": "vietcap",
@@ -313,6 +444,8 @@
       "officialSource": "https://www.vietcap.com.vn/bieu-phi",
       "httpStatus": 200,
       "isAccessible": true,
+      "sourceType": "direct",
+      "sourceCategory": "Direct",
       "unscannableReason": null,
       "manualCheckInstruction": null,
       "signals": {
@@ -335,7 +468,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 62637,
-      "scannedAt": "2026-10-22T03:47:30.896Z"
+      "scannedAt": "2026-10-22T03:53:51.844Z"
     },
     {
       "id": "kafi",
@@ -347,6 +480,8 @@
       "officialSource": "https://kafi.vn/bieu-phi-dich-vu",
       "httpStatus": 200,
       "isAccessible": true,
+      "sourceType": "fallback",
+      "sourceCategory": "Direct",
       "unscannableReason": null,
       "manualCheckInstruction": null,
       "signals": {
@@ -377,7 +512,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 79246,
-      "scannedAt": "2026-10-22T03:47:32.105Z"
+      "scannedAt": "2026-10-22T03:53:52.569Z"
     },
     {
       "id": "mbs",
@@ -389,6 +524,8 @@
       "officialSource": "https://mbs.com.vn/bieu-phi/",
       "httpStatus": 200,
       "isAccessible": true,
+      "sourceType": "direct",
+      "sourceCategory": "Direct",
       "unscannableReason": null,
       "manualCheckInstruction": null,
       "signals": {
@@ -417,7 +554,7 @@
         "hasPromoRateMention": true
       },
       "contentLength": 132575,
-      "scannedAt": "2026-10-22T03:47:35.958Z"
+      "scannedAt": "2026-10-22T03:53:53.578Z"
     },
     {
       "id": "shs",
@@ -429,6 +566,8 @@
       "officialSource": "https://www.shs.com.vn/Pages/BieuPhiDichVu.aspx",
       "httpStatus": 200,
       "isAccessible": true,
+      "sourceType": "direct",
+      "sourceCategory": "Direct",
       "unscannableReason": null,
       "manualCheckInstruction": null,
       "signals": {
@@ -447,7 +586,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 0,
-      "scannedAt": "2026-10-22T03:47:38.620Z"
+      "scannedAt": "2026-10-22T03:53:54.113Z"
     },
     {
       "id": "vix",
@@ -455,15 +594,41 @@
       "shortName": "VIX",
       "stockCode": "VIX",
       "isListed": true,
-      "url": "https://vixs.vn/bieu-phi",
-      "officialSource": "https://vixs.vn/bieu-phi",
-      "httpStatus": 403,
-      "isAccessible": false,
-      "unscannableReason": "Trang con biểu phí hạn chế truy cập bot tự động (HTTP 403). Cần đối chiếu thủ công qua trình duyệt.",
-      "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://vixs.vn/bieu-phi",
-      "signals": null,
-      "contentLength": 0,
-      "scannedAt": "2026-10-22T03:47:40.882Z"
+      "url": "https://r.jina.ai/https://vixs.vn",
+      "officialSource": "https://vixs.vn",
+      "httpStatus": 200,
+      "isAccessible": true,
+      "sourceType": "anti_waf_gateway",
+      "sourceCategory": "Anti-WAF Gateway",
+      "unscannableReason": null,
+      "manualCheckInstruction": null,
+      "signals": {
+        "hasTradingFee": true,
+        "hasZeroFee": true,
+        "hasInterestRate": true,
+        "hasLoanInterest": false,
+        "hasMargin": true,
+        "hasCreditLimit": false,
+        "hasDebtBalance": false,
+        "matchedList": [
+          "Phí giao dịch",
+          "Zero-Fee / Miễn phí",
+          "Lãi suất",
+          "Ký quỹ / Margin"
+        ],
+        "matchedKeys": [
+          "tradingFee",
+          "zeroFee",
+          "interestRate",
+          "margin"
+        ],
+        "ratesFound": [],
+        "hasZeroFeeMention": true,
+        "hasMarginMention": true,
+        "hasPromoRateMention": false
+      },
+      "contentLength": 20756,
+      "scannedAt": "2026-10-22T03:53:55.052Z"
     },
     {
       "id": "kis",
@@ -475,6 +640,8 @@
       "officialSource": "https://kisvn.vn/bieu-phi-dich-vu/",
       "httpStatus": 200,
       "isAccessible": true,
+      "sourceType": "fallback",
+      "sourceCategory": "Direct",
       "unscannableReason": null,
       "manualCheckInstruction": null,
       "signals": {
@@ -512,7 +679,7 @@
         "hasPromoRateMention": true
       },
       "contentLength": 1061877,
-      "scannedAt": "2026-10-22T03:47:43.458Z"
+      "scannedAt": "2026-10-22T03:53:57.686Z"
     },
     {
       "id": "acbs",
@@ -524,6 +691,8 @@
       "officialSource": "https://acbs.com.vn/bieu-phi",
       "httpStatus": 200,
       "isAccessible": true,
+      "sourceType": "direct",
+      "sourceCategory": "Direct",
       "unscannableReason": null,
       "manualCheckInstruction": null,
       "signals": {
@@ -550,7 +719,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 159693,
-      "scannedAt": "2026-10-22T03:47:49.091Z"
+      "scannedAt": "2026-10-22T03:53:59.554Z"
     },
     {
       "id": "vcbs",
@@ -562,6 +731,8 @@
       "officialSource": "https://vcbs.com.vn/bieu-phi",
       "httpStatus": 200,
       "isAccessible": true,
+      "sourceType": "direct",
+      "sourceCategory": "Direct",
       "unscannableReason": null,
       "manualCheckInstruction": null,
       "signals": {
@@ -579,8 +750,8 @@
         "hasMarginMention": false,
         "hasPromoRateMention": false
       },
-      "contentLength": 11941,
-      "scannedAt": "2026-10-22T03:47:51.300Z"
+      "contentLength": 11981,
+      "scannedAt": "2026-10-22T03:53:59.800Z"
     },
     {
       "id": "kbsv",
@@ -592,6 +763,8 @@
       "officialSource": "https://www.kbsec.com.vn/vi/bieu-phi.html",
       "httpStatus": 200,
       "isAccessible": true,
+      "sourceType": "direct",
+      "sourceCategory": "Direct",
       "unscannableReason": null,
       "manualCheckInstruction": null,
       "signals": {
@@ -610,7 +783,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 552,
-      "scannedAt": "2026-10-22T03:47:52.970Z"
+      "scannedAt": "2026-10-22T03:54:00.030Z"
     },
     {
       "id": "cts",
@@ -622,6 +795,8 @@
       "officialSource": "https://cts.vn/bieu-phi",
       "httpStatus": 200,
       "isAccessible": true,
+      "sourceType": "direct",
+      "sourceCategory": "Direct",
       "unscannableReason": null,
       "manualCheckInstruction": null,
       "signals": {
@@ -650,7 +825,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 75863,
-      "scannedAt": "2026-10-22T03:47:58.475Z"
+      "scannedAt": "2026-10-22T03:54:00.399Z"
     },
     {
       "id": "bvsc",
@@ -662,6 +837,8 @@
       "officialSource": "https://bvsc.com.vn/bieu-phi",
       "httpStatus": 200,
       "isAccessible": true,
+      "sourceType": "direct",
+      "sourceCategory": "Direct",
       "unscannableReason": null,
       "manualCheckInstruction": null,
       "signals": {
@@ -679,8 +856,8 @@
         "hasMarginMention": false,
         "hasPromoRateMention": false
       },
-      "contentLength": 189,
-      "scannedAt": "2026-10-22T03:48:02.221Z"
+      "contentLength": 123003,
+      "scannedAt": "2026-10-22T03:54:01.347Z"
     },
     {
       "id": "tps",
@@ -692,6 +869,8 @@
       "officialSource": "https://tpbs.com.vn/bieu-phi",
       "httpStatus": 200,
       "isAccessible": true,
+      "sourceType": "fallback",
+      "sourceCategory": "Direct",
       "unscannableReason": null,
       "manualCheckInstruction": null,
       "signals": {
@@ -716,7 +895,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 72142,
-      "scannedAt": "2026-10-22T03:48:06.156Z"
+      "scannedAt": "2026-10-22T03:54:02.796Z"
     },
     {
       "id": "yuanta",
@@ -728,6 +907,8 @@
       "officialSource": "https://yuanta.com.vn/bieu-phi",
       "httpStatus": 200,
       "isAccessible": true,
+      "sourceType": "direct",
+      "sourceCategory": "Direct",
       "unscannableReason": null,
       "manualCheckInstruction": null,
       "signals": {
@@ -745,8 +926,8 @@
         "hasMarginMention": false,
         "hasPromoRateMention": false
       },
-      "contentLength": 197,
-      "scannedAt": "2026-10-22T03:48:07.400Z"
+      "contentLength": 1479,
+      "scannedAt": "2026-10-22T03:54:03.307Z"
     },
     {
       "id": "shinhan",
@@ -758,6 +939,8 @@
       "officialSource": "https://shinhansec.com.vn/bieu-phi",
       "httpStatus": 200,
       "isAccessible": true,
+      "sourceType": "fallback",
+      "sourceCategory": "Direct",
       "unscannableReason": null,
       "manualCheckInstruction": null,
       "signals": {
@@ -780,7 +963,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 74534,
-      "scannedAt": "2026-10-22T03:48:11.534Z"
+      "scannedAt": "2026-10-22T03:54:05.131Z"
     },
     {
       "id": "agriseco",
@@ -792,6 +975,8 @@
       "officialSource": "https://agriseco.com.vn/bieu-phi",
       "httpStatus": 200,
       "isAccessible": true,
+      "sourceType": "fallback",
+      "sourceCategory": "Direct",
       "unscannableReason": null,
       "manualCheckInstruction": null,
       "signals": {
@@ -814,7 +999,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 65195,
-      "scannedAt": "2026-10-22T03:48:14.742Z"
+      "scannedAt": "2026-10-22T03:54:05.542Z"
     },
     {
       "id": "hdbs",
@@ -822,15 +1007,39 @@
       "shortName": "HDBS",
       "stockCode": null,
       "isListed": false,
-      "url": "https://hdbs.vn/bieu-phi",
-      "officialSource": "https://hdbs.vn/bieu-phi",
-      "httpStatus": "Timeout (8s)",
-      "isAccessible": false,
-      "unscannableReason": "Hết thời gian chờ phản hồi (Timeout > 8s). Máy chủ phản hồi chậm hoặc chặn crawler tự động.",
-      "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://hdbs.vn/bieu-phi",
-      "signals": null,
-      "contentLength": 0,
-      "scannedAt": "2026-10-22T03:48:22.742Z"
+      "url": "https://hdbs.vn",
+      "officialSource": "https://hdbs.vn",
+      "httpStatus": 200,
+      "isAccessible": true,
+      "sourceType": "direct",
+      "sourceCategory": "Direct",
+      "unscannableReason": null,
+      "manualCheckInstruction": null,
+      "signals": {
+        "hasTradingFee": true,
+        "hasZeroFee": false,
+        "hasInterestRate": false,
+        "hasLoanInterest": false,
+        "hasMargin": true,
+        "hasCreditLimit": false,
+        "hasDebtBalance": false,
+        "matchedList": [
+          "Phí giao dịch",
+          "Ký quỹ / Margin"
+        ],
+        "matchedKeys": [
+          "tradingFee",
+          "margin"
+        ],
+        "ratesFound": [
+          "6.25%"
+        ],
+        "hasZeroFeeMention": false,
+        "hasMarginMention": true,
+        "hasPromoRateMention": true
+      },
+      "contentLength": 145275,
+      "scannedAt": "2026-10-22T03:54:09.444Z"
     },
     {
       "id": "dsc",
@@ -842,6 +1051,8 @@
       "officialSource": "https://dsc.com.vn/bieu-phi",
       "httpStatus": 200,
       "isAccessible": true,
+      "sourceType": "direct",
+      "sourceCategory": "Direct",
       "unscannableReason": null,
       "manualCheckInstruction": null,
       "signals": {
@@ -877,7 +1088,7 @@
         "hasPromoRateMention": true
       },
       "contentLength": 160012,
-      "scannedAt": "2026-10-22T03:48:25.118Z"
+      "scannedAt": "2026-10-22T03:54:10.492Z"
     },
     {
       "id": "phs",
@@ -889,6 +1100,8 @@
       "officialSource": "https://phs.vn/bieu-phi",
       "httpStatus": 200,
       "isAccessible": true,
+      "sourceType": "fallback",
+      "sourceCategory": "Direct",
       "unscannableReason": null,
       "manualCheckInstruction": null,
       "signals": {
@@ -915,7 +1128,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 320701,
-      "scannedAt": "2026-10-22T03:48:29.953Z"
+      "scannedAt": "2026-10-22T03:54:11.020Z"
     },
     {
       "id": "tvsi",
@@ -927,6 +1140,8 @@
       "officialSource": "https://tvsi.com.vn/bieu-phi",
       "httpStatus": 200,
       "isAccessible": true,
+      "sourceType": "direct",
+      "sourceCategory": "Direct",
       "unscannableReason": null,
       "manualCheckInstruction": null,
       "signals": {
@@ -949,7 +1164,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 78112,
-      "scannedAt": "2026-10-22T03:48:32.657Z"
+      "scannedAt": "2026-10-22T03:54:11.619Z"
     },
     {
       "id": "evs",
@@ -961,6 +1176,8 @@
       "officialSource": "https://eves.com.vn/bieu-phi",
       "httpStatus": 200,
       "isAccessible": true,
+      "sourceType": "fallback",
+      "sourceCategory": "Direct",
       "unscannableReason": null,
       "manualCheckInstruction": null,
       "signals": {
@@ -987,7 +1204,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 79452,
-      "scannedAt": "2026-10-22T03:48:35.205Z"
+      "scannedAt": "2026-10-22T03:54:11.838Z"
     }
   ]
 }

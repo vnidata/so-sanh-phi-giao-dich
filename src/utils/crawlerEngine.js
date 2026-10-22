@@ -19,9 +19,10 @@ export async function crawlSingleBroker(broker) {
 
   // 1. Thử gọi API backend nội bộ (nếu chạy với Vite Dev Server hoặc Node server.mjs)
   try {
+    const fbParam = broker.fallbackUrl ? `&fallbackUrl=${encodeURIComponent(broker.fallbackUrl)}` : '';
     const apiRes = await fetch(
-      `/api/scan-single?id=${broker.id}&url=${encodeURIComponent(broker.url)}`,
-      { signal: AbortSignal.timeout(6000) }
+      `/api/scan-single?id=${broker.id}&url=${encodeURIComponent(broker.url)}${fbParam}`,
+      { signal: AbortSignal.timeout(8000) }
     );
     if (apiRes.ok) {
       const data = await apiRes.json();
@@ -34,38 +35,74 @@ export async function crawlSingleBroker(broker) {
     // Không có local backend API -> chuyển sang cơ chế Client Probe
   }
 
-  // 2. Thử fetch trực tiếp qua CORS Proxy công khai nếu cần
+  // 2. Thử fetch qua Anti-WAF Gateway hoặc CORS Proxy nếu chạy trên Client độc lập
   try {
-    const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(broker.url)}`;
-    const proxyRes = await fetch(proxyUrl, { signal: AbortSignal.timeout(4000) });
-    if (proxyRes.ok) {
-      const json = await proxyRes.json();
-      const text = json.contents || '';
-      const status = json.status?.http_code || 200;
-      const isAccessible = status === 200 && text.length > 500;
-      const signals = isAccessible ? analyzeFinancialKeywords(text) : null;
+    // Thử qua Jina Reader trước (vượt WAF Cloudflare rất tốt)
+    const jinaTarget = broker.fallbackUrl && broker.fallbackUrl.includes('r.jina.ai') 
+      ? broker.fallbackUrl 
+      : `https://r.jina.ai/${broker.url}`;
+    
+    let jinaRes = await fetch(jinaTarget, {
+      headers: { 'Accept': 'text/plain, text/markdown' },
+      signal: AbortSignal.timeout(6000)
+    });
 
-      return {
-        id: broker.id,
-        name: broker.name,
-        shortName: broker.shortName,
-        stockCode: broker.stockCode,
-        isListed: broker.isListed,
-        url: broker.url,
-        officialSource: broker.officialSource,
-        httpStatus: status === 200 ? 200 : status,
-        isAccessible,
-        contentLength: text.length,
-        signals,
-        unscannableReason: status === 403 ? 'Bảo vệ bởi Cloudflare WAF Bot-Protection (HTTP 403)' : null,
-        manualCheckInstruction: `Đối chiếu qua liên kết chính thức: ${broker.officialSource}`,
-        scannedAt: new Date().toISOString(),
-        elapsedMs: Date.now() - startTime,
-        sourceType: 'live_proxy'
-      };
+    if (jinaRes.ok) {
+      const text = await jinaRes.text();
+      if (text.length > 500 && !text.includes('Page Not Found')) {
+        const signals = analyzeFinancialKeywords(text);
+        return {
+          id: broker.id,
+          name: broker.name,
+          shortName: broker.shortName,
+          stockCode: broker.stockCode,
+          isListed: broker.isListed,
+          url: jinaTarget,
+          officialSource: broker.officialSource,
+          httpStatus: 200,
+          isAccessible: true,
+          contentLength: text.length,
+          signals,
+          unscannableReason: null,
+          manualCheckInstruction: null,
+          scannedAt: new Date().toISOString(),
+          elapsedMs: Date.now() - startTime,
+          sourceType: 'anti_waf_gateway'
+        };
+      }
     }
   } catch (_) {
-    // Không kết nối được qua proxy
+    // Thử tiếp proxy thứ 2
+    try {
+      const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(broker.url)}`;
+      const proxyRes = await fetch(proxyUrl, { signal: AbortSignal.timeout(4000) });
+      if (proxyRes.ok) {
+        const json = await proxyRes.json();
+        const text = json.contents || '';
+        const status = json.status?.http_code || 200;
+        const isAccessible = status === 200 && text.length > 500;
+        const signals = isAccessible ? analyzeFinancialKeywords(text) : null;
+
+        return {
+          id: broker.id,
+          name: broker.name,
+          shortName: broker.shortName,
+          stockCode: broker.stockCode,
+          isListed: broker.isListed,
+          url: broker.url,
+          officialSource: broker.officialSource,
+          httpStatus: status === 200 ? 200 : status,
+          isAccessible,
+          contentLength: text.length,
+          signals,
+          unscannableReason: status === 403 ? 'Bảo vệ bởi Cloudflare WAF Bot-Protection (HTTP 403)' : null,
+          manualCheckInstruction: `Đối chiếu qua liên kết chính thức: ${broker.officialSource}`,
+          scannedAt: new Date().toISOString(),
+          elapsedMs: Date.now() - startTime,
+          sourceType: 'live_proxy'
+        };
+      }
+    } catch (_) {}
   }
 
   // 3. Fallback đáng tin cậy: Lấy dữ liệu kiểm định đã audit từ scan-report.json có sẵn

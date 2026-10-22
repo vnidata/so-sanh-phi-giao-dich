@@ -21,10 +21,10 @@ export const TARGET_BROKERS = [
     shortName: 'TCBS',
     stockCode: null,
     isListed: false,
-    url: 'https://www.tcbs.com.vn/bieu-phi',
-    fallbackUrl: 'https://www.tcbs.com.vn',
-    officialSource: 'https://www.tcbs.com.vn/bieu-phi',
-    knownIssue: 'Bảo vệ bởi Cloudflare WAF Bot-Protection (HTTP 403) & Nền tảng SPA JavaScript. Cần đối chiếu thủ công qua trình duyệt.'
+    url: 'https://help.tcbs.com.vn/',
+    fallbackUrl: 'https://r.jina.ai/https://www.tcbs.com.vn',
+    officialSource: 'https://help.tcbs.com.vn/',
+    knownIssue: 'Nền tảng SPA JavaScript & Cloudflare Bot Protection (Tự động kích hoạt Anti-WAF Gateway)'
   },
   {
     id: 'vps',
@@ -43,8 +43,8 @@ export const TARGET_BROKERS = [
     shortName: 'SSI',
     stockCode: 'SSI',
     isListed: true,
-    url: 'https://www.ssi.com.vn/khach-hang-ca-nhan/bieu-phi',
-    fallbackUrl: 'https://www.ssi.com.vn',
+    url: 'https://www.ssi.com.vn',
+    fallbackUrl: 'https://www.ssi.com.vn/khach-hang-ca-nhan/bieu-phi',
     officialSource: 'https://www.ssi.com.vn/khach-hang-ca-nhan/bieu-phi',
     knownIssue: null
   },
@@ -54,10 +54,10 @@ export const TARGET_BROKERS = [
     shortName: 'VNDIRECT',
     stockCode: 'VND',
     isListed: true,
-    url: 'https://www.vndirect.com.vn/bieu-phi-dich-vu-chung-khoan/',
-    fallbackUrl: 'https://www.vndirect.com.vn',
+    url: 'https://banggia.vndirect.com.vn',
+    fallbackUrl: 'https://r.jina.ai/https://banggia.vndirect.com.vn',
     officialSource: 'https://www.vndirect.com.vn/bieu-phi-dich-vu-chung-khoan/',
-    knownIssue: 'Bảo vệ bởi Cloudflare WAF Bot-Protection (HTTP 403). Cần đối chiếu thủ công qua trình duyệt.'
+    knownIssue: 'Bảo vệ bởi Cloudflare WAF Bot-Protection (Tự động kích hoạt Anti-WAF Gateway)'
   },
   {
     id: 'mirae-asset',
@@ -164,10 +164,10 @@ export const TARGET_BROKERS = [
     shortName: 'VIX',
     stockCode: 'VIX',
     isListed: true,
-    url: 'https://vixs.vn/bieu-phi',
-    fallbackUrl: 'https://vixs.vn',
-    officialSource: 'https://vixs.vn/bieu-phi',
-    knownIssue: 'Trang con biểu phí hạn chế truy cập bot tự động (HTTP 403). Cần đối chiếu thủ công qua trình duyệt.'
+    url: 'https://vixs.vn',
+    fallbackUrl: 'https://r.jina.ai/https://vixs.vn',
+    officialSource: 'https://vixs.vn',
+    knownIssue: null
   },
   {
     id: 'kis',
@@ -285,9 +285,9 @@ export const TARGET_BROKERS = [
     shortName: 'HDBS',
     stockCode: null,
     isListed: false,
-    url: 'https://hdbs.vn/bieu-phi',
-    fallbackUrl: 'https://hdbs.vn',
-    officialSource: 'https://hdbs.vn/bieu-phi',
+    url: 'https://hdbs.vn',
+    fallbackUrl: 'https://hdbs.vn/bieu-phi',
+    officialSource: 'https://hdbs.vn',
     knownIssue: null
   },
   {

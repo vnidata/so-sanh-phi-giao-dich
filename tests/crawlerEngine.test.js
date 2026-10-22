@@ -71,7 +71,7 @@ describe('Crawler & Web Scraper Utility Suite', () => {
     expect(typeof result.isAccessible).toBe('boolean');
     expect(result.httpStatus).toBeDefined();
     expect(result.scannedAt).toBeTruthy();
-  });
+  }, 15000);
 
   it('should sync scan results into existing companies data without mutating original fields', () => {
     const mockScanResults = [

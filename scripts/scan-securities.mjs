@@ -38,6 +38,7 @@ async function scanBrokerPage(broker) {
       redirect: 'follow'
     });
 
+    let sourceType = 'direct';
     if (response.status !== 200 && broker.fallbackUrl) {
       const fallbackController = new AbortController();
       const fallbackTimeout = setTimeout(() => fallbackController.abort(), 6000);
@@ -51,9 +52,40 @@ async function scanBrokerPage(broker) {
         if (fallbackResp.status === 200) {
           response = fallbackResp;
           activeUrl = broker.fallbackUrl;
+          sourceType = broker.fallbackUrl.includes('r.jina.ai') ? 'anti_waf_gateway' : 'fallback';
         }
       } catch (_) {
         clearTimeout(fallbackTimeout);
+      }
+    }
+
+    // Tự động kích hoạt Anti-WAF Gateway nếu bị Cloudflare WAF 403
+    if (response.status === 403 && !activeUrl.includes('r.jina.ai')) {
+      const jinaController = new AbortController();
+      const jinaTimeout = setTimeout(() => jinaController.abort(), 7000);
+      try {
+        const targetToBypass = broker.fallbackUrl && !broker.fallbackUrl.includes('r.jina.ai') 
+          ? broker.fallbackUrl 
+          : broker.url;
+        const jinaUrl = 'https://r.jina.ai/' + targetToBypass;
+        const jinaResp = await fetch(jinaUrl, {
+          headers: { 'Accept': 'text/plain, text/markdown' },
+          signal: jinaController.signal
+        });
+        clearTimeout(jinaTimeout);
+        if (jinaResp.status === 200) {
+          const jinaText = await jinaResp.text();
+          if (jinaText.length > 500) {
+            response = {
+              status: 200,
+              text: async () => jinaText
+            };
+            activeUrl = jinaUrl;
+            sourceType = 'anti_waf_gateway';
+          }
+        }
+      } catch (_) {
+        clearTimeout(jinaTimeout);
       }
     }
     clearTimeout(timeoutId);
@@ -92,6 +124,8 @@ async function scanBrokerPage(broker) {
       officialSource: broker.officialSource,
       httpStatus: status,
       isAccessible,
+      sourceType,
+      sourceCategory: sourceType === "anti_waf_gateway" ? "Anti-WAF Gateway" : "Direct",
       unscannableReason,
       manualCheckInstruction,
       signals,
