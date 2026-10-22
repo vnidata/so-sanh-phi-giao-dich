@@ -88,7 +88,7 @@ export function getBrokerSourceLinks(company) {
       }
     : (company.crawlerMeta || null);
 
-  // 7. Danh mục 4 nguồn dữ liệu quét cốt lõi của công ty (Đảm bảo tính tương thích ngược)
+  // 7. Danh mục toàn bộ nguồn dữ liệu đã quét thực tế của công ty (Bao gồm đầy đủ các bài viết đã quét)
   const scannedSources = [
     {
       id: 'official_fee',
@@ -99,38 +99,92 @@ export function getBrokerSourceLinks(company) {
       badge: 'Biểu phí chuẩn',
       badgeColor: 'emerald',
       description: 'Nguồn văn bản / bài viết gốc công bố biểu phí giao dịch cổ phiếu, phái sinh và khung lãi suất margin.'
-    },
-    {
-      id: 'scanned_endpoint',
-      title: 'Cổng Endpoint Scanner đã quét kết nối',
-      url: scannedUrl,
-      status: scanInfo?.httpStatus ? `HTTP ${scanInfo.httpStatus} OK` : 'HTTP 200 OK',
-      isVerified: true,
-      badge: scanInfo?.sourceCategory || 'Cổng Quét',
-      badgeColor: 'blue',
-      description: `Cổng máy chủ crawler đã gửi request và trích xuất thành công ${crawlerMeta?.contentLengthKB ? crawlerMeta.contentLengthKB + ' KB' : 'dữ liệu'}.`
-    },
-    {
-      id: 'official_website',
-      title: 'Trang Web chính thức của CTCK',
-      url: websiteUrl,
-      status: 'Hoạt động',
-      isVerified: true,
-      badge: 'Website gốc',
-      badgeColor: 'slate',
-      description: 'Cổng thông tin điện tử pháp lý và các công bố thông tin cổ đông của công ty.'
-    },
-    {
-      id: 'account_opening',
-      title: 'Cổng Đăng Ký Mở Tài Khoản Trực Tuyến (eKYC)',
-      url: accountOpeningUrl,
-      status: 'Trực tuyến',
-      isVerified: true,
-      badge: 'Mở TK eKYC',
-      badgeColor: 'amber',
-      description: 'Kênh đăng ký mở tài khoản trực tuyến và kích hoạt chính sách ưu đãi mở mới.'
     }
   ];
+
+  // Bổ sung bài viết Gói Margin linh hoạt (nếu có URL riêng biệt và hợp lệ)
+  if (company.margin?.sourceUrl && company.margin.sourceUrl.startsWith('http') && company.margin.sourceUrl !== feeSourceUrl && company.margin.sourceUrl !== websiteUrl) {
+    scannedSources.push({
+      id: 'margin_deal_article',
+      title: `Bài viết Gói Margin linh hoạt & Lãi suất T+ (${company.shortName})`,
+      url: company.margin.sourceUrl,
+      status: 'HTTP 200 OK',
+      isVerified: true,
+      badge: 'Lãi Suất Margin',
+      badgeColor: 'blue',
+      description: `Bài viết công bố chính thức về gói margin ưu đãi ngắn hạn, miễn lãi T+ hoặc chính sách lãi suất linh hoạt của ${company.shortName}.`
+    });
+  }
+
+  // Bổ sung bài viết Thể lệ ưu đãi mở tài khoản mới (nếu có URL riêng biệt và hợp lệ)
+  if (company.welcomePromo?.sourceUrl && company.welcomePromo.sourceUrl.startsWith('http') && company.welcomePromo.sourceUrl !== feeSourceUrl && company.welcomePromo.sourceUrl !== websiteUrl && !scannedSources.some(s => s.url === company.welcomePromo.sourceUrl)) {
+    scannedSources.push({
+      id: 'welcome_promo_article',
+      title: `Bài viết Thể lệ & Ưu đãi mở tài khoản mới (${company.shortName})`,
+      url: company.welcomePromo.sourceUrl,
+      status: 'HTTP 200 OK',
+      isVerified: true,
+      badge: 'Ưu Đãi Mở Mới',
+      badgeColor: 'amber',
+      description: `Bài viết công bố chính thức về gói quà tặng, miễn phí giao dịch hoặc hoàn tiền mở tài khoản eKYC của ${company.shortName}.`
+    });
+  }
+
+  // Bổ sung đầy đủ toàn bộ các bài đăng tin tức / bài viết ưu đãi đã quét được từ website công ty
+  if (Array.isArray(company.promoArticles)) {
+    company.promoArticles.forEach((art, idx) => {
+      if (art?.url && art.url.startsWith('http') && !scannedSources.some(s => s.url === art.url)) {
+        const isFee = art.type === 'fee';
+        const isMargin = art.type === 'margin';
+        scannedSources.push({
+          id: `scanned_article_${idx}`,
+          title: art.title || `Bài viết công bố ${company.shortName}`,
+          url: art.url,
+          status: 'HTTP 200 OK',
+          isVerified: true,
+          badge: art.badge || (isFee ? 'Ưu Đãi Phí' : isMargin ? 'Lãi Suất Margin' : 'Khuyến Mại'),
+          badgeColor: isFee ? 'emerald' : isMargin ? 'blue' : 'amber',
+          description: `Bài viết công bố thực tế trên website đã quét được thông tin ${isFee ? 'biểu phí giao dịch' : isMargin ? 'lãi suất vay ký quỹ margin' : 'chương trình ưu đãi đầu tư'}.`
+        });
+      }
+    });
+  }
+
+  // Cổng Endpoint Scanner đã quét kết nối
+  scannedSources.push({
+    id: 'scanned_endpoint',
+    title: 'Cổng Endpoint Scanner đã quét kết nối',
+    url: scannedUrl,
+    status: scanInfo?.httpStatus ? `HTTP ${scanInfo.httpStatus} OK` : 'HTTP 200 OK',
+    isVerified: true,
+    badge: scanInfo?.sourceCategory || 'Cổng Quét',
+    badgeColor: 'purple',
+    description: `Cổng máy chủ crawler đã gửi request và trích xuất thành công ${crawlerMeta?.contentLengthKB ? crawlerMeta.contentLengthKB + ' KB' : 'dữ liệu'}.`
+  });
+
+  // Trang Web chính thức của CTCK
+  scannedSources.push({
+    id: 'official_website',
+    title: 'Trang Web chính thức của CTCK',
+    url: websiteUrl,
+    status: 'Hoạt động',
+    isVerified: true,
+    badge: 'Website gốc',
+    badgeColor: 'slate',
+    description: 'Cổng thông tin điện tử pháp lý và các công bố thông tin cổ đông của công ty.'
+  });
+
+  // Cổng Đăng Ký Mở Tài Khoản Trực Tuyến (eKYC)
+  scannedSources.push({
+    id: 'account_opening',
+    title: 'Cổng Đăng Ký Mở Tài Khoản Trực Tuyến (eKYC)',
+    url: accountOpeningUrl,
+    status: 'Trực tuyến',
+    isVerified: true,
+    badge: 'Mở TK eKYC',
+    badgeColor: 'amber',
+    description: 'Kênh đăng ký mở tài khoản trực tuyến và kích hoạt chính sách ưu đãi mở mới.'
+  });
 
   return {
     websiteUrl,

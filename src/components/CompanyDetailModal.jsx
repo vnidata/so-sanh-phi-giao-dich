@@ -234,6 +234,20 @@ export default function CompanyDetailModal({ company, onClose }) {
                       {company.tradingFee.brokerMin}% – {company.tradingFee.brokerMax}%
                     </span>
                   </div>
+                
+                  <div className="mt-2.5 pt-2.5 border-t border-slate-200/80 dark:border-slate-700/80 flex items-center justify-between text-xs">
+                    <span className="text-slate-500 dark:text-slate-400 font-medium">Nguồn bài viết biểu phí:</span>
+                    <a
+                      href={feeSourceUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 font-bold text-emerald-600 dark:text-emerald-400 hover:underline text-[11px]"
+                      title={`Xem văn bản công bố biểu phí giao dịch của ${company.shortName}`}
+                    >
+                      <span>Xem biểu phí chuẩn</span>
+                      <ExternalLink className="h-3 w-3" />
+                    </a>
+                  </div>
                 </div>
 
                 {/* Margin Loan Box with explicit distinction between 90-day standard vs short-term deal */}
@@ -264,6 +278,19 @@ export default function CompanyDetailModal({ company, onClose }) {
                       <p className="text-[10px] text-slate-500 dark:text-slate-400 mt-1 leading-normal">
                         Kỳ hạn chuẩn 90 ngày (gia hạn tối đa thêm 90 ngày). Áp dụng cho danh mục nắm giữ trung - dài hạn.
                       </p>
+                      <div className="mt-2.5 pt-2 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-[10px]">
+                        <span className="text-slate-400 font-medium">Nguồn lãi suất chuẩn:</span>
+                        <a
+                          href={feeSourceUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1 font-bold text-emerald-600 dark:text-emerald-400 hover:underline"
+                          title={`Xem văn bản công bố lãi suất margin chuẩn của ${company.shortName}`}
+                        >
+                          <span>Xem biểu lãi gốc</span>
+                          <ExternalLink className="h-2.5 w-2.5" />
+                        </a>
+                      </div>
                     </div>
 
                     {/* Block B: Short-term deal package / Margin linh hoạt */}
@@ -336,7 +363,7 @@ export default function CompanyDetailModal({ company, onClose }) {
                         </h4>
                         <span className="inline-flex items-center gap-1 rounded-full bg-emerald-100 dark:bg-emerald-900/80 px-2.5 py-0.5 text-[10px] font-black text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-700">
                           <CheckCircle2 className="h-3 w-3" />
-                          100% Đã Kiểm Chứng (HTTP 200 OK)
+                          {scannedSources?.length || 0} Nguồn Dữ Liệu & Bài Viết Đã Quét
                         </span>
                       </div>
                       <p className="text-xs text-slate-600 dark:text-slate-300 mt-0.5">
@@ -357,17 +384,34 @@ export default function CompanyDetailModal({ company, onClose }) {
                         <div className="flex items-center justify-between gap-1.5 mb-1.5">
                           <span className="text-xs font-black text-slate-900 dark:text-white flex items-center gap-1.5">
                             {source.id === 'official_fee' && <FileText className="h-3.5 w-3.5 text-emerald-600 shrink-0" />}
-                            {source.id === 'official_promo' && <Gift className="h-3.5 w-3.5 text-amber-500 shrink-0" />}
-                            {source.id === 'official_margin_deal' && <Zap className="h-3.5 w-3.5 text-purple-600 shrink-0" />}
-                            {source.id === 'official_article' && <Newspaper className="h-3.5 w-3.5 text-indigo-600 shrink-0" />}
-                            {source.id === 'scanned_endpoint' && <ShieldCheck className="h-3.5 w-3.5 text-blue-600 shrink-0" />}
-                            {source.id === 'official_website' && <Globe className="h-3.5 w-3.5 text-indigo-600 shrink-0" />}
+                            {source.id.includes('margin') && <Zap className="h-3.5 w-3.5 text-blue-600 shrink-0" />}
+                            {(source.id.includes('promo') || source.id.includes('welcome')) && <Gift className="h-3.5 w-3.5 text-amber-500 shrink-0" />}
+                            {source.id.includes('article') && !source.id.includes('margin') && !source.id.includes('promo') && <Newspaper className="h-3.5 w-3.5 text-indigo-600 shrink-0" />}
+                            {source.id === 'scanned_endpoint' && <ShieldCheck className="h-3.5 w-3.5 text-purple-600 shrink-0" />}
+                            {source.id === 'official_website' && <Globe className="h-3.5 w-3.5 text-slate-500 dark:text-slate-400 shrink-0" />}
                             {source.id === 'account_opening' && <ArrowUpRight className="h-3.5 w-3.5 text-amber-600 shrink-0" />}
                             <span>{source.title}</span>
                           </span>
-                          <span className="rounded-md bg-emerald-50 dark:bg-emerald-950/80 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 px-1.5 py-0.5 text-[9px] font-black shrink-0">
+                          <div className="flex items-center gap-1 shrink-0">
+                          {source.badge && (
+                            <span className={`rounded-md px-1.5 py-0.5 text-[9px] font-black border ${
+                              source.badgeColor === 'blue'
+                                ? 'bg-blue-50 text-blue-700 border-blue-200 dark:bg-blue-950 dark:text-blue-300 dark:border-blue-800'
+                                : source.badgeColor === 'amber'
+                                ? 'bg-amber-50 text-amber-800 border-amber-200 dark:bg-amber-950 dark:text-amber-300 dark:border-amber-800'
+                                : source.badgeColor === 'purple'
+                                ? 'bg-purple-50 text-purple-700 border-purple-200 dark:bg-purple-950 dark:text-purple-300 dark:border-purple-800'
+                                : source.badgeColor === 'slate'
+                                ? 'bg-slate-100 text-slate-700 border-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700'
+                                : 'bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950 dark:text-emerald-300 dark:border-emerald-800'
+                            }`}>
+                              {source.badge}
+                            </span>
+                          )}
+                          <span className="rounded-md bg-emerald-50 dark:bg-emerald-950/80 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 px-1.5 py-0.5 text-[9px] font-black">
                             {source.status}
                           </span>
+                        </div>
                         </div>
                         <p className="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed mb-2">
                           {source.description}
@@ -385,7 +429,7 @@ export default function CompanyDetailModal({ company, onClose }) {
                           className="inline-flex items-center gap-1 text-[11px] font-bold text-emerald-700 dark:text-emerald-400 hover:text-emerald-800 hover:underline shrink-0 bg-emerald-50 dark:bg-emerald-950/60 px-2 py-1 rounded-md"
                           title={`Truy cập ${source.title}: ${source.url}`}
                         >
-                          <span>Mở link</span>
+                          <span>{source.id.includes('article') || source.id.includes('fee') || source.id.includes('margin') ? 'Mở bài viết' : 'Mở link'}</span>
                           <ExternalLink className="h-3 w-3" />
                         </a>
                       </div>

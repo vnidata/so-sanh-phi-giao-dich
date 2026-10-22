@@ -380,7 +380,7 @@ describe('Securities Data Integrity & Anti-Hallucination Suite', () => {
     });
   });
 
-  it('should verify getBrokerSourceLinks returns verified URLs and 4 scannedSources for all 30 brokers without speculative links', () => {
+  it('should verify getBrokerSourceLinks returns verified URLs and comprehensive scannedSources for all 30 brokers without speculative links', () => {
     SECURITIES_COMPANIES.forEach(company => {
       const links = getBrokerSourceLinks(company);
       expect(links).toBeDefined();
@@ -388,7 +388,7 @@ describe('Securities Data Integrity & Anti-Hallucination Suite', () => {
       expect(links.feeSourceUrl).toMatch(/^https?:\/\//);
       expect(links.scannedUrl).toMatch(/^https?:\/\//);
       expect(links.accountOpeningUrl).toMatch(/^https?:\/\//);
-      expect(links.scannedSources).toHaveLength(4);
+      expect(links.scannedSources.length).toBeGreaterThanOrEqual(4);
 
       // Verify no speculative 404 paths like /khuyen-mai or /margin-deal
       expect(links.feeSourceUrl).not.toContain('/khuyen-mai');
