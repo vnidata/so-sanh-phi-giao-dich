@@ -47,9 +47,6 @@ const server = http.createServer(async (req, res) => {
       return;
     }
 
-    const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 7000);
-
     try {
       const browserHeaders = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 VietSecScanner/2.0',
@@ -60,18 +57,23 @@ const server = http.createServer(async (req, res) => {
 
       let activeUrl = targetUrl;
       let sourceType = 'direct';
-      let fetchRes = await fetch(activeUrl, {
-        headers: browserHeaders,
-        signal: controller.signal,
-        redirect: 'follow'
-      });
+      let fetchRes;
+      try {
+        fetchRes = await fetch(activeUrl, {
+          headers: browserHeaders,
+          signal: AbortSignal.timeout(3500),
+          redirect: 'follow'
+        });
+      } catch (_) {
+        fetchRes = { status: 408 };
+      }
 
       // 1. Thử fallbackUrl nếu URL chính không trả về 200
       if (fetchRes.status !== 200 && fallbackUrl) {
         try {
           const fbRes = await fetch(fallbackUrl, {
             headers: browserHeaders,
-            signal: AbortSignal.timeout(5000),
+            signal: AbortSignal.timeout(3500),
             redirect: 'follow'
           });
           if (fbRes.status === 200) {
@@ -89,7 +91,7 @@ const server = http.createServer(async (req, res) => {
           const jinaUrl = 'https://r.jina.ai/' + bypassUrl;
           const jinaRes = await fetch(jinaUrl, {
             headers: { 'Accept': 'text/plain, text/markdown' },
-            signal: AbortSignal.timeout(6000)
+            signal: AbortSignal.timeout(4500)
           });
           if (jinaRes.status === 200) {
             const jText = await jinaRes.text();
@@ -101,7 +103,6 @@ const server = http.createServer(async (req, res) => {
           }
         } catch (_) {}
       }
-      clearTimeout(timeoutId);
 
       const status = fetchRes.status;
       let text = '';
@@ -130,7 +131,6 @@ const server = http.createServer(async (req, res) => {
       res.end(JSON.stringify(result));
       return;
     } catch (err) {
-      clearTimeout(timeoutId);
       const isTimeout = err.name === 'AbortError';
       res.writeHead(200, {
         'Content-Type': 'application/json',

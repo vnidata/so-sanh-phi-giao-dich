@@ -32,9 +32,9 @@ export const TARGET_BROKERS = [
     shortName: 'VPS',
     stockCode: null,
     isListed: false,
-    url: 'https://vps.com.vn/bieu-phi-dich-vu/',
-    fallbackUrl: 'https://vps.com.vn',
-    officialSource: 'https://vps.com.vn/bieu-phi-dich-vu/',
+    url: 'https://vps.com.vn',
+    fallbackUrl: 'https://vps.com.vn/bieu-phi-dich-vu/',
+    officialSource: 'https://vps.com.vn',
     knownIssue: null
   },
   {
@@ -318,9 +318,9 @@ export const TARGET_BROKERS = [
     shortName: 'TVSI',
     stockCode: null,
     isListed: false,
-    url: 'https://tvsi.com.vn/bieu-phi',
-    fallbackUrl: 'https://tvsi.com.vn',
-    officialSource: 'https://tvsi.com.vn/bieu-phi',
+    url: 'https://tvsi.com.vn',
+    fallbackUrl: 'https://tvsi.com.vn/bieu-phi',
+    officialSource: 'https://tvsi.com.vn',
     knownIssue: null
   },
   {

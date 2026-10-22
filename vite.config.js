@@ -20,8 +20,6 @@ function crawlerDevPlugin() {
           }
 
           const fallbackUrl = reqUrl.searchParams.get('fallbackUrl');
-          const controller = new AbortController();
-          const timeoutId = setTimeout(() => controller.abort(), 7000);
 
           try {
             const browserHeaders = {
@@ -33,18 +31,23 @@ function crawlerDevPlugin() {
 
             let activeUrl = targetUrl;
             let sourceType = 'direct';
-            let fetchRes = await fetch(activeUrl, {
-              headers: browserHeaders,
-              signal: controller.signal,
-              redirect: 'follow'
-            });
+            let fetchRes;
+            try {
+              fetchRes = await fetch(activeUrl, {
+                headers: browserHeaders,
+                signal: AbortSignal.timeout(3500),
+                redirect: 'follow'
+              });
+            } catch (_) {
+              fetchRes = { status: 408 };
+            }
 
             // 1. Thử fallbackUrl nếu URL chính không trả về HTTP 200
             if (fetchRes.status !== 200 && fallbackUrl) {
               try {
                 const fbRes = await fetch(fallbackUrl, {
                   headers: browserHeaders,
-                  signal: AbortSignal.timeout(5000),
+                  signal: AbortSignal.timeout(3500),
                   redirect: 'follow'
                 });
                 if (fbRes.status === 200) {
@@ -62,7 +65,7 @@ function crawlerDevPlugin() {
                 const jinaUrl = 'https://r.jina.ai/' + bypassUrl;
                 const jinaRes = await fetch(jinaUrl, {
                   headers: { 'Accept': 'text/plain, text/markdown' },
-                  signal: AbortSignal.timeout(6000)
+                  signal: AbortSignal.timeout(4500)
                 });
                 if (jinaRes.status === 200) {
                   const jText = await jinaRes.text();
@@ -74,7 +77,6 @@ function crawlerDevPlugin() {
                 }
               } catch (_) {}
             }
-            clearTimeout(timeoutId);
 
             const status = fetchRes.status;
             let text = '';
@@ -102,7 +104,6 @@ function crawlerDevPlugin() {
             });
             res.end(JSON.stringify(result));
           } catch (err) {
-            clearTimeout(timeoutId);
             const isTimeout = err.name === 'AbortError';
             res.writeHead(200, {
               'Content-Type': 'application/json',
