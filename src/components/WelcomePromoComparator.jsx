@@ -6,8 +6,10 @@ import {
   ArrowUpRight, 
   Search, 
   Clock, 
-  Award
+  Award,
+  ExternalLink
 } from 'lucide-react';
+import { getBrokerSourceLinks } from '../utils/sourceLinks';
 
 export default function WelcomePromoComparator({ companies, onSelectDetail }) {
   const [search, setSearch] = useState('');
@@ -197,13 +199,25 @@ export default function WelcomePromoComparator({ companies, onSelectDetail }) {
                   </div>
                 </div>
 
-                <button
-                  type="button"
-                  onClick={() => onSelectDetail && onSelectDetail(company)}
-                  className="shrink-0 text-[11px] font-bold text-blue-600 dark:text-blue-400 hover:underline py-1 px-1.5"
-                >
-                  Chi tiết
-                </button>
+                <div className="flex items-center gap-1 shrink-0">
+                  <a
+                    href={company.welcomePromo?.sourceUrl || getBrokerSourceLinks(company).promoSourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-0.5 text-[10px] font-bold text-amber-700 dark:text-amber-300 hover:underline py-1 px-1.5 rounded-md bg-amber-50 dark:bg-amber-950/70 border border-amber-200/60 dark:border-amber-800/60"
+                    title={`Xem bài viết công bố ưu đãi tại ${company.shortName}`}
+                  >
+                    <span>Bài viết ưu đãi</span>
+                    <ExternalLink className="h-2.5 w-2.5" />
+                  </a>
+                  <button
+                    type="button"
+                    onClick={() => onSelectDetail && onSelectDetail(company)}
+                    className="text-[11px] font-bold text-blue-600 dark:text-blue-400 hover:underline py-1 px-1.5"
+                  >
+                    Chi tiết
+                  </button>
+                </div>
               </div>
 
               {/* Offer Summary Pills (2 Columns) */}
@@ -359,15 +373,36 @@ export default function WelcomePromoComparator({ companies, onSelectDetail }) {
 
                     {/* Action button */}
                     <td className="py-2.5 px-3 text-right whitespace-nowrap">
-                      <a
-                        href={company.accountOpeningUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1 rounded-lg bg-blue-600 hover:bg-blue-700 px-2.5 py-1 text-xs font-bold text-white shadow-xs transition-colors"
-                      >
-                        <span>Nhận Ưu Đãi</span>
-                        <ArrowUpRight className="h-3 w-3" />
-                      </a>
+                      <div className="flex flex-col items-end gap-1">
+                        <a
+                          href={company.accountOpeningUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1 rounded-lg bg-blue-600 hover:bg-blue-700 px-2.5 py-1 text-xs font-bold text-white shadow-xs transition-colors"
+                        >
+                          <span>Nhận Ưu Đãi</span>
+                          <ArrowUpRight className="h-3 w-3" />
+                        </a>
+                        <div className="flex items-center gap-2 text-[10px]">
+                          <a
+                            href={company.welcomePromo?.sourceUrl || getBrokerSourceLinks(company).promoSourceUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-amber-600 dark:text-amber-400 hover:underline font-bold inline-flex items-center gap-0.5"
+                            title={`Xem bài viết công bố ưu đãi tại ${company.shortName}`}
+                          >
+                            <span>Bài viết ưu đãi</span>
+                            <ExternalLink className="h-2.5 w-2.5" />
+                          </a>
+                          <button
+                            type="button"
+                            onClick={() => onSelectDetail && onSelectDetail(company)}
+                            className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200"
+                          >
+                            Chi tiết
+                          </button>
+                        </div>
+                      </div>
                     </td>
                   </tr>
                 );

@@ -20,6 +20,7 @@ import {
   Sparkles,
   DollarSign
 } from 'lucide-react';
+import { getBrokerSourceLinks } from '../utils/sourceLinks';
 
 /**
  * Trích xuất và chuẩn hóa thông tin gói Margin ngắn ngày của từng CTCK
@@ -561,13 +562,25 @@ export default function ShortTermMarginComparator({ companies = [], onSelectDeta
                           <ArrowUpRight className="h-3 w-3" />
                         </a>
 
-                        <button
-                          type="button"
-                          onClick={() => onSelectDetail && onSelectDetail(c)}
-                          className="text-[10px] font-semibold text-slate-500 hover:text-blue-600 dark:hover:text-blue-400 hover:underline"
-                        >
-                          Chi tiết
-                        </button>
+                        <div className="flex items-center gap-2 text-[10px]">
+                          <a
+                            href={c.margin?.sourceUrl || getBrokerSourceLinks(c).marginSourceUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-600 dark:text-blue-400 hover:underline font-bold inline-flex items-center gap-0.5"
+                            title={`Xem bài viết sản phẩm Margin tại ${c.shortName}`}
+                          >
+                            <span>Bài viết Margin</span>
+                            <ExternalLink className="h-2.5 w-2.5" />
+                          </a>
+                          <button
+                            type="button"
+                            onClick={() => onSelectDetail && onSelectDetail(c)}
+                            className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200"
+                          >
+                            Chi tiết
+                          </button>
+                        </div>
                       </div>
                     </td>
                   </tr>
@@ -669,13 +682,25 @@ export default function ShortTermMarginComparator({ companies = [], onSelectDeta
 
                 {/* Card Actions */}
                 <div className="pt-2 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between gap-2">
-                  <button
-                    type="button"
-                    onClick={() => onSelectDetail && onSelectDetail(c)}
-                    className="text-xs font-bold text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 py-1.5 px-2"
-                  >
-                    Xem Chi Tiết
-                  </button>
+                  <div className="flex items-center gap-1.5">
+                    <button
+                      type="button"
+                      onClick={() => onSelectDetail && onSelectDetail(c)}
+                      className="text-xs font-bold text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 py-1.5 px-2"
+                    >
+                      Chi Tiết
+                    </button>
+                    <a
+                      href={c.margin?.sourceUrl || getBrokerSourceLinks(c).marginSourceUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-0.5 text-[11px] font-bold text-blue-600 dark:text-blue-400 hover:underline py-1 px-1.5 rounded-lg bg-blue-50 dark:bg-blue-950/60"
+                      title={`Xem bài viết sản phẩm Margin tại ${c.shortName}`}
+                    >
+                      <span>Bài viết Margin</span>
+                      <ExternalLink className="h-2.5 w-2.5" />
+                    </a>
+                  </div>
 
                   <a
                     href={c.accountOpeningUrl || '#'}

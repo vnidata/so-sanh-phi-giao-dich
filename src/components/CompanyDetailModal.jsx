@@ -14,10 +14,11 @@ import {
   Layers,
   ExternalLink,
   Globe,
-  FileText
+  FileText,
+  Gift,
+  Zap
 } from 'lucide-react';
-import { TARGET_BROKERS } from '../data/brokersCrawlerList';
-import scanReportData from '../../scan-report.json';
+import { getBrokerSourceLinks } from '../utils/sourceLinks';
 
 export default function CompanyDetailModal({ company, onClose }) {
   if (!company) return null;
@@ -25,28 +26,15 @@ export default function CompanyDetailModal({ company, onClose }) {
   const [activeTab, setActiveTab] = useState('fee_margin');
   const isBsc = company.id === 'bsc' || company.isRecommended;
 
-  const companyWebsiteUrl = company.website || (company.sourceUrl ? (() => {
-    try {
-      return new URL(company.sourceUrl).origin;
-    } catch (_) {
-      return company.sourceUrl;
-    }
-  })() : '#');
+  // Lấy bộ 4 đường link nguồn chuẩn (Website, Biểu phí, Ưu đãi eKYC, Sản phẩm Margin)
+  const {
+    websiteUrl: companyWebsiteUrl,
+    feeSourceUrl,
+    promoSourceUrl,
+    marginSourceUrl
+  } = getBrokerSourceLinks(company);
 
-  const scanInfo = (scanReportData?.brokers || []).find((b) => b.id === company.id);
-  const brokerCrawlerItem = TARGET_BROKERS.find((b) => b.id === company.id);
-
-  // Link bài viết gốc về biểu phí & lãi suất trích xuất từ website đã quét
-  const feeArticleUrl =
-    scanInfo?.officialSource ||
-    brokerCrawlerItem?.officialSource ||
-    company.sourceUrl ||
-    scanInfo?.url ||
-    brokerCrawlerItem?.url ||
-    companyWebsiteUrl;
-
-  const scannedUrl = scanInfo?.url || brokerCrawlerItem?.url || feeArticleUrl;
-  const extractedSignals = company.crawlerMeta?.signals || scanInfo?.signals;
+  const extractedSignals = company.crawlerMeta?.signals;
 
   const tabs = [
     { id: 'fee_margin', label: 'Biểu Phí & Margin', icon: DollarSign },
@@ -77,7 +65,7 @@ export default function CompanyDetailModal({ company, onClose }) {
             </div>
 
             <div className="min-w-0">
-              <div className="flex items-center gap-2 flex-wrap">
+              <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap">
                 <h2 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white">
                   {company.shortName}
                 </h2>
@@ -90,7 +78,8 @@ export default function CompanyDetailModal({ company, onClose }) {
                     {company.listingStatus || 'Chưa niêm yết'}
                   </span>
                 )}
-                {/* Website công ty */}
+
+                {/* 1. Website chính thức */}
                 <a
                   href={companyWebsiteUrl}
                   target="_blank"
@@ -99,22 +88,52 @@ export default function CompanyDetailModal({ company, onClose }) {
                   title={`Truy cập trang web chính thức của ${company.shortName} (${companyWebsiteUrl})`}
                 >
                   <Globe className="h-2.5 w-2.5" />
-                  <span>Website công ty</span>
+                  <span>Website</span>
                   <ExternalLink className="h-2 w-2 opacity-70" />
                 </a>
 
-                {/* Nguồn bài viết biểu phí & lãi suất gốc */}
+                {/* 2. Nguồn bài viết biểu phí & lãi suất gốc */}
                 <a
-                  href={feeArticleUrl}
+                  href={feeSourceUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1 rounded-md bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-950/60 dark:hover:bg-emerald-900/60 px-2 py-0.5 text-[10px] font-bold text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 transition-colors"
-                  title={`Xem bài viết gốc về biểu phí & lãi suất tại ${company.shortName} (${feeArticleUrl})`}
+                  title={`Xem bài viết gốc về biểu phí & lãi suất tại ${company.shortName} (${feeSourceUrl})`}
                 >
                   <FileText className="h-2.5 w-2.5" />
-                  <span>Nguồn biểu phí & lãi</span>
+                  <span>Biểu phí gốc</span>
                   <ExternalLink className="h-2 w-2 opacity-70" />
                 </a>
+
+                {/* 3. Nguồn bài viết ưu đãi eKYC */}
+                {company.welcomePromo?.hasPromo && (
+                  <a
+                    href={promoSourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 rounded-md bg-amber-50 hover:bg-amber-100 dark:bg-amber-950/60 dark:hover:bg-amber-900/60 px-2 py-0.5 text-[10px] font-bold text-amber-800 dark:text-amber-300 border border-amber-200 dark:border-amber-800 transition-colors"
+                    title={`Xem bài viết công bố ưu đãi eKYC & khuyến mãi tại ${company.shortName} (${promoSourceUrl})`}
+                  >
+                    <Gift className="h-2.5 w-2.5 text-amber-600" />
+                    <span>Ưu đãi eKYC</span>
+                    <ExternalLink className="h-2 w-2 opacity-70" />
+                  </a>
+                )}
+
+                {/* 4. Nguồn bài viết gói Margin linh hoạt */}
+                {(company.margin?.shortTermTenor || company.margin?.isShortTermDealOnly) && (
+                  <a
+                    href={marginSourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 rounded-md bg-indigo-50 hover:bg-indigo-100 dark:bg-indigo-950/60 dark:hover:bg-indigo-900/60 px-2 py-0.5 text-[10px] font-bold text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800 transition-colors"
+                    title={`Xem bài viết giới thiệu sản phẩm Margin linh hoạt tại ${company.shortName} (${marginSourceUrl})`}
+                  >
+                    <Zap className="h-2.5 w-2.5 text-indigo-600" />
+                    <span>Margin T+</span>
+                    <ExternalLink className="h-2 w-2 opacity-70" />
+                  </a>
+                )}
 
                 {isBsc && (
                   <span className="rounded bg-gradient-to-r from-amber-500 to-orange-500 px-2 py-0.5 text-[10px] font-black text-white uppercase tracking-wider shadow-xs">
@@ -256,26 +275,43 @@ export default function CompanyDetailModal({ company, onClose }) {
                       </p>
                     </div>
 
-                    {/* Block B: Short-term deal package */}
-                    <div className="p-3 rounded-xl bg-white dark:bg-slate-900 border border-blue-200 dark:border-blue-900/60">
-                      <div className="flex items-center justify-between">
-                        <span className="text-[11px] font-bold text-blue-700 dark:text-blue-400">
-                          ⚡ Gói Ngắn Hạn (Deal / T+)
-                        </span>
-                        {company.margin.isShortTermDealOnly && (
-                          <span className="text-[9px] bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300 px-1 py-0.2 rounded font-bold">
-                            Deal 5–10 ngày
+                    {/* Block B: Short-term deal package / Margin linh hoạt */}
+                    <div className="p-3 rounded-xl bg-white dark:bg-slate-900 border border-blue-200 dark:border-blue-900/60 flex flex-col justify-between">
+                      <div>
+                        <div className="flex items-center justify-between">
+                          <span className="text-[11px] font-bold text-blue-700 dark:text-blue-400">
+                            ⚡ Gói Ngắn Hạn (Deal / T+)
                           </span>
-                        )}
+                          {company.margin.isShortTermDealOnly && (
+                            <span className="text-[9px] bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300 px-1 py-0.2 rounded font-bold">
+                              Deal 5–10 ngày
+                            </span>
+                          )}
+                        </div>
+                        <div className="mt-1 flex items-baseline gap-1">
+                          <span className="text-lg font-black text-blue-600 dark:text-blue-400">
+                            {company.margin.shortTermDisplay || `Từ ${company.margin.shortTermRate || company.margin.minRate}%/năm`}
+                          </span>
+                        </div>
+                        <p className="text-[10px] text-slate-500 dark:text-slate-400 mt-1 leading-normal">
+                          {company.margin.shortTermTenor || 'Gói lướt sóng ngắn hạn T+'}. {company.margin.interestFreeDays > 0 ? `Miễn lãi T+${company.margin.interestFreeDays - 1}.` : ''}
+                        </p>
                       </div>
-                      <div className="mt-1 flex items-baseline gap-1">
-                        <span className="text-lg font-black text-blue-600 dark:text-blue-400">
-                          {company.margin.shortTermDisplay || `Từ ${company.margin.shortTermRate || company.margin.minRate}%/năm`}
-                        </span>
+
+                      {/* Direct source link to flexible margin product article */}
+                      <div className="mt-2.5 pt-2 border-t border-blue-100 dark:border-blue-900/40 flex items-center justify-between text-[10px]">
+                        <span className="text-slate-400 font-medium">Nguồn gói Margin:</span>
+                        <a
+                          href={marginSourceUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1 font-bold text-blue-600 dark:text-blue-400 hover:underline"
+                          title={`Xem bài viết giới thiệu sản phẩm Margin linh hoạt tại ${company.shortName}`}
+                        >
+                          <span>Xem bài viết Margin</span>
+                          <ExternalLink className="h-2.5 w-2.5" />
+                        </a>
                       </div>
-                      <p className="text-[10px] text-slate-500 dark:text-slate-400 mt-1 leading-normal">
-                        {company.margin.shortTermTenor || 'Gói lướt sóng ngắn hạn T+'}. {company.margin.interestFreeDays > 0 ? `Miễn lãi T+${company.margin.interestFreeDays - 1}.` : ''}
-                      </p>
                     </div>
                   </div>
 
@@ -317,16 +353,28 @@ export default function CompanyDetailModal({ company, onClose }) {
                     </div>
                   </div>
 
-                  <a
-                    href={feeArticleUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 text-xs font-extrabold shadow-sm hover:shadow-md transition-all shrink-0 self-start sm:self-center"
-                    title={`Mở bài viết biểu phí & lãi suất gốc của ${company.shortName} tại tab mới`}
-                  >
-                    <span>Mở Bài Viết Gốc ({company.shortName})</span>
-                    <ExternalLink className="h-3.5 w-3.5" />
-                  </a>
+                  <div className="flex items-center gap-2 shrink-0 self-start sm:self-center">
+                    <a
+                      href={feeSourceUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center gap-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white px-3.5 py-2 text-xs font-extrabold shadow-sm hover:shadow-md transition-all"
+                      title={`Mở bài viết biểu phí & lãi suất gốc của ${company.shortName} tại tab mới`}
+                    >
+                      <span>Mở Biểu Phí Gốc</span>
+                      <ExternalLink className="h-3.5 w-3.5" />
+                    </a>
+                    <a
+                      href={marginSourceUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center gap-1.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white px-3.5 py-2 text-xs font-extrabold shadow-sm hover:shadow-md transition-all"
+                      title={`Mở bài viết sản phẩm Margin linh hoạt của ${company.shortName} tại tab mới`}
+                    >
+                      <span>Gói Margin T+</span>
+                      <ExternalLink className="h-3.5 w-3.5" />
+                    </a>
+                  </div>
                 </div>
 
                 {/* Source URL Box & Signals */}
@@ -337,13 +385,13 @@ export default function CompanyDetailModal({ company, onClose }) {
                       <span>Đường dẫn bài viết đã quét:</span>
                     </div>
                     <a
-                      href={feeArticleUrl}
+                      href={feeSourceUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="font-mono text-emerald-700 dark:text-emerald-400 hover:underline truncate max-w-full sm:max-w-md inline-flex items-center gap-1 text-[11px] font-semibold"
-                      title={feeArticleUrl}
+                      title={feeSourceUrl}
                     >
-                      <span className="truncate">{feeArticleUrl}</span>
+                      <span className="truncate">{feeSourceUrl}</span>
                       <ExternalLink className="h-3 w-3 shrink-0 opacity-70" />
                     </a>
                   </div>
@@ -445,6 +493,24 @@ export default function CompanyDetailModal({ company, onClose }) {
                       * {company.welcomePromo.note}
                     </p>
                   )}
+
+                  {/* Direct button to original promo announcement article */}
+                  <div className="mt-3.5 pt-3 border-t border-blue-200/80 dark:border-blue-800/80 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
+                    <div className="flex items-center gap-1.5 text-[11px] text-slate-600 dark:text-slate-300">
+                      <Gift className="h-3.5 w-3.5 text-amber-500 shrink-0" />
+                      <span>Bài viết công bố ưu đãi mở tài khoản eKYC:</span>
+                    </div>
+                    <a
+                      href={promoSourceUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-black px-3 py-1.5 text-xs shadow-xs transition-all shrink-0 self-start sm:self-auto"
+                      title={`Xem bài viết công bố ưu đãi mở tài khoản tại ${company.shortName}`}
+                    >
+                      <span>Xem Bài Viết Ưu Đãi Gốc</span>
+                      <ExternalLink className="h-3 w-3" />
+                    </a>
+                  </div>
                 </div>
               )}
 
@@ -464,6 +530,48 @@ export default function CompanyDetailModal({ company, onClose }) {
                     </li>
                   ))}
                 </ul>
+              </div>
+
+              {/* Card Nguồn Công Bố Khuyến Mại & Ưu Đãi */}
+              <div className="rounded-2xl border border-amber-200 dark:border-amber-900/60 bg-gradient-to-br from-amber-50/60 via-white to-orange-50/30 dark:from-amber-950/30 dark:via-slate-900 dark:to-slate-900/60 p-4 shadow-xs space-y-2.5">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
+                  <div className="flex items-center gap-2">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-amber-500 text-slate-950 shadow-xs">
+                      <Gift className="h-4 w-4" />
+                    </div>
+                    <div>
+                      <h4 className="text-xs font-black uppercase tracking-wider text-slate-900 dark:text-white">
+                        Nguồn Bài Viết Khuyến Mại & Ưu Đãi ({company.shortName})
+                      </h4>
+                      <p className="text-[11px] text-slate-500 dark:text-slate-400">
+                        Bài viết công bố thể lệ & chính sách ưu đãi mở mới trên website chính thức
+                      </p>
+                    </div>
+                  </div>
+
+                  <a
+                    href={promoSourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-3.5 py-1.5 text-xs shadow-xs transition-all shrink-0 self-start sm:self-auto"
+                  >
+                    <span>Mở Trang Khuyến Mại Gốc</span>
+                    <ExternalLink className="h-3.5 w-3.5" />
+                  </a>
+                </div>
+
+                <div className="rounded-xl bg-white dark:bg-slate-800/80 p-2.5 border border-amber-100 dark:border-amber-900/40 text-[11px] flex flex-col sm:flex-row sm:items-center justify-between gap-1.5">
+                  <span className="text-slate-500 dark:text-slate-400">Đường dẫn bài viết ưu đãi:</span>
+                  <a
+                    href={promoSourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-mono text-amber-700 dark:text-amber-400 hover:underline truncate max-w-full sm:max-w-md inline-flex items-center gap-1 font-semibold"
+                  >
+                    <span className="truncate">{promoSourceUrl}</span>
+                    <ExternalLink className="h-3 w-3 shrink-0 opacity-70" />
+                  </a>
+                </div>
               </div>
             </div>
           )}
@@ -551,18 +659,29 @@ export default function CompanyDetailModal({ company, onClose }) {
                     className="flex-1 inline-flex items-center justify-center gap-1.5 rounded-xl bg-blue-600 hover:bg-blue-700 px-4 py-2 text-xs font-bold text-white shadow-xs transition-all"
                   >
                     <Globe className="h-3.5 w-3.5" />
-                    <span>Mở Website {company.shortName}</span>
+                    <span>Website {company.shortName}</span>
                     <ExternalLink className="h-3 w-3 opacity-70" />
                   </a>
 
                   <a
-                    href={feeArticleUrl}
+                    href={feeSourceUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-1 inline-flex items-center justify-center gap-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 px-4 py-2 text-xs font-bold text-white shadow-xs transition-all"
                   >
                     <FileText className="h-3.5 w-3.5" />
-                    <span>Bài Viết Gốc Phí & Lãi</span>
+                    <span>Bài Viết Biểu Phí Gốc</span>
+                    <ExternalLink className="h-3 w-3 opacity-70" />
+                  </a>
+
+                  <a
+                    href={marginSourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 inline-flex items-center justify-center gap-1.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 px-4 py-2 text-xs font-bold text-white shadow-xs transition-all"
+                  >
+                    <Zap className="h-3.5 w-3.5" />
+                    <span>Sản Phẩm Margin T+</span>
                     <ExternalLink className="h-3 w-3 opacity-70" />
                   </a>
                 </div>
