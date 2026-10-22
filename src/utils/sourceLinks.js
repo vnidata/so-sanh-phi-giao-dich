@@ -5,6 +5,7 @@
  * 2. Cổng máy chủ Scanner/Crawler đã kết nối thực tế (scannedUrl / url)
  * 3. Trang Web chính thức của CTCK (websiteUrl / website)
  * 4. Cổng đăng ký mở tài khoản eKYC (accountOpeningUrl)
+ * 5. Các bài viết công bố ưu đãi, lãi suất margin & khuyến mại đã kiểm chứng (promoArticles, promoSourceUrl, marginSourceUrl)
  * 
  * NGUYÊN TẮC BẤT BIẾN:
  * - Tuyệt đối không phỏng đoán URL.
@@ -28,6 +29,7 @@ export function getBrokerSourceLinks(company) {
       accountOpeningUrl: '#',
       promoSourceUrl: '#',
       marginSourceUrl: '#',
+      promoArticles: [],
       scannedSources: [],
       crawlerMeta: null
     };
@@ -71,6 +73,7 @@ export function getBrokerSourceLinks(company) {
   // 5. Link bài viết Ưu đãi & Margin (dẫn về nguồn bài viết biểu phí/website đã kiểm chứng, không phỏng đoán link 404)
   const promoSourceUrl = company.welcomePromo?.sourceUrl || feeSourceUrl;
   const marginSourceUrl = company.margin?.sourceUrl || feeSourceUrl;
+  const promoArticles = Array.isArray(company.promoArticles) ? company.promoArticles : [];
 
   // 6. Metadata telemetry đo kiểm crawler
   const crawlerMeta = scanInfo
@@ -85,7 +88,7 @@ export function getBrokerSourceLinks(company) {
       }
     : (company.crawlerMeta || null);
 
-  // 7. Danh mục toàn bộ các liên kết đã quét thực tế của công ty
+  // 7. Danh mục 4 nguồn dữ liệu quét cốt lõi của công ty (Đảm bảo tính tương thích ngược)
   const scannedSources = [
     {
       id: 'official_fee',
@@ -136,6 +139,7 @@ export function getBrokerSourceLinks(company) {
     accountOpeningUrl,
     promoSourceUrl,
     marginSourceUrl,
+    promoArticles,
     scannedSources,
     crawlerMeta
   };

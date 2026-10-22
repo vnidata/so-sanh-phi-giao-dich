@@ -416,4 +416,28 @@ describe('Securities Data Integrity & Anti-Hallucination Suite', () => {
       expect(html).toContain(company.shortName);
     });
   });
+  it('should verify authentic promo and news articles and source URLs for all 30 brokers', () => {
+    SECURITIES_COMPANIES.forEach(company => {
+      // 1. Welcome Promo sourceUrl
+      expect(company.welcomePromo).toBeDefined();
+      expect(company.welcomePromo.sourceUrl).toMatch(/^https?:\/\//);
+
+      // 2. Margin sourceUrl
+      expect(company.margin).toBeDefined();
+      expect(company.margin.sourceUrl).toMatch(/^https?:\/\//);
+
+      // 3. Promo and News articles
+      expect(Array.isArray(company.promoArticles)).toBe(true);
+      expect(company.promoArticles.length).toBeGreaterThanOrEqual(1);
+
+      company.promoArticles.forEach(art => {
+        expect(typeof art.title).toBe('string');
+        expect(art.title.trim().length).toBeGreaterThan(0);
+        expect(art.url).toMatch(/^https?:\/\//);
+        expect(['fee', 'margin', 'promo']).toContain(art.type);
+        expect(typeof art.badge).toBe('string');
+        expect(art.badge.trim().length).toBeGreaterThan(0);
+      });
+    });
+  });
 });

@@ -17,7 +17,8 @@ import {
   FileText,
   Gift,
   Zap,
-  Database
+  Database,
+  Newspaper
 } from 'lucide-react';
 import { getBrokerSourceLinks } from '../utils/sourceLinks';
 
@@ -35,10 +36,12 @@ export default function CompanyDetailModal({ company, onClose }) {
     accountOpeningUrl,
     promoSourceUrl,
     marginSourceUrl,
+    promoArticles,
     scannedSources,
     crawlerMeta
   } = getBrokerSourceLinks(company);
 
+  const validPromoArticles = promoArticles?.length ? promoArticles : (company.promoArticles || []);
   const extractedSignals = crawlerMeta?.signals || company.crawlerMeta?.signals;
 
   const tabs = [
@@ -354,6 +357,9 @@ export default function CompanyDetailModal({ company, onClose }) {
                         <div className="flex items-center justify-between gap-1.5 mb-1.5">
                           <span className="text-xs font-black text-slate-900 dark:text-white flex items-center gap-1.5">
                             {source.id === 'official_fee' && <FileText className="h-3.5 w-3.5 text-emerald-600 shrink-0" />}
+                            {source.id === 'official_promo' && <Gift className="h-3.5 w-3.5 text-amber-500 shrink-0" />}
+                            {source.id === 'official_margin_deal' && <Zap className="h-3.5 w-3.5 text-purple-600 shrink-0" />}
+                            {source.id === 'official_article' && <Newspaper className="h-3.5 w-3.5 text-indigo-600 shrink-0" />}
                             {source.id === 'scanned_endpoint' && <ShieldCheck className="h-3.5 w-3.5 text-blue-600 shrink-0" />}
                             {source.id === 'official_website' && <Globe className="h-3.5 w-3.5 text-indigo-600 shrink-0" />}
                             {source.id === 'account_opening' && <ArrowUpRight className="h-3.5 w-3.5 text-amber-600 shrink-0" />}
@@ -518,6 +524,77 @@ export default function CompanyDetailModal({ company, onClose }) {
                       <span>Xem Bài Viết Ưu Đãi Gốc</span>
                       <ExternalLink className="h-3 w-3" />
                     </a>
+                  </div>
+                </div>
+              )}
+
+              {/* DANH SÁCH BÀI ĐĂNG TIN TỨC, ƯU ĐÃI & KHUYẾN MẠI ĐÃ QUÉT TRỰC TIẾP */}
+              {validPromoArticles.length > 0 && (
+                <div className="rounded-2xl border border-indigo-200 dark:border-indigo-900/60 bg-gradient-to-br from-indigo-50/70 via-white to-blue-50/40 dark:from-indigo-950/40 dark:via-slate-900 dark:to-slate-900/70 p-4 sm:p-5 shadow-xs space-y-3">
+                  <div className="flex items-center justify-between gap-2 flex-wrap pb-2 border-b border-indigo-100 dark:border-indigo-900/40">
+                    <div className="flex items-center gap-2">
+                      <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-indigo-600 text-white shadow-xs">
+                        <Newspaper className="h-4 w-4" />
+                      </div>
+                      <div>
+                        <h4 className="text-xs font-black uppercase tracking-wider text-slate-900 dark:text-white">
+                          Bài Đăng Tin Tức, Ưu Đãi & Khuyến Mại Liên Quan ({company.shortName})
+                        </h4>
+                        <p className="text-[11px] text-slate-500 dark:text-slate-400">
+                          Các bài viết công bố chính thức về lãi suất margin, gói phí và chính sách ưu đãi trên website công ty
+                        </p>
+                      </div>
+                    </div>
+                    <span className="text-[10px] font-black text-indigo-700 dark:text-indigo-300 bg-indigo-100 dark:bg-indigo-950/80 px-2 py-0.5 rounded-full border border-indigo-200 dark:border-indigo-800">
+                      {validPromoArticles.length} Bài viết đã quét
+                    </span>
+                  </div>
+
+                  <div className="space-y-2.5">
+                    {validPromoArticles.map((art, idx) => {
+                      const isFee = art.type === 'fee';
+                      const isMargin = art.type === 'margin';
+                      const badgeBg = isFee
+                        ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950/80 dark:text-emerald-300 border-emerald-300 dark:border-emerald-800'
+                        : isMargin
+                        ? 'bg-blue-100 text-blue-800 dark:bg-blue-950/80 dark:text-blue-300 border-blue-300 dark:border-blue-800'
+                        : 'bg-amber-100 text-amber-800 dark:bg-amber-950/80 dark:text-amber-300 border-amber-300 dark:border-amber-800';
+
+                      return (
+                        <div
+                          key={idx}
+                          className="rounded-xl bg-white dark:bg-slate-800/90 p-3 border border-slate-200/80 dark:border-slate-700/80 hover:border-indigo-400 dark:hover:border-indigo-500 transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-3 shadow-2xs"
+                        >
+                          <div className="min-w-0 flex-1 space-y-1">
+                            <div className="flex items-center gap-2 flex-wrap">
+                              <span className={`inline-flex items-center gap-1 rounded-md px-2 py-0.5 text-[9px] font-black border ${badgeBg}`}>
+                                {isFee && <FileText className="h-2.5 w-2.5" />}
+                                {isMargin && <Zap className="h-2.5 w-2.5" />}
+                                {!isFee && !isMargin && <Gift className="h-2.5 w-2.5" />}
+                                <span>{art.badge || (isFee ? 'Ưu Đãi Phí' : isMargin ? 'Lãi Suất Margin' : 'Khuyến Mại')}</span>
+                              </span>
+                              <span className="text-xs font-bold text-slate-900 dark:text-white line-clamp-1">
+                                {art.title}
+                              </span>
+                            </div>
+                            <p className="font-mono text-[10px] text-slate-400 truncate max-w-full sm:max-w-md">
+                              {art.url}
+                            </p>
+                          </div>
+
+                          <a
+                            href={art.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 rounded-lg bg-indigo-50 hover:bg-indigo-100 dark:bg-indigo-950/70 dark:hover:bg-indigo-900 text-indigo-700 dark:text-indigo-300 font-bold px-3 py-1.5 text-xs transition-colors shrink-0 self-start sm:self-auto border border-indigo-200 dark:border-indigo-800"
+                            title={`Xem bài viết gốc: ${art.title}`}
+                          >
+                            <span>Xem bài viết gốc</span>
+                            <ExternalLink className="h-3 w-3" />
+                          </a>
+                        </div>
+                      );
+                    })}
                   </div>
                 </div>
               )}

@@ -45,7 +45,8 @@ export const SECURITIES_COMPANIES = [
       "shortTermDisplay": "7.5% - 8.5%/năm (Gói Margin T+ BSC)",
       "standardRate90d": 10.5,
       "standardRateDisplay": "10.5% - 12.0%/năm (Chuẩn 90 ngày)",
-      "isShortTermDealOnly": false
+      "isShortTermDealOnly": false,
+      "sourceUrl": "https://www.bsc.com.vn/tin-tuc/tin-chi-tiet/1228024-giam-lai-suat-cho-vay-san-pham-margin-mr10-lai-suat-uu-dai-tu-0/"
     },
     "derivativesFee": {
       "feePerContract": 1000,
@@ -58,7 +59,8 @@ export const SECURITIES_COMPANIES = [
       "marginOffer": "Gói Margin T+ siêu cạnh tranh lãi suất từ 7.5%/năm",
       "duration": "Gói T+ / Khách hàng mới",
       "giftBonus": "Báo cáo phân tích chuyên sâu SmartX AI & BIDV Research",
-      "note": "Định chế tài chính vững mạnh từ Ngân hàng BIDV & Hana Securities."
+      "note": "Định chế tài chính vững mạnh từ Ngân hàng BIDV & Hana Securities.",
+      "sourceUrl": "https://www.bsc.com.vn/tin-tuc/tin-chi-tiet/84515-don-nha-dau-tu-giao-dich-tro-lai-bsc-mien-phi-giao-dich-voi-1-ty-gtgd/"
     },
     "promotions": [
       "Ưu đãi phí giao dịch cổ phiếu chỉ 0.08% cho tài khoản mở mới & Inactive",
@@ -85,7 +87,27 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://www.bsc.com.vn",
-    "sourceUrl": "https://www.bsc.com.vn/phi-giao-dich-qua-san/"
+    "sourceUrl": "https://www.bsc.com.vn/phi-giao-dich-qua-san/",
+    "promoArticles": [
+      {
+        "title": "Chương trình Miễn phí giao dịch với 1 tỷ GTGD mở mới & Inactive",
+        "url": "https://www.bsc.com.vn/tin-tuc/tin-chi-tiet/84515-don-nha-dau-tu-giao-dich-tro-lai-bsc-mien-phi-giao-dich-voi-1-ty-gtgd/",
+        "type": "fee",
+        "badge": "Ưu Đãi Phí"
+      },
+      {
+        "title": "Giảm lãi suất cho vay sản phẩm Margin MR10 ưu đãi từ 0%",
+        "url": "https://www.bsc.com.vn/tin-tuc/tin-chi-tiet/1228024-giam-lai-suat-cho-vay-san-pham-margin-mr10-lai-suat-uu-dai-tu-0/",
+        "type": "margin",
+        "badge": "Lãi Suất Margin"
+      },
+      {
+        "title": "Danh mục cổ phiếu chuẩn BSC10 – Ưu đãi phí & lãi vay chất",
+        "url": "https://www.bsc.com.vn/tin-tuc/tin-chi-tiet/1153587-danh-muc-chuan-uu-dai-chat/",
+        "type": "margin",
+        "badge": "Danh Mục Ưu Đãi"
+      }
+    ]
   },
   {
     "id": "tcbs",
@@ -124,7 +146,8 @@ export const SECURITIES_COMPANIES = [
       "shortTermDisplay": "7.99% - 10.5%/năm (Gói deal có điều kiện)",
       "standardRate90d": 14,
       "standardRateDisplay": "14.0%/năm (Phổ thông hiện hữu)",
-      "isShortTermDealOnly": false
+      "isShortTermDealOnly": false,
+      "sourceUrl": "https://www.tcbs.com.vn/ca-nhan/uu-dai/gom-co-ve-nha/"
     },
     "derivativesFee": {
       "feePerContract": 0,
@@ -137,7 +160,8 @@ export const SECURITIES_COMPANIES = [
       "marginOffer": "Lãi suất Margin linh hoạt từ 7.99%/năm",
       "duration": "Trọn đời",
       "giftBonus": "Tích lũy điểm thưởng iXu đổi tiền mặt/quà tặng",
-      "note": "Tiên phong miễn phí giao dịch chứng khoán tại Việt Nam."
+      "note": "Tiên phong miễn phí giao dịch chứng khoán tại Việt Nam.",
+      "sourceUrl": "https://www.tcbs.com.vn/ca-nhan/uu-dai/"
     },
     "promotions": [
       "Zero-Fee trọn đời cho giao dịch cổ phiếu và phái sinh",
@@ -164,7 +188,27 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://www.tcbs.com.vn",
-    "sourceUrl": "https://www.tcbs.com.vn"
+    "sourceUrl": "https://www.tcbs.com.vn",
+    "promoArticles": [
+      {
+        "title": "Chương trình Ưu đãi Gom Cổ Về Nhà lãi suất Margin từ 7.89%/năm",
+        "url": "https://www.tcbs.com.vn/ca-nhan/uu-dai/gom-co-ve-nha/",
+        "type": "margin",
+        "badge": "Lãi Suất Margin"
+      },
+      {
+        "title": "Tổng hợp kho chương trình ưu đãi và khuyến mại TCBS",
+        "url": "https://www.tcbs.com.vn/ca-nhan/uu-dai/",
+        "type": "promo",
+        "badge": "Kho Ưu Đãi"
+      },
+      {
+        "title": "Chính sách Zero-Fee miễn 100% phí giao dịch cổ phiếu trọn đời",
+        "url": "https://help.tcbs.com.vn/",
+        "type": "fee",
+        "badge": "Biểu Phí Zero-Fee"
+      }
+    ]
   },
   {
     "id": "vps",
@@ -203,7 +247,8 @@ export const SECURITIES_COMPANIES = [
       "shortTermDisplay": "8.6% - 9.8%/năm (Gói T+5/T+10 ngắn ngày)",
       "standardRate90d": 13.5,
       "standardRateDisplay": "13.5% - 14.0%/năm (Chuẩn 90 ngày)",
-      "isShortTermDealOnly": true
+      "isShortTermDealOnly": true,
+      "sourceUrl": "https://vps.com.vn/bai-viet/vps-ra-mat-goi-margin-uu-dai-phat-tai"
     },
     "derivativesFee": {
       "feePerContract": 1000,
@@ -216,7 +261,8 @@ export const SECURITIES_COMPANIES = [
       "marginOffer": "Gói lãi suất ưu đãi M9.8 từ 7.5%/năm",
       "duration": "6 tháng đầu",
       "giftBonus": "Tư vấn 1-1 phòng giao dịch & công cụ SmartOne Pro",
-      "note": "Thị phần số 1 sàn HOSE & HNX, đội ngũ broker đông đảo."
+      "note": "Thị phần số 1 sàn HOSE & HNX, đội ngũ broker đông đảo.",
+      "sourceUrl": "https://vps.com.vn/ca-nhan/ho-tro?view=bieu-phi-bieu-mau-va-chinh-sach&nav=bieu-phi--chinh-sach"
     },
     "promotions": [
       "Miễn phí 6 tháng giao dịch cổ phiếu cho tài khoản mở mới",
@@ -243,7 +289,21 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://vps.com.vn",
-    "sourceUrl": "https://vps.com.vn/ca-nhan/ho-tro?view=bieu-phi-bieu-mau-va-chinh-sach&nav=bieu-phi--chinh-sach"
+    "sourceUrl": "https://vps.com.vn/ca-nhan/ho-tro?view=bieu-phi-bieu-mau-va-chinh-sach&nav=bieu-phi--chinh-sach",
+    "promoArticles": [
+      {
+        "title": "VPS ra mắt gói Margin Ưu Đãi Phát Tài với lãi suất từ 8.8%/năm",
+        "url": "https://vps.com.vn/bai-viet/vps-ra-mat-goi-margin-uu-dai-phat-tai",
+        "type": "margin",
+        "badge": "Lãi Suất Margin"
+      },
+      {
+        "title": "Chính sách biểu phí dịch vụ tài chính & giao dịch VPS",
+        "url": "https://vps.com.vn/ca-nhan/ho-tro?view=bieu-phi-bieu-mau-va-chinh-sach&nav=bieu-phi--chinh-sach",
+        "type": "fee",
+        "badge": "Biểu Phí Chuẩn"
+      }
+    ]
   },
   {
     "id": "ssi",
@@ -282,7 +342,8 @@ export const SECURITIES_COMPANIES = [
       "shortTermDisplay": "9.0% - 10.5%/năm (Gói T+ ngắn hạn)",
       "standardRate90d": 12,
       "standardRateDisplay": "11.5% - 13.0%/năm (Chuẩn 90 ngày)",
-      "isShortTermDealOnly": false
+      "isShortTermDealOnly": false,
+      "sourceUrl": "https://www.ssi.com.vn/tin-tuc/tin-tuc-chung/dieu-chinh-goi-nhap-cuoc-voi-lai-suat-799-danh-cho-khach-hang-moi-va-kich-hoat-tro-lai"
     },
     "derivativesFee": {
       "feePerContract": 1000,
@@ -295,7 +356,8 @@ export const SECURITIES_COMPANIES = [
       "marginOffer": "Lãi suất Margin ưu đãi kích cầu định kỳ từ 9.0%/năm",
       "duration": "Theo chương trình từng quý",
       "giftBonus": "Báo cáo phân tích chuyên sâu SSI Research & iBoard",
-      "note": "Định chế chứng khoán lớn nhất và uy tín bậc nhất thị trường."
+      "note": "Định chế chứng khoán lớn nhất và uy tín bậc nhất thị trường.",
+      "sourceUrl": "https://www.ssi.com.vn/tin-tuc/tin-tuc-su-kien-ssi/ra-mat-chuong-trinh-khuyen-mai-ssi-margin-0-0"
     },
     "promotions": [
       "Chương trình quay số trúng thưởng và tặng quà giá trị cho tài khoản mới",
@@ -321,7 +383,27 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://www.ssi.com.vn",
-    "sourceUrl": "https://www.ssi.com.vn/khach-hang-ca-nhan/bieu-phi/bieu-gia-dich-vu-giao-dich-chung-khoan"
+    "sourceUrl": "https://www.ssi.com.vn/khach-hang-ca-nhan/bieu-phi/bieu-gia-dich-vu-giao-dich-chung-khoan",
+    "promoArticles": [
+      {
+        "title": "Ra mắt chương trình khuyến mại SSI Margin 0.0",
+        "url": "https://www.ssi.com.vn/tin-tuc/tin-tuc-su-kien-ssi/ra-mat-chuong-trinh-khuyen-mai-ssi-margin-0-0",
+        "type": "margin",
+        "badge": "Khuyến Mại Margin"
+      },
+      {
+        "title": "Gói Nhập Cuộc với lãi suất 7.99% cho khách hàng mới và kích hoạt trở lại",
+        "url": "https://www.ssi.com.vn/tin-tuc/tin-tuc-chung/dieu-chinh-goi-nhap-cuoc-voi-lai-suat-799-danh-cho-khach-hang-moi-va-kich-hoat-tro-lai",
+        "type": "margin",
+        "badge": "Lãi Suất 7.99%"
+      },
+      {
+        "title": "Biểu phí giao dịch và dịch vụ khách hàng cá nhân SSI",
+        "url": "https://www.ssi.com.vn/khach-hang-ca-nhan/bieu-phi-dich-vu",
+        "type": "fee",
+        "badge": "Biểu Phí Chuẩn"
+      }
+    ]
   },
   {
     "id": "vndirect",
@@ -360,7 +442,8 @@ export const SECURITIES_COMPANIES = [
       "shortTermDisplay": "9.5% - 10.5%/năm (Ưu đãi 30 ngày đầu)",
       "standardRate90d": 12.5,
       "standardRateDisplay": "12.0% - 13.5%/năm (Chuẩn 90 ngày)",
-      "isShortTermDealOnly": false
+      "isShortTermDealOnly": false,
+      "sourceUrl": "https://www.vndirect.com.vn/dich-vu-chung-khoan/san-pham-dich-vu/margin/t10/"
     },
     "derivativesFee": {
       "feePerContract": 1000,
@@ -373,7 +456,8 @@ export const SECURITIES_COMPANIES = [
       "marginOffer": "Gói D-Margin ưu đãi 30 ngày đầu từ 8.9%/năm",
       "duration": "30 ngày đầu",
       "giftBonus": "Khoá học D-Academy toàn diện cho F0 & tư vấn D-Wealth",
-      "note": "Hệ sinh thái tài chính quản trị gia sản đa dạng."
+      "note": "Hệ sinh thái tài chính quản trị gia sản đa dạng.",
+      "sourceUrl": "https://www.vndirect.com.vn/bieu-phi-lai-margin/"
     },
     "promotions": [
       "Ưu đãi lãi suất margin cho khách hàng mới",
@@ -399,7 +483,21 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://www.vndirect.com.vn",
-    "sourceUrl": "https://banggia.vndirect.com.vn"
+    "sourceUrl": "https://banggia.vndirect.com.vn",
+    "promoArticles": [
+      {
+        "title": "Công bố biểu phí dịch vụ giao dịch và khung lãi suất Margin VNDIRECT",
+        "url": "https://www.vndirect.com.vn/bieu-phi-lai-margin/",
+        "type": "fee",
+        "badge": "Biểu Phí & Lãi"
+      },
+      {
+        "title": "Gói sản phẩm D-Margin T10 miễn lãi 10 ngày đầu giải ngân",
+        "url": "https://www.vndirect.com.vn/dich-vu-chung-khoan/san-pham-dich-vu/margin/t10/",
+        "type": "margin",
+        "badge": "Margin T+10"
+      }
+    ]
   },
   {
     "id": "mirae-asset",
@@ -438,7 +536,8 @@ export const SECURITIES_COMPANIES = [
       "shortTermDisplay": "9.0% - 10.5%/năm (Ưu đãi 60 ngày)",
       "standardRate90d": 11.5,
       "standardRateDisplay": "11.0% - 12.5%/năm (Chuẩn 90 ngày)",
-      "isShortTermDealOnly": false
+      "isShortTermDealOnly": false,
+      "sourceUrl": "https://masvn.com/article/margin-888-phat-manh-suc-mua-bat-dua-but-toc-1086580"
     },
     "derivativesFee": {
       "feePerContract": 1000,
@@ -451,7 +550,8 @@ export const SECURITIES_COMPANIES = [
       "marginOffer": "Lãi suất Margin chỉ 7.99%/năm (chuẩn 9.9%)",
       "duration": "60 ngày đầu",
       "giftBonus": "Miễn phí ứng trước tiền bán trong chương trình",
-      "note": "Tiềm lực vốn ngoại dồi dào từ Tập đoàn Tài chính Mirae Asset."
+      "note": "Tiềm lực vốn ngoại dồi dào từ Tập đoàn Tài chính Mirae Asset.",
+      "sourceUrl": "https://masvn.com/article/dau-tu-thoa-thich-0-phi-giao-dich-1085894"
     },
     "promotions": [
       "Lãi suất vay Margin siêu ưu đãi từ 7.99%/năm",
@@ -477,7 +577,27 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://masvn.com",
-    "sourceUrl": "https://masvn.com/bieu-phi"
+    "sourceUrl": "https://masvn.com/bieu-phi",
+    "promoArticles": [
+      {
+        "title": "Chương trình Margin 8.88% – Phát mạnh sức mua, bứt phá vị thế",
+        "url": "https://masvn.com/article/margin-888-phat-manh-suc-mua-bat-dua-but-toc-1086580",
+        "type": "margin",
+        "badge": "Lãi Suất Margin"
+      },
+      {
+        "title": "Đầu tư thỏa thích 0% phí giao dịch cổ phiếu cơ sở",
+        "url": "https://masvn.com/article/dau-tu-thoa-thich-0-phi-giao-dich-1085894",
+        "type": "fee",
+        "badge": "Ưu Đãi Phí"
+      },
+      {
+        "title": "Phái sinh không phí – Tương lai như ý cùng Mirae Asset",
+        "url": "https://masvn.com/article/phai-sinh-khong-phi-tuong-lai-nhu-y-1086977",
+        "type": "fee",
+        "badge": "Zero-Fee Phái Sinh"
+      }
+    ]
   },
   {
     "id": "dnse",
@@ -516,7 +636,8 @@ export const SECURITIES_COMPANIES = [
       "shortTermDisplay": "5.99% - 8.99%/năm (Gói Deal 5–10 ngày)",
       "standardRate90d": 12.5,
       "standardRateDisplay": "12.5%/năm (Chuẩn 90 ngày)",
-      "isShortTermDealOnly": true
+      "isShortTermDealOnly": true,
+      "sourceUrl": "https://hdsd.dnse.com.vn/san-pham-dich-vu/sp-giao-dich-ky-quy-theo-deal/sp-giao-dich-ky-quy-5.99-plus"
     },
     "derivativesFee": {
       "feePerContract": 0,
@@ -529,7 +650,8 @@ export const SECURITIES_COMPANIES = [
       "marginOffer": "Margin Deal chỉ từ 5.99%/năm, miễn lãi T+0",
       "duration": "Trọn đời phí GD / Deal margin linh hoạt",
       "giftBonus": "Tặng cổ phiếu trải nghiệm & trợ lý ảo Ensa AI",
-      "note": "Nền tảng chứng khoán số thế hệ mới, tiên phong công nghệ."
+      "note": "Nền tảng chứng khoán số thế hệ mới, tiên phong công nghệ.",
+      "sourceUrl": "https://hdsd.dnse.com.vn/die-u-khoa-n-di-ch-vu-dnse/dieu-khoan-chuong-trinh-danh-cho-khach-hang-moi/chuong-trinh-mien-lai-margin-30-ngay"
     },
     "promotions": [
       "Miễn phí giao dịch cổ phiếu & phái sinh trọn đời",
@@ -555,7 +677,27 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://www.dnse.com.vn",
-    "sourceUrl": "https://www.dnse.com.vn/bieu-phi"
+    "sourceUrl": "https://www.dnse.com.vn/bieu-phi",
+    "promoArticles": [
+      {
+        "title": "Chương trình Miễn lãi Margin 30 ngày cho khách hàng mở tài khoản mới",
+        "url": "https://hdsd.dnse.com.vn/die-u-khoa-n-di-ch-vu-dnse/dieu-khoan-chuong-trinh-danh-cho-khach-hang-moi/chuong-trinh-mien-lai-margin-30-ngay",
+        "type": "promo",
+        "badge": "Miễn Lãi 30 Ngày"
+      },
+      {
+        "title": "Sản phẩm giao dịch ký quỹ Margin 5.99 Plus theo deal",
+        "url": "https://hdsd.dnse.com.vn/san-pham-dich-vu/sp-giao-dich-ky-quy-theo-deal/sp-giao-dich-ky-quy-5.99-plus",
+        "type": "margin",
+        "badge": "Gói Deal 5.99%"
+      },
+      {
+        "title": "Thông báo điều chỉnh chính sách sản phẩm Giao dịch ký quỹ 9.99%",
+        "url": "https://www.dnse.com.vn/tin-tuc/thong-bao-dieu-chinh-chinh-sach-san-pham-giao-dich-ky-quy-9-99",
+        "type": "margin",
+        "badge": "Chính Sách Lãi"
+      }
+    ]
   },
   {
     "id": "vpbanks",
@@ -594,7 +736,8 @@ export const SECURITIES_COMPANIES = [
       "shortTermDisplay": "9.5% - 10.5%/năm (Ưu đãi mở mới)",
       "standardRate90d": 11.8,
       "standardRateDisplay": "11.5% - 12.5%/năm (Chuẩn 90 ngày)",
-      "isShortTermDealOnly": false
+      "isShortTermDealOnly": false,
+      "sourceUrl": "https://www.vpbanks.com.vn/dich-vu-tai-chinh"
     },
     "derivativesFee": {
       "feePerContract": 500,
@@ -607,7 +750,8 @@ export const SECURITIES_COMPANIES = [
       "marginOffer": "Lãi suất Margin ưu đãi từ 8.6%/năm",
       "duration": "90 ngày đầu",
       "giftBonus": "Liên kết tài khoản VPBank NEO & hoàn tiền giao dịch",
-      "note": "Tiềm lực vốn lớn từ ngân hàng mẹ VPBank."
+      "note": "Tiềm lực vốn lớn từ ngân hàng mẹ VPBank.",
+      "sourceUrl": "https://www.vpbanks.com.vn/khuyen-mai"
     },
     "promotions": [
       "Miễn phí giao dịch cổ phiếu cho khách hàng mở tài khoản eKYC",
@@ -631,7 +775,27 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://www.vpbanks.com.vn",
-    "sourceUrl": "https://www.vpbanks.com.vn/bieu-phi"
+    "sourceUrl": "https://www.vpbanks.com.vn/bieu-phi",
+    "promoArticles": [
+      {
+        "title": "Dịch vụ tài chính và các gói hỗ trợ Margin VPBankS",
+        "url": "https://www.vpbanks.com.vn/dich-vu-tai-chinh",
+        "type": "margin",
+        "badge": "Gói Vay Margin"
+      },
+      {
+        "title": "Kho chương trình khuyến mại & ưu đãi mở mới tài khoản",
+        "url": "https://www.vpbanks.com.vn/khuyen-mai",
+        "type": "promo",
+        "badge": "Ưu Đãi Mở Mới"
+      },
+      {
+        "title": "Biểu phí dịch vụ chứng khoán & giao dịch trực tuyến",
+        "url": "https://www.vpbanks.com.vn/bieu-phi",
+        "type": "fee",
+        "badge": "Biểu Phí Chuẩn"
+      }
+    ]
   },
   {
     "id": "fpts",
@@ -670,7 +834,8 @@ export const SECURITIES_COMPANIES = [
       "shortTermDisplay": "10.5% - 11.5%/năm",
       "standardRate90d": 12.5,
       "standardRateDisplay": "12.0% - 13.5%/năm (Chuẩn 90 ngày)",
-      "isShortTermDealOnly": false
+      "isShortTermDealOnly": false,
+      "sourceUrl": "https://accounts.fpts.com.vn/Help/EzMarginPro?s=37"
     },
     "derivativesFee": {
       "feePerContract": 1000,
@@ -683,7 +848,8 @@ export const SECURITIES_COMPANIES = [
       "marginOffer": "Lãi suất Margin ưu đãi kích cầu từ 9.5%/năm",
       "duration": "Theo chính sách hạn mức",
       "giftBonus": "Hệ thống EzTrade & báo cáo FPTS Research",
-      "note": "Uy tín từ cổ đông chiến lược SBI Holdings Nhật Bản."
+      "note": "Uy tín từ cổ đông chiến lược SBI Holdings Nhật Bản.",
+      "sourceUrl": "https://new.eztrade.fpts.com.vn/customers/promotion/linh-hoat-lua-chon-goi-phi-giao-dich-tai-fpts"
     },
     "promotions": [
       "Giảm phí giao dịch bậc thang xuống chỉ 0.08% cho ngày giao dịch lớn",
@@ -709,7 +875,27 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://www.fpts.com.vn",
-    "sourceUrl": "https://new.eztrade.fpts.com.vn/customers/promotion/linh-hoat-lua-chon-goi-phi-giao-dich-tai-fpts"
+    "sourceUrl": "https://new.eztrade.fpts.com.vn/customers/promotion/linh-hoat-lua-chon-goi-phi-giao-dich-tai-fpts",
+    "promoArticles": [
+      {
+        "title": "Linh hoạt lựa chọn gói phí giao dịch tại FPTS",
+        "url": "https://new.eztrade.fpts.com.vn/customers/promotion/linh-hoat-lua-chon-goi-phi-giao-dich-tai-fpts",
+        "type": "fee",
+        "badge": "Ưu Đãi Phí"
+      },
+      {
+        "title": "Sản phẩm giao dịch ký quỹ chuyên biệt EzMargin Pro",
+        "url": "https://accounts.fpts.com.vn/Help/EzMarginPro?s=37",
+        "type": "margin",
+        "badge": "EzMargin Pro"
+      },
+      {
+        "title": "Biểu phí dịch vụ khách hàng FPTS",
+        "url": "https://www.fpts.com.vn/ho-tro-khach-hang/bieu-phi-dich-vu/",
+        "type": "fee",
+        "badge": "Biểu Phí Chuẩn"
+      }
+    ]
   },
   {
     "id": "hsc",
@@ -748,7 +934,8 @@ export const SECURITIES_COMPANIES = [
       "shortTermDisplay": "9.5% - 10.5%/năm (Ngắn hạn)",
       "standardRate90d": 12,
       "standardRateDisplay": "11.5% - 13.0%/năm (Chuẩn 90 ngày)",
-      "isShortTermDealOnly": false
+      "isShortTermDealOnly": false,
+      "sourceUrl": "https://www.hsc.com.vn/vi/lai-suat-giao-dich-ky-quy"
     },
     "derivativesFee": {
       "feePerContract": 1000,
@@ -761,7 +948,8 @@ export const SECURITIES_COMPANIES = [
       "marginOffer": "Lãi suất Margin kích cầu chọn lọc từ 9.0%/năm",
       "duration": "Theo chương trình từng quý",
       "giftBonus": "Khuyến nghị HSC ONE & trung tâm phân tích hàng đầu",
-      "note": "Định chế quản lý tài sản và môi giới định chế hàng đầu."
+      "note": "Định chế quản lý tài sản và môi giới định chế hàng đầu.",
+      "sourceUrl": "https://www.hsc.com.vn/vi/thong-bao-ve-viec-cap-nhat-bieu-phi-dich-vu-chung-khoan"
     },
     "promotions": [
       "Gói ưu đãi phí và lãi suất margin cho tài khoản mở mới",
@@ -785,7 +973,27 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://www.hsc.com.vn",
-    "sourceUrl": "https://www.hsc.com.vn/vi/bieu-phi"
+    "sourceUrl": "https://www.hsc.com.vn/vi/bieu-phi",
+    "promoArticles": [
+      {
+        "title": "Lãi suất giao dịch ký quỹ Margin HSC",
+        "url": "https://www.hsc.com.vn/vi/lai-suat-giao-dich-ky-quy",
+        "type": "margin",
+        "badge": "Lãi Suất Margin"
+      },
+      {
+        "title": "Thông báo cập nhật biểu phí dịch vụ chứng khoán",
+        "url": "https://www.hsc.com.vn/vi/thong-bao-ve-viec-cap-nhat-bieu-phi-dich-vu-chung-khoan",
+        "type": "fee",
+        "badge": "Cập Nhật Biểu Phí"
+      },
+      {
+        "title": "Dịch vụ giao dịch ký quỹ trực tuyến HSC ONE",
+        "url": "https://www.hsc.com.vn/vi/dich-vu-giao-dich-ky-quy-1",
+        "type": "margin",
+        "badge": "Dịch Vụ Margin"
+      }
+    ]
   },
   {
     "id": "vietcap",
@@ -824,7 +1032,8 @@ export const SECURITIES_COMPANIES = [
       "shortTermDisplay": "9.0% - 10.5%/năm (Hạn mức lớn)",
       "standardRate90d": 11.5,
       "standardRateDisplay": "11.0% - 12.5%/năm (Chuẩn 90 ngày)",
-      "isShortTermDealOnly": false
+      "isShortTermDealOnly": false,
+      "sourceUrl": "https://www.vietcap.com.vn/san-pham-tai-chinh/huong-dan-chung-khoan-co-so/v23-goi-vay-uu-dai-theo-gtgd"
     },
     "derivativesFee": {
       "feePerContract": 1000,
@@ -837,7 +1046,8 @@ export const SECURITIES_COMPANIES = [
       "marginOffer": "Lãi suất Margin ưu đãi theo gói từ 9.0%/năm",
       "duration": "Theo hạn mức tài khoản",
       "giftBonus": "Báo cáo phân tích doanh nghiệp chuyên sâu Vietcap Research",
-      "note": "Thế mạnh tư vấn IB và thị phần môi giới tổ chức hàng đầu."
+      "note": "Thế mạnh tư vấn IB và thị phần môi giới tổ chức hàng đầu.",
+      "sourceUrl": "https://www.vietcap.com.vn/san-pham-tai-chinh/huong-dan-chung-khoan-co-so/super-v9-dac-quyen-vuot-troi-9-0"
     },
     "promotions": [
       "Báo cáo phân tích doanh nghiệp và chiến lược độc quyền",
@@ -860,7 +1070,27 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://www.vietcap.com.vn",
-    "sourceUrl": "https://www.vietcap.com.vn/bieu-phi"
+    "sourceUrl": "https://www.vietcap.com.vn/bieu-phi",
+    "promoArticles": [
+      {
+        "title": "Gói vay ưu đãi Margin V23 theo giá trị giao dịch",
+        "url": "https://www.vietcap.com.vn/san-pham-tai-chinh/huong-dan-chung-khoan-co-so/v23-goi-vay-uu-dai-theo-gtgd",
+        "type": "margin",
+        "badge": "Gói Vay V23"
+      },
+      {
+        "title": "Super V9 đặc quyền vượt trội lãi suất 9.0%",
+        "url": "https://www.vietcap.com.vn/san-pham-tai-chinh/huong-dan-chung-khoan-co-so/super-v9-dac-quyen-vuot-troi-9-0",
+        "type": "margin",
+        "badge": "Lãi Suất 9.0%"
+      },
+      {
+        "title": "Dịch vụ giao dịch Margin tiêu chuẩn Vietcap",
+        "url": "https://www.vietcap.com.vn/san-pham-tai-chinh/huong-dan-chung-khoan-co-so/dich-vu-margin",
+        "type": "margin",
+        "badge": "Chính Sách Vay"
+      }
+    ]
   },
   {
     "id": "kafi",
@@ -899,7 +1129,8 @@ export const SECURITIES_COMPANIES = [
       "shortTermDisplay": "7.8% - 9.0%/năm (Gói lướt T+)",
       "standardRate90d": 11,
       "standardRateDisplay": "10.5% - 11.8%/năm (Chuẩn 90 ngày)",
-      "isShortTermDealOnly": false
+      "isShortTermDealOnly": false,
+      "sourceUrl": "https://kafi.vn/stock-trading?tab=ttgd"
     },
     "derivativesFee": {
       "feePerContract": 500,
@@ -912,7 +1143,8 @@ export const SECURITIES_COMPANIES = [
       "marginOffer": "Lãi suất Margin ưu đãi cạnh tranh chỉ 7.8%/năm",
       "duration": "90 ngày đầu kể từ ngày mở",
       "giftBonus": "Voucher ưu đãi lãi suất & gói phân tích Kafi Wealth",
-      "note": "Nguồn vốn dồi dào, tăng trưởng ấn tượng trong nhóm fintech."
+      "note": "Nguồn vốn dồi dào, tăng trưởng ấn tượng trong nhóm fintech.",
+      "sourceUrl": "https://kafi.vn/stock-trading?tab=ttgd"
     },
     "promotions": [
       "Miễn phí giao dịch cho khách hàng mở tài khoản mới",
@@ -936,7 +1168,27 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://kafi.vn",
-    "sourceUrl": "https://kafi.vn/stock-trading?tab=bpgd"
+    "sourceUrl": "https://kafi.vn/stock-trading?tab=bpgd",
+    "promoArticles": [
+      {
+        "title": "Giao dịch cổ phiếu & thông tin các gói Margin Kafi",
+        "url": "https://kafi.vn/stock-trading?tab=ttgd",
+        "type": "margin",
+        "badge": "Gói Vay Kafi"
+      },
+      {
+        "title": "Điều khoản sản phẩm Margin-S25 lãi suất 9%/năm",
+        "url": "https://kafi.vn/tnc/TnC_S25.pdf",
+        "type": "margin",
+        "badge": "Margin S25 (9%)"
+      },
+      {
+        "title": "Điều khoản gói Margin-B10 hạn mức lớn",
+        "url": "https://kafi.vn/tnc/TnC_Margin-B10.pdf",
+        "type": "margin",
+        "badge": "Margin B10"
+      }
+    ]
   },
   {
     "id": "mbs",
@@ -975,7 +1227,8 @@ export const SECURITIES_COMPANIES = [
       "shortTermDisplay": "8.5% - 9.9%/năm (Gói 30 ngày)",
       "standardRate90d": 11.8,
       "standardRateDisplay": "11.0% - 12.5%/năm (Chuẩn 90 ngày)",
-      "isShortTermDealOnly": false
+      "isShortTermDealOnly": false,
+      "sourceUrl": "https://www.mbs.com.vn/mbs-uu-dai-lai-suat-9-9-danh-cho-khach-hang-su-dung-dich-vu-giao-dich-chu-dong/"
     },
     "derivativesFee": {
       "feePerContract": 1000,
@@ -988,7 +1241,8 @@ export const SECURITIES_COMPANIES = [
       "marginOffer": "Lãi suất Margin ưu đãi từ 8.5%/năm",
       "duration": "90 ngày đầu",
       "giftBonus": "Tài khoản số đẹp MBBank & trợ lý ảo Dolphin AI",
-      "note": "Hậu thuẫn từ Ngân hàng Quân Đội MB, hệ thống ổn định."
+      "note": "Hậu thuẫn từ Ngân hàng Quân Đội MB, hệ thống ổn định.",
+      "sourceUrl": "https://www.mbs.com.vn/uu-dai-lai-suat-7-5-doc-quyen-danh-rieng-cho-khach-hang-mo-moi-su-dung-dich-vu-giao-dich-chu-dong/"
     },
     "promotions": [
       "Lãi suất vay Margin ưu đãi chỉ từ 8.5%/năm",
@@ -1013,7 +1267,27 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://mbs.com.vn",
-    "sourceUrl": "https://mbs.com.vn/bieu-phi-giao-dich/"
+    "sourceUrl": "https://mbs.com.vn/bieu-phi-giao-dich/",
+    "promoArticles": [
+      {
+        "title": "Ưu đãi lãi suất 7.5% độc quyền cho khách hàng mở mới",
+        "url": "https://www.mbs.com.vn/uu-dai-lai-suat-7-5-doc-quyen-danh-rieng-cho-khach-hang-mo-moi-su-dung-dich-vu-giao-dich-chu-dong/",
+        "type": "margin",
+        "badge": "Ưu Đãi 7.5%"
+      },
+      {
+        "title": "MBS ưu đãi lãi suất 9.9% cho giao dịch chủ động",
+        "url": "https://www.mbs.com.vn/mbs-uu-dai-lai-suat-9-9-danh-cho-khach-hang-su-dung-dich-vu-giao-dich-chu-dong/",
+        "type": "margin",
+        "badge": "Gói Vay 9.9%"
+      },
+      {
+        "title": "Triển khai ưu đãi lãi suất miễn lãi T+3",
+        "url": "https://www.mbs.com.vn/mbs-trien-khai-uu-dai-lai-suat-t3-danh-cho-khach-hang/",
+        "type": "margin",
+        "badge": "Miễn Lãi T+3"
+      }
+    ]
   },
   {
     "id": "shs",
@@ -1052,7 +1326,8 @@ export const SECURITIES_COMPANIES = [
       "shortTermDisplay": "9.9% - 11.0%/năm",
       "standardRate90d": 12.5,
       "standardRateDisplay": "12.0% - 13.5%/năm (Chuẩn 90 ngày)",
-      "isShortTermDealOnly": false
+      "isShortTermDealOnly": false,
+      "sourceUrl": "https://www.shs.com.vn/tin-tuc/giai-bai-toan-chi-phi-von-cung-margin-s30-lai-suat-tu-99percentnam-han-muc-toi-50-ty-dong"
     },
     "derivativesFee": {
       "feePerContract": 1000,
@@ -1065,7 +1340,8 @@ export const SECURITIES_COMPANIES = [
       "marginOffer": "Lãi suất Margin ưu đãi từ 8.9%/năm",
       "duration": "Theo chương trình mở mới",
       "giftBonus": "Tích hợp dịch vụ ngân hàng SHB & tư vấn thị trường",
-      "note": "Thương hiệu lâu đời, mạng lưới chi nhánh rộng."
+      "note": "Thương hiệu lâu đời, mạng lưới chi nhánh rộng.",
+      "sourceUrl": "https://www.shs.com.vn/tin-tuc/giai-bai-toan-chi-phi-von-cung-margin-s30-lai-suat-tu-99percentnam-han-muc-toi-50-ty-dong"
     },
     "promotions": [
       "Ưu đãi lãi suất margin cho tài khoản mở mới",
@@ -1089,7 +1365,21 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://www.shs.com.vn",
-    "sourceUrl": "https://www.shs.com.vn/Pages/BieuPhiDichVu.aspx"
+    "sourceUrl": "https://www.shs.com.vn/Pages/BieuPhiDichVu.aspx",
+    "promoArticles": [
+      {
+        "title": "Giải bài toán chi phí vốn cùng Margin S30 lãi suất từ 9.9%/năm",
+        "url": "https://www.shs.com.vn/tin-tuc/giai-bai-toan-chi-phi-von-cung-margin-s30-lai-suat-tu-99percentnam-han-muc-toi-50-ty-dong",
+        "type": "margin",
+        "badge": "Margin S30"
+      },
+      {
+        "title": "Biểu phí dịch vụ và lãi suất chứng khoán SHS",
+        "url": "https://www.shs.com.vn/Pages/BieuPhiDichVu.aspx",
+        "type": "fee",
+        "badge": "Biểu Phí Chuẩn"
+      }
+    ]
   },
   {
     "id": "vix",
@@ -1128,7 +1418,8 @@ export const SECURITIES_COMPANIES = [
       "shortTermDisplay": "10.0% - 11.5%/năm",
       "standardRate90d": 12.5,
       "standardRateDisplay": "12.0% - 13.5%/năm (Chuẩn 90 ngày)",
-      "isShortTermDealOnly": false
+      "isShortTermDealOnly": false,
+      "sourceUrl": "https://vixs.vn/chuong-trinh-uu-dai-lai-suat-theo-danh-muc.html"
     },
     "derivativesFee": {
       "feePerContract": 1000,
@@ -1141,7 +1432,8 @@ export const SECURITIES_COMPANIES = [
       "marginOffer": "Lãi suất Margin ưu đãi từ 8.8%/năm (chuẩn 10.9% - 11.5%)",
       "duration": "90 ngày đầu",
       "giftBonus": "Tư vấn room lệnh & hỗ trợ đòn bẩy linh hoạt",
-      "note": "Nguồn vốn dồi dào, thanh khoản thị trường năng động."
+      "note": "Nguồn vốn dồi dào, thanh khoản thị trường năng động.",
+      "sourceUrl": "https://vixs.vn/chuong-trinh-uu-dai-lai-suat-theo-danh-muc.html"
     },
     "promotions": [
       "Hạn mức cho vay margin lớn cho trader năng động",
@@ -1164,7 +1456,21 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://vixs.vn",
-    "sourceUrl": "https://vixs.vn/ho-tro/bieu-phi-giao-dich"
+    "sourceUrl": "https://vixs.vn/ho-tro/bieu-phi-giao-dich",
+    "promoArticles": [
+      {
+        "title": "Chương trình ưu đãi lãi suất theo danh mục cổ phiếu",
+        "url": "https://vixs.vn/chuong-trinh-uu-dai-lai-suat-theo-danh-muc.html",
+        "type": "margin",
+        "badge": "Ưu Đãi Lãi Suất"
+      },
+      {
+        "title": "Cổng thông tin giao dịch chính thức Chứng khoán VIX",
+        "url": "https://vixs.vn",
+        "type": "promo",
+        "badge": "Website Gốc"
+      }
+    ]
   },
   {
     "id": "kis",
@@ -1203,7 +1509,8 @@ export const SECURITIES_COMPANIES = [
       "shortTermDisplay": "9.5% - 10.5%/năm (Ưu đãi đầu)",
       "standardRate90d": 11.8,
       "standardRateDisplay": "11.5% - 12.5%/năm (Chuẩn 90 ngày)",
-      "isShortTermDealOnly": false
+      "isShortTermDealOnly": false,
+      "sourceUrl": "https://kisvn.vn/san-pham-dich-vu/dich-vu-ho-tro-tai-chinh/san-pham-margin-k-11299"
     },
     "derivativesFee": {
       "feePerContract": 1000,
@@ -1216,7 +1523,8 @@ export const SECURITIES_COMPANIES = [
       "marginOffer": "Lãi suất Margin ưu đãi chỉ 7.99%/năm",
       "duration": "60 ngày đầu",
       "giftBonus": "Báo cáo phân tích KIS Research & phái sinh",
-      "note": "Tiềm lực tài chính từ Tập đoàn Korea Investment & Securities."
+      "note": "Tiềm lực tài chính từ Tập đoàn Korea Investment & Securities.",
+      "sourceUrl": "https://kisvn.vn/san-pham-dich-vu/dich-vu-ho-tro-tai-chinh/san-pham-margin-k-11299"
     },
     "promotions": [
       "Lãi suất vay margin ưu đãi từ 7.99%/năm",
@@ -1239,7 +1547,21 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://kisvn.vn",
-    "sourceUrl": "https://kisvn.vn/san-pham-dich-vu/dich-vu-chung-khoan/bieu-phi-4206"
+    "sourceUrl": "https://kisvn.vn/san-pham-dich-vu/dich-vu-chung-khoan/bieu-phi-4206",
+    "promoArticles": [
+      {
+        "title": "Sản phẩm Margin K ngắn hạn lãi suất ưu đãi",
+        "url": "https://kisvn.vn/san-pham-dich-vu/dich-vu-ho-tro-tai-chinh/san-pham-margin-k-11299",
+        "type": "margin",
+        "badge": "Margin K T+"
+      },
+      {
+        "title": "Cổng thông tin dịch vụ & biểu phí giao dịch KIS Vietnam",
+        "url": "https://kisvn.vn",
+        "type": "fee",
+        "badge": "Dịch Vụ KIS"
+      }
+    ]
   },
   {
     "id": "acbs",
@@ -1278,7 +1600,8 @@ export const SECURITIES_COMPANIES = [
       "shortTermDisplay": "9.5% - 10.5%/năm (Khách ACB)",
       "standardRate90d": 11.8,
       "standardRateDisplay": "11.5% - 12.5%/năm (Chuẩn 90 ngày)",
-      "isShortTermDealOnly": false
+      "isShortTermDealOnly": false,
+      "sourceUrl": "https://acbs.com.vn/bieu-phi"
     },
     "derivativesFee": {
       "feePerContract": 1000,
@@ -1291,7 +1614,8 @@ export const SECURITIES_COMPANIES = [
       "marginOffer": "Lãi suất Margin ưu đãi từ 8.5%/năm",
       "duration": "90 ngày đầu",
       "giftBonus": "Liên kết tài khoản ACB ONE & tư vấn chuyên nghiệp",
-      "note": "Bảo chứng từ Ngân hàng TMCP Á Châu (ACB)."
+      "note": "Bảo chứng từ Ngân hàng TMCP Á Châu (ACB).",
+      "sourceUrl": "https://acbs.com.vn/blog/chi-phi-giao-dich-chung-khoan"
     },
     "promotions": [
       "Tích hợp nạp rút tức thời với tài khoản số ACB ONE",
@@ -1314,7 +1638,21 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://acbs.com.vn",
-    "sourceUrl": "https://acbs.com.vn/bieu-phi-giao-dich-chung-khoan-niem-yet"
+    "sourceUrl": "https://acbs.com.vn/bieu-phi-giao-dich-chung-khoan-niem-yet",
+    "promoArticles": [
+      {
+        "title": "Chi phí giao dịch chứng khoán và tối ưu hoá đầu tư",
+        "url": "https://acbs.com.vn/blog/chi-phi-giao-dich-chung-khoan",
+        "type": "fee",
+        "badge": "Chi Phí GD"
+      },
+      {
+        "title": "Biểu phí giao dịch và lãi suất cho vay ký quỹ ACBS",
+        "url": "https://acbs.com.vn/bieu-phi",
+        "type": "fee",
+        "badge": "Biểu Phí Chuẩn"
+      }
+    ]
   },
   {
     "id": "vcbs",
@@ -1353,7 +1691,8 @@ export const SECURITIES_COMPANIES = [
       "shortTermDisplay": "10.0% - 11.0%/năm (Hạn mức lớn)",
       "standardRate90d": 11.5,
       "standardRateDisplay": "11.0% - 12.5%/năm (Chuẩn 90 ngày)",
-      "isShortTermDealOnly": false
+      "isShortTermDealOnly": false,
+      "sourceUrl": "https://www.vcbs.com.vn/chi-tiet-khach-hang-ca-nhan/goi-margin-t"
     },
     "derivativesFee": {
       "feePerContract": 1000,
@@ -1366,7 +1705,8 @@ export const SECURITIES_COMPANIES = [
       "marginOffer": "Lãi suất Margin ưu đãi từ 8.5%/năm",
       "duration": "Gói khách hàng mới",
       "giftBonus": "Tích hợp VCB Digibank & uy tín định chế hàng đầu",
-      "note": "Trực thuộc Ngân hàng Vietcombank, an toàn vốn tuyệt đối."
+      "note": "Trực thuộc Ngân hàng Vietcombank, an toàn vốn tuyệt đối.",
+      "sourceUrl": "https://www.vcbs.com.vn/chi-tiet-tin-tuc-va-su-kien-vcbs/tb-chinh-sach-lai-suat-mo-moi-20260521"
     },
     "promotions": [
       "Liên kết trực tiếp nạp rút tức thì với VCB Digibank",
@@ -1389,7 +1729,27 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://vcbs.com.vn",
-    "sourceUrl": "https://vcbs.com.vn/bieu-phi"
+    "sourceUrl": "https://vcbs.com.vn/bieu-phi",
+    "promoArticles": [
+      {
+        "title": "Thông báo chính sách lãi suất mở mới ưu đãi 8.0%",
+        "url": "https://www.vcbs.com.vn/chi-tiet-tin-tuc-va-su-kien-vcbs/tb-chinh-sach-lai-suat-mo-moi-20260521",
+        "type": "margin",
+        "badge": "Ưu Đãi 8.0%"
+      },
+      {
+        "title": "Gói Margin T miễn lãi 5 ngày làm việc đầu tiên",
+        "url": "https://www.vcbs.com.vn/chi-tiet-khach-hang-ca-nhan/goi-margin-t",
+        "type": "margin",
+        "badge": "Miễn Lãi T+5"
+      },
+      {
+        "title": "Biểu phí dịch vụ khách hàng cá nhân VCBS",
+        "url": "https://www.vcbs.com.vn/bieu-phi",
+        "type": "fee",
+        "badge": "Biểu Phí Chuẩn"
+      }
+    ]
   },
   {
     "id": "kbsv",
@@ -1428,7 +1788,8 @@ export const SECURITIES_COMPANIES = [
       "shortTermDisplay": "9.0% - 10.5%/năm (Gói KB-Margin)",
       "standardRate90d": 11.8,
       "standardRateDisplay": "11.5% - 12.5%/năm (Chuẩn 90 ngày)",
-      "isShortTermDealOnly": false
+      "isShortTermDealOnly": false,
+      "sourceUrl": "https://kbsec.com.vn/vi/kb-himargin-tang-han-muc-len-20-ty-uu-dai-lai-suat-sieu-canh-tranh.htm"
     },
     "derivativesFee": {
       "feePerContract": 1000,
@@ -1441,7 +1802,8 @@ export const SECURITIES_COMPANIES = [
       "marginOffer": "Lãi suất Margin ưu đãi hấp dẫn chỉ từ 7.9%/năm",
       "duration": "90 ngày đầu",
       "giftBonus": "Ứng dụng KB Buddy cho F0 & báo cáo chuyên sâu",
-      "note": "Cổ đông tài chính hàng đầu Hàn Quốc KB Financial Group."
+      "note": "Cổ đông tài chính hàng đầu Hàn Quốc KB Financial Group.",
+      "sourceUrl": "https://kbsec.com.vn/vi/kb-himargin-tang-han-muc-len-20-ty-uu-dai-lai-suat-sieu-canh-tranh.htm"
     },
     "promotions": [
       "Lãi suất vay Margin cạnh tranh chỉ từ 7.9%/năm",
@@ -1464,7 +1826,21 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://www.kbsec.com.vn",
-    "sourceUrl": "https://www.kbsec.com.vn/vi/bieu-phi.html"
+    "sourceUrl": "https://www.kbsec.com.vn/vi/bieu-phi.html",
+    "promoArticles": [
+      {
+        "title": "KB HiMargin: Tăng hạn mức lên 20 tỷ, ưu đãi lãi suất siêu cạnh tranh 9.9%",
+        "url": "https://kbsec.com.vn/vi/kb-himargin-tang-han-muc-len-20-ty-uu-dai-lai-suat-sieu-canh-tranh.htm",
+        "type": "margin",
+        "badge": "KB HiMargin"
+      },
+      {
+        "title": "Cổng thông tin biểu phí và dịch vụ tài chính KBSV",
+        "url": "https://kbsec.com.vn",
+        "type": "fee",
+        "badge": "Website KBSV"
+      }
+    ]
   },
   {
     "id": "cts",
@@ -1503,7 +1879,8 @@ export const SECURITIES_COMPANIES = [
       "shortTermDisplay": "10.0% - 11.5%/năm (Ưu đãi)",
       "standardRate90d": 12,
       "standardRateDisplay": "11.5% - 13.0%/năm (Chuẩn 90 ngày)",
-      "isShortTermDealOnly": false
+      "isShortTermDealOnly": false,
+      "sourceUrl": "https://www.cts.vn/category/danh-muc-margin"
     },
     "derivativesFee": {
       "feePerContract": 1000,
@@ -1516,7 +1893,8 @@ export const SECURITIES_COMPANIES = [
       "marginOffer": "Lãi suất Margin ưu đãi từ 8.5%/năm",
       "duration": "Gói ưu đãi mở mới",
       "giftBonus": "Tích hợp ngân hàng VietinBank iPay & tư vấn tài chính",
-      "note": "Nguồn vốn ngân hàng quốc doanh VietinBank dồi dào."
+      "note": "Nguồn vốn ngân hàng quốc doanh VietinBank dồi dào.",
+      "sourceUrl": "https://www.cts.vn/category/tin-tuc"
     },
     "promotions": [
       "Ưu đãi kết nối luồng tiền với VietinBank iPay",
@@ -1539,7 +1917,27 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://www.vbse.vn",
-    "sourceUrl": "https://www.vbse.vn/khach-hang-ca-nhan/bieu-phi/"
+    "sourceUrl": "https://www.vbse.vn/khach-hang-ca-nhan/bieu-phi/",
+    "promoArticles": [
+      {
+        "title": "Danh mục và chính sách cho vay Margin VietinBank Sec",
+        "url": "https://www.cts.vn/category/danh-muc-margin",
+        "type": "margin",
+        "badge": "Chính Sách Margin"
+      },
+      {
+        "title": "Biểu phí dịch vụ chứng khoán CTS",
+        "url": "https://www.cts.vn/bieu-phi",
+        "type": "fee",
+        "badge": "Biểu Phí Chuẩn"
+      },
+      {
+        "title": "Tin tức sự kiện và ưu đãi khách hàng CTS",
+        "url": "https://www.cts.vn/category/tin-tuc",
+        "type": "promo",
+        "badge": "Tin Tức Ưu Đãi"
+      }
+    ]
   },
   {
     "id": "bvsc",
@@ -1578,7 +1976,8 @@ export const SECURITIES_COMPANIES = [
       "shortTermDisplay": "10.0% - 11.5%/năm",
       "standardRate90d": 12,
       "standardRateDisplay": "11.5% - 13.0%/năm (Chuẩn 90 ngày)",
-      "isShortTermDealOnly": false
+      "isShortTermDealOnly": false,
+      "sourceUrl": "https://www.bvsc.com.vn/danhsachbaiviet/chung-khoan-bao-viet-bvsc-trien-khai-chuong-trinh-uu-dai-margin-va-mo-tai-khoan-moi-den-het-nam-2026/"
     },
     "derivativesFee": {
       "feePerContract": 1000,
@@ -1591,7 +1990,8 @@ export const SECURITIES_COMPANIES = [
       "marginOffer": "Lãi suất Margin ưu đãi từ 8.8%/năm",
       "duration": "90 ngày đầu",
       "giftBonus": "Hệ sinh thái tài chính - bảo hiểm Bảo Việt",
-      "note": "Thương hiệu chứng khoán lâu đời nhất Việt Nam (thành lập 1999)."
+      "note": "Thương hiệu chứng khoán lâu đời nhất Việt Nam (thành lập 1999).",
+      "sourceUrl": "https://www.bvsc.com.vn/danhsachbaiviet/chung-khoan-bao-viet-bvsc-trien-khai-chuong-trinh-uu-dai-margin-va-mo-tai-khoan-moi-den-het-nam-2026/"
     },
     "promotions": [
       "Gói dịch vụ tài chính kết hợp giải pháp bảo hiểm tích sản Bảo Việt",
@@ -1614,7 +2014,21 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://www.bvsc.com.vn",
-    "sourceUrl": "https://www.bvsc.com.vn/danhmuc/dich-vu/khach-hang-ca-nhan/ho-tro/huong-dan-su-dung-dich-vu/bieu-lai-phi-giao-dich/"
+    "sourceUrl": "https://www.bvsc.com.vn/danhmuc/dich-vu/khach-hang-ca-nhan/ho-tro/huong-dan-su-dung-dich-vu/bieu-lai-phi-giao-dich/",
+    "promoArticles": [
+      {
+        "title": "BVSC triển khai ưu đãi Margin và mở tài khoản mới đến hết năm 2026",
+        "url": "https://www.bvsc.com.vn/danhsachbaiviet/chung-khoan-bao-viet-bvsc-trien-khai-chuong-trinh-uu-dai-margin-va-mo-tai-khoan-moi-den-het-nam-2026/",
+        "type": "promo",
+        "badge": "Ưu Đãi Margin"
+      },
+      {
+        "title": "Biểu phí dịch vụ giao dịch chứng khoán BVSC",
+        "url": "https://www.bvsc.com.vn/bieu-phi",
+        "type": "fee",
+        "badge": "Biểu Phí Chuẩn"
+      }
+    ]
   },
   {
     "id": "tps",
@@ -1653,7 +2067,8 @@ export const SECURITIES_COMPANIES = [
       "shortTermDisplay": "9.5% - 10.5%/năm",
       "standardRate90d": 11.8,
       "standardRateDisplay": "11.5% - 12.5%/năm (Chuẩn 90 ngày)",
-      "isShortTermDealOnly": false
+      "isShortTermDealOnly": false,
+      "sourceUrl": "https://www.tpbs.com.vn/vi/thong-tin-tps/thong-bao/thong-bao/gia-han-m7-margin-nang-dong-dau-tu-but-pha?postId=2827"
     },
     "derivativesFee": {
       "feePerContract": 1000,
@@ -1666,7 +2081,8 @@ export const SECURITIES_COMPANIES = [
       "marginOffer": "Lãi suất Margin ưu đãi từ 8.6%/năm",
       "duration": "90 ngày đầu",
       "giftBonus": "Liên kết TPBank & trợ lý đầu tư công nghệ số",
-      "note": "Hệ sinh thái công nghệ tài chính năng động từ TPBank."
+      "note": "Hệ sinh thái công nghệ tài chính năng động từ TPBank.",
+      "sourceUrl": "https://www.tpbs.com.vn/vi/thong-tin-tps/thong-bao/thong-bao/gia-han-m7-margin-nang-dong-dau-tu-but-pha?postId=2827"
     },
     "promotions": [
       "Miễn phí chuyển nộp tiền tức thời qua App TPBank",
@@ -1689,7 +2105,21 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://tpbs.com.vn",
-    "sourceUrl": "https://tpbs.com.vn"
+    "sourceUrl": "https://tpbs.com.vn",
+    "promoArticles": [
+      {
+        "title": "Gia hạn gói M7 Margin năng động đầu tư bứt phá miễn lãi 7 ngày",
+        "url": "https://www.tpbs.com.vn/vi/thong-tin-tps/thong-bao/thong-bao/gia-han-m7-margin-nang-dong-dau-tu-but-pha?postId=2827",
+        "type": "margin",
+        "badge": "Miễn Lãi M7"
+      },
+      {
+        "title": "Cổng thông tin biểu phí và dịch vụ tài chính TPS",
+        "url": "https://tpbs.com.vn",
+        "type": "fee",
+        "badge": "Website TPS"
+      }
+    ]
   },
   {
     "id": "yuanta",
@@ -1728,7 +2158,8 @@ export const SECURITIES_COMPANIES = [
       "shortTermDisplay": "8.8% - 10.0%/năm (Ưu đãi đầu)",
       "standardRate90d": 11.2,
       "standardRateDisplay": "11.0% - 12.0%/năm (Chuẩn 90 ngày)",
-      "isShortTermDealOnly": false
+      "isShortTermDealOnly": false,
+      "sourceUrl": "https://yuanta.com.vn/tin-tuc/chi-100-suat-margin-6-8-nam-don-song-nang-hang-margin-loc-phat"
     },
     "derivativesFee": {
       "feePerContract": 1000,
@@ -1741,7 +2172,8 @@ export const SECURITIES_COMPANIES = [
       "marginOffer": "Lãi suất Margin ưu đãi chỉ 7.99%/năm",
       "duration": "60 ngày đầu",
       "giftBonus": "Bộ công cụ chọn cổ phiếu YSuri & báo cáo Yuanta",
-      "note": "Tập đoàn tài chính Yuanta hàng đầu khu vực Châu Á."
+      "note": "Tập đoàn tài chính Yuanta hàng đầu khu vực Châu Á.",
+      "sourceUrl": "https://uudai.yuanta.com.vn/margin-uu-dai"
     },
     "promotions": [
       "Lãi suất vay margin ưu đãi chỉ từ 7.99%/năm",
@@ -1765,7 +2197,27 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://yuanta.com.vn",
-    "sourceUrl": "https://support.yuanta.com.vn/bieu-phi-va-lai-suat/"
+    "sourceUrl": "https://support.yuanta.com.vn/bieu-phi-va-lai-suat/",
+    "promoArticles": [
+      {
+        "title": "Gói vay Margin Lộc Phát 6.8%/năm đón sóng nâng hạng",
+        "url": "https://yuanta.com.vn/tin-tuc/chi-100-suat-margin-6-8-nam-don-song-nang-hang-margin-loc-phat",
+        "type": "margin",
+        "badge": "Margin 6.8%"
+      },
+      {
+        "title": "Cổng thông tin các gói ưu đãi Margin Yuanta",
+        "url": "https://uudai.yuanta.com.vn/margin-uu-dai",
+        "type": "promo",
+        "badge": "Kho Ưu Đãi"
+      },
+      {
+        "title": "Biểu phí giao dịch chứng khoán Yuanta Việt Nam",
+        "url": "https://yuanta.com.vn",
+        "type": "fee",
+        "badge": "Biểu Phí Chuẩn"
+      }
+    ]
   },
   {
     "id": "shinhan",
@@ -1804,7 +2256,8 @@ export const SECURITIES_COMPANIES = [
       "shortTermDisplay": "8.5% - 9.8%/năm (Gói SOL)",
       "standardRate90d": 11.2,
       "standardRateDisplay": "11.0% - 12.0%/năm (Chuẩn 90 ngày)",
-      "isShortTermDealOnly": false
+      "isShortTermDealOnly": false,
+      "sourceUrl": "https://shinhansec.com.vn"
     },
     "derivativesFee": {
       "feePerContract": 1000,
@@ -1817,7 +2270,8 @@ export const SECURITIES_COMPANIES = [
       "marginOffer": "Lãi suất Margin ưu đãi từ 8.0%/năm",
       "duration": "90 ngày đầu",
       "giftBonus": "Liên kết tài khoản Shinhan Bank & ứng dụng Shinhan Alpha",
-      "note": "Tiềm lực tài chính từ Tập đoàn Tài chính Shinhan Hàn Quốc."
+      "note": "Tiềm lực tài chính từ Tập đoàn Tài chính Shinhan Hàn Quốc.",
+      "sourceUrl": "https://shinhansec.com.vn/vi/ho-tro-khach-hang/chuong-trinh-uu-dai/135/mo-tai-khoan-shinhan-bank-truc-tuyen-ngay-tren-ung-dung-san-xin-ha.html"
     },
     "promotions": [
       "Tích hợp tài khoản thanh toán Shinhan Bank",
@@ -1840,7 +2294,21 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://shinhansec.com.vn",
-    "sourceUrl": "https://shinhansec.com.vn/vi/ho-tro-khach-hang/phi-giao-dich.html"
+    "sourceUrl": "https://shinhansec.com.vn/vi/ho-tro-khach-hang/phi-giao-dich.html",
+    "promoArticles": [
+      {
+        "title": "Ưu đãi mở tài khoản trực tuyến & miễn giảm phí giao dịch Shinhan",
+        "url": "https://shinhansec.com.vn/vi/ho-tro-khach-hang/chuong-trinh-uu-dai/135/mo-tai-khoan-shinhan-bank-truc-tuyen-ngay-tren-ung-dung-san-xin-ha.html",
+        "type": "promo",
+        "badge": "Ưu Đãi eKYC"
+      },
+      {
+        "title": "Cổng thông tin biểu phí và dịch vụ Shinhan Securities",
+        "url": "https://shinhansec.com.vn",
+        "type": "fee",
+        "badge": "Biểu Phí Shinhan"
+      }
+    ]
   },
   {
     "id": "agriseco",
@@ -1879,7 +2347,8 @@ export const SECURITIES_COMPANIES = [
       "shortTermDisplay": "10.5% - 11.5%/năm",
       "standardRate90d": 12.5,
       "standardRateDisplay": "12.0% - 13.0%/năm (Chuẩn 90 ngày)",
-      "isShortTermDealOnly": false
+      "isShortTermDealOnly": false,
+      "sourceUrl": "https://agriseco.com.vn/News/NewsDetail/2057993/vi-VN"
     },
     "derivativesFee": {
       "feePerContract": 1000,
@@ -1892,7 +2361,8 @@ export const SECURITIES_COMPANIES = [
       "marginOffer": "Lãi suất Margin ưu đãi từ 8.8%/năm",
       "duration": "Theo chương trình từng quý",
       "giftBonus": "Mạng lưới ngân hàng Agribank phủ khắp cả nước",
-      "note": "Trực thuộc Ngân hàng Nông nghiệp & PT Nông thôn Việt Nam (Agribank)."
+      "note": "Trực thuộc Ngân hàng Nông nghiệp & PT Nông thôn Việt Nam (Agribank).",
+      "sourceUrl": "https://agriseco.com.vn/News/NewsDetail/2057993/vi-VN"
     },
     "promotions": [
       "Ưu đãi nộp rút tiền tức thời qua hệ thống ngân hàng Agribank",
@@ -1915,7 +2385,21 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://agriseco.com.vn",
-    "sourceUrl": "https://agriseco.com.vn/News/NewsDetail/2057993/vi-VN"
+    "sourceUrl": "https://agriseco.com.vn/News/NewsDetail/2057993/vi-VN",
+    "promoArticles": [
+      {
+        "title": "Công bố biểu phí dịch vụ giao dịch chứng khoán Agriseco",
+        "url": "https://agriseco.com.vn/News/NewsDetail/2057993/vi-VN",
+        "type": "fee",
+        "badge": "Biểu Phí Công Bố"
+      },
+      {
+        "title": "Cổng thông tin giao dịch tài chính Chứng khoán Agribank",
+        "url": "https://agriseco.com.vn",
+        "type": "promo",
+        "badge": "Website Agriseco"
+      }
+    ]
   },
   {
     "id": "hdbs",
@@ -1954,7 +2438,8 @@ export const SECURITIES_COMPANIES = [
       "shortTermDisplay": "9.5% - 10.5%/năm",
       "standardRate90d": 11.8,
       "standardRateDisplay": "11.5% - 12.5%/năm (Chuẩn 90 ngày)",
-      "isShortTermDealOnly": false
+      "isShortTermDealOnly": false,
+      "sourceUrl": "https://hdbs.vn/dich-vu-co-phieu-hstock/san-pham-margin/"
     },
     "derivativesFee": {
       "feePerContract": 1000,
@@ -1967,7 +2452,8 @@ export const SECURITIES_COMPANIES = [
       "marginOffer": "Lãi suất Margin ưu đãi từ 8.5%/năm",
       "duration": "90 ngày đầu",
       "giftBonus": "Hệ sinh thái HDBank, Sovico & hoàn phí giao dịch",
-      "note": "Hậu thuẫn tài chính từ Ngân hàng HDBank."
+      "note": "Hậu thuẫn tài chính từ Ngân hàng HDBank.",
+      "sourceUrl": "https://hdbs.vn/dich-vu-co-phieu-hstock/san-pham-margin/"
     },
     "promotions": [
       "Tích hợp điểm thưởng và tài khoản ngân hàng HDBank",
@@ -1990,7 +2476,21 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://hdbs.vn",
-    "sourceUrl": "https://hdbs.vn/bieu-phi/"
+    "sourceUrl": "https://hdbs.vn/bieu-phi/",
+    "promoArticles": [
+      {
+        "title": "Sản phẩm Margin HStock và các gói vay tài chính linh hoạt",
+        "url": "https://hdbs.vn/dich-vu-co-phieu-hstock/san-pham-margin/",
+        "type": "margin",
+        "badge": "Gói Vay HStock"
+      },
+      {
+        "title": "Cổng giao dịch chứng khoán HDBS",
+        "url": "https://hdbs.vn",
+        "type": "fee",
+        "badge": "Website HDBS"
+      }
+    ]
   },
   {
     "id": "dsc",
@@ -2029,7 +2529,8 @@ export const SECURITIES_COMPANIES = [
       "shortTermDisplay": "9.0% - 10.5%/năm",
       "standardRate90d": 11.8,
       "standardRateDisplay": "11.5% - 12.5%/năm (Chuẩn 90 ngày)",
-      "isShortTermDealOnly": false
+      "isShortTermDealOnly": false,
+      "sourceUrl": "https://www.dsc.com.vn/kien-thuc/full-margin-la-gi-loi-khuyen-cho-nha-dau-tu-moi"
     },
     "derivativesFee": {
       "feePerContract": 1000,
@@ -2042,7 +2543,8 @@ export const SECURITIES_COMPANIES = [
       "marginOffer": "Lãi suất Margin ưu đãi từ 8.8%/năm",
       "duration": "90 ngày đầu",
       "giftBonus": "Hệ thống giao dịch DSC Pro & tư vấn danh mục",
-      "note": "Đầu tư mạnh mẽ vào nền tảng công nghệ số từ TC Group."
+      "note": "Đầu tư mạnh mẽ vào nền tảng công nghệ số từ TC Group.",
+      "sourceUrl": "https://dsc.com.vn/bieu-phi"
     },
     "promotions": [
       "Ứng dụng DSC Trading thế hệ mới",
@@ -2065,7 +2567,21 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://www.dsc.com.vn",
-    "sourceUrl": "https://www.dsc.com.vn/bieu-phi"
+    "sourceUrl": "https://www.dsc.com.vn/bieu-phi",
+    "promoArticles": [
+      {
+        "title": "Chính sách giao dịch Ký quỹ Margin & Lời khuyên đầu tư",
+        "url": "https://www.dsc.com.vn/kien-thuc/full-margin-la-gi-loi-khuyen-cho-nha-dau-tu-moi",
+        "type": "margin",
+        "badge": "Chính Sách Margin"
+      },
+      {
+        "title": "Biểu phí giao dịch và dịch vụ tài chính DSC",
+        "url": "https://dsc.com.vn/bieu-phi",
+        "type": "fee",
+        "badge": "Biểu Phí Chuẩn"
+      }
+    ]
   },
   {
     "id": "phs",
@@ -2104,7 +2620,8 @@ export const SECURITIES_COMPANIES = [
       "shortTermDisplay": "9.9% - 11.0%/năm",
       "standardRate90d": 12.2,
       "standardRateDisplay": "12.0% - 13.0%/năm (Chuẩn 90 ngày)",
-      "isShortTermDealOnly": false
+      "isShortTermDealOnly": false,
+      "sourceUrl": "https://www.phs.vn/tin-tuc/ra-mat-goi-uu-dai-phs-smart-margin-lai-suat-chi-9-5-nam/6402662"
     },
     "derivativesFee": {
       "feePerContract": 1000,
@@ -2117,7 +2634,8 @@ export const SECURITIES_COMPANIES = [
       "marginOffer": "Lãi suất Margin ưu đãi từ 8.9%/năm",
       "duration": "90 ngày đầu",
       "giftBonus": "Hệ thống PHS Mobile & tư vấn cổ phiếu",
-      "note": "Cổ đông chiến lược nước ngoài Đài Loan, tài chính ổn định."
+      "note": "Cổ đông chiến lược nước ngoài Đài Loan, tài chính ổn định.",
+      "sourceUrl": "https://www.phs.vn/tin-tuc/ra-mat-goi-uu-dai-phs-smart-margin-lai-suat-chi-9-5-nam/6402662"
     },
     "promotions": [
       "Báo cáo chiến lược đầu tư hàng quý chất lượng cao",
@@ -2140,7 +2658,21 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://www.phs.vn",
-    "sourceUrl": "https://www.phs.vn/san-pham-dich-vu/bieu-phi-giao-dich-chung-khoan-co-so-26"
+    "sourceUrl": "https://www.phs.vn/san-pham-dich-vu/bieu-phi-giao-dich-chung-khoan-co-so-26",
+    "promoArticles": [
+      {
+        "title": "Ra mắt gói ưu đãi PHS Smart Margin lãi suất chỉ 9.5%/năm",
+        "url": "https://www.phs.vn/tin-tuc/ra-mat-goi-uu-dai-phs-smart-margin-lai-suat-chi-9-5-nam/6402662",
+        "type": "margin",
+        "badge": "PHS Smart Margin"
+      },
+      {
+        "title": "Dịch vụ và biểu phí giao dịch Chứng khoán Phú Hưng",
+        "url": "https://phs.vn",
+        "type": "fee",
+        "badge": "Website PHS"
+      }
+    ]
   },
   {
     "id": "tvsi",
@@ -2179,7 +2711,8 @@ export const SECURITIES_COMPANIES = [
       "shortTermDisplay": "10.5% - 11.5%/năm",
       "standardRate90d": 13,
       "standardRateDisplay": "12.5% - 13.5%/năm (Chuẩn 90 ngày)",
-      "isShortTermDealOnly": false
+      "isShortTermDealOnly": false,
+      "sourceUrl": "https://www.tvsi.com.vn/endow/tvsi-margin-increase.html"
     },
     "derivativesFee": {
       "feePerContract": 1000,
@@ -2192,7 +2725,8 @@ export const SECURITIES_COMPANIES = [
       "marginOffer": "Lãi suất Margin ưu đãi từ 9.0%/năm",
       "duration": "Theo chính sách mở mới",
       "giftBonus": "Hệ thống i-Trade & hỗ trợ khách hàng",
-      "note": "Tập trung tái cơ cấu và phục vụ khách hàng giao dịch cổ phiếu."
+      "note": "Tập trung tái cơ cấu và phục vụ khách hàng giao dịch cổ phiếu.",
+      "sourceUrl": "https://www.tvsi.com.vn/endow/tvsi-margin-increase.html"
     },
     "promotions": [
       "Hỗ trợ dịch vụ giao dịch trực tuyến i-Trade Home",
@@ -2215,7 +2749,21 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://www.tvsi.com.vn",
-    "sourceUrl": "https://www.tvsi.com.vn/fee-stock.html"
+    "sourceUrl": "https://www.tvsi.com.vn/fee-stock.html",
+    "promoArticles": [
+      {
+        "title": "Chương trình ưu đãi tăng sức mua Margin TVSI",
+        "url": "https://www.tvsi.com.vn/endow/tvsi-margin-increase.html",
+        "type": "margin",
+        "badge": "Ưu Đãi Margin"
+      },
+      {
+        "title": "Biểu phí dịch vụ chứng khoán Tân Việt TVSI",
+        "url": "https://www.tvsi.com.vn/san-pham-dich-vu/dich-vu-chung-khoan/bieu-phi-dich-vu",
+        "type": "fee",
+        "badge": "Biểu Phí Chuẩn"
+      }
+    ]
   },
   {
     "id": "evs",
@@ -2254,7 +2802,8 @@ export const SECURITIES_COMPANIES = [
       "shortTermDisplay": "10.0% - 11.5%/năm",
       "standardRate90d": 12.5,
       "standardRateDisplay": "12.0% - 13.5%/năm (Chuẩn 90 ngày)",
-      "isShortTermDealOnly": false
+      "isShortTermDealOnly": false,
+      "sourceUrl": "https://www.eves.com.vn/evs-special/tin-evs/lai-vay-linh-hoat-loi-nhuan-toi-da-cung-evs-margin-tplus/"
     },
     "derivativesFee": {
       "feePerContract": 1000,
@@ -2267,7 +2816,8 @@ export const SECURITIES_COMPANIES = [
       "marginOffer": "Lãi suất Margin ưu đãi từ 8.9%/năm",
       "duration": "90 ngày đầu",
       "giftBonus": "Tư vấn đầu tư & báo cáo phân tích ngành",
-      "note": "Chính sách linh hoạt, tập trung khách hàng cá nhân năng động."
+      "note": "Chính sách linh hoạt, tập trung khách hàng cá nhân năng động.",
+      "sourceUrl": "https://www.eves.com.vn/evs-special/tin-evs/lai-vay-linh-hoat-loi-nhuan-toi-da-cung-evs-margin-tplus/"
     },
     "promotions": [
       "Ưu đãi lãi suất margin tài khoản mới",
@@ -2290,7 +2840,21 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://www.eves.com.vn",
-    "sourceUrl": "https://www.eves.com.vn/san-pham-dich-vu/bieu-phi/bieu-phi-dich-vu/"
+    "sourceUrl": "https://www.eves.com.vn/san-pham-dich-vu/bieu-phi/bieu-phi-dich-vu/",
+    "promoArticles": [
+      {
+        "title": "Lãi vay linh hoạt, lợi nhuận tối đa cùng EVS Margin T+",
+        "url": "https://www.eves.com.vn/evs-special/tin-evs/lai-vay-linh-hoat-loi-nhuan-toi-da-cung-evs-margin-tplus/",
+        "type": "margin",
+        "badge": "EVS Margin T+"
+      },
+      {
+        "title": "Biểu phí dịch vụ giao dịch chứng khoán Everest EVS",
+        "url": "https://www.eves.com.vn/san-pham-dich-vu/bieu-phi/bieu-phi-dich-vu/",
+        "type": "fee",
+        "badge": "Biểu Phí Chuẩn"
+      }
+    ]
   }
 ];
 
