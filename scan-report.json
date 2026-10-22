@@ -1,19 +1,19 @@
 {
   "summary": {
     "total": 30,
-    "accessible": 30,
-    "unscannable": 0,
+    "accessible": 29,
+    "unscannable": 1,
     "keywordStats": {
-      "tradingFee": 17,
+      "tradingFee": 16,
       "zeroFee": 11,
       "interestRate": 11,
       "loanInterest": 1,
-      "margin": 22,
+      "margin": 21,
       "creditLimit": 4,
       "debtBalance": 3,
       "promoRate": 8
     },
-    "timestamp": "2026-10-22T06:55:37.015Z",
+    "timestamp": "2026-10-22T07:11:54.357Z",
     "note": "Dữ liệu được quét tự động từ các trang web biểu phí công khai của 30 CTCK."
   },
   "brokers": [
@@ -60,7 +60,7 @@
         "hasPromoRateMention": true
       },
       "contentLength": 151634,
-      "scannedAt": "2026-10-22T06:54:35.115Z"
+      "scannedAt": "2026-10-22T07:10:34.482Z"
     },
     {
       "id": "tcbs",
@@ -104,7 +104,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 24828,
-      "scannedAt": "2026-10-22T06:54:35.559Z"
+      "scannedAt": "2026-10-22T07:10:35.196Z"
     },
     {
       "id": "vps",
@@ -144,7 +144,7 @@
         "hasPromoRateMention": true
       },
       "contentLength": 59053,
-      "scannedAt": "2026-10-22T06:54:37.019Z"
+      "scannedAt": "2026-10-22T07:10:36.798Z"
     },
     {
       "id": "ssi",
@@ -176,7 +176,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 10345,
-      "scannedAt": "2026-10-22T06:54:37.479Z"
+      "scannedAt": "2026-10-22T07:10:37.227Z"
     },
     {
       "id": "vndirect",
@@ -208,7 +208,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 3376,
-      "scannedAt": "2026-10-22T06:54:38.631Z"
+      "scannedAt": "2026-10-22T07:10:38.577Z"
     },
     {
       "id": "mirae-asset",
@@ -254,7 +254,7 @@
         "hasPromoRateMention": true
       },
       "contentLength": 141271,
-      "scannedAt": "2026-10-22T06:54:40.642Z"
+      "scannedAt": "2026-10-22T07:10:40.883Z"
     },
     {
       "id": "dnse",
@@ -301,7 +301,7 @@
         "hasPromoRateMention": true
       },
       "contentLength": 547677,
-      "scannedAt": "2026-10-22T06:54:41.685Z"
+      "scannedAt": "2026-10-22T07:10:42.373Z"
     },
     {
       "id": "vpbanks",
@@ -339,7 +339,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 17177,
-      "scannedAt": "2026-10-22T06:54:41.945Z"
+      "scannedAt": "2026-10-22T07:10:42.738Z"
     },
     {
       "id": "fpts",
@@ -377,7 +377,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 193049,
-      "scannedAt": "2026-10-22T06:54:44.137Z"
+      "scannedAt": "2026-10-22T07:10:44.893Z"
     },
     {
       "id": "hsc",
@@ -409,7 +409,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 3064,
-      "scannedAt": "2026-10-22T06:54:44.350Z"
+      "scannedAt": "2026-10-22T07:10:45.278Z"
     },
     {
       "id": "vietcap",
@@ -445,7 +445,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 62637,
-      "scannedAt": "2026-10-22T06:54:45.582Z"
+      "scannedAt": "2026-10-22T07:10:47.408Z"
     },
     {
       "id": "kafi",
@@ -489,7 +489,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 79246,
-      "scannedAt": "2026-10-22T06:54:46.318Z"
+      "scannedAt": "2026-10-22T07:10:49.180Z"
     },
     {
       "id": "mbs",
@@ -531,7 +531,7 @@
         "hasPromoRateMention": true
       },
       "contentLength": 132575,
-      "scannedAt": "2026-10-22T06:54:49.927Z"
+      "scannedAt": "2026-10-22T07:10:54.602Z"
     },
     {
       "id": "shs",
@@ -563,7 +563,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 0,
-      "scannedAt": "2026-10-22T06:54:52.178Z"
+      "scannedAt": "2026-10-22T07:10:58.239Z"
     },
     {
       "id": "vix",
@@ -605,7 +605,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 20756,
-      "scannedAt": "2026-10-22T06:54:52.713Z"
+      "scannedAt": "2026-10-22T07:10:58.727Z"
     },
     {
       "id": "kis",
@@ -656,7 +656,7 @@
         "hasPromoRateMention": true
       },
       "contentLength": 1061879,
-      "scannedAt": "2026-10-22T06:54:53.742Z"
+      "scannedAt": "2026-10-22T07:11:00.258Z"
     },
     {
       "id": "acbs",
@@ -696,7 +696,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 159693,
-      "scannedAt": "2026-10-22T06:54:57.975Z"
+      "scannedAt": "2026-10-22T07:11:07.781Z"
     },
     {
       "id": "vcbs",
@@ -727,8 +727,8 @@
         "hasMarginMention": false,
         "hasPromoRateMention": false
       },
-      "contentLength": 11941,
-      "scannedAt": "2026-10-22T06:55:00.307Z"
+      "contentLength": 11982,
+      "scannedAt": "2026-10-22T07:11:09.676Z"
     },
     {
       "id": "kbsv",
@@ -770,7 +770,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 169805,
-      "scannedAt": "2026-10-22T06:55:03.562Z"
+      "scannedAt": "2026-10-22T07:11:14.124Z"
     },
     {
       "id": "cts",
@@ -812,7 +812,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 75863,
-      "scannedAt": "2026-10-22T06:55:08.089Z"
+      "scannedAt": "2026-10-22T07:11:19.721Z"
     },
     {
       "id": "bvsc",
@@ -844,7 +844,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 191,
-      "scannedAt": "2026-10-22T06:55:11.268Z"
+      "scannedAt": "2026-10-22T07:11:23.056Z"
     },
     {
       "id": "tps",
@@ -854,35 +854,13 @@
       "isListed": true,
       "url": "https://tpbs.com.vn",
       "officialSource": "https://tpbs.com.vn",
-      "httpStatus": 200,
-      "isAccessible": true,
-      "sourceType": "direct",
-      "sourceCategory": "Direct",
-      "unscannableReason": null,
-      "manualCheckInstruction": null,
-      "signals": {
-        "hasTradingFee": true,
-        "hasZeroFee": false,
-        "hasInterestRate": false,
-        "hasLoanInterest": false,
-        "hasMargin": true,
-        "hasCreditLimit": false,
-        "hasDebtBalance": false,
-        "matchedList": [
-          "Phí giao dịch",
-          "Ký quỹ / Margin"
-        ],
-        "matchedKeys": [
-          "tradingFee",
-          "margin"
-        ],
-        "ratesFound": [],
-        "hasZeroFeeMention": false,
-        "hasMarginMention": true,
-        "hasPromoRateMention": false
-      },
-      "contentLength": 72142,
-      "scannedAt": "2026-10-22T06:55:13.217Z"
+      "httpStatus": "Timeout (8s)",
+      "isAccessible": false,
+      "unscannableReason": "Hết thời gian chờ phản hồi (Timeout > 8s). Máy chủ phản hồi chậm hoặc chặn crawler tự động.",
+      "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://tpbs.com.vn",
+      "signals": null,
+      "contentLength": 0,
+      "scannedAt": "2026-10-22T07:11:31.057Z"
     },
     {
       "id": "yuanta",
@@ -914,7 +892,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 199,
-      "scannedAt": "2026-10-22T06:55:14.203Z"
+      "scannedAt": "2026-10-22T07:11:32.154Z"
     },
     {
       "id": "shinhan",
@@ -945,8 +923,8 @@
         "hasMarginMention": false,
         "hasPromoRateMention": false
       },
-      "contentLength": 1603,
-      "scannedAt": "2026-10-22T06:55:19.799Z"
+      "contentLength": 1599,
+      "scannedAt": "2026-10-22T07:11:38.870Z"
     },
     {
       "id": "agriseco",
@@ -982,7 +960,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 65200,
-      "scannedAt": "2026-10-22T06:55:21.382Z"
+      "scannedAt": "2026-10-22T07:11:40.598Z"
     },
     {
       "id": "hdbs",
@@ -1021,8 +999,8 @@
         "hasMarginMention": true,
         "hasPromoRateMention": true
       },
-      "contentLength": 145284,
-      "scannedAt": "2026-10-22T06:55:26.552Z"
+      "contentLength": 145261,
+      "scannedAt": "2026-10-22T07:11:45.954Z"
     },
     {
       "id": "dsc",
@@ -1071,7 +1049,7 @@
         "hasPromoRateMention": true
       },
       "contentLength": 160012,
-      "scannedAt": "2026-10-22T06:55:28.150Z"
+      "scannedAt": "2026-10-22T07:11:47.698Z"
     },
     {
       "id": "phs",
@@ -1111,7 +1089,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 321944,
-      "scannedAt": "2026-10-22T06:55:30.574Z"
+      "scannedAt": "2026-10-22T07:11:50.730Z"
     },
     {
       "id": "tvsi",
@@ -1149,7 +1127,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 110436,
-      "scannedAt": "2026-10-22T06:55:34.457Z"
+      "scannedAt": "2026-10-22T07:11:52.953Z"
     },
     {
       "id": "evs",
@@ -1189,7 +1167,7 @@
         "hasPromoRateMention": false
       },
       "contentLength": 79452,
-      "scannedAt": "2026-10-22T06:55:37.014Z"
+      "scannedAt": "2026-10-22T07:11:54.356Z"
     }
   ]
 }

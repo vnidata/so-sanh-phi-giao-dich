@@ -2,10 +2,10 @@
   "metadata": {
     "title": "Cơ Sở Dữ Liệu Hiệu Chỉnh Thủ Công 30 Công Ty Chứng Khoán Việt Nam",
     "version": "2.2.1",
-    "updatedAt": "2026-10-22T06:55:37.019Z",
+    "updatedAt": "2026-10-22T07:11:54.363Z",
     "totalBrokers": 30,
-    "accessibleBrokers": 30,
-    "unscannableBrokers": 0,
+    "accessibleBrokers": 29,
+    "unscannableBrokers": 1,
     "instruction": "Người dùng có thể chỉnh sửa các giá trị phí, lãi suất vay margin, mã niêm yết hoặc link nguồn trong file này, sau đó nạp trực tiếp qua nút Tải lên file JSON tại Modal Quản Lý Dữ Liệu."
   },
   "overrides": {
@@ -1660,10 +1660,10 @@
       "isListed": true,
       "listingStatus": "Niêm yết HOSE",
       "sourceUrl": "https://tpbs.com.vn",
-      "scanStatus": "ACCESSIBLE_HTTP_200",
-      "httpStatus": 200,
-      "unscannableReason": null,
-      "manualCheckInstruction": null,
+      "scanStatus": "UNSCANNABLE_MANUAL_AUDIT_REQUIRED",
+      "httpStatus": "Timeout (8s)",
+      "unscannableReason": "Hết thời gian chờ phản hồi (Timeout > 8s). Máy chủ phản hồi chậm hoặc chặn crawler tự động.",
+      "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://tpbs.com.vn",
       "lastVerified": "Tháng 09/2026",
       "verifiedBy": "Web Scanner & Kiểm định viên độc lập",
       "data": {
