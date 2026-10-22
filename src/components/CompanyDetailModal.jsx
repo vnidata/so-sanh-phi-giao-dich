@@ -27,15 +27,19 @@ export default function CompanyDetailModal({ company, onClose }) {
   const [activeTab, setActiveTab] = useState('fee_margin');
   const isBsc = company.id === 'bsc' || company.isRecommended;
 
-  // Lấy bộ 4 đường link nguồn chuẩn (Website, Biểu phí, Ưu đãi eKYC, Sản phẩm Margin)
+  // Lấy bộ liên kết nguồn đã quét và kiểm chứng thực tế
   const {
     websiteUrl: companyWebsiteUrl,
     feeSourceUrl,
+    scannedUrl,
+    accountOpeningUrl,
     promoSourceUrl,
-    marginSourceUrl
+    marginSourceUrl,
+    scannedSources,
+    crawlerMeta
   } = getBrokerSourceLinks(company);
 
-  const extractedSignals = company.crawlerMeta?.signals;
+  const extractedSignals = crawlerMeta?.signals || company.crawlerMeta?.signals;
 
   const tabs = [
     { id: 'fee_margin', label: 'Biểu Phí & Margin', icon: DollarSign },
@@ -106,35 +110,18 @@ export default function CompanyDetailModal({ company, onClose }) {
                   <ExternalLink className="h-2 w-2 opacity-70" />
                 </a>
 
-                {/* 3. Nguồn bài viết ưu đãi eKYC */}
-                {company.welcomePromo?.hasPromo && (
-                  <a
-                    href={promoSourceUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 rounded-md bg-amber-50 hover:bg-amber-100 dark:bg-amber-950/60 dark:hover:bg-amber-900/60 px-2 py-0.5 text-[10px] font-bold text-amber-800 dark:text-amber-300 border border-amber-200 dark:border-amber-800 transition-colors"
-                    title={`Xem bài viết công bố ưu đãi eKYC & khuyến mãi tại ${company.shortName} (${promoSourceUrl})`}
-                  >
-                    <Gift className="h-2.5 w-2.5 text-amber-600" />
-                    <span>Ưu đãi eKYC</span>
-                    <ExternalLink className="h-2 w-2 opacity-70" />
-                  </a>
-                )}
-
-                {/* 4. Nguồn bài viết gói Margin linh hoạt */}
-                {(company.margin?.shortTermTenor || company.margin?.isShortTermDealOnly) && (
-                  <a
-                    href={marginSourceUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 rounded-md bg-indigo-50 hover:bg-indigo-100 dark:bg-indigo-950/60 dark:hover:bg-indigo-900/60 px-2 py-0.5 text-[10px] font-bold text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800 transition-colors"
-                    title={`Xem bài viết giới thiệu sản phẩm Margin linh hoạt tại ${company.shortName} (${marginSourceUrl})`}
-                  >
-                    <Zap className="h-2.5 w-2.5 text-indigo-600" />
-                    <span>Margin T+</span>
-                    <ExternalLink className="h-2 w-2 opacity-70" />
-                  </a>
-                )}
+                {/* 3. Cổng crawler đã quét dữ liệu */}
+                <a
+                  href={scannedUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 rounded-md bg-purple-50 hover:bg-purple-100 dark:bg-purple-950/60 dark:hover:bg-purple-900/60 px-2 py-0.5 text-[10px] font-bold text-purple-700 dark:text-purple-300 border border-purple-200 dark:border-purple-800 transition-colors"
+                  title={`Xem cổng dữ liệu scanner đã quét thực tế của ${company.shortName} (${scannedUrl})`}
+                >
+                  <ShieldCheck className="h-2.5 w-2.5" />
+                  <span>Cổng quét</span>
+                  <ExternalLink className="h-2 w-2 opacity-70" />
+                </a>
 
                 {isBsc && (
                   <span className="rounded bg-gradient-to-r from-amber-500 to-orange-500 px-2 py-0.5 text-[10px] font-black text-white uppercase tracking-wider shadow-xs">
@@ -691,18 +678,18 @@ export default function CompanyDetailModal({ company, onClose }) {
                     className="flex-1 inline-flex items-center justify-center gap-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 px-4 py-2 text-xs font-bold text-white shadow-xs transition-all"
                   >
                     <FileText className="h-3.5 w-3.5" />
-                    <span>Bài Viết Biểu Phí Gốc</span>
+                    <span>Biểu Phí & Lãi Gốc</span>
                     <ExternalLink className="h-3 w-3 opacity-70" />
                   </a>
 
                   <a
-                    href={marginSourceUrl}
+                    href={scannedUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 inline-flex items-center justify-center gap-1.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 px-4 py-2 text-xs font-bold text-white shadow-xs transition-all"
+                    className="flex-1 inline-flex items-center justify-center gap-1.5 rounded-xl bg-purple-600 hover:bg-purple-700 px-4 py-2 text-xs font-bold text-white shadow-xs transition-all"
                   >
-                    <Zap className="h-3.5 w-3.5" />
-                    <span>Sản Phẩm Margin T+</span>
+                    <ShieldCheck className="h-3.5 w-3.5" />
+                    <span>Cổng Quét Scanner</span>
                     <ExternalLink className="h-3 w-3 opacity-70" />
                   </a>
                 </div>

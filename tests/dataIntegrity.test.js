@@ -1,6 +1,9 @@
 import { describe, it, expect } from 'vitest';
 import { SECURITIES_COMPANIES, FILTER_CATEGORIES } from '../src/data/securitiesData.js';
+import React from 'react';
+import ReactDOMServer from 'react-dom/server';
 import { getBrokerSourceLinks } from '../src/utils/sourceLinks.js';
+import CompanyDetailModal from '../src/components/CompanyDetailModal.jsx';
 
 describe('Securities Data Integrity & Anti-Hallucination Suite', () => {
   it('should contain exactly 30 securities companies', () => {
@@ -398,5 +401,14 @@ describe('Securities Data Integrity & Anti-Hallucination Suite', () => {
       });
     });
   });
+  it('should render CompanyDetailModal without ReferenceError or runtime crash for all 30 brokers', () => {
+    SECURITIES_COMPANIES.forEach(company => {
+      const html = ReactDOMServer.renderToString(
+        React.createElement(CompanyDetailModal, { company, onClose: () => {} })
+      );
+      expect(html).toBeDefined();
+      expect(html.length).toBeGreaterThan(200);
+      expect(html).toContain(company.shortName);
+    });
+  });
 });
-
