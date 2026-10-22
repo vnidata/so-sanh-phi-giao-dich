@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import { analyzeFinancialKeywords } from './src/utils/financialKeywords.js';
 
 // Custom plugin to provide native Node-based crawler endpoint during dev
 function crawlerDevPlugin() {
@@ -38,9 +39,7 @@ function crawlerDevPlugin() {
               text = await fetchRes.text();
             }
 
-            const hasZeroFeeMention = /miễn phí|0%|zero[s-]?fee/i.test(text);
-            const hasMarginMention = /margin|ký quỹ|lãi suất vay|lãi vay/i.test(text);
-            const hasPromoRateMention = /([4-9][.,][0-9]+%|1[0-4][.,][0-9]+%)/i.test(text);
+            const signals = status === 200 ? analyzeFinancialKeywords(text) : null;
 
             const result = {
               id: brokerId,
@@ -48,11 +47,7 @@ function crawlerDevPlugin() {
               httpStatus: status,
               isAccessible: status === 200,
               contentLength: text.length,
-              signals: {
-                hasZeroFeeMention,
-                hasMarginMention,
-                hasPromoRateMention
-              },
+              signals,
               scannedAt: new Date().toISOString()
             };
 

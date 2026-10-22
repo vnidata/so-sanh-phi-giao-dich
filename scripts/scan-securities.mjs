@@ -17,6 +17,7 @@ const __dirname = path.dirname(__filename);
 
 // Danh sách đầy đủ 30 Công ty Chứng khoán cần quét (dùng chung cho cả Node.js và Web UI)
 import { TARGET_BROKERS } from '../src/data/brokersCrawlerList.js';
+import { analyzeFinancialKeywords, KEYWORD_DICTIONARY } from '../src/utils/financialKeywords.js';
 export { TARGET_BROKERS };
 
 async function scanBrokerPage(broker) {
@@ -78,10 +79,8 @@ async function scanBrokerPage(broker) {
       manualCheckInstruction = `Truy cập trực tiếp liên kết chính thức: ${broker.officialSource}`;
     }
 
-    // Phân tích tín hiệu biểu phí nếu quét được
-    const hasZeroFeeMention = /miễn phí|0%|zero[s-]?fee/i.test(text);
-    const hasMarginMention = /margin|ký quỹ|lãi suất vay|lãi vay/i.test(text);
-    const hasPromoRateMention = /([4-9][.,][0-9]+%|1[0-4][.,][0-9]+%)/i.test(text);
+    // Phân tích tín hiệu từ khóa biểu phí, lãi suất, ký quỹ, hạn mức, dư nợ
+    const signals = isAccessible ? analyzeFinancialKeywords(text) : null;
 
     return {
       id: broker.id,
@@ -95,11 +94,7 @@ async function scanBrokerPage(broker) {
       isAccessible,
       unscannableReason,
       manualCheckInstruction,
-      signals: isAccessible ? {
-        hasZeroFeeMention,
-        hasMarginMention,
-        hasPromoRateMention,
-      } : null,
+      signals,
       contentLength: text.length,
       scannedAt: new Date().toISOString()
     };
@@ -142,7 +137,10 @@ async function runScanner() {
     process.stdout.write(`Đang quét [${broker.shortName}] (${broker.url})... `);
     const result = await scanBrokerPage(broker);
     if (result.isAccessible) {
-      console.log(`✅ HTTP ${result.httpStatus} (${Math.round(result.contentLength / 1024)} KB)`);
+      const kwCount = result.signals?.matchedList?.length || 0;
+      const kwList = kwCount > 0 ? ` [Từ khóa: ${result.signals.matchedList.slice(0, 4).join(', ')}${kwCount > 4 ? ` +${kwCount - 4}` : ''}]` : '';
+      const rates = result.signals?.ratesFound?.length > 0 ? ` [Lãi suất: ${result.signals.ratesFound.join(', ')}]` : '';
+      console.log(`✅ HTTP ${result.httpStatus} (${Math.round(result.contentLength / 1024)} KB)${kwList}${rates}`);
     } else {
       console.log(`⚠️ ${result.httpStatus} - ${result.unscannableReason?.slice(0, 55)}...`);
     }
@@ -152,10 +150,31 @@ async function runScanner() {
   // Tổng hợp báo cáo
   const accessibleCount = results.filter(r => r.isAccessible).length;
   const unscannableCount = results.length - accessibleCount;
+  
+  // Đếm theo từng nhóm từ khóa
+  const stats = {
+    tradingFee: results.filter(r => r.signals?.hasTradingFee).length,
+    zeroFee: results.filter(r => r.signals?.hasZeroFee || r.signals?.hasZeroFeeMention).length,
+    interestRate: results.filter(r => r.signals?.hasInterestRate).length,
+    loanInterest: results.filter(r => r.signals?.hasLoanInterest).length,
+    margin: results.filter(r => r.signals?.hasMargin || r.signals?.hasMarginMention).length,
+    creditLimit: results.filter(r => r.signals?.hasCreditLimit).length,
+    debtBalance: results.filter(r => r.signals?.hasDebtBalance).length,
+    promoRate: results.filter(r => (r.signals?.ratesFound && r.signals.ratesFound.length > 0)).length
+  };
+
   console.log('\n=================================================================');
   console.log(`📊 TỔNG KẾT BÁO CÁO QUÉT DỮ LIỆU 30 CTCK:`);
-  console.log(`- Thành công: ${accessibleCount}/${TARGET_BROKERS.length} trang web truy cập tốt.`);
-  console.log(`- Cần đối chiếu: ${unscannableCount}/${TARGET_BROKERS.length} trang có WAF / chặn bot / timeout.`);
+  console.log(`- Trạng thái: ${accessibleCount}/${TARGET_BROKERS.length} trang web truy cập tốt, ${unscannableCount} cần đối chiếu WAF/SPA.`);
+  console.log(`- Tín hiệu từ khóa:`);
+  console.log(`  + Phí giao dịch:   ${stats.tradingFee}/${accessibleCount} CTCK`);
+  console.log(`  + Zero-Fee/Miễn phí: ${stats.zeroFee}/${accessibleCount} CTCK`);
+  console.log(`  + Lãi suất:        ${stats.interestRate}/${accessibleCount} CTCK`);
+  console.log(`  + Lãi vay:         ${stats.loanInterest}/${accessibleCount} CTCK`);
+  console.log(`  + Ký quỹ / Margin: ${stats.margin}/${accessibleCount} CTCK`);
+  console.log(`  + Hạn mức tín dụng: ${stats.creditLimit}/${accessibleCount} CTCK`);
+  console.log(`  + Dư nợ:           ${stats.debtBalance}/${accessibleCount} CTCK`);
+  console.log(`  + Mức % Lãi suất:  ${stats.promoRate}/${accessibleCount} CTCK`);
   console.log('=================================================================');
 
   // Ghi file scan-report.json
@@ -165,6 +184,7 @@ async function runScanner() {
       total: TARGET_BROKERS.length,
       accessible: accessibleCount,
       unscannable: unscannableCount,
+      keywordStats: stats,
       timestamp: new Date().toISOString(),
       note: 'Dữ liệu được quét tự động từ các trang web biểu phí công khai của 30 CTCK.'
     },

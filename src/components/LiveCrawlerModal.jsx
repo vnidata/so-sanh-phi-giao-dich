@@ -22,7 +22,8 @@ import { TARGET_BROKERS } from '../data/brokersCrawlerList';
 import { 
   crawlSingleBroker, 
   calculateScanSummary, 
-  syncScanResultsToCompanies 
+  syncScanResultsToCompanies,
+  KEYWORD_DICTIONARY 
 } from '../utils/crawlerEngine';
 
 export default function LiveCrawlerModal({
@@ -111,8 +112,14 @@ export default function LiveCrawlerModal({
         });
 
         if (result.isAccessible) {
+          const kwStr = result.signals?.matchedList?.length > 0 
+            ? ` | 🎯 ${result.signals.matchedList.slice(0, 4).join(', ')}${result.signals.matchedList.length > 4 ? ` +${result.signals.matchedList.length - 4}` : ''}`
+            : '';
+          const rateStr = result.signals?.ratesFound?.length > 0 
+            ? ` | 📈 Lãi: ${result.signals.ratesFound.join(', ')}`
+            : '';
           addLog(
-            `✅ [${broker.shortName}] HTTP 200 OK (${Math.round((result.contentLength || 0) / 1024)} KB) - ${result.elapsedMs}ms`,
+            `✅ [${broker.shortName}] HTTP 200 OK (${Math.round((result.contentLength || 0) / 1024)} KB) - ${result.elapsedMs}ms${kwStr}${rateStr}`,
             'success'
           );
         } else {
@@ -196,6 +203,14 @@ export default function LiveCrawlerModal({
   const filteredList = scanResults.filter(b => {
     if (filterType === 'accessible') return b.isAccessible;
     if (filterType === 'unscannable') return !b.isAccessible;
+    if (filterType === 'tradingFee') return b.signals?.hasTradingFee;
+    if (filterType === 'zeroFee') return b.signals?.hasZeroFee || b.signals?.hasZeroFeeMention;
+    if (filterType === 'interestRate') return b.signals?.hasInterestRate;
+    if (filterType === 'loanInterest') return b.signals?.hasLoanInterest;
+    if (filterType === 'margin') return b.signals?.hasMargin || b.signals?.hasMarginMention;
+    if (filterType === 'creditLimit') return b.signals?.hasCreditLimit;
+    if (filterType === 'debtBalance') return b.signals?.hasDebtBalance;
+    if (filterType === 'ratesFound') return b.signals?.ratesFound && b.signals.ratesFound.length > 0;
     return true;
   });
 
@@ -341,14 +356,139 @@ export default function LiveCrawlerModal({
               </div>
             </div>
 
-            <div className="rounded-xl border border-blue-200 dark:border-blue-900/60 bg-blue-50/50 dark:bg-blue-950/30 p-3">
-              <div className="text-[11px] font-medium text-blue-700 dark:text-blue-300 flex items-center gap-1">
+            <div className="rounded-xl border border-teal-200 dark:border-teal-900/60 bg-teal-50/50 dark:bg-teal-950/30 p-3">
+              <div className="text-[11px] font-medium text-teal-700 dark:text-teal-300 flex items-center gap-1">
                 <Sparkles className="h-3 w-3" />
                 Tín hiệu Zero-Fee
               </div>
-              <div className="text-lg font-black text-blue-700 dark:text-blue-300 mt-0.5">
+              <div className="text-lg font-black text-teal-700 dark:text-teal-300 mt-0.5">
                 {summary.withZeroFeeSignal}
               </div>
+            </div>
+          </div>
+
+          {/* Dải Thống Kê & Bộ Lọc Nhanh Tín Hiệu Từ Khóa Tài Chính */}
+          <div className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50/60 dark:bg-slate-800/40 p-3">
+            <div className="flex items-center justify-between mb-2">
+              <span className="text-[11px] font-extrabold uppercase tracking-wider text-slate-600 dark:text-slate-300 flex items-center gap-1.5">
+                <Filter className="h-3 w-3 text-blue-500" />
+                Tín Hiệu Từ Khóa Nhận Diện Được (Bấm để lọc kết quả):
+              </span>
+              {filterType !== 'all' && (
+                <button
+                  type="button"
+                  onClick={() => setFilterType('all')}
+                  className="text-[10px] text-blue-600 dark:text-blue-400 font-bold hover:underline"
+                >
+                  ✕ Bỏ lọc
+                </button>
+              )}
+            </div>
+
+            <div className="flex flex-wrap gap-1.5">
+              <button
+                type="button"
+                onClick={() => setFilterType(filterType === 'tradingFee' ? 'all' : 'tradingFee')}
+                className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold border transition-all ${
+                  filterType === 'tradingFee' 
+                    ? 'ring-2 ring-emerald-500 bg-emerald-600 text-white border-transparent'
+                    : 'bg-emerald-50 dark:bg-emerald-950/40 text-emerald-800 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800/60 hover:bg-emerald-100'
+                }`}
+                title="Lọc các CTCK có từ khóa Phí giao dịch / Biểu phí"
+              >
+                Phí GD: <span className="font-extrabold">{summary.withTradingFeeSignal}</span>
+              </button>
+
+              <button
+                type="button"
+                onClick={() => setFilterType(filterType === 'zeroFee' ? 'all' : 'zeroFee')}
+                className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold border transition-all ${
+                  filterType === 'zeroFee' 
+                    ? 'ring-2 ring-teal-500 bg-teal-600 text-white border-transparent'
+                    : 'bg-teal-50 dark:bg-teal-950/40 text-teal-800 dark:text-teal-300 border-teal-200 dark:border-teal-800/60 hover:bg-teal-100'
+                }`}
+                title="Lọc các CTCK có ưu đãi Zero-Fee / Miễn phí giao dịch"
+              >
+                Zero-Fee: <span className="font-extrabold">{summary.withZeroFeeSignal}</span>
+              </button>
+
+              <button
+                type="button"
+                onClick={() => setFilterType(filterType === 'interestRate' ? 'all' : 'interestRate')}
+                className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold border transition-all ${
+                  filterType === 'interestRate' 
+                    ? 'ring-2 ring-blue-500 bg-blue-600 text-white border-transparent'
+                    : 'bg-blue-50 dark:bg-blue-950/40 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800/60 hover:bg-blue-100'
+                }`}
+                title="Lọc các CTCK có từ khóa Lãi suất"
+              >
+                Lãi suất: <span className="font-extrabold">{summary.withInterestRateSignal}</span>
+              </button>
+
+              <button
+                type="button"
+                onClick={() => setFilterType(filterType === 'loanInterest' ? 'all' : 'loanInterest')}
+                className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold border transition-all ${
+                  filterType === 'loanInterest' 
+                    ? 'ring-2 ring-indigo-500 bg-indigo-600 text-white border-transparent'
+                    : 'bg-indigo-50 dark:bg-indigo-950/40 text-indigo-800 dark:text-indigo-300 border-indigo-200 dark:border-indigo-800/60 hover:bg-indigo-100'
+                }`}
+                title="Lọc các CTCK có từ khóa Lãi vay margin"
+              >
+                Lãi vay: <span className="font-extrabold">{summary.withLoanInterestSignal}</span>
+              </button>
+
+              <button
+                type="button"
+                onClick={() => setFilterType(filterType === 'margin' ? 'all' : 'margin')}
+                className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold border transition-all ${
+                  filterType === 'margin' 
+                    ? 'ring-2 ring-purple-500 bg-purple-600 text-white border-transparent'
+                    : 'bg-purple-50 dark:bg-purple-950/40 text-purple-800 dark:text-purple-300 border-purple-200 dark:border-purple-800/60 hover:bg-purple-100'
+                }`}
+                title="Lọc các CTCK có từ khóa Ký quỹ / Margin"
+              >
+                Ký quỹ: <span className="font-extrabold">{summary.withMarginSignal}</span>
+              </button>
+
+              <button
+                type="button"
+                onClick={() => setFilterType(filterType === 'creditLimit' ? 'all' : 'creditLimit')}
+                className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold border transition-all ${
+                  filterType === 'creditLimit' 
+                    ? 'ring-2 ring-amber-500 bg-amber-600 text-white border-transparent'
+                    : 'bg-amber-50 dark:bg-amber-950/40 text-amber-800 dark:text-amber-300 border-amber-200 dark:border-amber-800/60 hover:bg-amber-100'
+                }`}
+                title="Lọc các CTCK có từ khóa Hạn mức vay / Cấp tín dụng"
+              >
+                Hạn mức: <span className="font-extrabold">{summary.withCreditLimitSignal}</span>
+              </button>
+
+              <button
+                type="button"
+                onClick={() => setFilterType(filterType === 'debtBalance' ? 'all' : 'debtBalance')}
+                className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold border transition-all ${
+                  filterType === 'debtBalance' 
+                    ? 'ring-2 ring-rose-500 bg-rose-600 text-white border-transparent'
+                    : 'bg-rose-50 dark:bg-rose-950/40 text-rose-800 dark:text-rose-300 border-rose-200 dark:border-rose-800/60 hover:bg-rose-100'
+                }`}
+                title="Lọc các CTCK có từ khóa Dư nợ"
+              >
+                Dư nợ: <span className="font-extrabold">{summary.withDebtBalanceSignal}</span>
+              </button>
+
+              <button
+                type="button"
+                onClick={() => setFilterType(filterType === 'ratesFound' ? 'all' : 'ratesFound')}
+                className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold border transition-all ${
+                  filterType === 'ratesFound' 
+                    ? 'ring-2 ring-cyan-500 bg-cyan-600 text-white border-transparent'
+                    : 'bg-cyan-50 dark:bg-cyan-950/40 text-cyan-800 dark:text-cyan-300 border-cyan-200 dark:border-cyan-800/60 hover:bg-cyan-100'
+                }`}
+                title="Lọc các CTCK có phát hiện cụ thể mức % lãi suất"
+              >
+                Tỷ lệ %: <span className="font-extrabold">{summary.withPromoSignal}</span>
+              </button>
             </div>
           </div>
 
@@ -469,19 +609,50 @@ export default function LiveCrawlerModal({
                           )}
                         </div>
 
-                        <div className="mt-1 flex items-center gap-3 text-[11px] text-slate-500">
-                          {broker.signals?.hasZeroFeeMention && (
-                            <span className="text-emerald-600 dark:text-emerald-400 font-semibold">
-                              ✓ Có từ khóa Zero-Fee
+                        {/* Dải Badge Tín Hiệu Từ Khóa & Cảnh Báo */}
+                        <div className="mt-1.5 flex items-center gap-1.5 flex-wrap">
+                          {broker.signals?.hasTradingFee && (
+                            <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-emerald-100 dark:bg-emerald-950/80 text-emerald-800 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800">
+                              Phí GD
                             </span>
                           )}
-                          {broker.signals?.hasMarginMention && (
-                            <span className="text-blue-600 dark:text-blue-400 font-semibold">
-                              ✓ Có thông tin Margin
+                          {(broker.signals?.hasZeroFee || broker.signals?.hasZeroFeeMention) && (
+                            <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-teal-100 dark:bg-teal-950/80 text-teal-800 dark:text-teal-300 border border-teal-200 dark:border-teal-800">
+                              Zero-Fee
+                            </span>
+                          )}
+                          {broker.signals?.hasInterestRate && (
+                            <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-blue-100 dark:bg-blue-950/80 text-blue-800 dark:text-blue-300 border border-blue-200 dark:border-blue-800">
+                              Lãi suất
+                            </span>
+                          )}
+                          {broker.signals?.hasLoanInterest && (
+                            <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-indigo-100 dark:bg-indigo-950/80 text-indigo-800 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800">
+                              Lãi vay
+                            </span>
+                          )}
+                          {(broker.signals?.hasMargin || broker.signals?.hasMarginMention) && (
+                            <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-purple-100 dark:bg-purple-950/80 text-purple-800 dark:text-purple-300 border border-purple-200 dark:border-purple-800">
+                              Ký quỹ
+                            </span>
+                          )}
+                          {broker.signals?.hasCreditLimit && (
+                            <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-100 dark:bg-amber-950/80 text-amber-800 dark:text-amber-300 border border-amber-200 dark:border-amber-800">
+                              Hạn mức
+                            </span>
+                          )}
+                          {broker.signals?.hasDebtBalance && (
+                            <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-rose-100 dark:bg-rose-950/80 text-rose-800 dark:text-rose-300 border border-rose-200 dark:border-rose-800">
+                              Dư nợ
+                            </span>
+                          )}
+                          {broker.signals?.ratesFound && broker.signals.ratesFound.length > 0 && (
+                            <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-mono font-bold bg-cyan-100 dark:bg-cyan-950/80 text-cyan-800 dark:text-cyan-300 border border-cyan-200 dark:border-cyan-800">
+                              Lãi: {broker.signals.ratesFound.join(', ')}
                             </span>
                           )}
                           {broker.unscannableReason && (
-                            <span className="text-amber-600 dark:text-amber-400 truncate max-w-sm">
+                            <span className="text-amber-600 dark:text-amber-400 text-[11px] truncate max-w-sm">
                               {broker.unscannableReason}
                             </span>
                           )}

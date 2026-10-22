@@ -2,6 +2,7 @@ import http from 'http';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { analyzeFinancialKeywords } from './src/utils/financialKeywords.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -65,9 +66,7 @@ const server = http.createServer(async (req, res) => {
         text = await fetchRes.text();
       }
 
-      const hasZeroFeeMention = /miễn phí|0%|zero[s-]?fee/i.test(text);
-      const hasMarginMention = /margin|ký quỹ|lãi suất vay|lãi vay/i.test(text);
-      const hasPromoRateMention = /([4-9][.,][0-9]+%|1[0-4][.,][0-9]+%)/i.test(text);
+      const signals = status === 200 ? analyzeFinancialKeywords(text) : null;
 
       const result = {
         id: brokerId,
@@ -75,11 +74,7 @@ const server = http.createServer(async (req, res) => {
         httpStatus: status,
         isAccessible: status === 200,
         contentLength: text.length,
-        signals: {
-          hasZeroFeeMention,
-          hasMarginMention,
-          hasPromoRateMention
-        },
+        signals,
         scannedAt: new Date().toISOString()
       };
 
