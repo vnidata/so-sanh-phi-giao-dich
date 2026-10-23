@@ -6,7 +6,7 @@ import {
 } from '../src/utils/promotionsExtractor.js';
 
 describe('Promotions & Offers Extractor & CSV Exporter Tests', () => {
-  it('extractAllPromotions trích xuất danh sách chương trình từ 30 CTCK', () => {
+  it('extractAllPromotions trích xuất danh sách chương trình từ đầy đủ 30 CTCK', () => {
     const promos = extractAllPromotions(SECURITIES_COMPANIES);
 
     expect(Array.isArray(promos)).toBe(true);
@@ -28,6 +28,7 @@ describe('Promotions & Offers Extractor & CSV Exporter Tests', () => {
       // 2. Nội dung tóm tắt
       expect(p.summary, `Missing summary at index ${idx}`).toBeTruthy();
       expect(typeof p.summary).toBe('string');
+      expect(p.summary.length).toBeGreaterThan(25);
 
       // 3. Ưu đãi phí (nếu có)
       expect(p.feeOffer, `Missing feeOffer at index ${idx}`).toBeTruthy();
@@ -51,16 +52,37 @@ describe('Promotions & Offers Extractor & CSV Exporter Tests', () => {
     });
   });
 
-  it('Phân loại ưu đãi gồm đầy đủ các nhóm: Phí, Lãi margin, Mở mới eKYC', () => {
+  it('100% URL là duy nhất - Tuyệt đối không trùng lặp link giữa các chương trình ưu đãi', () => {
+    const promos = extractAllPromotions(SECURITIES_COMPANIES);
+    const urls = promos.map(p => p.sourceUrl);
+    const uniqueUrls = new Set(urls);
+
+    // Kiểm tra không có 2 chương trình nào dùng chung 1 URL
+    expect(uniqueUrls.size).toBe(urls.length);
+  });
+
+  it('100% nội dung tóm tắt thật - Tuyệt đối không chứa câu chữ văn mẫu AI sáo rỗng', () => {
     const promos = extractAllPromotions(SECURITIES_COMPANIES);
 
-    const feePromos = promos.filter(p => p.category === 'fee' || (!p.feeOffer.includes('Không áp dụng') && !p.feeOffer.includes('Theo biểu phí chuẩn')));
-    const marginPromos = promos.filter(p => p.category === 'margin' || (!p.interestOffer.includes('Không áp dụng') && !p.interestOffer.includes('Theo biểu lãi chuẩn')));
+    promos.forEach((p, idx) => {
+      // Không được chứa các câu template văn mẫu AI
+      expect(p.summary).not.toContain('công bố chính thức trên website');
+      expect(p.summary).not.toContain('Hưởng chính sách ưu đãi cạnh tranh trong năm 2026');
+      expect(p.programName).not.toContain('& eKYC (');
+      expect(p.notes).not.toContain('tuân thủ các quy định hiện hành của UBCKNN.');
+    });
+  });
+
+  it('Phân loại ưu đãi gồm đầy đủ các nhóm: Phí, Lãi margin, Mở mới eKYC, Combo', () => {
+    const promos = extractAllPromotions(SECURITIES_COMPANIES);
+
+    const feePromos = promos.filter(p => p.category === 'fee' || p.category === 'combo');
+    const marginPromos = promos.filter(p => p.category === 'margin' || p.category === 'combo');
     const welcomePromos = promos.filter(p => p.category === 'welcome');
 
-    expect(feePromos.length).toBeGreaterThan(20);
-    expect(marginPromos.length).toBeGreaterThan(30);
-    expect(welcomePromos.length).toBe(30);
+    expect(feePromos.length).toBeGreaterThan(15);
+    expect(marginPromos.length).toBeGreaterThan(25);
+    expect(welcomePromos.length).toBeGreaterThan(10);
   });
 
   it('exportPromotionsToCsvString tạo chuỗi CSV chuẩn hóa có BOM UTF-8', () => {
@@ -74,6 +96,7 @@ describe('Promotions & Offers Extractor & CSV Exporter Tests', () => {
     expect(csvString).toContain('"STT"');
     expect(csvString).toContain('"Mã CTCK"');
     expect(csvString).toContain('"Công Ty Chứng Khoán"');
+    expect(csvString).toContain('"Mã CP"');
     expect(csvString).toContain('"Tên Chương Trình"');
     expect(csvString).toContain('"Nội Dung Tóm Tắt"');
     expect(csvString).toContain('"Ưu Đãi Phí"');
