@@ -1,0 +1,2772 @@
+{
+  "summary": {
+    "total": 146,
+    "healthy": 146,
+    "dead": 0
+  },
+  "deadUrls": [],
+  "results": [
+    {
+      "url": "https://www.bsc.com.vn",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "BSC website"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.bsc.com.vn/",
+      "title": "Công ty Cổ phần Chứng khoán BIDV",
+      "h1": "Công ty Cổ phần Chứng khoán BIDV",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.bsc.com.vn/phi-giao-dich-qua-san/",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "BSC sourceUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.bsc.com.vn/phi-giao-dich-qua-san/",
+      "title": "Phí giao dịch qua sàn - BSC",
+      "h1": "Phí giao dịch qua sàn",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://dangky.bsc.com.vn/moi-gioi?online=false&cif=4768",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "BSC accountOpeningUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://dangky.bsc.com.vn/moi-gioi?online=false&cif=4768",
+      "title": "Trang chủ- C&#244;ng ty Chứng kho&#225;n Ng&#226;n h&#224;ng Đầu tư v&#224; Ph&#225;t triển Việt Nam",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.bsc.com.vn/tin-tuc/tin-chi-tiet/1228024-giam-lai-suat-cho-vay-san-pham-margin-mr10-lai-suat-uu-dai-tu-0/",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "BSC margin.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "BSC promoArticle: Giảm lãi suất cho vay sản phẩm Margin MR10 ưu đãi từ 0%"
+        },
+        {
+          "source": "promotionsData",
+          "context": "BSC promo: Sản Phẩm Vay Margin MR10 - Lãi Suất Ưu Đãi Từ 0%/năm"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.bsc.com.vn/tin-tuc/tin-chi-tiet/1228024-giam-lai-suat-cho-vay-san-pham-margin-mr10-lai-suat-uu-dai-tu-0/",
+      "title": "Triển khai sản phẩm MR10 Plus: Lãi suất ưu đãi từ 0%",
+      "h1": "Triển khai sản phẩm MR10 Plus: Lãi suất ưu đãi từ 0%",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.bsc.com.vn/tin-tuc/tin-chi-tiet/84515-don-nha-dau-tu-giao-dich-tro-lai-bsc-mien-phi-giao-dich-voi-1-ty-gtgd/",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "BSC welcomePromo.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "BSC promoArticle: Chương trình Miễn phí giao dịch với 1 tỷ GTGD mở mới & Inactive"
+        },
+        {
+          "source": "promotionsData",
+          "context": "BSC promo: Đón Nhà Đầu Tư Trở Lại - Miễn Phí Giao Dịch 1 Tỷ GTGD"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.bsc.com.vn/tin-tuc/tin-chi-tiet/84515-don-nha-dau-tu-giao-dich-tro-lai-bsc-mien-phi-giao-dich-voi-1-ty-gtgd/",
+      "title": "Đón nhà đầu tư giao dịch trở lại, BSC miễn phí giao dịch với 1 tỷ GTGD",
+      "h1": "Đón nhà đầu tư giao dịch trở lại, BSC miễn phí giao dịch với 1 tỷ GTGD",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.bsc.com.vn/tin-tuc/tin-chi-tiet/1153587-danh-muc-chuan-uu-dai-chat/",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "BSC promoArticle: Danh mục cổ phiếu chuẩn BSC10 – Ưu đãi phí & lãi vay chất"
+        },
+        {
+          "source": "promotionsData",
+          "context": "BSC promo: Danh Mục Cổ Phiếu Chuẩn BSC10 – Ưu Đãi Phí & Lãi Vay Chất"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.bsc.com.vn/tin-tuc/tin-chi-tiet/1153587-danh-muc-chuan-uu-dai-chat/",
+      "title": "Danh mục “Chuẩn” – Ưu đãi “Chất”",
+      "h1": "Danh mục “Chuẩn” – Ưu đãi “Chất”",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.tcbs.com.vn",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "TCBS website"
+        }
+      ],
+      "status": 403,
+      "finalUrl": "https://www.tcbs.com.vn/",
+      "title": "Just a moment...",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://help.tcbs.com.vn/bieu-phi-dich-vu-chung-khoan/",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "TCBS sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "TCBS promoArticle: Chính sách Zero-Fee miễn 100% phí giao dịch cổ phiếu trọn đời"
+        },
+        {
+          "source": "promotionsData",
+          "context": "TCBS promo: Chính Sách Zero-Fee Miễn 100% Phí Giao Dịch Cổ Phiếu Trọn Đời"
+        }
+      ],
+      "status": 403,
+      "finalUrl": "https://help.tcbs.com.vn/bieu-phi-dich-vu-chung-khoan/",
+      "title": "Just a moment...",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://tcinvest.tcbs.com.vn/",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "TCBS accountOpeningUrl"
+        }
+      ],
+      "status": 403,
+      "finalUrl": "https://tcinvest.tcbs.com.vn/",
+      "title": "Just a moment...",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.tcbs.com.vn/ca-nhan/uu-dai/gom-co-ve-nha/",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "TCBS margin.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "TCBS promoArticle: Chương trình Ưu đãi Gom Cổ Về Nhà lãi suất Margin từ 7.89%/năm"
+        },
+        {
+          "source": "promotionsData",
+          "context": "TCBS promo: Chương Trình Gom Cổ Về Nhà - Ưu Đãi Lãi Suất Margin Từ 7.89%/năm"
+        }
+      ],
+      "status": 403,
+      "finalUrl": "https://www.tcbs.com.vn/ca-nhan/uu-dai/gom-co-ve-nha/",
+      "title": "Just a moment...",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.tcbs.com.vn/ca-nhan/uu-dai/",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "TCBS welcomePromo.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "TCBS promoArticle: Tổng hợp kho chương trình ưu đãi và khuyến mại TCBS"
+        },
+        {
+          "source": "promotionsData",
+          "context": "TCBS promo: Kho Chương Trình Ưu Đãi & Điểm Thưởng iXu Techcom Securities"
+        }
+      ],
+      "status": 403,
+      "finalUrl": "https://www.tcbs.com.vn/ca-nhan/uu-dai/",
+      "title": "Just a moment...",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://vps.com.vn",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "VPS website"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://vps.com.vn/",
+      "title": "Trang Chủ | VPS - Công ty Cổ phần Chứng khoán VPS",
+      "h1": "Bạn muốn tìm hiểu về?",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://vps.com.vn/ca-nhan/ho-tro?view=bieu-phi-bieu-mau-va-chinh-sach&nav=bieu-phi--chinh-sach",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "VPS sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "VPS welcomePromo.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "VPS promoArticle: Chính sách biểu phí dịch vụ tài chính & giao dịch VPS"
+        },
+        {
+          "source": "promotionsData",
+          "context": "VPS promo: Ưu Đãi Miễn Phí Giao Dịch Tháng Đầu Cho Tài Khoản Mở Mới eKYC"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://vps.com.vn/ca-nhan/ho-tro?view=bieu-phi-bieu-mau-va-chinh-sach&nav=bieu-phi--chinh-sach",
+      "title": "Hỗ trợ | VPS - Công ty Cổ phần Chứng khoán VPS",
+      "h1": "Hỗ trợ",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://openaccount.vps.com.vn/",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "VPS accountOpeningUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://openaccount.vps.com.vn/",
+      "title": "Mở tài khoản chứng khoán VPS",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://vps.com.vn/bai-viet/vps-ra-mat-goi-margin-uu-dai-phat-tai",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "VPS margin.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "VPS promoArticle: VPS ra mắt gói Margin Ưu Đãi Phát Tài với lãi suất từ 8.8%/năm"
+        },
+        {
+          "source": "promotionsData",
+          "context": "VPS promo: Gói Margin Ưu Đãi Phát Tài - Lãi Suất Cạnh Tranh Từ 8.8%/năm"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://vps.com.vn/bai-viet/vps-ra-mat-goi-margin-uu-dai-phat-tai",
+      "title": "VPS ra mắt gói margin “Ưu Đãi Phát Tài” với lãi suất chỉ 8,8%/năm | VPS - Công ty Cổ phần Chứng khoá",
+      "h1": "VPS ra mắt gói margin “Ưu Đãi Phát Tài” với lãi suất chỉ 8,8%/năm",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.ssi.com.vn",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "SSI website"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.ssi.com.vn/",
+      "title": "Công ty cổ phần chứng khoán SSI",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.ssi.com.vn/khach-hang-ca-nhan/bieu-phi/bieu-gia-dich-vu-giao-dich-chung-khoan",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "SSI sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "SSI promoArticle: Biểu phí giao dịch và dịch vụ khách hàng cá nhân SSI"
+        },
+        {
+          "source": "promotionsData",
+          "context": "SSI promo: Biểu Phí Dịch Vụ Giao Dịch Chứng Khoán Khách Hàng Cá Nhân SSI"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.ssi.com.vn/khach-hang-ca-nhan/bieu-phi/bieu-gia-dich-vu-giao-dich-chung-khoan",
+      "title": "Biểu giá dịch vụ giao dịch có chuyên viên TVCK",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.ssi.com.vn/khach-hang-ca-nhan/gioi-thieu-mo-tai-khoan",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "SSI accountOpeningUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.ssi.com.vn/khach-hang-ca-nhan/gioi-thieu-mo-tai-khoan",
+      "title": "Mở tài khoản chứng khoán tại SSI",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.ssi.com.vn/tin-tuc/tin-tuc-chung/dieu-chinh-goi-nhap-cuoc-voi-lai-suat-799-danh-cho-khach-hang-moi-va-kich-hoat-tro-lai",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "SSI margin.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "SSI promoArticle: Gói Nhập Cuộc với lãi suất 7.99% cho khách hàng mới và kích hoạt trở lại"
+        },
+        {
+          "source": "promotionsData",
+          "context": "SSI promo: Gói Nhập Cuộc - Lãi Suất 7.99% Cho Khách Hàng Mới & Kích Hoạt Lại"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.ssi.com.vn/tin-tuc/tin-tuc-chung/dieu-chinh-goi-nhap-cuoc-voi-lai-suat-799-danh-cho-khach-hang-moi-va-kich-hoat-tro-lai",
+      "title": "ĐIỀU CHỈNH GÓI NHẬP CUỘC VỚI LÃI SUẤT 7.99% DÀNH CHO KHÁCH HÀNG MỚI VÀ KÍCH HOẠT TRỞ LẠI",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.ssi.com.vn/tin-tuc/tin-tuc-su-kien-ssi/ra-mat-chuong-trinh-khuyen-mai-ssi-margin-0-0",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "SSI welcomePromo.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "SSI promoArticle: Ra mắt chương trình khuyến mại SSI Margin 0.0"
+        },
+        {
+          "source": "promotionsData",
+          "context": "SSI promo: Chương Trình Khuyến Mại SSI Margin 0.0"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.ssi.com.vn/tin-tuc/tin-tuc-su-kien-ssi/ra-mat-chuong-trinh-khuyen-mai-ssi-margin-0-0",
+      "title": "RA MẮT CHƯƠNG TRÌNH KHUYẾN MẠI SSI MARGIN 0.0",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.vndirect.com.vn",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "VNDIRECT website"
+        }
+      ],
+      "status": 403,
+      "finalUrl": "https://www.vndirect.com.vn/",
+      "title": "Just a moment...",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://support.vndirect.com.vn/hc/vi/articles/14623187438873-Bi%E1%BB%83u-ph%C3%AD-giao-d%E1%BB%8Bch-ch%E1%BB%A9ng-kho%C3%A1n-c%C6%A1-s%E1%BB%9F",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "VNDIRECT sourceUrl"
+        }
+      ],
+      "status": 403,
+      "finalUrl": "https://support.vndirect.com.vn/hc/vi/articles/14623187438873-Bi%E1%BB%83u-ph%C3%AD-giao-d%E1%BB%8Bch-ch%E1%BB%A9ng-kho%C3%A1n-c%C6%A1-s%E1%BB%9F",
+      "title": "Just a moment...",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://accounts.vndirect.com.vn/",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "VNDIRECT accountOpeningUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://mydgo.vndirect.com.vn/",
+      "title": "My DGO",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.vndirect.com.vn/dich-vu-chung-khoan/san-pham-dich-vu/margin/t10/",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "VNDIRECT margin.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "VNDIRECT promoArticle: Gói sản phẩm D-Margin T10 miễn lãi 10 ngày đầu giải ngân"
+        },
+        {
+          "source": "promotionsData",
+          "context": "VNDIRECT promo: Gói Sản Phẩm D-Margin T10 Miễn Lãi 10 Ngày Đầu Giải Ngân"
+        }
+      ],
+      "status": 403,
+      "finalUrl": "https://www.vndirect.com.vn/dich-vu-chung-khoan/san-pham-dich-vu/margin/t10/",
+      "title": "Just a moment...",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.vndirect.com.vn/bieu-phi-lai-margin/",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "VNDIRECT welcomePromo.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "VNDIRECT promoArticle: Công bố biểu phí dịch vụ giao dịch và khung lãi suất Margin VNDIRECT"
+        },
+        {
+          "source": "promotionsData",
+          "context": "VNDIRECT promo: Biểu Phí Dịch Vụ Giao Dịch & Khung Lãi Suất Margin VNDIRECT"
+        }
+      ],
+      "status": 403,
+      "finalUrl": "https://www.vndirect.com.vn/bieu-phi-lai-margin/",
+      "title": "Just a moment...",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://masvn.com",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "Mirae Asset website"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://masvn.com/",
+      "title": "Mirae Asset Securities (Vietnam) JSC",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://masvn.com/cate/phi-dich-vu-chung-khoan-co-so-1726",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "Mirae Asset sourceUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://masvn.com/cate/phi-dich-vu-chung-khoan-co-so-1726",
+      "title": "Mirae Asset Securities (Vietnam) JSC",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://masvn.com/register",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "Mirae Asset accountOpeningUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://masvn.com/register",
+      "title": "Tạo tài khoản | Mirae Asset Securities (Vietnam) JSC",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://masvn.com/article/margin-888-phat-manh-suc-mua-bat-dua-but-toc-1086580",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "Mirae Asset margin.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "Mirae Asset promoArticle: Chương trình Margin 8.88% – Phát mạnh sức mua, bứt phá vị thế"
+        },
+        {
+          "source": "promotionsData",
+          "context": "Mirae Asset promo: Gói Margin 8.88% – Phát Mạnh Sức Mua, Bứt Phá Vị Thế"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://masvn.com/article/margin-888-phat-manh-suc-mua-bat-dua-but-toc-1086580",
+      "title": "Margin 8.88: Phát mạnh sức mua, Bật đua vị thế | Mirae Asset Securities (Vietnam) JSC",
+      "h1": "Đang diễn ra",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://masvn.com/article/dau-tu-thoa-thich-0-phi-giao-dich-1085894",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "Mirae Asset welcomePromo.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "Mirae Asset promoArticle: Đầu tư thỏa thích 0% phí giao dịch cổ phiếu cơ sở"
+        },
+        {
+          "source": "promotionsData",
+          "context": "Mirae Asset promo: Đầu Tư Thỏa Thích - 0% Phí Giao Dịch Cổ Phiếu Cơ Sở"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://masvn.com/article/dau-tu-thoa-thich-0-phi-giao-dich-1085894",
+      "title": "Đầu tư thỏa thích - 0 Phí giao dịch | Mirae Asset Securities (Vietnam) JSC",
+      "h1": "Năm 2026",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://masvn.com/article/phai-sinh-khong-phi-tuong-lai-nhu-y-1086977",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "Mirae Asset promoArticle: Phái sinh không phí – Tương lai như ý cùng Mirae Asset"
+        },
+        {
+          "source": "promotionsData",
+          "context": "Mirae Asset promo: Phái Sinh Không Phí – Tương Lai Như Ý Cùng Mirae Asset"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://masvn.com/article/phai-sinh-khong-phi-tuong-lai-nhu-y-1086977",
+      "title": "Phái sinh không phí - Tương lai như ý  | Mirae Asset Securities (Vietnam) JSC",
+      "h1": "Đang diễn ra",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.dnse.com.vn",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "DNSE website"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.dnse.com.vn/",
+      "title": "Chứng khoán DNSE - Miễn phí giao dịch trọn đời",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.dnse.com.vn/bieu-phi",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "DNSE sourceUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://hdsd.dnse.com.vn/san-pham-dich-vu/bieu-phi-dich-vu-dnse",
+      "title": "Biểu phí dịch vụ DNSE | ENTRADE X",
+      "h1": "Biểu phí dịch vụ DNSE",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.dnse.com.vn/mo-tai-khoan",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "DNSE accountOpeningUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.dnse.com.vn/mo-tai-khoan",
+      "title": "Mở tài khoản chứng khoán | Công ty cổ phần chứng khoán DNSE",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://hdsd.dnse.com.vn/san-pham-dich-vu/sp-giao-dich-ky-quy-theo-deal/sp-giao-dich-ky-quy-5.99-plus",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "DNSE margin.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "DNSE promoArticle: Sản phẩm giao dịch ký quỹ Margin 5.99 Plus theo deal"
+        },
+        {
+          "source": "promotionsData",
+          "context": "DNSE promo: Sản Phẩm Giao Dịch Ký Quỹ Margin 5.99 Plus Theo Deal"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://hdsd.dnse.com.vn/san-pham-dich-vu/sp-giao-dich-ky-quy-theo-deal/sp-giao-dich-ky-quy-5.99-plus",
+      "title": "SP Giao dịch ký quỹ 5.99 Plus | ENTRADE X",
+      "h1": "SP Giao dịch ký quỹ 5.99 Plus",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://hdsd.dnse.com.vn/die-u-khoa-n-di-ch-vu-dnse/dieu-khoan-chuong-trinh-danh-cho-khach-hang-moi/chuong-trinh-mien-lai-margin-30-ngay",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "DNSE welcomePromo.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "DNSE promoArticle: Chương trình Miễn lãi Margin 30 ngày cho khách hàng mở tài khoản mới"
+        },
+        {
+          "source": "promotionsData",
+          "context": "DNSE promo: Chương Trình Miễn Lãi Margin 30 Ngày Cho Khách Hàng Mở Mới"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://hdsd.dnse.com.vn/die-u-khoa-n-di-ch-vu-dnse/dieu-khoan-chuong-trinh-danh-cho-khach-hang-moi/chuong-trinh-mien-lai-margin-30-ngay",
+      "title": "Chương trình &quot;Miễn lãi Margin 30 ngày&quot; | ENTRADE X",
+      "h1": "Chương trình &quot;Miễn lãi Margin 30 ngày&quot;",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.dnse.com.vn/tin-tuc/thong-bao-dieu-chinh-chinh-sach-san-pham-giao-dich-ky-quy-9-99",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "DNSE promoArticle: Thông báo điều chỉnh chính sách sản phẩm Giao dịch ký quỹ 9.99%"
+        },
+        {
+          "source": "promotionsData",
+          "context": "DNSE promo: Chính Sách Margin Cố Định 9.99%/năm Dài Hạn"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.dnse.com.vn/tin-tuc/thong-bao-dieu-chinh-chinh-sach-san-pham-giao-dich-ky-quy-9-99",
+      "title": "Thông báo điều chỉnh chính sách sản phẩm Giao dịch ký quỹ 9.99",
+      "h1": "Thông báo điều chỉnh chính sách sản phẩm Giao dịch ký quỹ 9.99",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.vpbanks.com.vn",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "VPBankS website"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.vpbanks.com.vn/",
+      "title": "Chứng khoán VPBank - Vì một tương lai thịnh vượng",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.vpbanks.com.vn/san-pham/estock",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "VPBankS sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "VPBankS promoArticle: Biểu phí dịch vụ chứng khoán & giao dịch trực tuyến"
+        },
+        {
+          "source": "promotionsData",
+          "context": "VPBankS promo: Biểu Phí Dịch Vụ Chứng Khoán & Nền Tảng Giao Dịch eStock VPBankS"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.vpbanks.com.vn/san-pham/estock",
+      "title": "eStock | Chứng khoán VPBank",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://hdsd.vpbanks.com.vn/mo-tai-khoan/mo-tai-khoan-ekyc",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "VPBankS accountOpeningUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://hdsd.vpbanks.com.vn/mo-tai-khoan/mo-tai-khoan-ekyc",
+      "title": "Mở tài khoản eKYC | Hướng dẫn sử dụng",
+      "h1": "Mở tài khoản eKYC",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.vpbanks.com.vn/san-pham/emargin",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "VPBankS margin.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "VPBankS promoArticle: Dịch vụ tài chính và các gói hỗ trợ Margin VPBankS"
+        },
+        {
+          "source": "promotionsData",
+          "context": "VPBankS promo: Sản Phẩm Vay Ký Quỹ eMargin - Lãi Suất Linh Hoạt Từ 6.8%/năm"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.vpbanks.com.vn/san-pham/emargin",
+      "title": "eMargin | Chứng khoán VPBank",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://s3.vpbanks.com.vn/vpbanks/TH%E1%BB%82%20L%E1%BB%86%20CH%C3%8DNH%20S%C3%81CH%200%20PH%C3%8D%200%20MARGIN%20(5).pdf",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "VPBankS welcomePromo.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "VPBankS promoArticle: Kho chương trình khuyến mại & ưu đãi mở mới tài khoản"
+        },
+        {
+          "source": "promotionsData",
+          "context": "VPBankS promo: Chính Sách 0 Phí Giao Dịch & 0% Margin Cho Khách Hàng Mở Mới"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://s3.vpbanks.com.vn/vpbanks/TH%E1%BB%82%20L%E1%BB%86%20CH%C3%8DNH%20S%C3%81CH%200%20PH%C3%8D%200%20MARGIN%20(5).pdf",
+      "title": "",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.fpts.com.vn",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "FPTS website"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.fpts.com.vn/",
+      "title": "FPTS - Home",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://new.eztrade.fpts.com.vn/customers/promotion/linh-hoat-lua-chon-goi-phi-giao-dich-tai-fpts",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "FPTS sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "FPTS welcomePromo.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "FPTS promoArticle: Linh hoạt lựa chọn gói phí giao dịch tại FPTS"
+        },
+        {
+          "source": "promotionsData",
+          "context": "FPTS promo: Linh Hoạt Lựa Chọn Gói Phí Giao Dịch Tại FPTS"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://new.eztrade.fpts.com.vn/customers/promotion/linh-hoat-lua-chon-goi-phi-giao-dich-tai-fpts",
+      "title": "",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://ezopen.fpts.com.vn/",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "FPTS accountOpeningUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://ezopen.fpts.com.vn/Pages/Default.aspx",
+      "title": "",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://accounts.fpts.com.vn/Help/EzMarginPro?s=37",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "FPTS margin.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "FPTS promoArticle: Sản phẩm giao dịch ký quỹ chuyên biệt EzMargin Pro"
+        },
+        {
+          "source": "promotionsData",
+          "context": "FPTS promo: Sản Phẩm Giao Dịch Ký Quỹ Chuyên Biệt EzMargin Pro"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://accounts.fpts.com.vn/Help/EzMarginPro?s=37",
+      "title": "FPTS Accounts :: Hỗ trợ",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://eztrade.fpts.com.vn/Shovel",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "FPTS promoArticle: Biểu phí dịch vụ khách hàng FPTS"
+        },
+        {
+          "source": "promotionsData",
+          "context": "FPTS promo: Biểu Phí Dịch Vụ Khách Hàng Giao Dịch Chứng Khoán FPTS"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://eztrade.fpts.com.vn/Shovel",
+      "title": "Shovel",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.hsc.com.vn",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "HSC website"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.hsc.com.vn/en",
+      "title": "Ho Chi Minh City Securities Corporation | HSC",
+      "h1": "Viewfinder 2Q2026: Resilience amidst chaos",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.hsc.com.vn/vi/bieu-phi",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "HSC sourceUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.hsc.com.vn/vi/bieu-phi",
+      "title": "Biểu phí",
+      "h1": "Tư vấn huy động trên thị trường vốn (ECM)",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://register.hsc.com.vn/",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "HSC accountOpeningUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://storage.googleapis.com/maintain-app/maintain.html",
+      "title": "HSC - Bảo trì dịch vụ",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.hsc.com.vn/vi/lai-suat-giao-dich-ky-quy",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "HSC margin.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "HSC promoArticle: Lãi suất giao dịch ký quỹ Margin HSC"
+        },
+        {
+          "source": "promotionsData",
+          "context": "HSC promo: Chính Sách Lãi Suất Giao Dịch Ký Quỹ Margin HSC"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.hsc.com.vn/vi/lai-suat-giao-dich-ky-quy",
+      "title": "Lãi suất giao dịch ký quỹ",
+      "h1": "Giao dịch ký quỹ",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.hsc.com.vn/vi/thong-bao-ve-viec-cap-nhat-bieu-phi-dich-vu-chung-khoan",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "HSC welcomePromo.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "HSC promoArticle: Thông báo cập nhật biểu phí dịch vụ chứng khoán"
+        },
+        {
+          "source": "promotionsData",
+          "context": "HSC promo: Cập Nhật Biểu Phí Dịch Vụ Chứng Khoán HSC ONE"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.hsc.com.vn/vi/thong-bao-ve-viec-cap-nhat-bieu-phi-dich-vu-chung-khoan",
+      "title": "Thông báo về việc cập nhật biểu phí dịch vụ chứng khoán",
+      "h1": "Thông báo",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.hsc.com.vn/vi/dich-vu-giao-dich-ky-quy-1",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "HSC promoArticle: Dịch vụ giao dịch ký quỹ trực tuyến HSC ONE"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.hsc.com.vn/vi/dich-vu-giao-dich-ky-quy-1",
+      "title": "Dịch vụ giao dịch ký quỹ",
+      "h1": "Câu hỏi thường gặp",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.vietcap.com.vn",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "Vietcap website"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.vietcap.com.vn/",
+      "title": "Công ty Cổ phần Chứng khoán Vietcap",
+      "h1": "Chúng tôi chuyên tư vấn, cung cấp các giải pháp tài chính cho khách hàng.",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.vietcap.com.vn/huong-dan-chung/bieu-phi-dich-vu",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "Vietcap sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "Vietcap promoArticle: Dịch vụ giao dịch Margin tiêu chuẩn Vietcap"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.vietcap.com.vn/huong-dan-chung/bieu-phi-dich-vu",
+      "title": "Biểu phí dịch vụ - Vietcap",
+      "h1": "Biểu phí dịch vụ",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.vietcap.com.vn/mo-tai-khoan",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "Vietcap accountOpeningUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.vietcap.com.vn/mo-tai-khoan",
+      "title": "Đăng ký mở tài khoản chứng khoán trực tuyến tại Chứng khoán Vietcap (Vietcap)",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.vietcap.com.vn/san-pham-tai-chinh/huong-dan-chung-khoan-co-so/v23-goi-vay-uu-dai-theo-gtgd",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "Vietcap margin.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "Vietcap promoArticle: Gói vay ưu đãi Margin V23 theo giá trị giao dịch"
+        },
+        {
+          "source": "promotionsData",
+          "context": "Vietcap promo: Gói Vay Ưu Đãi Margin V23 Theo Giá Trị Giao Dịch"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.vietcap.com.vn/san-pham-tai-chinh/huong-dan-chung-khoan-co-so/v23-goi-vay-uu-dai-theo-gtgd",
+      "title": "V23 - Gói vay ưu đãi theo GTGD - Vietcap",
+      "h1": "V23 - Gói vay ưu đãi theo GTGD",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.vietcap.com.vn/san-pham-tai-chinh/huong-dan-chung-khoan-co-so/super-v9-dac-quyen-vuot-troi-9-0",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "Vietcap welcomePromo.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "Vietcap promoArticle: Super V9 đặc quyền vượt trội lãi suất 9.0%"
+        },
+        {
+          "source": "promotionsData",
+          "context": "Vietcap promo: Sản Phẩm Super V9 – Đặc Quyền Vượt Trội Lãi Suất 9.0%"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.vietcap.com.vn/san-pham-tai-chinh/huong-dan-chung-khoan-co-so/super-v9-dac-quyen-vuot-troi-9-0",
+      "title": "SV10 - Đặc quyền vượt trội - Vietcap",
+      "h1": "SV10 - Đặc quyền vượt trội",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://kafi.vn",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "Kafi website"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://kafi.vn/",
+      "title": "Công ty Cổ phần Chứng khoán Kafi",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://kafi.vn/stock-trading?tab=bpgd",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "Kafi sourceUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://kafi.vn/stock-trading?tab=bpgd",
+      "title": "Công ty Cổ phần Chứng khoán Kafi",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://kafi.vn/support/detail?tab=dk_mtk",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "Kafi accountOpeningUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://kafi.vn/support/detail?tab=dk_mtk",
+      "title": "Công ty Cổ phần Chứng khoán Kafi",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://kafi.vn/stock-trading?tab=ttgd",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "Kafi margin.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "Kafi welcomePromo.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "Kafi promoArticle: Giao dịch cổ phiếu & thông tin các gói Margin Kafi"
+        },
+        {
+          "source": "promotionsData",
+          "context": "Kafi promo: Chính Sách Giao Dịch Toàn Diện – Zero-Fee & Margin 7.8%"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://kafi.vn/stock-trading?tab=ttgd",
+      "title": "Công ty Cổ phần Chứng khoán Kafi",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://kafi.vn/tnc/TnC_S25.pdf",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "Kafi promoArticle: Điều khoản sản phẩm Margin-S25 lãi suất 9%/năm"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://kafi.vn/tnc/TnC_S25.pdf",
+      "title": "",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://kafi.vn/tnc/TnC_Margin-B10.pdf",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "Kafi promoArticle: Điều khoản gói Margin-B10 hạn mức lớn"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://kafi.vn/tnc/TnC_Margin-B10.pdf",
+      "title": "",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://mbs.com.vn",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "MBS website"
+        }
+      ],
+      "status": 403,
+      "finalUrl": "https://www.mbs.com.vn/",
+      "title": "mbs — Xác minh bảo mật",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://mbs.com.vn/bieu-phi-giao-dich/",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "MBS sourceUrl"
+        }
+      ],
+      "status": 403,
+      "finalUrl": "https://www.mbs.com.vn/bieu-phi-giao-dich/",
+      "title": "mbs — Xác minh bảo mật",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://mbs.com.vn/mo-tai-khoan/",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "MBS accountOpeningUrl"
+        }
+      ],
+      "status": 403,
+      "finalUrl": "https://www.mbs.com.vn/mo-tai-khoan/",
+      "title": "mbs — Xác minh bảo mật",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.mbs.com.vn/mbs-uu-dai-lai-suat-9-9-danh-cho-khach-hang-su-dung-dich-vu-giao-dich-chu-dong/",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "MBS margin.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "MBS promoArticle: MBS ưu đãi lãi suất 9.9% cho giao dịch chủ động"
+        },
+        {
+          "source": "promotionsData",
+          "context": "MBS promo: MBS Ưu Đãi Lãi Suất 9.9% Cho Khách Hàng Giao Dịch Chủ Động"
+        }
+      ],
+      "status": 403,
+      "finalUrl": "https://www.mbs.com.vn/mbs-uu-dai-lai-suat-9-9-danh-cho-khach-hang-su-dung-dich-vu-giao-dich-chu-dong/",
+      "title": "mbs — Xác minh bảo mật",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.mbs.com.vn/uu-dai-lai-suat-7-5-doc-quyen-danh-rieng-cho-khach-hang-mo-moi-su-dung-dich-vu-giao-dich-chu-dong/",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "MBS welcomePromo.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "MBS promoArticle: Ưu đãi lãi suất 7.5% độc quyền cho khách hàng mở mới"
+        },
+        {
+          "source": "promotionsData",
+          "context": "MBS promo: Ưu Đãi Lãi Suất 7.5% Dành Riêng Cho Khách Hàng Mở Mới Giao Dịch Chủ Động"
+        }
+      ],
+      "status": 403,
+      "finalUrl": "https://www.mbs.com.vn/uu-dai-lai-suat-7-5-doc-quyen-danh-rieng-cho-khach-hang-mo-moi-su-dung-dich-vu-giao-dich-chu-dong/",
+      "title": "mbs — Xác minh bảo mật",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.mbs.com.vn/mbs-trien-khai-uu-dai-lai-suat-t3-danh-cho-khach-hang/",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "MBS promoArticle: Triển khai ưu đãi lãi suất miễn lãi T+3"
+        }
+      ],
+      "status": 403,
+      "finalUrl": "https://www.mbs.com.vn/mbs-trien-khai-uu-dai-lai-suat-t3-danh-cho-khach-hang/",
+      "title": "mbs — Xác minh bảo mật",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.shs.com.vn",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "SHS website"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.shs.com.vn/",
+      "title": "Website công ty Cổ phần chứng khoán Sài Gòn - Hà Nội (SHS) | shs.com.vn",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.shs.com.vn/ho-tro/bieu-phi",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "SHS sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "SHS promoArticle: Biểu phí dịch vụ và lãi suất chứng khoán SHS"
+        },
+        {
+          "source": "promotionsData",
+          "context": "SHS promo: Biểu Phí Dịch Vụ Chứng Khoán & Ưu Đãi Giao Dịch Trực Tuyến SHS"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.shs.com.vn/ho-tro/bieu-phi",
+      "title": "Website công ty Cổ phần chứng khoán Sài Gòn - Hà Nội (SHS) | shs.com.vn",
+      "h1": "Biểu phí",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.shs.com.vn/Pages/MoTaiKhoan.aspx",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "SHS accountOpeningUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://archive.shs.com.vn/Pages/MoTaiKhoan.aspx",
+      "title": "",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.shs.com.vn/tin-tuc/giai-bai-toan-chi-phi-von-cung-margin-s30-lai-suat-tu-99percentnam-han-muc-toi-50-ty-dong",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "SHS margin.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "SHS welcomePromo.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "SHS promoArticle: Giải bài toán chi phí vốn cùng Margin S30 lãi suất từ 9.9%/năm"
+        },
+        {
+          "source": "promotionsData",
+          "context": "SHS promo: Gói Margin S30 - Lãi Suất Từ 9.9%/năm, Hạn Mức Tới 50 Tỷ Đồng"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.shs.com.vn/tin-tuc/giai-bai-toan-chi-phi-von-cung-margin-s30-lai-suat-tu-99percentnam-han-muc-toi-50-ty-dong",
+      "title": "Giải bài toán chi phí vốn cùng Margin S30: Lãi suất từ 9.9%&#x2F;năm, hạn mức tới 50 tỷ đồng  | shs.",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://vixs.vn",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "VIX website"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://vixs.vn/",
+      "title": "Công ty CP Chứng khoán VIX",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://vixs.vn/ho-tro/bieu-phi-giao-dich",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "VIX sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "VIX promoArticle: Biểu phí giao dịch dịch vụ chứng khoán niêm yết VIX"
+        },
+        {
+          "source": "promotionsData",
+          "context": "VIX promo: Biểu Phí Dịch Vụ Giao Dịch Chứng Khoán VIX"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://vixs.vn/ho-tro/bieu-phi-giao-dich",
+      "title": "Biểu phí giao dịch - Công ty CP Chứng khoán VIX",
+      "h1": "Biểu phí giao dịch",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://xpower.vixs.vn/account-register",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "VIX accountOpeningUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://xpower.vixs.vn/account-register?ver=1791364069341",
+      "title": "VIX Trading",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://vixs.vn/chuong-trinh-uu-dai-lai-suat-theo-danh-muc.html",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "VIX margin.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "VIX welcomePromo.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "VIX promoArticle: Chương trình ưu đãi lãi suất theo danh mục cổ phiếu"
+        },
+        {
+          "source": "promotionsData",
+          "context": "VIX promo: Chương Trình Ưu Đãi Lãi Suất Margin Theo Danh Mục Cổ Phiếu VIX"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://vixs.vn/chuong-trinh-uu-dai-lai-suat-theo-danh-muc.html",
+      "title": "Chương trình Ưu đãi lãi suất theo danh mục - Công ty CP Chứng khoán VIX",
+      "h1": "Chương trình Ưu đãi lãi suất theo danh mục",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://kisvn.vn",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "KIS website"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://kisvn.vn/",
+      "title": "Khách hàng cá nhân - CTCP Chứng khoán KIS Việt Nam",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://kisvn.vn/san-pham-dich-vu/dich-vu-chung-khoan/bieu-phi-4206",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "KIS sourceUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://kisvn.vn/san-pham-dich-vu/dich-vu-chung-khoan/bieu-phi-4206",
+      "title": "Biểu phí",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://kisvn.vn/hoc-dau-tu/mo-tai-khoan-chung-khoan-kis-online-ekyc",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "KIS accountOpeningUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://kisvn.vn/hoc-dau-tu/mo-tai-khoan-chung-khoan-kis-online-ekyc",
+      "title": "Hướng dẫn chi tiết quy trình mở tài khoản chứng khoán KIS online eKYC",
+      "h1": "Hướng dẫn chi tiết quy trình mở tài khoản chứng khoán KIS online eKYC",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://kisvn.vn/san-pham-dich-vu/dich-vu-ho-tro-tai-chinh/san-pham-margin-k-11299",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "KIS margin.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "KIS welcomePromo.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "KIS promoArticle: Sản phẩm Margin K ngắn hạn lãi suất ưu đãi"
+        },
+        {
+          "source": "promotionsData",
+          "context": "KIS promo: Sản Phẩm Hỗ Trợ Tài Chính Margin K - Lãi Suất Cạnh Tranh Từ 7.99%/năm"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://kisvn.vn/san-pham-dich-vu/dich-vu-ho-tro-tai-chinh/san-pham-margin-k-11299",
+      "title": "Sản phẩm Margin K",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://kisvn.vn/bieu-phi-giao-dich",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "KIS promoArticle: Biểu phí dịch vụ và giao dịch chứng khoán KIS Vietnam"
+        },
+        {
+          "source": "promotionsData",
+          "context": "KIS promo: Biểu Phí Dịch Vụ Giao Dịch Chứng Khoán KIS Việt Nam"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://kisvn.vn/bieu-phi-giao-dich",
+      "title": "Thông báo: Biểu phí giao dịch mới áp dụng từ 1/4/2023",
+      "h1": "Thông báo: Biểu phí giao dịch mới áp dụng từ 1/4/2023",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://acbs.com.vn",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "ACBS website"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://acbs.com.vn/",
+      "title": "Trang chủ - ACBS - Nắm bắt cơ hội, đầu tư hiệu quả",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://acbs.com.vn/bieu-phi-giao-dich-chung-khoan-niem-yet",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "ACBS sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "ACBS promoArticle: Biểu phí giao dịch và lãi suất cho vay ký quỹ ACBS"
+        },
+        {
+          "source": "promotionsData",
+          "context": "ACBS promo: Biểu Phí Dịch Vụ & Lãi Suất Cho Vay Giao Dịch Ký Quỹ ACBS"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://acbs.com.vn/bieu-phi-giao-dich-chung-khoan-niem-yet",
+      "title": "Biểu phí giao dịch chứng khoán niêm yết - ACBS - Nắm bắt cơ hội, đầu tư hiệu quả",
+      "h1": "Biểu phí dịch vụ",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://acbs.com.vn/blog/chi-phi-giao-dich-chung-khoan",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "ACBS accountOpeningUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "ACBS welcomePromo.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "ACBS promoArticle: Chi phí giao dịch chứng khoán và tối ưu hoá đầu tư"
+        },
+        {
+          "source": "promotionsData",
+          "context": "ACBS promo: Chuyên Đề Tối Ưu Chi Phí Giao Dịch Chứng Khoán ACBS"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://acbs.com.vn/blog/chi-phi-giao-dich-chung-khoan",
+      "title": "Chi phí giao dịch chứng khoán: Những khoản cần biết để tối ưu lợi nhuận - ACBS - Nắm bắt cơ hội, đầu",
+      "h1": "Chi phí giao dịch chứng khoán: Những khoản cần biết để tối ưu lợi nhuận",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://acbs.com.vn/bieu-phi",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "ACBS margin.sourceUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://acbs.com.vn/bieu-phi-dich-vu-khac",
+      "title": "Biểu phí dịch vụ khác - ACBS - Nắm bắt cơ hội, đầu tư hiệu quả",
+      "h1": "Biểu phí dịch vụ",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://vcbs.com.vn",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "VCBS website"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.vcbs.com.vn/",
+      "title": "Vietcombank Securities",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://vcbs.com.vn/bieu-phi",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "VCBS sourceUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.vcbs.com.vn/bieu-phi",
+      "title": "Vietcombank Securities",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.vcbs.com.vn/chi-tiet-ho-tro-giao-dich/mo-tai-khoan-giao-dich-chung-khoan",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "VCBS accountOpeningUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.vcbs.com.vn/chi-tiet-ho-tro-giao-dich/mo-tai-khoan-giao-dich-chung-khoan",
+      "title": "Vietcombank Securities",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.vcbs.com.vn/chi-tiet-khach-hang-ca-nhan/goi-margin-t",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "VCBS margin.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "VCBS promoArticle: Gói Margin T miễn lãi 5 ngày làm việc đầu tiên"
+        },
+        {
+          "source": "promotionsData",
+          "context": "VCBS promo: Gói Margin T – Miễn Lãi 5 Ngày Làm Việc Đầu Tiên"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.vcbs.com.vn/chi-tiet-khach-hang-ca-nhan/goi-margin-t",
+      "title": "Vietcombank Securities",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.vcbs.com.vn/chi-tiet-tin-tuc-va-su-kien-vcbs/tb-chinh-sach-lai-suat-mo-moi-20260521",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "VCBS welcomePromo.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "VCBS promoArticle: Thông báo chính sách lãi suất mở mới ưu đãi 8.0%"
+        },
+        {
+          "source": "promotionsData",
+          "context": "VCBS promo: Chính Sách Lãi Suất Mở Mới Ưu Đãi 8.0%/năm VCBS"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.vcbs.com.vn/chi-tiet-tin-tuc-va-su-kien-vcbs/tb-chinh-sach-lai-suat-mo-moi-20260521",
+      "title": "Vietcombank Securities",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.vcbs.com.vn/bieu-phi",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "VCBS promoArticle: Biểu phí dịch vụ khách hàng cá nhân VCBS"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.vcbs.com.vn/bieu-phi",
+      "title": "Vietcombank Securities",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.kbsec.com.vn",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "KBSV website"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.kbsec.com.vn/",
+      "title": "Công ty Cổ phần Chứng khoán KB Việt Nam (KBSV)",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.kbsec.com.vn/vi/bieu-phi-cac-dich-vu-chung-khoan-cua-kbsv.htm",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "KBSV sourceUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.kbsec.com.vn/vi/bieu-phi-cac-dich-vu-chung-khoan-cua-kbsv.htm",
+      "title": "Biểu phí các dịch vụ chứng khoán của KBSV",
+      "h1": "&nbsp;",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.kbsec.com.vn/vi/huong-dan-mo-tai-khoan.html",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "KBSV accountOpeningUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.kbsec.com.vn/vi/huong-dan-mo-tai-khoan.html",
+      "title": "Công ty Cổ phần Chứng khoán KB Việt Nam (KBSV)",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://kbsec.com.vn/vi/kb-himargin-tang-han-muc-len-20-ty-uu-dai-lai-suat-sieu-canh-tranh.htm",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "KBSV margin.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "KBSV welcomePromo.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "KBSV promoArticle: KB HiMargin: Tăng hạn mức lên 20 tỷ, ưu đãi lãi suất siêu cạnh tranh 9.9%"
+        },
+        {
+          "source": "promotionsData",
+          "context": "KBSV promo: KB HiMargin: Tăng Hạn Mức Lên 20 Tỷ, Ưu Đãi Lãi Suất Siêu Cạnh Tranh 9.9%"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://kbsec.com.vn/vi/kb-himargin-tang-han-muc-len-20-ty-uu-dai-lai-suat-sieu-canh-tranh.htm",
+      "title": "KB HiMargin – Tăng hạn mức lên 20 tỷ, ưu đãi lãi suất siêu cạnh tranh",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.kbsec.com.vn/vi/kb-zero-fee-mien-phi-giao-dich-90-ngay.htm",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "KBSV promoArticle: KB Zero Fee - Miễn phí giao dịch 90 ngày"
+        },
+        {
+          "source": "promotionsData",
+          "context": "KBSV promo: KB Zero Fee - Miễn Phí Giao Dịch 90 Ngày Cho Khách Hàng Mới"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.kbsec.com.vn/vi/kb-zero-fee-mien-phi-giao-dich-90-ngay.htm",
+      "title": "KB Zero Fee - Miễn phí giao dịch 90 ngày",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.vbse.vn",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "VietinBank Sec website"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.vbse.vn/",
+      "title": "VBSE Công ty Cổ phần Chứng khoán VietinBank",
+      "h1": "Tìm kiếm",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.vbse.vn/khach-hang-ca-nhan/bieu-phi/",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "VietinBank Sec sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "VietinBank Sec promoArticle: Biểu phí dịch vụ chứng khoán CTS"
+        },
+        {
+          "source": "promotionsData",
+          "context": "VietinBank Sec promo: Biểu Phí Dịch Vụ Chứng Khoán & Ưu Đãi Khách Hàng CTS"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.vbse.vn/khach-hang-ca-nhan/bieu-phi/",
+      "title": "Biểu phí VBSE",
+      "h1": "Tìm kiếm",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.vbse.vn/huong-dan-mo-tai-khoan-chung-khoan-truc-tuyen-qua-webmobi-gia-tang-trai-nghiem-dau-tu-so/",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "VietinBank Sec accountOpeningUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.vbse.vn/huong-dan-mo-tai-khoan-chung-khoan-truc-tuyen-qua-webmobi-gia-tang-trai-nghiem-dau-tu-so/",
+      "title": "Hướng dẫn mở tài khoản chứng khoán trực tuyến qua WebMobi, gia tăng trải nghiệm đầu tư số VBSE",
+      "h1": "Tìm kiếm",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.vbse.vn/category/danh-muc-margin/",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "VietinBank Sec margin.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "VietinBank Sec promoArticle: Danh mục và chính sách cho vay Margin VietinBank Sec"
+        },
+        {
+          "source": "promotionsData",
+          "context": "VietinBank Sec promo: Danh Mục & Chính Sách Cho Vay Giao Dịch Ký Quỹ VietinBank Sec"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.vbse.vn/category/danh-muc-margin/",
+      "title": "Danh mục Margin &#8211; VBSE",
+      "h1": "Tìm kiếm",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.vbse.vn/category/tin-tuc/",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "VietinBank Sec welcomePromo.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "VietinBank Sec promoArticle: Tin tức sự kiện và ưu đãi khách hàng CTS"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.vbse.vn/category/tin-tuc/",
+      "title": "Tin tức &#8211; VBSE",
+      "h1": "Tìm kiếm",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.bvsc.com.vn",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "BVSC website"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.bvsc.com.vn/",
+      "title": "BVSC - Công ty Cổ phần Chứng khoán Bảo Việt",
+      "h1": "Kh&#xE1;ch h&#xE0;ng c&#xE1; nh&#xE2;n",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.bvsc.com.vn/danhmuc/dich-vu/khach-hang-ca-nhan/ho-tro/huong-dan-su-dung-dich-vu/bieu-lai-phi-giao-dich/",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "BVSC sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "BVSC promoArticle: Biểu phí dịch vụ giao dịch chứng khoán BVSC"
+        },
+        {
+          "source": "promotionsData",
+          "context": "BVSC promo: Biểu Phí Dịch Vụ Giao Dịch Chứng Khoán BVSC"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.bvsc.com.vn/danhmuc/dich-vu/khach-hang-ca-nhan/ho-tro/huong-dan-su-dung-dich-vu/bieu-lai-phi-giao-dich/",
+      "title": "Bi&#x1EC3;u l&#xE3;i - ph&#xED; giao d&#x1ECB;ch",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.bvsc.com.vn/danhmuc/dich-vu/khach-hang-ca-nhan/",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "BVSC accountOpeningUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.bvsc.com.vn/danhmuc/dich-vu/khach-hang-ca-nhan/",
+      "title": "Kh&#xE1;ch h&#xE0;ng c&#xE1; nh&#xE2;n",
+      "h1": "Kh&#xE1;ch h&#xE0;ng c&#xE1; nh&#xE2;n",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.bvsc.com.vn/danhsachbaiviet/chung-khoan-bao-viet-bvsc-trien-khai-chuong-trinh-uu-dai-margin-va-mo-tai-khoan-moi-den-het-nam-2026/",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "BVSC margin.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "BVSC welcomePromo.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "BVSC promoArticle: BVSC triển khai ưu đãi Margin và mở tài khoản mới đến hết năm 2026"
+        },
+        {
+          "source": "promotionsData",
+          "context": "BVSC promo: BVSC Triển Khai Chương Trình Ưu Đãi Margin & Mở Tài Khoản Mới Đến Hết Năm 2026"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.bvsc.com.vn/danhsachbaiviet/chung-khoan-bao-viet-bvsc-trien-khai-chuong-trinh-uu-dai-margin-va-mo-tai-khoan-moi-den-het-nam-2026/",
+      "title": "Ch&#x1EE9;ng kho&#xE1;n B&#x1EA3;o Vi&#x1EC7;t (BVSC) tri&#x1EC3;n khai ch&#x1B0;&#x1A1;ng tr&#xEC;n",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://tpbs.com.vn",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "TPS website"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://tpbs.com.vn/",
+      "title": "Trang chủ | TPS: Công ty cổ phần chứng khoán Tiên Phong",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://tpbs.com.vn/thong-tin-tps/thong-bao/thong-bao/mm-lo-phi-nha-dau-tu-lo-phi?postId=2632",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "TPS sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "TPS promoArticle: Biểu phí giao dịch MM+ lo phí - Nhà đầu tư lo phi"
+        },
+        {
+          "source": "promotionsData",
+          "context": "TPS promo: Chính Sách MM+ Lo Phí – Nhà Đầu Tư Lo Phi"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://tpbs.com.vn/vi/thong-tin-tps/thong-bao/thong-bao/mm-lo-phi-nha-dau-tu-lo-phi?postId=2632",
+      "title": "MM+ LO PHÍ – NHÀ ĐẦU TƯ LO PHI",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://ekyc.tpbs.com.vn",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "TPS accountOpeningUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://ekyc.tpbs.com.vn/",
+      "title": "TPS eKYC",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.tpbs.com.vn/vi/thong-tin-tps/thong-bao/thong-bao/gia-han-m7-margin-nang-dong-dau-tu-but-pha?postId=2827",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "TPS margin.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "TPS welcomePromo.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "TPS promoArticle: Gia hạn gói M7 Margin năng động đầu tư bứt phá miễn lãi 7 ngày"
+        },
+        {
+          "source": "promotionsData",
+          "context": "TPS promo: Gia Hạn Gói M7 Margin Năng Động – Miễn Lãi 7 Ngày Đầu"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.tpbs.com.vn/vi/thong-tin-tps/thong-bao/thong-bao/gia-han-m7-margin-nang-dong-dau-tu-but-pha?postId=2827",
+      "title": "GIA HẠN M7 – MARGIN NĂNG ĐỘNG – ĐẦU TƯ BỨT PHÁ",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://yuanta.com.vn",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "Yuanta website"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://yuanta.com.vn/",
+      "title": "Yuanta Việt Nam - Tập đoàn tài chính chứng khoán hàng đầu Châu Á Yuanta Việt Nam - Tập đoàn tài chín",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://support.yuanta.com.vn/wp-content/uploads/2025/07/Bieu-phi-dich-vu-01082025.pdf",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "Yuanta sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "Yuanta promoArticle: Biểu phí giao dịch chứng khoán Yuanta Việt Nam"
+        }
+      ],
+      "status": "TIMEOUT",
+      "finalUrl": "https://support.yuanta.com.vn/wp-content/uploads/2025/07/Bieu-phi-dich-vu-01082025.pdf",
+      "title": "",
+      "h1": "",
+      "isDead": false,
+      "deadReason": "Network error: This operation was aborted"
+    },
+    {
+      "url": "https://yuanta.com.vn/mo-tai-khoan",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "Yuanta accountOpeningUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://taikhoan.yuanta.com.vn/",
+      "title": "Mở Tài Khoản - Yuanta Việt Nam &#8211; Tập đoàn tài chính chứng khoán hàng đầu Châu Á",
+      "h1": "Hướng dẫn",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://yuanta.com.vn/tin-tuc/chi-100-suat-margin-6-8-nam-don-song-nang-hang-margin-loc-phat",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "Yuanta margin.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "Yuanta promoArticle: Gói vay Margin Lộc Phát 6.8%/năm đón sóng nâng hạng"
+        },
+        {
+          "source": "promotionsData",
+          "context": "Yuanta promo: Gói Vay Margin Lộc Phát 6.8%/năm Đón Sóng Nâng Hạng"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://yuanta.com.vn/tin-tuc/chi-100-suat-margin-6-8-nam-don-song-nang-hang-margin-loc-phat",
+      "title": "Gói Vay Margin Lộc Phát 6.8% - Tối Ưu Lợi Nhuận Yuanta Việt Nam - Tập đoàn tài chính chứng khoán hàn",
+      "h1": "[CHỈ 100 SUẤT] MARGIN 6.8%/NĂM: ĐÓN SÓNG NÂNG HẠNG &#8211; MARGIN LỘC PHÁT",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://uudai.yuanta.com.vn/margin-uu-dai",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "Yuanta welcomePromo.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "Yuanta promoArticle: Cổng thông tin các gói ưu đãi Margin Yuanta"
+        },
+        {
+          "source": "promotionsData",
+          "context": "Yuanta promo: Cổng Thông Tin Các Gói Ưu Đãi Margin Đa Dạng Yuanta"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://uudai.yuanta.com.vn/margin-uu-dai",
+      "title": "Chương trình Margin ưu đãi tại Chứng khoán Yuanta Việt Nam",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://shinhansec.com.vn",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "Shinhan Sec website"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://shinhansec.com.vn/vi",
+      "title": "Chứng khoán Shinhan Việt Nam (SSV) - Công ty Chứng khoán hàng đầu Hàn Quốc",
+      "h1": "Chứng khoán Shinhan Securities Việt Nam (SSV) - Công ty Chứng khoán hàng đầu Hàn Quốc",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://shinhansec.com.vn/vi/ho-tro-khach-hang/phi-giao-dich.html",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "Shinhan Sec sourceUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://shinhansec.com.vn/vi/ho-tro-khach-hang/phi-giao-dich.html",
+      "title": "Phí dịch vụ",
+      "h1": "Hướng dẫn người dùng",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://shinhansec.com.vn/vi/ho-tro-khach-hang/chuong-trinh-uu-dai/135/mo-tai-khoan-shinhan-bank-truc-tuyen-ngay-tren-ung-dung-san-xin-ha.html",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "Shinhan Sec accountOpeningUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "Shinhan Sec welcomePromo.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "Shinhan Sec promoArticle: Ưu đãi mở tài khoản trực tuyến & miễn giảm phí giao dịch Shinhan"
+        },
+        {
+          "source": "promotionsData",
+          "context": "Shinhan Sec promo: Ưu Đãi Mở Tài Khoản Trực Tuyến & Miễn Giảm Phí Giao Dịch Shinhan"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://shinhansec.com.vn/vi/ho-tro-khach-hang/chuong-trinh-uu-dai/135/mo-tai-khoan-shinhan-bank-truc-tuyen-ngay-tren-ung-dung-san-xin-ha.html",
+      "title": "Trang Khuyến mãi - Sự kiện | Mở tài khoản Shinhan Bank trực tuyến ngay trên ứng dụng SAN XIN HA",
+      "h1": "Mở tài khoản Shinhan Bank trực tuyến ngay trên ứng dụng SAN XIN HA",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://shinhansec.com.vn/vi/ho-tro-khach-hang/chuong-trinh-uu-dai/145/thong-bao-cap-nhat-thoi-gian-uu-dai-lai-vay-ky-quy-margin-ap-dung-cho-khach-hang-moi.html",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "Shinhan Sec margin.sourceUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://shinhansec.com.vn/vi/ho-tro-khach-hang/chuong-trinh-uu-dai/145/thong-bao-cap-nhat-thoi-gian-uu-dai-lai-vay-ky-quy-margin-ap-dung-cho-khach-hang-moi.html",
+      "title": "Trang Khuyến mãi - Sự kiện | Thông báo cập nhật thời gian ưu đãi lãi vay ký quỹ (margin) áp dụng cho",
+      "h1": "Thông báo cập nhật thời gian ưu đãi lãi vay ký quỹ (margin) áp dụng cho khách hàng mới",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://shinhansec.com.vn/vi/san-pham-dich-vu/moi-gioi-chung-khoan/dich-vu-tai-chinh.html",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "Shinhan Sec promoArticle: Dịch vụ tài chính và các gói hỗ trợ giao dịch ký quỹ Shinhan"
+        },
+        {
+          "source": "promotionsData",
+          "context": "Shinhan Sec promo: Thông Báo Cập Nhật Thời Gian Ưu Đãi Lãi Vay Margin Cho Khách Hàng Mới"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://shinhansec.com.vn/vi/san-pham-dich-vu/moi-gioi-chung-khoan/dich-vu-tai-chinh.html",
+      "title": "Dịch vụ tài chính",
+      "h1": "Dịch vụ tài chính",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://agriseco.com.vn",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "Agriseco website"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://agriseco.com.vn/",
+      "title": "Agriseco",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://agriseco.com.vn/News/NewsDetail/2057993/vi-VN",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "Agriseco sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "Agriseco margin.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "Agriseco welcomePromo.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "Agriseco promoArticle: Công bố biểu phí dịch vụ giao dịch chứng khoán Agriseco"
+        },
+        {
+          "source": "securitiesData",
+          "context": "Agriseco promoArticle: Cổng thông tin giao dịch tài chính Chứng khoán Agribank"
+        },
+        {
+          "source": "promotionsData",
+          "context": "Agriseco promo: Công Bố Biểu Phí Dịch Vụ & Ưu Đãi Giao Dịch Chứng Khoán Agriseco"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://agriseco.com.vn/News/NewsDetail/2057993/vi-VN",
+      "title": "Agriseco - Tin AGR",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://agriseco.com.vn/Training/Lesson/A/5/vi-VN",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "Agriseco accountOpeningUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://agriseco.com.vn/Training/Lesson/A/5/vi-VN",
+      "title": "Agriseco - H&#x1ECD;c &#x111;&#x1EA7;u t&#x1B0;",
+      "h1": "M&#x1EDF; t&#xE0;i kho&#x1EA3;n ch&#x1EE9;ng kho&#xE1;n t&#x1EA1;i AGR nh&#x1B0; th&#x1EBF; n&#xE0;o",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://hdbs.vn",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "HDBS website"
+        },
+        {
+          "source": "securitiesData",
+          "context": "HDBS accountOpeningUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://hdbs.vn/",
+      "title": "HD Securities",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://hdbs.vn/bieu-phi/",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "HDBS sourceUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://hdbs.vn/bieu-phi/",
+      "title": "Biểu phí | HD Securities",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://hdbs.vn/dich-vu-co-phieu-hstock/san-pham-margin/",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "HDBS margin.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "HDBS promoArticle: Sản phẩm Margin HStock và các gói vay tài chính linh hoạt"
+        },
+        {
+          "source": "promotionsData",
+          "context": "HDBS promo: Sản Phẩm Margin HStock Và Các Gói Vay Tài Chính Linh Hoạt"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://hdbs.vn/dich-vu-co-phieu-hstock/san-pham-margin/",
+      "title": "Sản phẩm Margin | HD Securities",
+      "h1": "Sản phẩm Margin",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://hdbs.vn/uu-dai-hap-dan-tu-hds-giao-dich-cuc-da-voi-goi-margin-chi-7-5-nam-danh-rieng-cho-khach-hang-moi/",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "HDBS welcomePromo.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "HDBS promoArticle: Ưu đãi hấp dẫn gói Margin chỉ 7.5%/năm cho khách hàng mới"
+        },
+        {
+          "source": "promotionsData",
+          "context": "HDBS promo: Gói Margin Ưu Đãi Chỉ 7.5%/năm Dành Riêng Cho Khách Hàng Mới"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://hdbs.vn/uu-dai-hap-dan-tu-hds-giao-dich-cuc-da-voi-goi-margin-chi-7-5-nam-danh-rieng-cho-khach-hang-moi/",
+      "title": "ƯU ĐÃI HẤP DẪN TỪ HDS: GIAO DỊCH CỰC ĐÃ VỚI GÓI MARGIN CHỈ 7.5%/NĂM DÀNH RIÊNG CHO KHÁCH HÀNG MỚI | ",
+      "h1": "ƯU ĐÃI HẤP DẪN TỪ HDS: GIAO DỊCH CỰC ĐÃ VỚI GÓI MARGIN CHỈ 7.5%/NĂM DÀNH RIÊNG CHO KHÁCH HÀNG MỚI",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.dsc.com.vn",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "DSC website"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.dsc.com.vn/",
+      "title": "Chứng khoán DSC - Uy tín hàng đầu, đồng hành cùng nhà đầu tư",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.dsc.com.vn/bieu-phi",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "DSC sourceUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.dsc.com.vn/bieu-phi",
+      "title": "",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.dsc.com.vn/kien-thuc/cach-mo-tai-khoan-chung-khoan",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "DSC accountOpeningUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.dsc.com.vn/kien-thuc/cach-mo-tai-khoan-chung-khoan",
+      "title": "Cách mở tài khoản chứng khoán online 3 phút cho người mới",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.dsc.com.vn/kien-thuc/full-margin-la-gi-loi-khuyen-cho-nha-dau-tu-moi",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "DSC margin.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "DSC promoArticle: Chính sách giao dịch Ký quỹ Margin & Lời khuyên đầu tư"
+        },
+        {
+          "source": "promotionsData",
+          "context": "DSC promo: Chính Sách Giao Dịch Ký Quỹ Margin & Hướng Dẫn Tối Ưu Đòn Bẩy DSC"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.dsc.com.vn/kien-thuc/full-margin-la-gi-loi-khuyen-cho-nha-dau-tu-moi",
+      "title": "Full Margin là gì? 5 lưu ý quản trị rủi ro đòn bẩy",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://dsc.com.vn/bieu-phi",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "DSC welcomePromo.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "DSC promoArticle: Biểu phí giao dịch và dịch vụ tài chính DSC"
+        },
+        {
+          "source": "promotionsData",
+          "context": "DSC promo: Biểu Phí Dịch Vụ Giao Dịch Chứng Khoán & Ưu Đãi Mở Mới DSC"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://dsc.com.vn/bieu-phi",
+      "title": "",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.phs.vn",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "PHS website"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.phs.vn/",
+      "title": "Công ty Cổ phần Chứng khoán Phú Hưng",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.phs.vn/san-pham-dich-vu/bieu-phi-giao-dich-chung-khoan-co-so-26",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "PHS sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "PHS promoArticle: Biểu phí giao dịch và lãi suất ký quỹ chứng khoán cơ sở PHS"
+        },
+        {
+          "source": "promotionsData",
+          "context": "PHS promo: Biểu Phí Giao Dịch & Lãi Suất Ký Quỹ Chứng Khoán Cơ Sở PHS"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.phs.vn/san-pham-dich-vu/bieu-phi-giao-dich-chung-khoan-co-so-26",
+      "title": "Biểu phí giao dịch chứng khoán cơ sở",
+      "h1": "Biểu phí",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.phs.vn/mo-tai-khoan",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "PHS accountOpeningUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.phs.vn/mo-tai-khoan",
+      "title": "Công ty Cổ phần Chứng khoán Phú Hưng",
+      "h1": "PHS ELITE TRADING",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.phs.vn/tin-tuc/ra-mat-goi-uu-dai-phs-smart-margin-lai-suat-chi-9-5-nam/6402662",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "PHS margin.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "PHS welcomePromo.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "PHS promoArticle: Ra mắt gói ưu đãi PHS Smart Margin lãi suất chỉ 9.5%/năm"
+        },
+        {
+          "source": "promotionsData",
+          "context": "PHS promo: Ra Mắt Gói Ưu Đãi PHS Smart Margin Lãi Suất Chỉ 9.5%/năm"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.phs.vn/tin-tuc/ra-mat-goi-uu-dai-phs-smart-margin-lai-suat-chi-9-5-nam/6402662",
+      "title": "RA MẮT GÓI ƯU ĐÃI PHS SMART MARGIN LÃI SUẤT CHỈ 9.5%/NĂM",
+      "h1": "RA MẮT GÓI ƯU ĐÃI PHS SMART MARGIN LÃI SUẤT CHỈ 9.5%/NĂM",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.tvsi.com.vn",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "TVSI website"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.tvsi.com.vn/",
+      "title": "",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.tvsi.com.vn/fee-stock.html",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "TVSI sourceUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.tvsi.com.vn/fee-stock.html",
+      "title": "",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.tvsi.com.vn/help-open-account.html",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "TVSI accountOpeningUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.tvsi.com.vn/help-open-account.html",
+      "title": "",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.tvsi.com.vn/endow/tvsi-margin-increase.html",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "TVSI margin.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "TVSI welcomePromo.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "TVSI promoArticle: Chương trình ưu đãi tăng sức mua Margin TVSI"
+        },
+        {
+          "source": "promotionsData",
+          "context": "TVSI promo: Chương Trình Ưu Đãi Tăng Sức Mua Giao Dịch Ký Quỹ TVSI Margin"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.tvsi.com.vn/endow/tvsi-margin-increase.html",
+      "title": "",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.tvsi.com.vn/san-pham-dich-vu/dich-vu-chung-khoan/bieu-phi-dich-vu",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "TVSI promoArticle: Biểu phí dịch vụ chứng khoán Tân Việt TVSI"
+        },
+        {
+          "source": "promotionsData",
+          "context": "TVSI promo: Biểu Phí Dịch Vụ Chứng Khoán & Giao Dịch Trực Tuyến TVSI"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.tvsi.com.vn/san-pham-dich-vu/dich-vu-chung-khoan/bieu-phi-dich-vu",
+      "title": "",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.eves.com.vn",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "EVS website"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.eves.com.vn/",
+      "title": "Trang ch&#x1EE7;",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.eves.com.vn/san-pham-dich-vu/bieu-phi/bieu-phi-dich-vu/",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "EVS sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "EVS promoArticle: Biểu phí dịch vụ giao dịch chứng khoán Everest EVS"
+        },
+        {
+          "source": "promotionsData",
+          "context": "EVS promo: Biểu Phí Dịch Vụ Giao Dịch Chứng Khoán Everest EVS"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.eves.com.vn/san-pham-dich-vu/bieu-phi/bieu-phi-dich-vu/",
+      "title": "Bi&#x1EC3;u ph&#xED; d&#x1ECB;ch v&#x1EE5;",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://trade.eves.com.vn",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "EVS accountOpeningUrl"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://trade.eves.com.vn/evrtrade/",
+      "title": "EVS",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    },
+    {
+      "url": "https://www.eves.com.vn/evs-special/tin-evs/lai-vay-linh-hoat-loi-nhuan-toi-da-cung-evs-margin-tplus/",
+      "usages": [
+        {
+          "source": "securitiesData",
+          "context": "EVS margin.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "EVS welcomePromo.sourceUrl"
+        },
+        {
+          "source": "securitiesData",
+          "context": "EVS promoArticle: Lãi vay linh hoạt, lợi nhuận tối đa cùng EVS Margin T+"
+        },
+        {
+          "source": "promotionsData",
+          "context": "EVS promo: Lãi Vay Linh Hoạt, Lợi Nhuận Tối Đa Cùng EVS Margin T+"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.eves.com.vn/evs-special/tin-evs/lai-vay-linh-hoat-loi-nhuan-toi-da-cung-evs-margin-tplus/",
+      "title": "L&#xE3;i Vay Linh Ho&#x1EA1;t - L&#x1EE3;i Nhu&#x1EAD;n T&#x1ED1;i &#x110;a c&#xF9;ng EVS Margin T&#",
+      "h1": "",
+      "isDead": false,
+      "deadReason": ""
+    }
+  ]
+}
