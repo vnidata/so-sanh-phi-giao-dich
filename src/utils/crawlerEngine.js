@@ -164,6 +164,13 @@ export async function crawlBrokerDeep(broker, options = {}) {
         referenceDate
       });
 
+      // Kiểm tra tính mới/thay đổi của bài viết so với dữ liệu cũ
+      const existingArticles = Array.isArray(options.companyData?.promoArticles) ? options.companyData.promoArticles : [];
+      const existingUrls = new Set(existingArticles.map(a => a.url));
+      const existingTitles = new Set(existingArticles.map(a => (a.title || '').toLowerCase().trim()));
+      const isBrandNew = !existingUrls.has(tab.url) && !existingTitles.has((tab.title || '').toLowerCase().trim());
+      const isNew = Boolean(tab.isNew || isBrandNew);
+
       const promoItem = {
         title: tab.title,
         url: tab.url,
@@ -175,6 +182,7 @@ export async function crawlBrokerDeep(broker, options = {}) {
         formattedExpiryDate: validity.formattedExpiryDate,
         isActive: validity.isActive,
         isWithinOneYear: validity.isWithinOneYear,
+        isNew,
         status: validity.status,
         validityReason: validity.reason
       };
@@ -248,6 +256,8 @@ export async function crawlBrokerDeep(broker, options = {}) {
     signals: combinedSignals,
     contentLength: totalBytes,
     scannedAt: new Date().toISOString(),
+    hasNewUpdates: activePromos.some(p => p.isNew),
+    newUpdatesCount: activePromos.filter(p => p.isNew).length,
     elapsedMs: Date.now() - startTime,
     sourceType: 'deep_crawler'
   };
@@ -459,26 +469,42 @@ export function syncScanResultsToCompanies(currentCompanies = [], scanResults = 
     const scan = scanResults.find(r => r.id === company.id);
     if (!scan) return company;
 
+    const existingArticles = Array.isArray(company.promoArticles) ? company.promoArticles : [];
+    const existingUrls = new Set(existingArticles.map(a => a.url));
+    const existingTitles = new Set(existingArticles.map(a => (a.title || '').toLowerCase().trim()));
+
     // Nếu phiên quét có danh sách activePromos đã qua bộ lọc 1 năm & hiệu lực, đồng bộ vào company.promoArticles
     let updatedPromoArticles = company.promoArticles;
+    let newUpdatesCount = scan.newUpdatesCount || 0;
+
     if (Array.isArray(scan.activePromos) && scan.activePromos.length > 0) {
-      updatedPromoArticles = scan.activePromos.map(art => ({
-        title: art.title,
-        url: art.url,
-        type: art.type,
-        badge: art.badge,
-        publishedDate: art.publishedDate,
-        expiryDate: art.expiryDate,
-        formattedPublishedDate: art.formattedPublishedDate,
-        formattedExpiryDate: art.formattedExpiryDate,
-        status: 'active',
-        isActive: true
-      }));
+      updatedPromoArticles = scan.activePromos.map(art => {
+        const isBrandNew = !existingUrls.has(art.url) && !existingTitles.has((art.title || '').toLowerCase().trim());
+        const isNew = Boolean(art.isNew || isBrandNew);
+        return {
+          title: art.title,
+          url: art.url,
+          type: art.type,
+          badge: art.badge,
+          publishedDate: art.publishedDate,
+          expiryDate: art.expiryDate,
+          formattedPublishedDate: art.formattedPublishedDate,
+          formattedExpiryDate: art.formattedExpiryDate,
+          status: 'active',
+          isActive: true,
+          isNew
+        };
+      });
+      newUpdatesCount = updatedPromoArticles.filter(a => a.isNew).length;
     }
+
+    const hasNewUpdates = newUpdatesCount > 0 || Boolean(scan.hasNewUpdates);
 
     return {
       ...company,
       lastUpdated: todayStr,
+      hasNewUpdates,
+      newUpdatesCount,
       promoArticles: updatedPromoArticles,
       crawlerMeta: {
         lastScanned: scan.scannedAt,
@@ -488,7 +514,9 @@ export function syncScanResultsToCompanies(currentCompanies = [], scanResults = 
         signals: scan.signals,
         mode: scan.mode || 'standard',
         totalTabsScanned: scan.totalTabsScanned || 1,
-        activePromosCount: scan.activePromos?.length || 0
+        activePromosCount: scan.activePromos?.length || 0,
+        hasNewUpdates,
+        newUpdatesCount
       }
     };
   });

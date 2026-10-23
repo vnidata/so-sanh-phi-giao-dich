@@ -96,6 +96,34 @@ describe('Crawler & Web Scraper Utility Suite', () => {
     expect(updatedBsc.margin.standardRate90d).toBe(10.5); // preserves core margin
   });
 
+  it('should detect new articles and set isNew: true and hasNewUpdates: true in syncScanResultsToCompanies', () => {
+    const mockScanWithNew = [
+      {
+        id: 'bsc',
+        isAccessible: true,
+        httpStatus: 200,
+        contentLength: 150000,
+        signals: { hasZeroFeeMention: true, hasMarginMention: true, hasPromoRateMention: true },
+        scannedAt: '2026-10-23T08:00:00.000Z',
+        activePromos: [
+          {
+            title: 'Chương trình Ưu Đãi Mới Toanh Chưa Từng Có 2026',
+            url: 'https://www.bsc.com.vn/tin-tuc/tin-chi-tiet/chuong-trinh-moi-2026/',
+            type: 'margin',
+            badge: 'Mới 2026'
+          }
+        ]
+      }
+    ];
+
+    const updated = syncScanResultsToCompanies(SECURITIES_COMPANIES, mockScanWithNew);
+    const updatedBsc = updated.find(c => c.id === 'bsc');
+
+    expect(updatedBsc.hasNewUpdates).toBe(true);
+    expect(updatedBsc.newUpdatesCount).toBeGreaterThanOrEqual(1);
+    expect(updatedBsc.promoArticles.some(a => a.isNew && a.title.includes('Mới Toanh'))).toBe(true);
+  });
+
   describe('Financial Keywords & NLP Signal Analyzer', () => {
     it('should have all 7 core financial keyword groups in dictionary', () => {
       const keys = KEYWORD_DICTIONARY.map(k => k.key);

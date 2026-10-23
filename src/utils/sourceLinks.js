@@ -142,6 +142,7 @@ export function getBrokerSourceLinks(company) {
           url: art.url,
           status: 'HTTP 200 OK',
           isVerified: true,
+          isNew: Boolean(art.isNew),
           badge: art.badge || (isFee ? 'Ưu Đãi Phí' : isMargin ? 'Lãi Suất Margin' : 'Khuyến Mại'),
           badgeColor: isFee ? 'emerald' : isMargin ? 'blue' : 'amber',
           description: `Bài viết công bố thực tế trên website đã quét được thông tin ${isFee ? 'biểu phí giao dịch' : isMargin ? 'lãi suất vay ký quỹ margin' : 'chương trình ưu đãi đầu tư'}.`

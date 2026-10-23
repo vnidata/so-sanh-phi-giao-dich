@@ -45,7 +45,8 @@ export const VERIFIED_PROMOTIONS = [
     sourceUrl: 'https://www.bsc.com.vn/tin-tuc/tin-chi-tiet/1228024-giam-lai-suat-cho-vay-san-pham-margin-mr10-lai-suat-uu-dai-tu-0/',
     category: 'margin',
     badge: 'Lãi Suất 0%',
-    status: 'active'
+    status: 'active',
+    isNew: true
   },
   {
     id: 'bsc-danh-muc-bsc10',
@@ -63,7 +64,8 @@ export const VERIFIED_PROMOTIONS = [
     sourceUrl: 'https://www.bsc.com.vn/tin-tuc/tin-chi-tiet/1153587-danh-muc-chuan-uu-dai-chat/',
     category: 'combo',
     badge: 'Gói BSC10',
-    status: 'active'
+    status: 'active',
+    isNew: true
   },
 
   // 2. TCBS (Techcom Securities)
@@ -101,7 +103,8 @@ export const VERIFIED_PROMOTIONS = [
     sourceUrl: 'https://www.tcbs.com.vn/ca-nhan/uu-dai/gom-co-ve-nha/',
     category: 'margin',
     badge: 'Lãi Từ 7.89%',
-    status: 'active'
+    status: 'active',
+    isNew: true
   },
   {
     id: 'tcbs-tong-hop-uu-dai',
@@ -139,7 +142,8 @@ export const VERIFIED_PROMOTIONS = [
     sourceUrl: 'https://vps.com.vn/bai-viet/vps-ra-mat-goi-margin-uu-dai-phat-tai',
     category: 'margin',
     badge: 'Phát Tài 8.8%',
-    status: 'active'
+    status: 'active',
+    isNew: true
   },
   {
     id: 'vps-welcome-ekyc',
@@ -177,7 +181,8 @@ export const VERIFIED_PROMOTIONS = [
     sourceUrl: 'https://www.ssi.com.vn/tin-tuc/tin-tuc-su-kien-ssi/ra-mat-chuong-trinh-khuyen-mai-ssi-margin-0-0',
     category: 'margin',
     badge: 'Margin 0.0',
-    status: 'active'
+    status: 'active',
+    isNew: true
   },
   {
     id: 'ssi-goi-nhap-cuoc',
@@ -195,7 +200,8 @@ export const VERIFIED_PROMOTIONS = [
     sourceUrl: 'https://www.ssi.com.vn/tin-tuc/tin-tuc-chung/dieu-chinh-goi-nhap-cuoc-voi-lai-suat-799-danh-cho-khach-hang-moi-va-kich-hoat-tro-lai',
     category: 'welcome',
     badge: 'Nhập Cuộc 7.99%',
-    status: 'active'
+    status: 'active',
+    isNew: true
   },
   {
     id: 'ssi-bieu-phi-khcn',
@@ -233,7 +239,8 @@ export const VERIFIED_PROMOTIONS = [
     sourceUrl: 'https://www.vndirect.com.vn/dich-vu-chung-khoan/san-pham-dich-vu/margin/t10/',
     category: 'margin',
     badge: 'Miễn Lãi T10',
-    status: 'active'
+    status: 'active',
+    isNew: true
   },
   {
     id: 'vndirect-bieu-phi-margin',
@@ -289,7 +296,8 @@ export const VERIFIED_PROMOTIONS = [
     sourceUrl: 'https://masvn.com/article/margin-888-phat-manh-suc-mua-bat-dua-but-toc-1086580',
     category: 'margin',
     badge: 'Margin 8.88%',
-    status: 'active'
+    status: 'active',
+    isNew: true
   },
   {
     id: 'masvn-phai-sinh-0phi',
@@ -327,7 +335,8 @@ export const VERIFIED_PROMOTIONS = [
     sourceUrl: 'https://hdsd.dnse.com.vn/die-u-khoa-n-di-ch-vu-dnse/dieu-khoan-chuong-trinh-danh-cho-khach-hang-moi/chuong-trinh-mien-lai-margin-30-ngay',
     category: 'welcome',
     badge: 'Miễn Lãi 30 Ngày',
-    status: 'active'
+    status: 'active',
+    isNew: true
   },
   {
     id: 'dnse-margin-deal-599',
@@ -345,7 +354,8 @@ export const VERIFIED_PROMOTIONS = [
     sourceUrl: 'https://hdsd.dnse.com.vn/san-pham-dich-vu/sp-giao-dich-ky-quy-theo-deal/sp-giao-dich-ky-quy-5.99-plus',
     category: 'margin',
     badge: 'Margin Deal 5.99%',
-    status: 'active'
+    status: 'active',
+    isNew: true
   },
   {
     id: 'dnse-margin-999-dai-han',
@@ -383,7 +393,8 @@ export const VERIFIED_PROMOTIONS = [
     sourceUrl: 'https://s3.vpbanks.com.vn/vpbanks/TH%E1%BB%82%20L%E1%BB%86%20CH%C3%8DNH%20S%C3%81CH%200%20PH%C3%8D%200%20MARGIN%20(5).pdf',
     category: 'welcome',
     badge: '0 Phí 0 Margin',
-    status: 'active'
+    status: 'active',
+    isNew: true
   },
   {
     id: 'vpbanks-emargin-68',
@@ -551,7 +562,8 @@ export const VERIFIED_PROMOTIONS = [
     sourceUrl: 'https://www.vietcap.com.vn/san-pham-tai-chinh/huong-dan-chung-khoan-co-so/super-v9-dac-quyen-vuot-troi-9-0',
     category: 'margin',
     badge: 'Super V9 9.0%',
-    status: 'active'
+    status: 'active',
+    isNew: true
   },
 
   // 12. Kafi
@@ -571,7 +583,8 @@ export const VERIFIED_PROMOTIONS = [
     sourceUrl: 'https://kafi.vn/stock-trading?tab=ttgd',
     category: 'combo',
     badge: 'Zero-Fee & 7.8%',
-    status: 'active'
+    status: 'active',
+    isNew: true
   },
 
   // 13. MBS (MB Securities)
@@ -591,7 +604,8 @@ export const VERIFIED_PROMOTIONS = [
     sourceUrl: 'https://www.mbs.com.vn/uu-dai-lai-suat-7-5-doc-quyen-danh-rieng-cho-khach-hang-mo-moi-su-dung-dich-vu-giao-dich-chu-dong/',
     category: 'welcome',
     badge: 'Mở Mới 7.5%',
-    status: 'active'
+    status: 'active',
+    isNew: true
   },
   {
     id: 'mbs-margin-99',
@@ -629,7 +643,8 @@ export const VERIFIED_PROMOTIONS = [
     sourceUrl: 'https://www.shs.com.vn/tin-tuc/giai-bai-toan-chi-phi-von-cung-margin-s30-lai-suat-tu-99percentnam-han-muc-toi-50-ty-dong',
     category: 'margin',
     badge: 'Margin S30 9.9%',
-    status: 'active'
+    status: 'active',
+    isNew: true
   },
   {
     id: 'shs-bieu-phi-dich-vu',
@@ -799,7 +814,8 @@ export const VERIFIED_PROMOTIONS = [
     sourceUrl: 'https://www.vcbs.com.vn/chi-tiet-khach-hang-ca-nhan/goi-margin-t',
     category: 'margin',
     badge: 'Miễn Lãi T5',
-    status: 'active'
+    status: 'active',
+    isNew: true
   },
 
   // 19. KBSV (KB Securities Vietnam)
@@ -819,7 +835,8 @@ export const VERIFIED_PROMOTIONS = [
     sourceUrl: 'https://kbsec.com.vn/vi/kb-himargin-tang-han-muc-len-20-ty-uu-dai-lai-suat-sieu-canh-tranh.htm',
     category: 'margin',
     badge: 'HiMargin 20 Tỷ',
-    status: 'active'
+    status: 'active',
+    isNew: true
   },
   {
     id: 'kbsv-zero-fee-90d',
@@ -895,7 +912,8 @@ export const VERIFIED_PROMOTIONS = [
     sourceUrl: 'https://www.bvsc.com.vn/danhsachbaiviet/chung-khoan-bao-viet-bvsc-trien-khai-chuong-trinh-uu-dai-margin-va-mo-tai-khoan-moi-den-het-nam-2026/',
     category: 'welcome',
     badge: 'Ưu Đãi Kép 2026',
-    status: 'active'
+    status: 'active',
+    isNew: true
   },
   {
     id: 'bvsc-bieu-phi-dich-vu',
@@ -933,7 +951,8 @@ export const VERIFIED_PROMOTIONS = [
     sourceUrl: 'https://www.tpbs.com.vn/vi/thong-tin-tps/thong-bao/thong-bao/gia-han-m7-margin-nang-dong-dau-tu-but-pha?postId=2827',
     category: 'margin',
     badge: 'Miễn Lãi M7',
-    status: 'active'
+    status: 'active',
+    isNew: true
   },
   {
     id: 'tps-mm-lo-phi',
@@ -971,7 +990,8 @@ export const VERIFIED_PROMOTIONS = [
     sourceUrl: 'https://yuanta.com.vn/tin-tuc/chi-100-suat-margin-6-8-nam-don-song-nang-hang-margin-loc-phat',
     category: 'margin',
     badge: 'Lộc Phát 6.8%',
-    status: 'active'
+    status: 'active',
+    isNew: true
   },
   {
     id: 'yuanta-cong-thong-tin-margin',
@@ -1027,7 +1047,8 @@ export const VERIFIED_PROMOTIONS = [
     sourceUrl: 'https://shinhansec.com.vn/vi/san-pham-dich-vu/moi-gioi-chung-khoan/dich-vu-tai-chinh.html',
     category: 'margin',
     badge: 'Margin Mới 8.0%',
-    status: 'active'
+    status: 'active',
+    isNew: true
   },
 
   // 25. Agriseco
@@ -1067,7 +1088,8 @@ export const VERIFIED_PROMOTIONS = [
     sourceUrl: 'https://hdbs.vn/uu-dai-hap-dan-tu-hds-giao-dich-cuc-da-voi-goi-margin-chi-7-5-nam-danh-rieng-cho-khach-hang-moi/',
     category: 'welcome',
     badge: 'Mở Mới 7.5%',
-    status: 'active'
+    status: 'active',
+    isNew: true
   },
   {
     id: 'hdbs-margin-hstock',

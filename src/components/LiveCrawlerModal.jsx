@@ -236,6 +236,7 @@ export default function LiveCrawlerModal({
 
   // Filtered results list
   const filteredList = scanResults.filter(b => {
+    if (filterType === 'newUpdates') return b.hasNewUpdates || (b.activePromos && b.activePromos.some(p => p.isNew));
     if (filterType === 'accessible') return b.isAccessible;
     if (filterType === 'unscannable') return !b.isAccessible;
     if (filterType === 'activePromos') return b.activePromos && b.activePromos.length > 0;
@@ -477,6 +478,20 @@ export default function LiveCrawlerModal({
             <div className="flex flex-wrap gap-1.5">
               <button
                 type="button"
+                onClick={() => setFilterType(filterType === 'newUpdates' ? 'all' : 'newUpdates')}
+                className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold border transition-all ${
+                  filterType === 'newUpdates' 
+                    ? 'ring-2 ring-rose-500 bg-rose-600 text-white border-transparent'
+                    : 'bg-rose-50 dark:bg-rose-950/40 text-rose-800 dark:text-rose-300 border-rose-200 dark:border-rose-800/60 hover:bg-rose-100'
+                }`}
+                title="Lọc các CTCK có ưu đãi hoặc cập nhật mới phát hiện"
+              >
+                <span className="h-1.5 w-1.5 rounded-full bg-rose-400 animate-ping" />
+                Mới cập nhật (New): <span className="font-extrabold">{scanResults.filter(r => r.hasNewUpdates || r.activePromos?.some(p => p.isNew)).length}</span>
+              </button>
+
+              <button
+                type="button"
                 onClick={() => setFilterType(filterType === 'activePromos' ? 'all' : 'activePromos')}
                 className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold border transition-all ${
                   filterType === 'activePromos' 
@@ -682,6 +697,11 @@ export default function LiveCrawlerModal({
                               <span className="font-extrabold text-slate-900 dark:text-white">
                                 {broker.shortName}
                               </span>
+                              {(broker.hasNewUpdates || (broker.activePromos && broker.activePromos.some(p => p.isNew))) && (
+                                <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded-full text-[9px] font-black bg-rose-500 text-white shadow-xs animate-pulse">
+                                  NEW
+                                </span>
+                              )}
                               <span className="text-[11px] text-slate-400 truncate max-w-[180px]">
                                 {broker.name}
                               </span>
@@ -766,6 +786,11 @@ export default function LiveCrawlerModal({
                                   className="flex items-center justify-between gap-2 p-1.5 rounded-lg bg-emerald-50/60 dark:bg-emerald-950/30 border border-emerald-200/60 dark:border-emerald-900/40 text-[11px]"
                                 >
                                   <div className="flex items-center gap-1.5 min-w-0">
+                                    {art.isNew && (
+                                      <span className="px-1 py-0.2 rounded text-[8px] font-black bg-rose-500 text-white animate-pulse shrink-0">
+                                        NEW
+                                      </span>
+                                    )}
                                     <span className="px-1 py-0.2 rounded text-[9px] font-black bg-emerald-200 dark:bg-emerald-900 text-emerald-800 dark:text-emerald-300 shrink-0">
                                       {art.badge || (art.type === 'margin' ? 'Margin' : 'Phí')}
                                     </span>

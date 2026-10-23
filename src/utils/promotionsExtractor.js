@@ -45,12 +45,17 @@ export function extractAllPromotions(companies = SECURITIES_COMPANIES) {
   VERIFIED_PROMOTIONS.forEach(promo => {
     if (companyMap.has(promo.companyId)) {
       const company = companyMap.get(promo.companyId);
+      const hasMatchingNewArticle = Array.isArray(company?.promoArticles) &&
+        company.promoArticles.some(a => a.isNew && (a.url === promo.sourceUrl || (a.title && promo.programName.includes(a.title))));
+      const isNew = Boolean(promo.isNew || hasMatchingNewArticle);
+
       result.push({
         ...promo,
         companyName: company.name || promo.companyName,
         companyShortName: company.shortName || promo.companyShortName,
         stockCode: company.stockCode || promo.stockCode,
-        brandColor: company.brandColor || promo.brandColor
+        brandColor: company.brandColor || promo.brandColor,
+        isNew
       });
     }
   });

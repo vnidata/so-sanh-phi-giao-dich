@@ -64,6 +64,7 @@ import SecuritiesTable from '../src/components/SecuritiesTable.jsx';
 import SecuritiesCards from '../src/components/SecuritiesCards.jsx';
 import CostCalculator from '../src/components/CostCalculator.jsx';
 import CriteriaGuide from '../src/components/CriteriaGuide.jsx';
+import CompanyDetailModal from '../src/components/CompanyDetailModal.jsx';
 
 describe('System-Wide 100% Features & Link Health End-to-End Audit Suite', () => {
 
@@ -275,12 +276,14 @@ describe('System-Wide 100% Features & Link Health End-to-End Audit Suite', () =>
   // 9. UI COMPONENTS FULL RENDER SUITE (ZERO CRASHES)
   // =========================================================================
   describe('Feature 9: React Components Render Integrity', () => {
-    it('renders PromotionsSummaryTable without errors', () => {
+    it('renders PromotionsSummaryTable without errors and includes NEW badges and filter', () => {
       const html = ReactDOMServer.renderToString(
         React.createElement(PromotionsSummaryTable, { companies: SECURITIES_COMPANIES })
       );
       expect(html).toContain('Tóm Tắt Toàn Bộ Chương Trình Khuyến Mãi');
       expect(html).toContain('Xuất File CSV');
+      expect(html).toContain('NEW');
+      expect(html).toContain('Mới cập nhật (New)');
     });
 
     it('renders ShortTermMarginComparator without errors', () => {
@@ -297,7 +300,7 @@ describe('System-Wide 100% Features & Link Health End-to-End Audit Suite', () =>
       expect(html).toContain('Bảng Đối Chiếu Ưu Đãi Mở Tài Khoản Mới');
     });
 
-    it('renders SecuritiesTable and SecuritiesCards without errors', () => {
+    it('renders SecuritiesTable and SecuritiesCards without errors and displays NEW badges', () => {
       const tableHtml = ReactDOMServer.renderToString(
         React.createElement(SecuritiesTable, { 
           companies: SECURITIES_COMPANIES,
@@ -307,6 +310,7 @@ describe('System-Wide 100% Features & Link Health End-to-End Audit Suite', () =>
         })
       );
       expect(tableHtml).toContain('Công Ty Chứng Khoán');
+      expect(tableHtml).toContain('NEW');
 
       const cardsHtml = ReactDOMServer.renderToString(
         React.createElement(SecuritiesCards, { 
@@ -317,6 +321,18 @@ describe('System-Wide 100% Features & Link Health End-to-End Audit Suite', () =>
         })
       );
       expect(cardsHtml.length).toBeGreaterThan(500);
+      expect(cardsHtml).toContain('NEW');
+    });
+
+    it('renders CompanyDetailModal with NEW badges when company has updates', () => {
+      const bsc = SECURITIES_COMPANIES.find(c => c.id === 'bsc');
+      const html = ReactDOMServer.renderToString(
+        React.createElement(CompanyDetailModal, { 
+          company: bsc,
+          onClose: () => {}
+        })
+      );
+      expect(html).toContain('NEW UPDATES');
     });
 
     it('renders CostCalculator without errors', () => {

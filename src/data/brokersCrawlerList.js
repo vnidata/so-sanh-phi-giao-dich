@@ -350,7 +350,7 @@ export function getBrokerSubTabs(broker, companyData = null) {
   const tabs = [];
   const seen = new Set();
 
-  const addTab = (id, type, title, url, badge, description) => {
+  const addTab = (id, type, title, url, badge, description, isNew = false) => {
     if (!url || url === '#' || seen.has(url)) return;
     seen.add(url);
     tabs.push({
@@ -359,7 +359,8 @@ export function getBrokerSubTabs(broker, companyData = null) {
       title: title || 'Nguồn dữ liệu',
       url,
       badge: badge || (type === 'fee' ? 'Biểu phí' : type === 'margin' ? 'Lãi suất Margin' : 'Ưu đãi'),
-      description: description || ''
+      description: description || '',
+      isNew: Boolean(isNew)
     });
   };
 
@@ -407,7 +408,8 @@ export function getBrokerSubTabs(broker, companyData = null) {
           art.title || `Bài viết công bố ${broker.shortName}`,
           art.url,
           art.badge || (art.type === 'fee' ? 'Ưu Đãi Phí' : art.type === 'margin' ? 'Lãi Suất Margin' : 'Khuyến Mại'),
-          `Bài viết tin tức chính thức công bố trên website ${broker.shortName}`
+          `Bài viết tin tức chính thức công bố trên website ${broker.shortName}`,
+          art.isNew
         );
       }
     });

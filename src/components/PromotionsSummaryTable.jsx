@@ -75,6 +75,9 @@ export default function PromotionsSummaryTable({
       if (selectedCategory === 'welcome') {
         if (item.category !== 'welcome') return false;
       }
+      if (selectedCategory === 'new') {
+        if (!item.isNew) return false;
+      }
 
       // 3. Lọc theo CTCK
       if (selectedBroker !== 'all' && item.companyId !== selectedBroker) {
@@ -101,7 +104,8 @@ export default function PromotionsSummaryTable({
       total: allPromotions.length,
       feeCount: allPromotions.filter(p => p.category === 'fee' || (!p.feeOffer.includes('Không áp dụng') && !p.feeOffer.includes('Theo biểu phí chuẩn'))).length,
       marginCount: allPromotions.filter(p => p.category === 'margin' || (!p.interestOffer.includes('Không áp dụng') && !p.interestOffer.includes('Theo biểu lãi chuẩn'))).length,
-      welcomeCount: allPromotions.filter(p => p.category === 'welcome').length
+      welcomeCount: allPromotions.filter(p => p.category === 'welcome').length,
+      newCount: allPromotions.filter(p => p.isNew).length
     };
   }, [allPromotions]);
 
@@ -154,7 +158,7 @@ export default function PromotionsSummaryTable({
         )}
 
         {/* Thống kê nhanh dạng thẻ */}
-        <div className="mt-5 grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3 text-xs">
+        <div className="mt-5 grid grid-cols-2 sm:grid-cols-5 gap-2.5 sm:gap-3 text-xs">
           <div className="p-3 rounded-2xl bg-white dark:bg-slate-800/80 border border-slate-200/80 dark:border-slate-700 shadow-2xs">
             <span className="text-slate-500 dark:text-slate-400 block text-[11px] font-medium">Tổng chương trình:</span>
             <strong className="text-lg sm:text-xl font-black text-slate-900 dark:text-white mt-0.5 block">
@@ -189,6 +193,16 @@ export default function PromotionsSummaryTable({
             </span>
             <strong className="text-lg sm:text-xl font-black text-amber-700 dark:text-amber-300 mt-0.5 block">
               {stats.welcomeCount} chương trình
+            </strong>
+          </div>
+
+          <div className="p-3 rounded-2xl bg-rose-50/70 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-900/60 shadow-2xs col-span-2 sm:col-span-1">
+            <span className="text-rose-700 dark:text-rose-300 block text-[11px] font-medium flex items-center gap-1">
+              <Sparkles className="h-3 w-3" />
+              Mới cập nhật (New):
+            </span>
+            <strong className="text-lg sm:text-xl font-black text-rose-700 dark:text-rose-300 mt-0.5 block">
+              {stats.newCount} chương trình
             </strong>
           </div>
         </div>
@@ -294,6 +308,19 @@ export default function PromotionsSummaryTable({
             >
               Mở tài khoản eKYC ({stats.welcomeCount})
             </button>
+
+            <button
+              type="button"
+              onClick={() => setSelectedCategory('new')}
+              className={`px-3 py-1.5 rounded-xl font-bold transition-all inline-flex items-center gap-1.5 ${
+                selectedCategory === 'new'
+                  ? 'bg-rose-600 text-white shadow-xs'
+                  : 'bg-rose-50 dark:bg-rose-950/40 text-rose-800 dark:text-rose-300 border border-rose-200 dark:border-rose-800/60 hover:bg-rose-100'
+              }`}
+            >
+              <span className="h-1.5 w-1.5 rounded-full bg-rose-400 animate-ping" />
+              Mới cập nhật (New) ({stats.newCount})
+            </button>
           </div>
 
           <div className="text-xs text-slate-500 dark:text-slate-400 font-medium">
@@ -372,9 +399,16 @@ export default function PromotionsSummaryTable({
                       {/* Tên chương trình */}
                       <td className="py-3 px-4">
                         <div className="space-y-1">
-                          <strong className="text-slate-900 dark:text-white font-bold leading-snug block">
-                            {promo.programName}
-                          </strong>
+                          <div className="flex items-center gap-1.5 flex-wrap">
+                            {promo.isNew && (
+                              <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded-full text-[9px] font-black bg-rose-500 text-white shadow-xs animate-pulse shrink-0">
+                                NEW
+                              </span>
+                            )}
+                            <strong className="text-slate-900 dark:text-white font-bold leading-snug">
+                              {promo.programName}
+                            </strong>
+                          </div>
                           <span className={`inline-block px-1.5 py-0.2 rounded text-[9px] font-black uppercase tracking-wider ${
                             promo.category === 'fee'
                               ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300'
@@ -495,9 +529,16 @@ export default function PromotionsSummaryTable({
               </div>
 
               <div>
-                <strong className="text-xs font-bold text-slate-900 dark:text-white block">
-                  {promo.programName}
-                </strong>
+                <div className="flex items-center gap-1.5 flex-wrap">
+                  {promo.isNew && (
+                    <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded-full text-[9px] font-black bg-rose-500 text-white shadow-xs animate-pulse shrink-0">
+                      NEW
+                    </span>
+                  )}
+                  <strong className="text-xs font-bold text-slate-900 dark:text-white">
+                    {promo.programName}
+                  </strong>
+                </div>
                 <p className="text-[11px] text-slate-600 dark:text-slate-300 mt-1 leading-relaxed">
                   {promo.summary}
                 </p>

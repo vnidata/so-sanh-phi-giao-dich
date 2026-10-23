@@ -120,4 +120,16 @@ describe('Promotions & Offers Extractor & CSV Exporter Tests', () => {
     expect(emptyCsv.charCodeAt(0)).toBe(0xFEFF);
     expect(emptyCsv).toContain('"STT"');
   });
+  it('Các chương trình ưu đãi mới cập nhật được gắn nhãn isNew đầy đủ', () => {
+    const promos = extractAllPromotions(SECURITIES_COMPANIES);
+    const newPromos = promos.filter(p => p.isNew);
+
+    expect(newPromos.length).toBeGreaterThanOrEqual(15);
+    // Xác nhận các gói ưu đãi mới nổi bật 2026 đều có cờ isNew
+    expect(newPromos.some(p => p.id === 'bsc-margin-mr10')).toBe(true);
+    expect(newPromos.some(p => p.id === 'tcbs-gom-co-ve-nha')).toBe(true);
+    expect(newPromos.some(p => p.id === 'ssi-margin-00')).toBe(true);
+    expect(newPromos.some(p => p.id === 'vndirect-margin-t10')).toBe(true);
+    expect(newPromos.some(p => p.id === 'dnse-welcome-mien-lai-30d')).toBe(true);
+  });
 });

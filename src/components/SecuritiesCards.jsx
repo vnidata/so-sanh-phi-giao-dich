@@ -81,6 +81,11 @@ export default function SecuritiesCards({
                           <HighlightText text={company.parentStockCode ? `Chưa NY (${company.parentStockCode})` : 'Chưa niêm yết'} query={searchQuery} />
                         </span>
                       )}
+                      {company.hasNewUpdates && (
+                        <span className="rounded-full bg-rose-500 px-1.5 py-0.5 text-[9px] font-black text-white uppercase tracking-wider animate-pulse shadow-xs" title="Có cập nhật ưu đãi mới được quét">
+                          NEW
+                        </span>
+                      )}
                     </div>
                     <p className="text-[11px] text-slate-500 dark:text-slate-400 line-clamp-1 leading-normal">
                       <HighlightText text={company.name} query={searchQuery} />

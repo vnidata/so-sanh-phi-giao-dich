@@ -142,6 +142,11 @@ export default function SecuritiesTable({
                                 Top 1
                               </span>
                             ) : null}
+                            {company.hasNewUpdates ? (
+                              <span className="rounded-full bg-rose-500 px-1.5 py-0.5 text-[9px] font-black text-white uppercase tracking-wider animate-pulse shadow-xs" title="Có cập nhật ưu đãi mới được quét">
+                                NEW
+                              </span>
+                            ) : null}
                           </div>
                           <p className="text-[11px] text-slate-500 dark:text-slate-300 truncate max-w-[150px] sm:max-w-[200px] lg:max-w-[250px] mt-0.5 font-medium">
                             {company.name}

@@ -77,6 +77,11 @@ export default function CompanyDetailModal({ company, onClose }) {
                 <h2 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white">
                   {company.shortName}
                 </h2>
+                {company.hasNewUpdates && (
+                  <span className="inline-flex items-center gap-1 rounded-full bg-rose-500 text-white px-2 py-0.5 text-[10px] font-black shadow-xs animate-pulse">
+                    NEW UPDATES
+                  </span>
+                )}
                 {company.isListed && company.stockCode ? (
                   <span className="rounded-md bg-blue-100 dark:bg-blue-950 px-2 py-0.5 text-xs font-black text-blue-800 dark:text-blue-300 border border-blue-200 dark:border-blue-800">
                     Mã: {company.stockCode} ({company.listingExchange})
@@ -393,6 +398,11 @@ export default function CompanyDetailModal({ company, onClose }) {
                             <span>{source.title}</span>
                           </span>
                           <div className="flex items-center gap-1 shrink-0">
+                          {source.isNew && (
+                            <span className="rounded-md bg-rose-500 text-white px-1.5 py-0.5 text-[9px] font-black animate-pulse">
+                              NEW
+                            </span>
+                          )}
                           {source.badge && (
                             <span className={`rounded-md px-1.5 py-0.5 text-[9px] font-black border ${
                               source.badgeColor === 'blue'
@@ -498,6 +508,11 @@ export default function CompanyDetailModal({ company, onClose }) {
                             className="flex items-center justify-between gap-2 p-2 rounded-lg bg-slate-800/90 hover:bg-slate-800 border border-slate-700/80 transition-colors"
                           >
                             <div className="flex items-center gap-2 min-w-0">
+                              {art.isNew && (
+                                <span className="px-1.5 py-0.5 rounded text-[8px] font-black bg-rose-500 text-white animate-pulse shrink-0">
+                                  NEW
+                                </span>
+                              )}
                               <span
                                 className={`px-1.5 py-0.5 rounded text-[9px] font-black shrink-0 ${
                                   art.type === 'fee'

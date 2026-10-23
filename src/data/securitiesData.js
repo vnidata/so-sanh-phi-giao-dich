@@ -93,21 +93,26 @@ export const SECURITIES_COMPANIES = [
         "title": "Chương trình Miễn phí giao dịch với 1 tỷ GTGD mở mới & Inactive",
         "url": "https://www.bsc.com.vn/tin-tuc/tin-chi-tiet/84515-don-nha-dau-tu-giao-dich-tro-lai-bsc-mien-phi-giao-dich-voi-1-ty-gtgd/",
         "type": "fee",
-        "badge": "Ưu Đãi Phí"
+        "badge": "Ưu Đãi Phí",
+        "isNew": false
       },
       {
         "title": "Giảm lãi suất cho vay sản phẩm Margin MR10 ưu đãi từ 0%",
         "url": "https://www.bsc.com.vn/tin-tuc/tin-chi-tiet/1228024-giam-lai-suat-cho-vay-san-pham-margin-mr10-lai-suat-uu-dai-tu-0/",
         "type": "margin",
-        "badge": "Lãi Suất Margin"
+        "badge": "Lãi Suất Margin",
+        "isNew": true
       },
       {
         "title": "Danh mục cổ phiếu chuẩn BSC10 – Ưu đãi phí & lãi vay chất",
         "url": "https://www.bsc.com.vn/tin-tuc/tin-chi-tiet/1153587-danh-muc-chuan-uu-dai-chat/",
         "type": "margin",
-        "badge": "Danh Mục Ưu Đãi"
+        "badge": "Danh Mục Ưu Đãi",
+        "isNew": true
       }
-    ]
+    ],
+    "hasNewUpdates": true,
+    "newUpdatesCount": 2
   },
   {
     "id": "tcbs",
@@ -194,21 +199,26 @@ export const SECURITIES_COMPANIES = [
         "title": "Chương trình Ưu đãi Gom Cổ Về Nhà lãi suất Margin từ 7.89%/năm",
         "url": "https://www.tcbs.com.vn/ca-nhan/uu-dai/gom-co-ve-nha/",
         "type": "margin",
-        "badge": "Lãi Suất Margin"
+        "badge": "Lãi Suất Margin",
+        "isNew": true
       },
       {
         "title": "Tổng hợp kho chương trình ưu đãi và khuyến mại TCBS",
         "url": "https://www.tcbs.com.vn/ca-nhan/uu-dai/",
         "type": "promo",
-        "badge": "Kho Ưu Đãi"
+        "badge": "Kho Ưu Đãi",
+        "isNew": false
       },
       {
         "title": "Chính sách Zero-Fee miễn 100% phí giao dịch cổ phiếu trọn đời",
         "url": "https://help.tcbs.com.vn/bieu-phi-dich-vu-chung-khoan/",
         "type": "fee",
-        "badge": "Biểu Phí Zero-Fee"
+        "badge": "Biểu Phí Zero-Fee",
+        "isNew": false
       }
-    ]
+    ],
+    "hasNewUpdates": true,
+    "newUpdatesCount": 1
   },
   {
     "id": "vps",
@@ -295,15 +305,19 @@ export const SECURITIES_COMPANIES = [
         "title": "VPS ra mắt gói Margin Ưu Đãi Phát Tài với lãi suất từ 8.8%/năm",
         "url": "https://vps.com.vn/bai-viet/vps-ra-mat-goi-margin-uu-dai-phat-tai",
         "type": "margin",
-        "badge": "Lãi Suất Margin"
+        "badge": "Lãi Suất Margin",
+        "isNew": true
       },
       {
         "title": "Chính sách biểu phí dịch vụ tài chính & giao dịch VPS",
         "url": "https://vps.com.vn/ca-nhan/ho-tro?view=bieu-phi-bieu-mau-va-chinh-sach&nav=bieu-phi--chinh-sach",
         "type": "fee",
-        "badge": "Biểu Phí Chuẩn"
+        "badge": "Biểu Phí Chuẩn",
+        "isNew": false
       }
-    ]
+    ],
+    "hasNewUpdates": true,
+    "newUpdatesCount": 1
   },
   {
     "id": "ssi",
@@ -389,21 +403,26 @@ export const SECURITIES_COMPANIES = [
         "title": "Ra mắt chương trình khuyến mại SSI Margin 0.0",
         "url": "https://www.ssi.com.vn/tin-tuc/tin-tuc-su-kien-ssi/ra-mat-chuong-trinh-khuyen-mai-ssi-margin-0-0",
         "type": "margin",
-        "badge": "Khuyến Mại Margin"
+        "badge": "Khuyến Mại Margin",
+        "isNew": true
       },
       {
         "title": "Gói Nhập Cuộc với lãi suất 7.99% cho khách hàng mới và kích hoạt trở lại",
         "url": "https://www.ssi.com.vn/tin-tuc/tin-tuc-chung/dieu-chinh-goi-nhap-cuoc-voi-lai-suat-799-danh-cho-khach-hang-moi-va-kich-hoat-tro-lai",
         "type": "margin",
-        "badge": "Lãi Suất 7.99%"
+        "badge": "Lãi Suất 7.99%",
+        "isNew": true
       },
       {
         "title": "Biểu phí giao dịch và dịch vụ khách hàng cá nhân SSI",
         "url": "https://www.ssi.com.vn/khach-hang-ca-nhan/bieu-phi/bieu-gia-dich-vu-giao-dich-chung-khoan",
         "type": "fee",
-        "badge": "Biểu Phí Chuẩn"
+        "badge": "Biểu Phí Chuẩn",
+        "isNew": false
       }
-    ]
+    ],
+    "hasNewUpdates": true,
+    "newUpdatesCount": 2
   },
   {
     "id": "vndirect",
@@ -489,15 +508,19 @@ export const SECURITIES_COMPANIES = [
         "title": "Công bố biểu phí dịch vụ giao dịch và khung lãi suất Margin VNDIRECT",
         "url": "https://www.vndirect.com.vn/bieu-phi-lai-margin/",
         "type": "fee",
-        "badge": "Biểu Phí & Lãi"
+        "badge": "Biểu Phí & Lãi",
+        "isNew": false
       },
       {
         "title": "Gói sản phẩm D-Margin T10 miễn lãi 10 ngày đầu giải ngân",
         "url": "https://www.vndirect.com.vn/dich-vu-chung-khoan/san-pham-dich-vu/margin/t10/",
         "type": "margin",
-        "badge": "Margin T+10"
+        "badge": "Margin T+10",
+        "isNew": true
       }
-    ]
+    ],
+    "hasNewUpdates": true,
+    "newUpdatesCount": 1
   },
   {
     "id": "mirae-asset",
@@ -583,21 +606,26 @@ export const SECURITIES_COMPANIES = [
         "title": "Chương trình Margin 8.88% – Phát mạnh sức mua, bứt phá vị thế",
         "url": "https://masvn.com/article/margin-888-phat-manh-suc-mua-bat-dua-but-toc-1086580",
         "type": "margin",
-        "badge": "Lãi Suất Margin"
+        "badge": "Lãi Suất Margin",
+        "isNew": true
       },
       {
         "title": "Đầu tư thỏa thích 0% phí giao dịch cổ phiếu cơ sở",
         "url": "https://masvn.com/article/dau-tu-thoa-thich-0-phi-giao-dich-1085894",
         "type": "fee",
-        "badge": "Ưu Đãi Phí"
+        "badge": "Ưu Đãi Phí",
+        "isNew": false
       },
       {
         "title": "Phái sinh không phí – Tương lai như ý cùng Mirae Asset",
         "url": "https://masvn.com/article/phai-sinh-khong-phi-tuong-lai-nhu-y-1086977",
         "type": "fee",
-        "badge": "Zero-Fee Phái Sinh"
+        "badge": "Zero-Fee Phái Sinh",
+        "isNew": false
       }
-    ]
+    ],
+    "hasNewUpdates": true,
+    "newUpdatesCount": 1
   },
   {
     "id": "dnse",
@@ -683,21 +711,26 @@ export const SECURITIES_COMPANIES = [
         "title": "Chương trình Miễn lãi Margin 30 ngày cho khách hàng mở tài khoản mới",
         "url": "https://hdsd.dnse.com.vn/die-u-khoa-n-di-ch-vu-dnse/dieu-khoan-chuong-trinh-danh-cho-khach-hang-moi/chuong-trinh-mien-lai-margin-30-ngay",
         "type": "promo",
-        "badge": "Miễn Lãi 30 Ngày"
+        "badge": "Miễn Lãi 30 Ngày",
+        "isNew": true
       },
       {
         "title": "Sản phẩm giao dịch ký quỹ Margin 5.99 Plus theo deal",
         "url": "https://hdsd.dnse.com.vn/san-pham-dich-vu/sp-giao-dich-ky-quy-theo-deal/sp-giao-dich-ky-quy-5.99-plus",
         "type": "margin",
-        "badge": "Gói Deal 5.99%"
+        "badge": "Gói Deal 5.99%",
+        "isNew": true
       },
       {
         "title": "Thông báo điều chỉnh chính sách sản phẩm Giao dịch ký quỹ 9.99%",
         "url": "https://www.dnse.com.vn/tin-tuc/thong-bao-dieu-chinh-chinh-sach-san-pham-giao-dich-ky-quy-9-99",
         "type": "margin",
-        "badge": "Chính Sách Lãi"
+        "badge": "Chính Sách Lãi",
+        "isNew": false
       }
-    ]
+    ],
+    "hasNewUpdates": true,
+    "newUpdatesCount": 2
   },
   {
     "id": "vpbanks",
@@ -781,21 +814,26 @@ export const SECURITIES_COMPANIES = [
         "title": "Dịch vụ tài chính và các gói hỗ trợ Margin VPBankS",
         "url": "https://www.vpbanks.com.vn/san-pham/emargin",
         "type": "margin",
-        "badge": "Gói Vay Margin"
+        "badge": "Gói Vay Margin",
+        "isNew": false
       },
       {
         "title": "Kho chương trình khuyến mại & ưu đãi mở mới tài khoản",
         "url": "https://s3.vpbanks.com.vn/vpbanks/TH%E1%BB%82%20L%E1%BB%86%20CH%C3%8DNH%20S%C3%81CH%200%20PH%C3%8D%200%20MARGIN%20(5).pdf",
         "type": "promo",
-        "badge": "Ưu Đãi Mở Mới"
+        "badge": "Ưu Đãi Mở Mới",
+        "isNew": true
       },
       {
         "title": "Biểu phí dịch vụ chứng khoán & giao dịch trực tuyến",
         "url": "https://www.vpbanks.com.vn/san-pham/estock",
         "type": "fee",
-        "badge": "Biểu Phí Chuẩn"
+        "badge": "Biểu Phí Chuẩn",
+        "isNew": false
       }
-    ]
+    ],
+    "hasNewUpdates": true,
+    "newUpdatesCount": 1
   },
   {
     "id": "fpts",
@@ -881,21 +919,26 @@ export const SECURITIES_COMPANIES = [
         "title": "Linh hoạt lựa chọn gói phí giao dịch tại FPTS",
         "url": "https://new.eztrade.fpts.com.vn/customers/promotion/linh-hoat-lua-chon-goi-phi-giao-dich-tai-fpts",
         "type": "fee",
-        "badge": "Ưu Đãi Phí"
+        "badge": "Ưu Đãi Phí",
+        "isNew": false
       },
       {
         "title": "Sản phẩm giao dịch ký quỹ chuyên biệt EzMargin Pro",
         "url": "https://accounts.fpts.com.vn/Help/EzMarginPro?s=37",
         "type": "margin",
-        "badge": "EzMargin Pro"
+        "badge": "EzMargin Pro",
+        "isNew": false
       },
       {
         "title": "Biểu phí dịch vụ khách hàng FPTS",
         "url": "https://eztrade.fpts.com.vn/Shovel",
         "type": "fee",
-        "badge": "Biểu Phí Chuẩn"
+        "badge": "Biểu Phí Chuẩn",
+        "isNew": false
       }
-    ]
+    ],
+    "hasNewUpdates": false,
+    "newUpdatesCount": 0
   },
   {
     "id": "hsc",
@@ -979,21 +1022,26 @@ export const SECURITIES_COMPANIES = [
         "title": "Lãi suất giao dịch ký quỹ Margin HSC",
         "url": "https://www.hsc.com.vn/vi/lai-suat-giao-dich-ky-quy",
         "type": "margin",
-        "badge": "Lãi Suất Margin"
+        "badge": "Lãi Suất Margin",
+        "isNew": false
       },
       {
         "title": "Thông báo cập nhật biểu phí dịch vụ chứng khoán",
         "url": "https://www.hsc.com.vn/vi/thong-bao-ve-viec-cap-nhat-bieu-phi-dich-vu-chung-khoan",
         "type": "fee",
-        "badge": "Cập Nhật Biểu Phí"
+        "badge": "Cập Nhật Biểu Phí",
+        "isNew": false
       },
       {
         "title": "Dịch vụ giao dịch ký quỹ trực tuyến HSC ONE",
         "url": "https://www.hsc.com.vn/vi/dich-vu-giao-dich-ky-quy-1",
         "type": "margin",
-        "badge": "Dịch Vụ Margin"
+        "badge": "Dịch Vụ Margin",
+        "isNew": false
       }
-    ]
+    ],
+    "hasNewUpdates": false,
+    "newUpdatesCount": 0
   },
   {
     "id": "vietcap",
@@ -1076,21 +1124,26 @@ export const SECURITIES_COMPANIES = [
         "title": "Gói vay ưu đãi Margin V23 theo giá trị giao dịch",
         "url": "https://www.vietcap.com.vn/san-pham-tai-chinh/huong-dan-chung-khoan-co-so/v23-goi-vay-uu-dai-theo-gtgd",
         "type": "margin",
-        "badge": "Gói Vay V23"
+        "badge": "Gói Vay V23",
+        "isNew": false
       },
       {
         "title": "Super V9 đặc quyền vượt trội lãi suất 9.0%",
         "url": "https://www.vietcap.com.vn/san-pham-tai-chinh/huong-dan-chung-khoan-co-so/super-v9-dac-quyen-vuot-troi-9-0",
         "type": "margin",
-        "badge": "Lãi Suất 9.0%"
+        "badge": "Lãi Suất 9.0%",
+        "isNew": true
       },
       {
         "title": "Dịch vụ giao dịch Margin tiêu chuẩn Vietcap",
         "url": "https://www.vietcap.com.vn/huong-dan-chung/bieu-phi-dich-vu",
         "type": "margin",
-        "badge": "Chính Sách Vay"
+        "badge": "Chính Sách Vay",
+        "isNew": false
       }
-    ]
+    ],
+    "hasNewUpdates": true,
+    "newUpdatesCount": 1
   },
   {
     "id": "kafi",
@@ -1174,21 +1227,26 @@ export const SECURITIES_COMPANIES = [
         "title": "Giao dịch cổ phiếu & thông tin các gói Margin Kafi",
         "url": "https://kafi.vn/stock-trading?tab=ttgd",
         "type": "margin",
-        "badge": "Gói Vay Kafi"
+        "badge": "Gói Vay Kafi",
+        "isNew": true
       },
       {
         "title": "Điều khoản sản phẩm Margin-S25 lãi suất 9%/năm",
         "url": "https://kafi.vn/tnc/TnC_S25.pdf",
         "type": "margin",
-        "badge": "Margin S25 (9%)"
+        "badge": "Margin S25 (9%)",
+        "isNew": false
       },
       {
         "title": "Điều khoản gói Margin-B10 hạn mức lớn",
         "url": "https://kafi.vn/tnc/TnC_Margin-B10.pdf",
         "type": "margin",
-        "badge": "Margin B10"
+        "badge": "Margin B10",
+        "isNew": false
       }
-    ]
+    ],
+    "hasNewUpdates": true,
+    "newUpdatesCount": 1
   },
   {
     "id": "mbs",
@@ -1273,21 +1331,26 @@ export const SECURITIES_COMPANIES = [
         "title": "Ưu đãi lãi suất 7.5% độc quyền cho khách hàng mở mới",
         "url": "https://www.mbs.com.vn/uu-dai-lai-suat-7-5-doc-quyen-danh-rieng-cho-khach-hang-mo-moi-su-dung-dich-vu-giao-dich-chu-dong/",
         "type": "margin",
-        "badge": "Ưu Đãi 7.5%"
+        "badge": "Ưu Đãi 7.5%",
+        "isNew": true
       },
       {
         "title": "MBS ưu đãi lãi suất 9.9% cho giao dịch chủ động",
         "url": "https://www.mbs.com.vn/mbs-uu-dai-lai-suat-9-9-danh-cho-khach-hang-su-dung-dich-vu-giao-dich-chu-dong/",
         "type": "margin",
-        "badge": "Gói Vay 9.9%"
+        "badge": "Gói Vay 9.9%",
+        "isNew": false
       },
       {
         "title": "Triển khai ưu đãi lãi suất miễn lãi T+3",
         "url": "https://www.mbs.com.vn/mbs-trien-khai-uu-dai-lai-suat-t3-danh-cho-khach-hang/",
         "type": "margin",
-        "badge": "Miễn Lãi T+3"
+        "badge": "Miễn Lãi T+3",
+        "isNew": false
       }
-    ]
+    ],
+    "hasNewUpdates": true,
+    "newUpdatesCount": 1
   },
   {
     "id": "shs",
@@ -1371,15 +1434,19 @@ export const SECURITIES_COMPANIES = [
         "title": "Giải bài toán chi phí vốn cùng Margin S30 lãi suất từ 9.9%/năm",
         "url": "https://www.shs.com.vn/tin-tuc/giai-bai-toan-chi-phi-von-cung-margin-s30-lai-suat-tu-99percentnam-han-muc-toi-50-ty-dong",
         "type": "margin",
-        "badge": "Margin S30"
+        "badge": "Margin S30",
+        "isNew": true
       },
       {
         "title": "Biểu phí dịch vụ và lãi suất chứng khoán SHS",
         "url": "https://www.shs.com.vn/ho-tro/bieu-phi",
         "type": "fee",
-        "badge": "Biểu Phí Chuẩn"
+        "badge": "Biểu Phí Chuẩn",
+        "isNew": false
       }
-    ]
+    ],
+    "hasNewUpdates": true,
+    "newUpdatesCount": 1
   },
   {
     "id": "vix",
@@ -1462,15 +1529,19 @@ export const SECURITIES_COMPANIES = [
         "title": "Chương trình ưu đãi lãi suất theo danh mục cổ phiếu",
         "url": "https://vixs.vn/chuong-trinh-uu-dai-lai-suat-theo-danh-muc.html",
         "type": "margin",
-        "badge": "Ưu Đãi Lãi Suất"
+        "badge": "Ưu Đãi Lãi Suất",
+        "isNew": false
       },
       {
         "title": "Biểu phí giao dịch dịch vụ chứng khoán niêm yết VIX",
         "url": "https://vixs.vn/ho-tro/bieu-phi-giao-dich",
         "type": "fee",
-        "badge": "Biểu Phí Chuẩn"
+        "badge": "Biểu Phí Chuẩn",
+        "isNew": false
       }
-    ]
+    ],
+    "hasNewUpdates": false,
+    "newUpdatesCount": 0
   },
   {
     "id": "kis",
@@ -1553,15 +1624,19 @@ export const SECURITIES_COMPANIES = [
         "title": "Sản phẩm Margin K ngắn hạn lãi suất ưu đãi",
         "url": "https://kisvn.vn/san-pham-dich-vu/dich-vu-ho-tro-tai-chinh/san-pham-margin-k-11299",
         "type": "margin",
-        "badge": "Margin K T+"
+        "badge": "Margin K T+",
+        "isNew": false
       },
       {
         "title": "Biểu phí dịch vụ và giao dịch chứng khoán KIS Vietnam",
         "url": "https://kisvn.vn/bieu-phi-giao-dich",
         "type": "fee",
-        "badge": "Biểu Phí Chuẩn"
+        "badge": "Biểu Phí Chuẩn",
+        "isNew": false
       }
-    ]
+    ],
+    "hasNewUpdates": false,
+    "newUpdatesCount": 0
   },
   {
     "id": "acbs",
@@ -1644,15 +1719,19 @@ export const SECURITIES_COMPANIES = [
         "title": "Chi phí giao dịch chứng khoán và tối ưu hoá đầu tư",
         "url": "https://acbs.com.vn/blog/chi-phi-giao-dich-chung-khoan",
         "type": "fee",
-        "badge": "Chi Phí GD"
+        "badge": "Chi Phí GD",
+        "isNew": false
       },
       {
         "title": "Biểu phí giao dịch và lãi suất cho vay ký quỹ ACBS",
         "url": "https://acbs.com.vn/bieu-phi-giao-dich-chung-khoan-niem-yet",
         "type": "fee",
-        "badge": "Biểu Phí Chuẩn"
+        "badge": "Biểu Phí Chuẩn",
+        "isNew": false
       }
-    ]
+    ],
+    "hasNewUpdates": false,
+    "newUpdatesCount": 0
   },
   {
     "id": "vcbs",
@@ -1735,21 +1814,26 @@ export const SECURITIES_COMPANIES = [
         "title": "Thông báo chính sách lãi suất mở mới ưu đãi 8.0%",
         "url": "https://www.vcbs.com.vn/chi-tiet-tin-tuc-va-su-kien-vcbs/tb-chinh-sach-lai-suat-mo-moi-20260521",
         "type": "margin",
-        "badge": "Ưu Đãi 8.0%"
+        "badge": "Ưu Đãi 8.0%",
+        "isNew": false
       },
       {
         "title": "Gói Margin T miễn lãi 5 ngày làm việc đầu tiên",
         "url": "https://www.vcbs.com.vn/chi-tiet-khach-hang-ca-nhan/goi-margin-t",
         "type": "margin",
-        "badge": "Miễn Lãi T+5"
+        "badge": "Miễn Lãi T+5",
+        "isNew": true
       },
       {
         "title": "Biểu phí dịch vụ khách hàng cá nhân VCBS",
         "url": "https://www.vcbs.com.vn/bieu-phi",
         "type": "fee",
-        "badge": "Biểu Phí Chuẩn"
+        "badge": "Biểu Phí Chuẩn",
+        "isNew": false
       }
-    ]
+    ],
+    "hasNewUpdates": true,
+    "newUpdatesCount": 1
   },
   {
     "id": "kbsv",
@@ -1832,15 +1916,19 @@ export const SECURITIES_COMPANIES = [
         "title": "KB HiMargin: Tăng hạn mức lên 20 tỷ, ưu đãi lãi suất siêu cạnh tranh 9.9%",
         "url": "https://kbsec.com.vn/vi/kb-himargin-tang-han-muc-len-20-ty-uu-dai-lai-suat-sieu-canh-tranh.htm",
         "type": "margin",
-        "badge": "KB HiMargin"
+        "badge": "KB HiMargin",
+        "isNew": true
       },
       {
         "title": "KB Zero Fee - Miễn phí giao dịch 90 ngày",
         "url": "https://www.kbsec.com.vn/vi/kb-zero-fee-mien-phi-giao-dich-90-ngay.htm",
         "type": "fee",
-        "badge": "KB Zero Fee"
+        "badge": "KB Zero Fee",
+        "isNew": false
       }
-    ]
+    ],
+    "hasNewUpdates": true,
+    "newUpdatesCount": 1
   },
   {
     "id": "cts",
@@ -1923,21 +2011,26 @@ export const SECURITIES_COMPANIES = [
         "title": "Danh mục và chính sách cho vay Margin VietinBank Sec",
         "url": "https://www.vbse.vn/category/danh-muc-margin/",
         "type": "margin",
-        "badge": "Chính Sách Margin"
+        "badge": "Chính Sách Margin",
+        "isNew": false
       },
       {
         "title": "Biểu phí dịch vụ chứng khoán CTS",
         "url": "https://www.vbse.vn/khach-hang-ca-nhan/bieu-phi/",
         "type": "fee",
-        "badge": "Biểu Phí Chuẩn"
+        "badge": "Biểu Phí Chuẩn",
+        "isNew": false
       },
       {
         "title": "Tin tức sự kiện và ưu đãi khách hàng CTS",
         "url": "https://www.vbse.vn/category/tin-tuc/",
         "type": "promo",
-        "badge": "Tin Tức Ưu Đãi"
+        "badge": "Tin Tức Ưu Đãi",
+        "isNew": false
       }
-    ]
+    ],
+    "hasNewUpdates": false,
+    "newUpdatesCount": 0
   },
   {
     "id": "bvsc",
@@ -2020,15 +2113,19 @@ export const SECURITIES_COMPANIES = [
         "title": "BVSC triển khai ưu đãi Margin và mở tài khoản mới đến hết năm 2026",
         "url": "https://www.bvsc.com.vn/danhsachbaiviet/chung-khoan-bao-viet-bvsc-trien-khai-chuong-trinh-uu-dai-margin-va-mo-tai-khoan-moi-den-het-nam-2026/",
         "type": "promo",
-        "badge": "Ưu Đãi Margin"
+        "badge": "Ưu Đãi Margin",
+        "isNew": true
       },
       {
         "title": "Biểu phí dịch vụ giao dịch chứng khoán BVSC",
         "url": "https://www.bvsc.com.vn/danhmuc/dich-vu/khach-hang-ca-nhan/ho-tro/huong-dan-su-dung-dich-vu/bieu-lai-phi-giao-dich/",
         "type": "fee",
-        "badge": "Biểu Phí Chuẩn"
+        "badge": "Biểu Phí Chuẩn",
+        "isNew": false
       }
-    ]
+    ],
+    "hasNewUpdates": true,
+    "newUpdatesCount": 1
   },
   {
     "id": "tps",
@@ -2111,15 +2208,19 @@ export const SECURITIES_COMPANIES = [
         "title": "Gia hạn gói M7 Margin năng động đầu tư bứt phá miễn lãi 7 ngày",
         "url": "https://www.tpbs.com.vn/vi/thong-tin-tps/thong-bao/thong-bao/gia-han-m7-margin-nang-dong-dau-tu-but-pha?postId=2827",
         "type": "margin",
-        "badge": "Miễn Lãi M7"
+        "badge": "Miễn Lãi M7",
+        "isNew": true
       },
       {
         "title": "Biểu phí giao dịch MM+ lo phí - Nhà đầu tư lo phi",
         "url": "https://tpbs.com.vn/thong-tin-tps/thong-bao/thong-bao/mm-lo-phi-nha-dau-tu-lo-phi?postId=2632",
         "type": "fee",
-        "badge": "Ưu Đãi Phí"
+        "badge": "Ưu Đãi Phí",
+        "isNew": false
       }
-    ]
+    ],
+    "hasNewUpdates": true,
+    "newUpdatesCount": 1
   },
   {
     "id": "yuanta",
@@ -2203,21 +2304,26 @@ export const SECURITIES_COMPANIES = [
         "title": "Gói vay Margin Lộc Phát 6.8%/năm đón sóng nâng hạng",
         "url": "https://yuanta.com.vn/tin-tuc/chi-100-suat-margin-6-8-nam-don-song-nang-hang-margin-loc-phat",
         "type": "margin",
-        "badge": "Margin 6.8%"
+        "badge": "Margin 6.8%",
+        "isNew": true
       },
       {
         "title": "Cổng thông tin các gói ưu đãi Margin Yuanta",
         "url": "https://uudai.yuanta.com.vn/margin-uu-dai",
         "type": "promo",
-        "badge": "Kho Ưu Đãi"
+        "badge": "Kho Ưu Đãi",
+        "isNew": false
       },
       {
         "title": "Biểu phí giao dịch chứng khoán Yuanta Việt Nam",
         "url": "https://support.yuanta.com.vn/wp-content/uploads/2025/07/Bieu-phi-dich-vu-01082025.pdf",
         "type": "fee",
-        "badge": "Biểu Phí Chuẩn"
+        "badge": "Biểu Phí Chuẩn",
+        "isNew": false
       }
-    ]
+    ],
+    "hasNewUpdates": true,
+    "newUpdatesCount": 1
   },
   {
     "id": "shinhan",
@@ -2300,15 +2406,19 @@ export const SECURITIES_COMPANIES = [
         "title": "Ưu đãi mở tài khoản trực tuyến & miễn giảm phí giao dịch Shinhan",
         "url": "https://shinhansec.com.vn/vi/ho-tro-khach-hang/chuong-trinh-uu-dai/135/mo-tai-khoan-shinhan-bank-truc-tuyen-ngay-tren-ung-dung-san-xin-ha.html",
         "type": "promo",
-        "badge": "Ưu Đãi eKYC"
+        "badge": "Ưu Đãi eKYC",
+        "isNew": false
       },
       {
         "title": "Dịch vụ tài chính và các gói hỗ trợ giao dịch ký quỹ Shinhan",
         "url": "https://shinhansec.com.vn/vi/san-pham-dich-vu/moi-gioi-chung-khoan/dich-vu-tai-chinh.html",
         "type": "margin",
-        "badge": "Dịch Vụ Ký Quỹ"
+        "badge": "Dịch Vụ Ký Quỹ",
+        "isNew": true
       }
-    ]
+    ],
+    "hasNewUpdates": true,
+    "newUpdatesCount": 1
   },
   {
     "id": "agriseco",
@@ -2391,15 +2501,19 @@ export const SECURITIES_COMPANIES = [
         "title": "Công bố biểu phí dịch vụ giao dịch chứng khoán Agriseco",
         "url": "https://agriseco.com.vn/News/NewsDetail/2057993/vi-VN",
         "type": "fee",
-        "badge": "Biểu Phí Công Bố"
+        "badge": "Biểu Phí Công Bố",
+        "isNew": false
       },
       {
         "title": "Cổng thông tin giao dịch tài chính Chứng khoán Agribank",
         "url": "https://agriseco.com.vn/News/NewsDetail/2057993/vi-VN",
         "type": "promo",
-        "badge": "Website Agriseco"
+        "badge": "Website Agriseco",
+        "isNew": false
       }
-    ]
+    ],
+    "hasNewUpdates": false,
+    "newUpdatesCount": 0
   },
   {
     "id": "hdbs",
@@ -2482,15 +2596,19 @@ export const SECURITIES_COMPANIES = [
         "title": "Sản phẩm Margin HStock và các gói vay tài chính linh hoạt",
         "url": "https://hdbs.vn/dich-vu-co-phieu-hstock/san-pham-margin/",
         "type": "margin",
-        "badge": "Gói Vay HStock"
+        "badge": "Gói Vay HStock",
+        "isNew": false
       },
       {
         "title": "Ưu đãi hấp dẫn gói Margin chỉ 7.5%/năm cho khách hàng mới",
         "url": "https://hdbs.vn/uu-dai-hap-dan-tu-hds-giao-dich-cuc-da-voi-goi-margin-chi-7-5-nam-danh-rieng-cho-khach-hang-moi/",
         "type": "margin",
-        "badge": "Margin 7.5%"
+        "badge": "Margin 7.5%",
+        "isNew": true
       }
-    ]
+    ],
+    "hasNewUpdates": true,
+    "newUpdatesCount": 1
   },
   {
     "id": "dsc",
@@ -2573,15 +2691,19 @@ export const SECURITIES_COMPANIES = [
         "title": "Chính sách giao dịch Ký quỹ Margin & Lời khuyên đầu tư",
         "url": "https://www.dsc.com.vn/kien-thuc/full-margin-la-gi-loi-khuyen-cho-nha-dau-tu-moi",
         "type": "margin",
-        "badge": "Chính Sách Margin"
+        "badge": "Chính Sách Margin",
+        "isNew": false
       },
       {
         "title": "Biểu phí giao dịch và dịch vụ tài chính DSC",
         "url": "https://dsc.com.vn/bieu-phi",
         "type": "fee",
-        "badge": "Biểu Phí Chuẩn"
+        "badge": "Biểu Phí Chuẩn",
+        "isNew": false
       }
-    ]
+    ],
+    "hasNewUpdates": false,
+    "newUpdatesCount": 0
   },
   {
     "id": "phs",
@@ -2664,15 +2786,19 @@ export const SECURITIES_COMPANIES = [
         "title": "Ra mắt gói ưu đãi PHS Smart Margin lãi suất chỉ 9.5%/năm",
         "url": "https://www.phs.vn/tin-tuc/ra-mat-goi-uu-dai-phs-smart-margin-lai-suat-chi-9-5-nam/6402662",
         "type": "margin",
-        "badge": "PHS Smart Margin"
+        "badge": "PHS Smart Margin",
+        "isNew": false
       },
       {
         "title": "Biểu phí giao dịch và lãi suất ký quỹ chứng khoán cơ sở PHS",
         "url": "https://www.phs.vn/san-pham-dich-vu/bieu-phi-giao-dich-chung-khoan-co-so-26",
         "type": "fee",
-        "badge": "Biểu Phí PHS"
+        "badge": "Biểu Phí PHS",
+        "isNew": false
       }
-    ]
+    ],
+    "hasNewUpdates": false,
+    "newUpdatesCount": 0
   },
   {
     "id": "tvsi",
@@ -2755,15 +2881,19 @@ export const SECURITIES_COMPANIES = [
         "title": "Chương trình ưu đãi tăng sức mua Margin TVSI",
         "url": "https://www.tvsi.com.vn/endow/tvsi-margin-increase.html",
         "type": "margin",
-        "badge": "Ưu Đãi Margin"
+        "badge": "Ưu Đãi Margin",
+        "isNew": false
       },
       {
         "title": "Biểu phí dịch vụ chứng khoán Tân Việt TVSI",
         "url": "https://www.tvsi.com.vn/san-pham-dich-vu/dich-vu-chung-khoan/bieu-phi-dich-vu",
         "type": "fee",
-        "badge": "Biểu Phí Chuẩn"
+        "badge": "Biểu Phí Chuẩn",
+        "isNew": false
       }
-    ]
+    ],
+    "hasNewUpdates": false,
+    "newUpdatesCount": 0
   },
   {
     "id": "evs",
@@ -2846,15 +2976,19 @@ export const SECURITIES_COMPANIES = [
         "title": "Lãi vay linh hoạt, lợi nhuận tối đa cùng EVS Margin T+",
         "url": "https://www.eves.com.vn/evs-special/tin-evs/lai-vay-linh-hoat-loi-nhuan-toi-da-cung-evs-margin-tplus/",
         "type": "margin",
-        "badge": "EVS Margin T+"
+        "badge": "EVS Margin T+",
+        "isNew": false
       },
       {
         "title": "Biểu phí dịch vụ giao dịch chứng khoán Everest EVS",
         "url": "https://www.eves.com.vn/san-pham-dich-vu/bieu-phi/bieu-phi-dich-vu/",
         "type": "fee",
-        "badge": "Biểu Phí Chuẩn"
+        "badge": "Biểu Phí Chuẩn",
+        "isNew": false
       }
-    ]
+    ],
+    "hasNewUpdates": false,
+    "newUpdatesCount": 0
   }
 ];
 
