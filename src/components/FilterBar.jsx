@@ -1,6 +1,6 @@
 import React from 'react';
 import { FILTER_CATEGORIES } from '../data/securitiesData';
-import { LayoutGrid, Table, ArrowRightLeft, X, Sparkles, TrendingDown, Landmark, Gift, Zap } from 'lucide-react';
+import { LayoutGrid, Table, ArrowRightLeft, X, Sparkles, TrendingDown, Landmark, Gift, Zap, FileSpreadsheet } from 'lucide-react';
 
 const iconMap = {
   Sparkles: Sparkles,
@@ -24,9 +24,9 @@ export default function FilterBar({
 }) {
   return (
     <div className="space-y-2.5 sm:space-y-3">
-      {/* Primary Mode Switcher: Existing Client Standard Rates vs Short-term Margin vs Welcome Promo */}
+      {/* Primary Mode Switcher: Existing Client Standard Rates vs Short-term Margin vs Welcome Promo vs Promotions Summary */}
       <div className="flex flex-col xl:flex-row items-stretch xl:items-center justify-between gap-2 bg-slate-100 dark:bg-slate-800/90 p-1.5 rounded-2xl border border-slate-200/80 dark:border-slate-700">
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-1 sm:gap-1.5 flex-1">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-1 sm:gap-1.5 flex-1">
           {/* Tab 1: Existing Clients */}
           <button
             type="button"
@@ -53,7 +53,7 @@ export default function FilterBar({
             }`}
           >
             <Zap className={`h-4 w-4 shrink-0 ${comparisonTab === 'short_term_margin' ? 'text-amber-300 fill-amber-300' : 'text-amber-500'}`} />
-            <span className="hidden sm:inline">Margin Ngắn Ngày (T+, Quick, Deal)</span>
+            <span className="hidden sm:inline">Margin Ngắn Ngày (T+, Quick)</span>
             <span className="sm:hidden text-xs">Margin T+ / Quick</span>
             <span className="rounded-full bg-amber-400 text-amber-950 text-[9px] sm:text-[10px] font-black px-1.5 py-0.2 shrink-0">
               ⚡ T+
@@ -77,6 +77,24 @@ export default function FilterBar({
               HOT
             </span>
           </button>
+
+          {/* Tab 4: Promotions & Offers Summary Table (with CSV Export) */}
+          <button
+            type="button"
+            onClick={() => setComparisonTab && setComparisonTab('promotions_summary')}
+            className={`inline-flex items-center justify-center gap-1.5 sm:gap-2 rounded-xl px-2.5 sm:px-3 py-2 text-xs sm:text-sm font-extrabold transition-all text-center ${
+              comparisonTab === 'promotions_summary'
+                ? 'bg-gradient-to-r from-emerald-600 to-teal-600 text-white shadow-sm shadow-emerald-500/25'
+                : 'text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white'
+            }`}
+          >
+            <FileSpreadsheet className={`h-4 w-4 shrink-0 ${comparisonTab === 'promotions_summary' ? 'text-emerald-200' : 'text-emerald-600 dark:text-emerald-400'}`} />
+            <span className="hidden sm:inline">Tổng Hợp Ưu Đãi</span>
+            <span className="sm:hidden text-xs">Tổng Hợp Ưu Đãi</span>
+            <span className="rounded-full bg-emerald-400 text-emerald-950 text-[9px] sm:text-[10px] font-black px-1.5 py-0.2 shrink-0">
+              ⚡ CSV
+            </span>
+          </button>
         </div>
 
         <div className="text-[10px] sm:text-[11px] text-slate-500 dark:text-slate-300 px-2 text-center xl:text-right font-medium shrink-0">
@@ -84,8 +102,10 @@ export default function FilterBar({
             <span>Biểu phí & margin chuẩn <strong className="text-slate-700 dark:text-white font-bold">dài hạn 90 ngày</strong></span>
           ) : comparisonTab === 'short_term_margin' ? (
             <span>Các gói lướt sóng <strong className="text-blue-600 dark:text-blue-400 font-bold">T+3, T+5, T+10 chỉ từ 5.99%</strong></span>
-          ) : (
+          ) : comparisonTab === 'welcome_promo' ? (
             <span>Tổng hợp các gói <strong className="text-slate-700 dark:text-white font-bold">miễn phí & quà tặng eKYC</strong></span>
+          ) : (
+            <span>Bảng tóm tắt <strong className="text-emerald-600 dark:text-emerald-400 font-bold">toàn bộ khuyến mãi & xuất CSV</strong></span>
           )}
         </div>
       </div>

@@ -6,6 +6,7 @@ import SecuritiesTable from './components/SecuritiesTable';
 import SecuritiesCards from './components/SecuritiesCards';
 import WelcomePromoComparator from './components/WelcomePromoComparator';
 import ShortTermMarginComparator from './components/ShortTermMarginComparator';
+import PromotionsSummaryTable from './components/PromotionsSummaryTable';
 import CostCalculator from './components/CostCalculator';
 import HeadToHeadModal from './components/HeadToHeadModal';
 import CompanyDetailModal from './components/CompanyDetailModal';
@@ -280,6 +281,8 @@ export default function App() {
                   ? 'So Sánh Các Gói Margin Ngắn Ngày (Quick, T+, Margin Deal)'
                   : comparisonTab === 'welcome_promo'
                   ? 'So Sánh Ưu Đãi Mở Tài Khoản Mới (eKYC Deals)'
+                  : comparisonTab === 'promotions_summary'
+                  ? 'Bảng Tóm Tắt Toàn Bộ Chương Trình Khuyến Mãi & Ưu Đãi (Xuất CSV)'
                   : 'Biểu Phí & Lãi Margin Khách Hàng Hiện Hữu (Chuẩn)'}
               </h2>
             </div>
@@ -302,7 +305,7 @@ export default function App() {
             filteredCount={filteredCompanies.length}
           />
 
-          {/* Table / Cards Display or Dedicated Welcome Promo / Short-Term Margin Comparator */}
+          {/* Table / Cards Display or Dedicated Welcome Promo / Short-Term Margin / Promotions Summary */}
           {comparisonTab === 'welcome_promo' ? (
             <WelcomePromoComparator
               companies={companiesData}
@@ -310,6 +313,11 @@ export default function App() {
             />
           ) : comparisonTab === 'short_term_margin' ? (
             <ShortTermMarginComparator
+              companies={companiesData}
+              onSelectDetail={(company) => setActiveCompanyDetail(company)}
+            />
+          ) : comparisonTab === 'promotions_summary' ? (
+            <PromotionsSummaryTable
               companies={companiesData}
               onSelectDetail={(company) => setActiveCompanyDetail(company)}
             />
