@@ -1,0 +1,2850 @@
+{
+  "metadata": {
+    "title": "Báo Cáo Kiểm Định Toàn Diện 100% Liên Kết Hệ Thống (Link Health Audit)",
+    "version": "1.0.0",
+    "timestamp": "2026-10-23T03:26:30.082Z",
+    "summary": {
+      "totalUrls": 155,
+      "http200Count": 140,
+      "waf403Count": 14,
+      "http404Count": 0,
+      "timeoutCount": 1,
+      "otherErrorCount": 0,
+      "validAvailabilityRate": "99%",
+      "averageLatencyMs": 897
+    }
+  },
+  "deadLinks404": [],
+  "results": [
+    {
+      "url": "https://www.bsc.com.vn",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 1126,
+      "sources": [
+        "securitiesData.website",
+        "brokersCrawlerList.fallbackUrl"
+      ],
+      "brokers": [
+        "BSC (bsc)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.bsc.com.vn/phi-giao-dich-qua-san/",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 1116,
+      "sources": [
+        "securitiesData.sourceUrl (Biểu phí chuẩn)",
+        "brokersCrawlerList.url",
+        "brokersCrawlerList.officialSource",
+        "brokersCrawlerList.subTab (Biểu phí giao dịch chính thức)",
+        "scanReport.url",
+        "scanReport.officialSource",
+        "scanReport.subTabsResults (Biểu phí giao dịch chính thức)",
+        "scanReport.activePromos (Biểu phí giao dịch chính thức)"
+      ],
+      "brokers": [
+        "BSC (bsc)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://dangky.bsc.com.vn/moi-gioi?online=false&cif=4768",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 392,
+      "sources": [
+        "securitiesData.accountOpeningUrl (Mở TK eKYC)"
+      ],
+      "brokers": [
+        "BSC (bsc)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.bsc.com.vn/tin-tuc/tin-chi-tiet/1228024-giam-lai-suat-cho-vay-san-pham-margin-mr10-lai-suat-uu-dai-tu-0/",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 1229,
+      "sources": [
+        "securitiesData.margin.sourceUrl (Lãi suất margin)",
+        "securitiesData.promoArticles[1] (Giảm lãi suất cho vay sản phẩm Margin MR10 ưu đãi từ 0%)",
+        "brokersCrawlerList.subTab (Chính sách & Gói vay Margin)",
+        "scanReport.subTabsResults (Chính sách & Gói vay Margin)"
+      ],
+      "brokers": [
+        "BSC (bsc)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.bsc.com.vn/tin-tuc/tin-chi-tiet/84515-don-nha-dau-tu-giao-dich-tro-lai-bsc-mien-phi-giao-dich-voi-1-ty-gtgd/",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 1145,
+      "sources": [
+        "securitiesData.welcomePromo.sourceUrl (Ưu đãi mở mới)",
+        "securitiesData.promoArticles[0] (Chương trình Miễn phí giao dịch với 1 tỷ GTGD mở mới & Inactive)",
+        "brokersCrawlerList.subTab (Chính sách ưu đãi mở tài khoản eKYC)",
+        "scanReport.subTabsResults (Chính sách ưu đãi mở tài khoản eKYC)",
+        "scanReport.activePromos (Chính sách ưu đãi mở tài khoản eKYC)"
+      ],
+      "brokers": [
+        "BSC (bsc)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.bsc.com.vn/tin-tuc/tin-chi-tiet/1153587-danh-muc-chuan-uu-dai-chat/",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 1213,
+      "sources": [
+        "securitiesData.promoArticles[2] (Danh mục cổ phiếu chuẩn BSC10 – Ưu đãi phí & lãi vay chất)",
+        "brokersCrawlerList.subTab (Danh mục cổ phiếu chuẩn BSC10 – Ưu đãi phí & lãi vay chất)",
+        "scanReport.subTabsResults (Danh mục cổ phiếu chuẩn BSC10 – Ưu đãi phí & lãi vay chất)",
+        "scanReport.activePromos (Danh mục cổ phiếu chuẩn BSC10 – Ưu đãi phí & lãi vay chất)"
+      ],
+      "brokers": [
+        "BSC (bsc)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.tcbs.com.vn",
+      "status": 403,
+      "statusText": "Forbidden",
+      "isWorking": true,
+      "category": "WAF_PROTECTED_403",
+      "latencyMs": 213,
+      "sources": [
+        "securitiesData.website",
+        "securitiesData.sourceUrl (Biểu phí chuẩn)",
+        "brokersCrawlerList.fallbackUrl",
+        "brokersCrawlerList.officialSource",
+        "brokersCrawlerList.subTab (Biểu phí giao dịch chính thức)",
+        "scanReport.officialSource",
+        "scanReport.subTabsResults (Biểu phí giao dịch chính thức)"
+      ],
+      "brokers": [
+        "TCBS (tcbs)"
+      ],
+      "note": "Bảo vệ bởi Cloudflare WAF Bot-Protection. Trang tồn tại hợp lệ trên máy chủ CTCK."
+    },
+    {
+      "url": "https://tcinvest.tcbs.com.vn/",
+      "status": 403,
+      "statusText": "Forbidden",
+      "isWorking": true,
+      "category": "WAF_PROTECTED_403",
+      "latencyMs": 239,
+      "sources": [
+        "securitiesData.accountOpeningUrl (Mở TK eKYC)"
+      ],
+      "brokers": [
+        "TCBS (tcbs)"
+      ],
+      "note": "Bảo vệ bởi Cloudflare WAF Bot-Protection. Trang tồn tại hợp lệ trên máy chủ CTCK."
+    },
+    {
+      "url": "https://www.tcbs.com.vn/ca-nhan/uu-dai/gom-co-ve-nha/",
+      "status": 403,
+      "statusText": "Forbidden",
+      "isWorking": true,
+      "category": "WAF_PROTECTED_403",
+      "latencyMs": 240,
+      "sources": [
+        "securitiesData.margin.sourceUrl (Lãi suất margin)",
+        "securitiesData.promoArticles[0] (Chương trình Ưu đãi Gom Cổ Về Nhà lãi suất Margin từ 7.89%/năm)",
+        "brokersCrawlerList.subTab (Chính sách & Gói vay Margin)",
+        "scanReport.subTabsResults (Chính sách & Gói vay Margin)",
+        "scanReport.activePromos (Chính sách & Gói vay Margin)"
+      ],
+      "brokers": [
+        "TCBS (tcbs)"
+      ],
+      "note": "Bảo vệ bởi Cloudflare WAF Bot-Protection. Trang tồn tại hợp lệ trên máy chủ CTCK."
+    },
+    {
+      "url": "https://www.tcbs.com.vn/ca-nhan/uu-dai/",
+      "status": 403,
+      "statusText": "Forbidden",
+      "isWorking": true,
+      "category": "WAF_PROTECTED_403",
+      "latencyMs": 238,
+      "sources": [
+        "securitiesData.welcomePromo.sourceUrl (Ưu đãi mở mới)",
+        "securitiesData.promoArticles[1] (Tổng hợp kho chương trình ưu đãi và khuyến mại TCBS)",
+        "brokersCrawlerList.subTab (Chính sách ưu đãi mở tài khoản eKYC)",
+        "scanReport.subTabsResults (Chính sách ưu đãi mở tài khoản eKYC)",
+        "scanReport.activePromos (Chính sách ưu đãi mở tài khoản eKYC)"
+      ],
+      "brokers": [
+        "TCBS (tcbs)"
+      ],
+      "note": "Bảo vệ bởi Cloudflare WAF Bot-Protection. Trang tồn tại hợp lệ trên máy chủ CTCK."
+    },
+    {
+      "url": "https://help.tcbs.com.vn/",
+      "status": 403,
+      "statusText": "Forbidden",
+      "isWorking": true,
+      "category": "WAF_PROTECTED_403",
+      "latencyMs": 240,
+      "sources": [
+        "securitiesData.promoArticles[2] (Chính sách Zero-Fee miễn 100% phí giao dịch cổ phiếu trọn đời)",
+        "brokersCrawlerList.subTab (Chính sách Zero-Fee miễn 100% phí giao dịch cổ phiếu trọn đời)",
+        "scanReport.subTabsResults (Chính sách Zero-Fee miễn 100% phí giao dịch cổ phiếu trọn đời)",
+        "scanReport.activePromos (Chính sách Zero-Fee miễn 100% phí giao dịch cổ phiếu trọn đời)"
+      ],
+      "brokers": [
+        "TCBS (tcbs)"
+      ],
+      "note": "Bảo vệ bởi Cloudflare WAF Bot-Protection. Trang tồn tại hợp lệ trên máy chủ CTCK."
+    },
+    {
+      "url": "https://vps.com.vn",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 335,
+      "sources": [
+        "securitiesData.website",
+        "brokersCrawlerList.fallbackUrl"
+      ],
+      "brokers": [
+        "VPS (vps)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://vps.com.vn/ca-nhan/ho-tro?view=bieu-phi-bieu-mau-va-chinh-sach&nav=bieu-phi--chinh-sach",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 88,
+      "sources": [
+        "securitiesData.sourceUrl (Biểu phí chuẩn)",
+        "securitiesData.welcomePromo.sourceUrl (Ưu đãi mở mới)",
+        "securitiesData.promoArticles[1] (Chính sách biểu phí dịch vụ tài chính & giao dịch VPS)",
+        "brokersCrawlerList.url",
+        "brokersCrawlerList.officialSource",
+        "brokersCrawlerList.subTab (Biểu phí giao dịch chính thức)",
+        "scanReport.url",
+        "scanReport.officialSource",
+        "scanReport.subTabsResults (Biểu phí giao dịch chính thức)",
+        "scanReport.activePromos (Biểu phí giao dịch chính thức)"
+      ],
+      "brokers": [
+        "VPS (vps)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://openaccount.vps.com.vn/",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 70,
+      "sources": [
+        "securitiesData.accountOpeningUrl (Mở TK eKYC)"
+      ],
+      "brokers": [
+        "VPS (vps)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://vps.com.vn/bai-viet/vps-ra-mat-goi-margin-uu-dai-phat-tai",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 188,
+      "sources": [
+        "securitiesData.margin.sourceUrl (Lãi suất margin)",
+        "securitiesData.promoArticles[0] (VPS ra mắt gói Margin Ưu Đãi Phát Tài với lãi suất từ 8.8%/năm)",
+        "brokersCrawlerList.subTab (Chính sách & Gói vay Margin)",
+        "scanReport.subTabsResults (Chính sách & Gói vay Margin)",
+        "scanReport.activePromos (Chính sách & Gói vay Margin)"
+      ],
+      "brokers": [
+        "VPS (vps)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.ssi.com.vn",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 880,
+      "sources": [
+        "securitiesData.website"
+      ],
+      "brokers": [
+        "SSI (ssi)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.ssi.com.vn/khach-hang-ca-nhan/bieu-phi/bieu-gia-dich-vu-giao-dich-chung-khoan",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 1095,
+      "sources": [
+        "securitiesData.sourceUrl (Biểu phí chuẩn)",
+        "securitiesData.promoArticles[2] (Biểu phí giao dịch và dịch vụ khách hàng cá nhân SSI)",
+        "brokersCrawlerList.url",
+        "brokersCrawlerList.officialSource",
+        "brokersCrawlerList.subTab (Biểu phí giao dịch chính thức)",
+        "scanReport.url",
+        "scanReport.officialSource",
+        "scanReport.subTabsResults (Biểu phí giao dịch chính thức)",
+        "scanReport.activePromos (Biểu phí giao dịch chính thức)"
+      ],
+      "brokers": [
+        "SSI (ssi)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.ssi.com.vn/khach-hang-ca-nhan/gioi-thieu-mo-tai-khoan",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 1017,
+      "sources": [
+        "securitiesData.accountOpeningUrl (Mở TK eKYC)"
+      ],
+      "brokers": [
+        "SSI (ssi)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.ssi.com.vn/tin-tuc/tin-tuc-chung/dieu-chinh-goi-nhap-cuoc-voi-lai-suat-799-danh-cho-khach-hang-moi-va-kich-hoat-tro-lai",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 962,
+      "sources": [
+        "securitiesData.margin.sourceUrl (Lãi suất margin)",
+        "securitiesData.promoArticles[1] (Gói Nhập Cuộc với lãi suất 7.99% cho khách hàng mới và kích hoạt trở lại)",
+        "brokersCrawlerList.subTab (Chính sách & Gói vay Margin)",
+        "scanReport.subTabsResults (Chính sách & Gói vay Margin)",
+        "scanReport.activePromos (Chính sách & Gói vay Margin)"
+      ],
+      "brokers": [
+        "SSI (ssi)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.ssi.com.vn/tin-tuc/tin-tuc-su-kien-ssi/ra-mat-chuong-trinh-khuyen-mai-ssi-margin-0-0",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 704,
+      "sources": [
+        "securitiesData.welcomePromo.sourceUrl (Ưu đãi mở mới)",
+        "securitiesData.promoArticles[0] (Ra mắt chương trình khuyến mại SSI Margin 0.0)",
+        "brokersCrawlerList.subTab (Chính sách ưu đãi mở tài khoản eKYC)",
+        "scanReport.subTabsResults (Chính sách ưu đãi mở tài khoản eKYC)",
+        "scanReport.activePromos (Chính sách ưu đãi mở tài khoản eKYC)"
+      ],
+      "brokers": [
+        "SSI (ssi)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.vndirect.com.vn",
+      "status": 403,
+      "statusText": "Forbidden",
+      "isWorking": true,
+      "category": "WAF_PROTECTED_403",
+      "latencyMs": 181,
+      "sources": [
+        "securitiesData.website"
+      ],
+      "brokers": [
+        "VNDIRECT (vndirect)"
+      ],
+      "note": "Bảo vệ bởi Cloudflare WAF Bot-Protection. Trang tồn tại hợp lệ trên máy chủ CTCK."
+    },
+    {
+      "url": "https://banggia.vndirect.com.vn",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 538,
+      "sources": [
+        "securitiesData.sourceUrl (Biểu phí chuẩn)",
+        "brokersCrawlerList.url",
+        "brokersCrawlerList.officialSource",
+        "brokersCrawlerList.subTab (Biểu phí giao dịch chính thức)",
+        "scanReport.url",
+        "scanReport.officialSource",
+        "scanReport.subTabsResults (Biểu phí giao dịch chính thức)",
+        "scanReport.activePromos (Biểu phí giao dịch chính thức)"
+      ],
+      "brokers": [
+        "VNDIRECT (vndirect)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://accounts.vndirect.com.vn/",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 278,
+      "sources": [
+        "securitiesData.accountOpeningUrl (Mở TK eKYC)"
+      ],
+      "brokers": [
+        "VNDIRECT (vndirect)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.vndirect.com.vn/dich-vu-chung-khoan/san-pham-dich-vu/margin/t10/",
+      "status": 403,
+      "statusText": "Forbidden",
+      "isWorking": true,
+      "category": "WAF_PROTECTED_403",
+      "latencyMs": 195,
+      "sources": [
+        "securitiesData.margin.sourceUrl (Lãi suất margin)",
+        "securitiesData.promoArticles[1] (Gói sản phẩm D-Margin T10 miễn lãi 10 ngày đầu giải ngân)",
+        "brokersCrawlerList.subTab (Chính sách & Gói vay Margin)",
+        "scanReport.subTabsResults (Chính sách & Gói vay Margin)"
+      ],
+      "brokers": [
+        "VNDIRECT (vndirect)"
+      ],
+      "note": "Bảo vệ bởi Cloudflare WAF Bot-Protection. Trang tồn tại hợp lệ trên máy chủ CTCK."
+    },
+    {
+      "url": "https://www.vndirect.com.vn/bieu-phi-lai-margin/",
+      "status": 403,
+      "statusText": "Forbidden",
+      "isWorking": true,
+      "category": "WAF_PROTECTED_403",
+      "latencyMs": 84,
+      "sources": [
+        "securitiesData.welcomePromo.sourceUrl (Ưu đãi mở mới)",
+        "securitiesData.promoArticles[0] (Công bố biểu phí dịch vụ giao dịch và khung lãi suất Margin VNDIRECT)",
+        "brokersCrawlerList.subTab (Chính sách ưu đãi mở tài khoản eKYC)",
+        "scanReport.subTabsResults (Chính sách ưu đãi mở tài khoản eKYC)"
+      ],
+      "brokers": [
+        "VNDIRECT (vndirect)"
+      ],
+      "note": "Bảo vệ bởi Cloudflare WAF Bot-Protection. Trang tồn tại hợp lệ trên máy chủ CTCK."
+    },
+    {
+      "url": "https://masvn.com",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 341,
+      "sources": [
+        "securitiesData.website",
+        "brokersCrawlerList.fallbackUrl"
+      ],
+      "brokers": [
+        "Mirae Asset (mirae-asset)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://masvn.com/bieu-phi",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 436,
+      "sources": [
+        "securitiesData.sourceUrl (Biểu phí chuẩn)",
+        "brokersCrawlerList.url",
+        "brokersCrawlerList.officialSource",
+        "brokersCrawlerList.subTab (Biểu phí giao dịch chính thức)",
+        "scanReport.url",
+        "scanReport.officialSource",
+        "scanReport.subTabsResults (Biểu phí giao dịch chính thức)",
+        "scanReport.activePromos (Biểu phí giao dịch chính thức)"
+      ],
+      "brokers": [
+        "Mirae Asset (mirae-asset)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://masvn.com/register",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 468,
+      "sources": [
+        "securitiesData.accountOpeningUrl (Mở TK eKYC)"
+      ],
+      "brokers": [
+        "Mirae Asset (mirae-asset)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://masvn.com/article/margin-888-phat-manh-suc-mua-bat-dua-but-toc-1086580",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 4968,
+      "sources": [
+        "securitiesData.margin.sourceUrl (Lãi suất margin)",
+        "securitiesData.promoArticles[0] (Chương trình Margin 8.88% – Phát mạnh sức mua, bứt phá vị thế)",
+        "brokersCrawlerList.subTab (Chính sách & Gói vay Margin)",
+        "scanReport.subTabsResults (Chính sách & Gói vay Margin)",
+        "scanReport.activePromos (Chính sách & Gói vay Margin)"
+      ],
+      "brokers": [
+        "Mirae Asset (mirae-asset)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://masvn.com/article/dau-tu-thoa-thich-0-phi-giao-dich-1085894",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 2651,
+      "sources": [
+        "securitiesData.welcomePromo.sourceUrl (Ưu đãi mở mới)",
+        "securitiesData.promoArticles[1] (Đầu tư thỏa thích 0% phí giao dịch cổ phiếu cơ sở)",
+        "brokersCrawlerList.subTab (Chính sách ưu đãi mở tài khoản eKYC)",
+        "scanReport.subTabsResults (Chính sách ưu đãi mở tài khoản eKYC)",
+        "scanReport.activePromos (Chính sách ưu đãi mở tài khoản eKYC)"
+      ],
+      "brokers": [
+        "Mirae Asset (mirae-asset)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://masvn.com/article/phai-sinh-khong-phi-tuong-lai-nhu-y-1086977",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 2701,
+      "sources": [
+        "securitiesData.promoArticles[2] (Phái sinh không phí – Tương lai như ý cùng Mirae Asset)",
+        "brokersCrawlerList.subTab (Phái sinh không phí – Tương lai như ý cùng Mirae Asset)",
+        "scanReport.subTabsResults (Phái sinh không phí – Tương lai như ý cùng Mirae Asset)",
+        "scanReport.activePromos (Phái sinh không phí – Tương lai như ý cùng Mirae Asset)"
+      ],
+      "brokers": [
+        "Mirae Asset (mirae-asset)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.dnse.com.vn",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 94,
+      "sources": [
+        "securitiesData.website",
+        "brokersCrawlerList.fallbackUrl"
+      ],
+      "brokers": [
+        "DNSE (dnse)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.dnse.com.vn/bieu-phi",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 571,
+      "sources": [
+        "securitiesData.sourceUrl (Biểu phí chuẩn)",
+        "brokersCrawlerList.url",
+        "brokersCrawlerList.officialSource",
+        "brokersCrawlerList.subTab (Biểu phí giao dịch chính thức)",
+        "scanReport.url",
+        "scanReport.officialSource",
+        "scanReport.subTabsResults (Biểu phí giao dịch chính thức)",
+        "scanReport.activePromos (Biểu phí giao dịch chính thức)"
+      ],
+      "brokers": [
+        "DNSE (dnse)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.dnse.com.vn/mo-tai-khoan",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 94,
+      "sources": [
+        "securitiesData.accountOpeningUrl (Mở TK eKYC)"
+      ],
+      "brokers": [
+        "DNSE (dnse)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://hdsd.dnse.com.vn/san-pham-dich-vu/sp-giao-dich-ky-quy-theo-deal/sp-giao-dich-ky-quy-5.99-plus",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 558,
+      "sources": [
+        "securitiesData.margin.sourceUrl (Lãi suất margin)",
+        "securitiesData.promoArticles[1] (Sản phẩm giao dịch ký quỹ Margin 5.99 Plus theo deal)",
+        "brokersCrawlerList.subTab (Chính sách & Gói vay Margin)",
+        "scanReport.subTabsResults (Chính sách & Gói vay Margin)",
+        "scanReport.activePromos (Chính sách & Gói vay Margin)"
+      ],
+      "brokers": [
+        "DNSE (dnse)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://hdsd.dnse.com.vn/die-u-khoa-n-di-ch-vu-dnse/dieu-khoan-chuong-trinh-danh-cho-khach-hang-moi/chuong-trinh-mien-lai-margin-30-ngay",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 3302,
+      "sources": [
+        "securitiesData.welcomePromo.sourceUrl (Ưu đãi mở mới)",
+        "securitiesData.promoArticles[0] (Chương trình Miễn lãi Margin 30 ngày cho khách hàng mở tài khoản mới)",
+        "brokersCrawlerList.subTab (Chính sách ưu đãi mở tài khoản eKYC)",
+        "scanReport.subTabsResults (Chính sách ưu đãi mở tài khoản eKYC)",
+        "scanReport.activePromos (Chính sách ưu đãi mở tài khoản eKYC)"
+      ],
+      "brokers": [
+        "DNSE (dnse)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.dnse.com.vn/tin-tuc/thong-bao-dieu-chinh-chinh-sach-san-pham-giao-dich-ky-quy-9-99",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 20,
+      "sources": [
+        "securitiesData.promoArticles[2] (Thông báo điều chỉnh chính sách sản phẩm Giao dịch ký quỹ 9.99%)",
+        "brokersCrawlerList.subTab (Thông báo điều chỉnh chính sách sản phẩm Giao dịch ký quỹ 9.99%)",
+        "scanReport.subTabsResults (Thông báo điều chỉnh chính sách sản phẩm Giao dịch ký quỹ 9.99%)",
+        "scanReport.activePromos (Thông báo điều chỉnh chính sách sản phẩm Giao dịch ký quỹ 9.99%)"
+      ],
+      "brokers": [
+        "DNSE (dnse)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.vpbanks.com.vn",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 371,
+      "sources": [
+        "securitiesData.website"
+      ],
+      "brokers": [
+        "VPBankS (vpbanks)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.vpbanks.com.vn/bieu-phi",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 481,
+      "sources": [
+        "securitiesData.sourceUrl (Biểu phí chuẩn)",
+        "securitiesData.promoArticles[2] (Biểu phí dịch vụ chứng khoán & giao dịch trực tuyến)",
+        "brokersCrawlerList.url",
+        "brokersCrawlerList.officialSource",
+        "brokersCrawlerList.subTab (Biểu phí giao dịch chính thức)",
+        "scanReport.url",
+        "scanReport.officialSource",
+        "scanReport.subTabsResults (Biểu phí giao dịch chính thức)",
+        "scanReport.activePromos (Biểu phí giao dịch chính thức)"
+      ],
+      "brokers": [
+        "VPBankS (vpbanks)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://hdsd.vpbanks.com.vn/mo-tai-khoan/mo-tai-khoan-ekyc",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 200,
+      "sources": [
+        "securitiesData.accountOpeningUrl (Mở TK eKYC)"
+      ],
+      "brokers": [
+        "VPBankS (vpbanks)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.vpbanks.com.vn/dich-vu-tai-chinh",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 374,
+      "sources": [
+        "securitiesData.margin.sourceUrl (Lãi suất margin)",
+        "securitiesData.promoArticles[0] (Dịch vụ tài chính và các gói hỗ trợ Margin VPBankS)",
+        "brokersCrawlerList.subTab (Chính sách & Gói vay Margin)",
+        "scanReport.subTabsResults (Chính sách & Gói vay Margin)",
+        "scanReport.activePromos (Chính sách & Gói vay Margin)"
+      ],
+      "brokers": [
+        "VPBankS (vpbanks)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.vpbanks.com.vn/khuyen-mai",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 380,
+      "sources": [
+        "securitiesData.welcomePromo.sourceUrl (Ưu đãi mở mới)",
+        "securitiesData.promoArticles[1] (Kho chương trình khuyến mại & ưu đãi mở mới tài khoản)",
+        "brokersCrawlerList.subTab (Chính sách ưu đãi mở tài khoản eKYC)",
+        "scanReport.subTabsResults (Chính sách ưu đãi mở tài khoản eKYC)",
+        "scanReport.activePromos (Chính sách ưu đãi mở tài khoản eKYC)"
+      ],
+      "brokers": [
+        "VPBankS (vpbanks)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.fpts.com.vn",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 374,
+      "sources": [
+        "securitiesData.website",
+        "brokersCrawlerList.fallbackUrl"
+      ],
+      "brokers": [
+        "FPTS (fpts)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://new.eztrade.fpts.com.vn/customers/promotion/linh-hoat-lua-chon-goi-phi-giao-dich-tai-fpts",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 94,
+      "sources": [
+        "securitiesData.sourceUrl (Biểu phí chuẩn)",
+        "securitiesData.welcomePromo.sourceUrl (Ưu đãi mở mới)",
+        "securitiesData.promoArticles[0] (Linh hoạt lựa chọn gói phí giao dịch tại FPTS)",
+        "brokersCrawlerList.url",
+        "brokersCrawlerList.officialSource",
+        "brokersCrawlerList.subTab (Biểu phí giao dịch chính thức)",
+        "scanReport.url",
+        "scanReport.officialSource",
+        "scanReport.subTabsResults (Biểu phí giao dịch chính thức)",
+        "scanReport.activePromos (Biểu phí giao dịch chính thức)"
+      ],
+      "brokers": [
+        "FPTS (fpts)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://ezopen.fpts.com.vn/",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 189,
+      "sources": [
+        "securitiesData.accountOpeningUrl (Mở TK eKYC)"
+      ],
+      "brokers": [
+        "FPTS (fpts)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://accounts.fpts.com.vn/Help/EzMarginPro?s=37",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 120,
+      "sources": [
+        "securitiesData.margin.sourceUrl (Lãi suất margin)",
+        "securitiesData.promoArticles[1] (Sản phẩm giao dịch ký quỹ chuyên biệt EzMargin Pro)",
+        "brokersCrawlerList.subTab (Chính sách & Gói vay Margin)",
+        "scanReport.subTabsResults (Chính sách & Gói vay Margin)",
+        "scanReport.activePromos (Chính sách & Gói vay Margin)"
+      ],
+      "brokers": [
+        "FPTS (fpts)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://eztrade.fpts.com.vn/Shovel",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 172,
+      "sources": [
+        "securitiesData.promoArticles[2] (Biểu phí dịch vụ khách hàng FPTS)",
+        "brokersCrawlerList.subTab (Biểu phí dịch vụ khách hàng FPTS)",
+        "scanReport.subTabsResults (Biểu phí dịch vụ khách hàng FPTS)",
+        "scanReport.activePromos (Biểu phí dịch vụ khách hàng FPTS)"
+      ],
+      "brokers": [
+        "FPTS (fpts)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.hsc.com.vn",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 435,
+      "sources": [
+        "securitiesData.website"
+      ],
+      "brokers": [
+        "HSC (hsc)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.hsc.com.vn/vi/bieu-phi",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 378,
+      "sources": [
+        "securitiesData.sourceUrl (Biểu phí chuẩn)",
+        "brokersCrawlerList.url",
+        "brokersCrawlerList.officialSource",
+        "brokersCrawlerList.subTab (Biểu phí giao dịch chính thức)",
+        "scanReport.url",
+        "scanReport.officialSource",
+        "scanReport.subTabsResults (Biểu phí giao dịch chính thức)",
+        "scanReport.activePromos (Biểu phí giao dịch chính thức)"
+      ],
+      "brokers": [
+        "HSC (hsc)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://register.hsc.com.vn/",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 207,
+      "sources": [
+        "securitiesData.accountOpeningUrl (Mở TK eKYC)"
+      ],
+      "brokers": [
+        "HSC (hsc)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.hsc.com.vn/vi/lai-suat-giao-dich-ky-quy",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 308,
+      "sources": [
+        "securitiesData.margin.sourceUrl (Lãi suất margin)",
+        "securitiesData.promoArticles[0] (Lãi suất giao dịch ký quỹ Margin HSC)",
+        "brokersCrawlerList.subTab (Chính sách & Gói vay Margin)",
+        "scanReport.subTabsResults (Chính sách & Gói vay Margin)",
+        "scanReport.activePromos (Chính sách & Gói vay Margin)"
+      ],
+      "brokers": [
+        "HSC (hsc)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.hsc.com.vn/vi/thong-bao-ve-viec-cap-nhat-bieu-phi-dich-vu-chung-khoan",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 374,
+      "sources": [
+        "securitiesData.welcomePromo.sourceUrl (Ưu đãi mở mới)",
+        "securitiesData.promoArticles[1] (Thông báo cập nhật biểu phí dịch vụ chứng khoán)",
+        "brokersCrawlerList.subTab (Chính sách ưu đãi mở tài khoản eKYC)",
+        "scanReport.subTabsResults (Chính sách ưu đãi mở tài khoản eKYC)",
+        "scanReport.activePromos (Chính sách ưu đãi mở tài khoản eKYC)"
+      ],
+      "brokers": [
+        "HSC (hsc)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.hsc.com.vn/vi/dich-vu-giao-dich-ky-quy-1",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 364,
+      "sources": [
+        "securitiesData.promoArticles[2] (Dịch vụ giao dịch ký quỹ trực tuyến HSC ONE)",
+        "brokersCrawlerList.subTab (Dịch vụ giao dịch ký quỹ trực tuyến HSC ONE)",
+        "scanReport.subTabsResults (Dịch vụ giao dịch ký quỹ trực tuyến HSC ONE)",
+        "scanReport.activePromos (Dịch vụ giao dịch ký quỹ trực tuyến HSC ONE)"
+      ],
+      "brokers": [
+        "HSC (hsc)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.vietcap.com.vn",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 178,
+      "sources": [
+        "securitiesData.website",
+        "brokersCrawlerList.fallbackUrl"
+      ],
+      "brokers": [
+        "Vietcap (vietcap)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.vietcap.com.vn/bieu-phi",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 117,
+      "sources": [
+        "securitiesData.sourceUrl (Biểu phí chuẩn)",
+        "brokersCrawlerList.url",
+        "brokersCrawlerList.officialSource",
+        "brokersCrawlerList.subTab (Biểu phí giao dịch chính thức)",
+        "scanReport.url",
+        "scanReport.officialSource",
+        "scanReport.subTabsResults (Biểu phí giao dịch chính thức)",
+        "scanReport.activePromos (Biểu phí giao dịch chính thức)"
+      ],
+      "brokers": [
+        "Vietcap (vietcap)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.vietcap.com.vn/mo-tai-khoan",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 110,
+      "sources": [
+        "securitiesData.accountOpeningUrl (Mở TK eKYC)"
+      ],
+      "brokers": [
+        "Vietcap (vietcap)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.vietcap.com.vn/san-pham-tai-chinh/huong-dan-chung-khoan-co-so/v23-goi-vay-uu-dai-theo-gtgd",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 145,
+      "sources": [
+        "securitiesData.margin.sourceUrl (Lãi suất margin)",
+        "securitiesData.promoArticles[0] (Gói vay ưu đãi Margin V23 theo giá trị giao dịch)",
+        "brokersCrawlerList.subTab (Chính sách & Gói vay Margin)",
+        "scanReport.subTabsResults (Chính sách & Gói vay Margin)",
+        "scanReport.activePromos (Chính sách & Gói vay Margin)"
+      ],
+      "brokers": [
+        "Vietcap (vietcap)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.vietcap.com.vn/san-pham-tai-chinh/huong-dan-chung-khoan-co-so/super-v9-dac-quyen-vuot-troi-9-0",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 142,
+      "sources": [
+        "securitiesData.welcomePromo.sourceUrl (Ưu đãi mở mới)",
+        "securitiesData.promoArticles[1] (Super V9 đặc quyền vượt trội lãi suất 9.0%)",
+        "brokersCrawlerList.subTab (Chính sách ưu đãi mở tài khoản eKYC)",
+        "scanReport.subTabsResults (Chính sách ưu đãi mở tài khoản eKYC)",
+        "scanReport.activePromos (Chính sách ưu đãi mở tài khoản eKYC)"
+      ],
+      "brokers": [
+        "Vietcap (vietcap)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.vietcap.com.vn/san-pham-tai-chinh/huong-dan-chung-khoan-co-so/dich-vu-margin",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 142,
+      "sources": [
+        "securitiesData.promoArticles[2] (Dịch vụ giao dịch Margin tiêu chuẩn Vietcap)",
+        "brokersCrawlerList.subTab (Dịch vụ giao dịch Margin tiêu chuẩn Vietcap)",
+        "scanReport.subTabsResults (Dịch vụ giao dịch Margin tiêu chuẩn Vietcap)",
+        "scanReport.activePromos (Dịch vụ giao dịch Margin tiêu chuẩn Vietcap)"
+      ],
+      "brokers": [
+        "Vietcap (vietcap)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://kafi.vn",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 545,
+      "sources": [
+        "securitiesData.website",
+        "brokersCrawlerList.fallbackUrl"
+      ],
+      "brokers": [
+        "Kafi (kafi)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://kafi.vn/stock-trading?tab=bpgd",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 133,
+      "sources": [
+        "securitiesData.sourceUrl (Biểu phí chuẩn)",
+        "brokersCrawlerList.url",
+        "brokersCrawlerList.officialSource",
+        "brokersCrawlerList.subTab (Biểu phí giao dịch chính thức)",
+        "scanReport.url",
+        "scanReport.officialSource",
+        "scanReport.subTabsResults (Biểu phí giao dịch chính thức)",
+        "scanReport.activePromos (Biểu phí giao dịch chính thức)"
+      ],
+      "brokers": [
+        "Kafi (kafi)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://kafi.vn/support/detail?tab=dk_mtk",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 439,
+      "sources": [
+        "securitiesData.accountOpeningUrl (Mở TK eKYC)"
+      ],
+      "brokers": [
+        "Kafi (kafi)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://kafi.vn/stock-trading?tab=ttgd",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 273,
+      "sources": [
+        "securitiesData.margin.sourceUrl (Lãi suất margin)",
+        "securitiesData.welcomePromo.sourceUrl (Ưu đãi mở mới)",
+        "securitiesData.promoArticles[0] (Giao dịch cổ phiếu & thông tin các gói Margin Kafi)",
+        "brokersCrawlerList.subTab (Chính sách & Gói vay Margin)",
+        "scanReport.subTabsResults (Chính sách & Gói vay Margin)",
+        "scanReport.activePromos (Chính sách & Gói vay Margin)"
+      ],
+      "brokers": [
+        "Kafi (kafi)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://kafi.vn/tnc/TnC_S25.pdf",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 323,
+      "sources": [
+        "securitiesData.promoArticles[1] (Điều khoản sản phẩm Margin-S25 lãi suất 9%/năm)",
+        "brokersCrawlerList.subTab (Điều khoản sản phẩm Margin-S25 lãi suất 9%/năm)",
+        "scanReport.subTabsResults (Điều khoản sản phẩm Margin-S25 lãi suất 9%/năm)",
+        "scanReport.activePromos (Điều khoản sản phẩm Margin-S25 lãi suất 9%/năm)"
+      ],
+      "brokers": [
+        "Kafi (kafi)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://kafi.vn/tnc/TnC_Margin-B10.pdf",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 348,
+      "sources": [
+        "securitiesData.promoArticles[2] (Điều khoản gói Margin-B10 hạn mức lớn)",
+        "brokersCrawlerList.subTab (Điều khoản gói Margin-B10 hạn mức lớn)",
+        "scanReport.subTabsResults (Điều khoản gói Margin-B10 hạn mức lớn)",
+        "scanReport.activePromos (Điều khoản gói Margin-B10 hạn mức lớn)"
+      ],
+      "brokers": [
+        "Kafi (kafi)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://mbs.com.vn",
+      "status": 403,
+      "statusText": "Forbidden",
+      "isWorking": true,
+      "category": "WAF_PROTECTED_403",
+      "latencyMs": 221,
+      "sources": [
+        "securitiesData.website",
+        "brokersCrawlerList.fallbackUrl"
+      ],
+      "brokers": [
+        "MBS (mbs)"
+      ],
+      "note": "Bảo vệ bởi Cloudflare WAF Bot-Protection. Trang tồn tại hợp lệ trên máy chủ CTCK."
+    },
+    {
+      "url": "https://mbs.com.vn/bieu-phi-giao-dich/",
+      "status": 403,
+      "statusText": "Forbidden",
+      "isWorking": true,
+      "category": "WAF_PROTECTED_403",
+      "latencyMs": 135,
+      "sources": [
+        "securitiesData.sourceUrl (Biểu phí chuẩn)",
+        "brokersCrawlerList.url",
+        "brokersCrawlerList.officialSource",
+        "brokersCrawlerList.subTab (Biểu phí giao dịch chính thức)",
+        "scanReport.url",
+        "scanReport.officialSource",
+        "scanReport.subTabsResults (Biểu phí giao dịch chính thức)",
+        "scanReport.activePromos (Biểu phí giao dịch chính thức)"
+      ],
+      "brokers": [
+        "MBS (mbs)"
+      ],
+      "note": "Bảo vệ bởi Cloudflare WAF Bot-Protection. Trang tồn tại hợp lệ trên máy chủ CTCK."
+    },
+    {
+      "url": "https://mbs.com.vn/mo-tai-khoan/",
+      "status": 403,
+      "statusText": "Forbidden",
+      "isWorking": true,
+      "category": "WAF_PROTECTED_403",
+      "latencyMs": 115,
+      "sources": [
+        "securitiesData.accountOpeningUrl (Mở TK eKYC)"
+      ],
+      "brokers": [
+        "MBS (mbs)"
+      ],
+      "note": "Bảo vệ bởi Cloudflare WAF Bot-Protection. Trang tồn tại hợp lệ trên máy chủ CTCK."
+    },
+    {
+      "url": "https://www.mbs.com.vn/mbs-uu-dai-lai-suat-9-9-danh-cho-khach-hang-su-dung-dich-vu-giao-dich-chu-dong/",
+      "status": 403,
+      "statusText": "Forbidden",
+      "isWorking": true,
+      "category": "WAF_PROTECTED_403",
+      "latencyMs": 148,
+      "sources": [
+        "securitiesData.margin.sourceUrl (Lãi suất margin)",
+        "securitiesData.promoArticles[1] (MBS ưu đãi lãi suất 9.9% cho giao dịch chủ động)",
+        "brokersCrawlerList.subTab (Chính sách & Gói vay Margin)",
+        "scanReport.subTabsResults (Chính sách & Gói vay Margin)",
+        "scanReport.activePromos (Chính sách & Gói vay Margin)"
+      ],
+      "brokers": [
+        "MBS (mbs)"
+      ],
+      "note": "Bảo vệ bởi Cloudflare WAF Bot-Protection. Trang tồn tại hợp lệ trên máy chủ CTCK."
+    },
+    {
+      "url": "https://www.mbs.com.vn/uu-dai-lai-suat-7-5-doc-quyen-danh-rieng-cho-khach-hang-mo-moi-su-dung-dich-vu-giao-dich-chu-dong/",
+      "status": 403,
+      "statusText": "Forbidden",
+      "isWorking": true,
+      "category": "WAF_PROTECTED_403",
+      "latencyMs": 105,
+      "sources": [
+        "securitiesData.welcomePromo.sourceUrl (Ưu đãi mở mới)",
+        "securitiesData.promoArticles[0] (Ưu đãi lãi suất 7.5% độc quyền cho khách hàng mở mới)",
+        "brokersCrawlerList.subTab (Chính sách ưu đãi mở tài khoản eKYC)",
+        "scanReport.subTabsResults (Chính sách ưu đãi mở tài khoản eKYC)",
+        "scanReport.activePromos (Chính sách ưu đãi mở tài khoản eKYC)"
+      ],
+      "brokers": [
+        "MBS (mbs)"
+      ],
+      "note": "Bảo vệ bởi Cloudflare WAF Bot-Protection. Trang tồn tại hợp lệ trên máy chủ CTCK."
+    },
+    {
+      "url": "https://www.mbs.com.vn/mbs-trien-khai-uu-dai-lai-suat-t3-danh-cho-khach-hang/",
+      "status": 403,
+      "statusText": "Forbidden",
+      "isWorking": true,
+      "category": "WAF_PROTECTED_403",
+      "latencyMs": 125,
+      "sources": [
+        "securitiesData.promoArticles[2] (Triển khai ưu đãi lãi suất miễn lãi T+3)",
+        "brokersCrawlerList.subTab (Triển khai ưu đãi lãi suất miễn lãi T+3)",
+        "scanReport.subTabsResults (Triển khai ưu đãi lãi suất miễn lãi T+3)",
+        "scanReport.activePromos (Triển khai ưu đãi lãi suất miễn lãi T+3)"
+      ],
+      "brokers": [
+        "MBS (mbs)"
+      ],
+      "note": "Bảo vệ bởi Cloudflare WAF Bot-Protection. Trang tồn tại hợp lệ trên máy chủ CTCK."
+    },
+    {
+      "url": "https://www.shs.com.vn",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 177,
+      "sources": [
+        "securitiesData.website",
+        "brokersCrawlerList.fallbackUrl"
+      ],
+      "brokers": [
+        "SHS (shs)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.shs.com.vn/Pages/BieuPhiDichVu.aspx",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 218,
+      "sources": [
+        "securitiesData.sourceUrl (Biểu phí chuẩn)",
+        "securitiesData.promoArticles[1] (Biểu phí dịch vụ và lãi suất chứng khoán SHS)",
+        "brokersCrawlerList.url",
+        "brokersCrawlerList.officialSource",
+        "brokersCrawlerList.subTab (Biểu phí giao dịch chính thức)",
+        "scanReport.url",
+        "scanReport.officialSource",
+        "scanReport.subTabsResults (Biểu phí giao dịch chính thức)",
+        "scanReport.activePromos (Biểu phí giao dịch chính thức)"
+      ],
+      "brokers": [
+        "SHS (shs)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.shs.com.vn/Pages/MoTaiKhoan.aspx",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 279,
+      "sources": [
+        "securitiesData.accountOpeningUrl (Mở TK eKYC)"
+      ],
+      "brokers": [
+        "SHS (shs)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.shs.com.vn/tin-tuc/giai-bai-toan-chi-phi-von-cung-margin-s30-lai-suat-tu-99percentnam-han-muc-toi-50-ty-dong",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 154,
+      "sources": [
+        "securitiesData.margin.sourceUrl (Lãi suất margin)",
+        "securitiesData.welcomePromo.sourceUrl (Ưu đãi mở mới)",
+        "securitiesData.promoArticles[0] (Giải bài toán chi phí vốn cùng Margin S30 lãi suất từ 9.9%/năm)",
+        "brokersCrawlerList.subTab (Chính sách & Gói vay Margin)",
+        "scanReport.subTabsResults (Chính sách & Gói vay Margin)",
+        "scanReport.activePromos (Chính sách & Gói vay Margin)"
+      ],
+      "brokers": [
+        "SHS (shs)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://vixs.vn",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 631,
+      "sources": [
+        "securitiesData.website",
+        "securitiesData.promoArticles[1] (Cổng thông tin giao dịch chính thức Chứng khoán VIX)",
+        "brokersCrawlerList.fallbackUrl",
+        "brokersCrawlerList.subTab (Cổng thông tin giao dịch chính thức Chứng khoán VIX)",
+        "scanReport.subTabsResults (Cổng thông tin giao dịch chính thức Chứng khoán VIX)",
+        "scanReport.activePromos (Cổng thông tin giao dịch chính thức Chứng khoán VIX)"
+      ],
+      "brokers": [
+        "VIX (vix)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://vixs.vn/ho-tro/bieu-phi-giao-dich",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 333,
+      "sources": [
+        "securitiesData.sourceUrl (Biểu phí chuẩn)",
+        "brokersCrawlerList.url",
+        "brokersCrawlerList.officialSource",
+        "brokersCrawlerList.subTab (Biểu phí giao dịch chính thức)",
+        "scanReport.url",
+        "scanReport.officialSource",
+        "scanReport.subTabsResults (Biểu phí giao dịch chính thức)"
+      ],
+      "brokers": [
+        "VIX (vix)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://xpower.vixs.vn/account-register",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 156,
+      "sources": [
+        "securitiesData.accountOpeningUrl (Mở TK eKYC)"
+      ],
+      "brokers": [
+        "VIX (vix)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://vixs.vn/chuong-trinh-uu-dai-lai-suat-theo-danh-muc.html",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 228,
+      "sources": [
+        "securitiesData.margin.sourceUrl (Lãi suất margin)",
+        "securitiesData.welcomePromo.sourceUrl (Ưu đãi mở mới)",
+        "securitiesData.promoArticles[0] (Chương trình ưu đãi lãi suất theo danh mục cổ phiếu)",
+        "brokersCrawlerList.subTab (Chính sách & Gói vay Margin)",
+        "scanReport.subTabsResults (Chính sách & Gói vay Margin)"
+      ],
+      "brokers": [
+        "VIX (vix)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://kisvn.vn",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 323,
+      "sources": [
+        "securitiesData.website",
+        "securitiesData.promoArticles[1] (Cổng thông tin dịch vụ & biểu phí giao dịch KIS Vietnam)",
+        "brokersCrawlerList.fallbackUrl",
+        "brokersCrawlerList.subTab (Cổng thông tin dịch vụ & biểu phí giao dịch KIS Vietnam)",
+        "scanReport.subTabsResults (Cổng thông tin dịch vụ & biểu phí giao dịch KIS Vietnam)",
+        "scanReport.activePromos (Cổng thông tin dịch vụ & biểu phí giao dịch KIS Vietnam)"
+      ],
+      "brokers": [
+        "KIS (kis)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://kisvn.vn/san-pham-dich-vu/dich-vu-chung-khoan/bieu-phi-4206",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 320,
+      "sources": [
+        "securitiesData.sourceUrl (Biểu phí chuẩn)",
+        "brokersCrawlerList.url",
+        "brokersCrawlerList.officialSource",
+        "brokersCrawlerList.subTab (Biểu phí giao dịch chính thức)",
+        "scanReport.url",
+        "scanReport.officialSource",
+        "scanReport.subTabsResults (Biểu phí giao dịch chính thức)",
+        "scanReport.activePromos (Biểu phí giao dịch chính thức)"
+      ],
+      "brokers": [
+        "KIS (kis)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://kisvn.vn/hoc-dau-tu/mo-tai-khoan-chung-khoan-kis-online-ekyc",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 918,
+      "sources": [
+        "securitiesData.accountOpeningUrl (Mở TK eKYC)"
+      ],
+      "brokers": [
+        "KIS (kis)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://kisvn.vn/san-pham-dich-vu/dich-vu-ho-tro-tai-chinh/san-pham-margin-k-11299",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 966,
+      "sources": [
+        "securitiesData.margin.sourceUrl (Lãi suất margin)",
+        "securitiesData.welcomePromo.sourceUrl (Ưu đãi mở mới)",
+        "securitiesData.promoArticles[0] (Sản phẩm Margin K ngắn hạn lãi suất ưu đãi)",
+        "brokersCrawlerList.subTab (Chính sách & Gói vay Margin)",
+        "scanReport.subTabsResults (Chính sách & Gói vay Margin)",
+        "scanReport.activePromos (Chính sách & Gói vay Margin)"
+      ],
+      "brokers": [
+        "KIS (kis)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://acbs.com.vn",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 1985,
+      "sources": [
+        "securitiesData.website",
+        "brokersCrawlerList.fallbackUrl"
+      ],
+      "brokers": [
+        "ACBS (acbs)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://acbs.com.vn/bieu-phi-giao-dich-chung-khoan-niem-yet",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 1174,
+      "sources": [
+        "securitiesData.sourceUrl (Biểu phí chuẩn)",
+        "brokersCrawlerList.url",
+        "brokersCrawlerList.officialSource",
+        "brokersCrawlerList.subTab (Biểu phí giao dịch chính thức)",
+        "scanReport.url",
+        "scanReport.officialSource",
+        "scanReport.subTabsResults (Biểu phí giao dịch chính thức)",
+        "scanReport.activePromos (Biểu phí giao dịch chính thức)"
+      ],
+      "brokers": [
+        "ACBS (acbs)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://acbs.com.vn/blog/chi-phi-giao-dich-chung-khoan",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 1076,
+      "sources": [
+        "securitiesData.accountOpeningUrl (Mở TK eKYC)",
+        "securitiesData.welcomePromo.sourceUrl (Ưu đãi mở mới)",
+        "securitiesData.promoArticles[0] (Chi phí giao dịch chứng khoán và tối ưu hoá đầu tư)",
+        "brokersCrawlerList.subTab (Chính sách ưu đãi mở tài khoản eKYC)",
+        "scanReport.subTabsResults (Chính sách ưu đãi mở tài khoản eKYC)",
+        "scanReport.activePromos (Chính sách ưu đãi mở tài khoản eKYC)"
+      ],
+      "brokers": [
+        "ACBS (acbs)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://acbs.com.vn/bieu-phi",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 1654,
+      "sources": [
+        "securitiesData.margin.sourceUrl (Lãi suất margin)",
+        "securitiesData.promoArticles[1] (Biểu phí giao dịch và lãi suất cho vay ký quỹ ACBS)",
+        "brokersCrawlerList.subTab (Chính sách & Gói vay Margin)",
+        "scanReport.subTabsResults (Chính sách & Gói vay Margin)",
+        "scanReport.activePromos (Chính sách & Gói vay Margin)"
+      ],
+      "brokers": [
+        "ACBS (acbs)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://vcbs.com.vn",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 202,
+      "sources": [
+        "securitiesData.website",
+        "brokersCrawlerList.fallbackUrl"
+      ],
+      "brokers": [
+        "VCBS (vcbs)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://vcbs.com.vn/bieu-phi",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 217,
+      "sources": [
+        "securitiesData.sourceUrl (Biểu phí chuẩn)",
+        "brokersCrawlerList.url",
+        "brokersCrawlerList.officialSource",
+        "brokersCrawlerList.subTab (Biểu phí giao dịch chính thức)",
+        "scanReport.url",
+        "scanReport.officialSource",
+        "scanReport.subTabsResults (Biểu phí giao dịch chính thức)",
+        "scanReport.activePromos (Biểu phí giao dịch chính thức)"
+      ],
+      "brokers": [
+        "VCBS (vcbs)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.vcbs.com.vn/chi-tiet-ho-tro-giao-dich/mo-tai-khoan-giao-dich-chung-khoan",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 204,
+      "sources": [
+        "securitiesData.accountOpeningUrl (Mở TK eKYC)"
+      ],
+      "brokers": [
+        "VCBS (vcbs)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.vcbs.com.vn/chi-tiet-khach-hang-ca-nhan/goi-margin-t",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 22,
+      "sources": [
+        "securitiesData.margin.sourceUrl (Lãi suất margin)",
+        "securitiesData.promoArticles[1] (Gói Margin T miễn lãi 5 ngày làm việc đầu tiên)",
+        "brokersCrawlerList.subTab (Chính sách & Gói vay Margin)",
+        "scanReport.subTabsResults (Chính sách & Gói vay Margin)",
+        "scanReport.activePromos (Chính sách & Gói vay Margin)"
+      ],
+      "brokers": [
+        "VCBS (vcbs)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.vcbs.com.vn/chi-tiet-tin-tuc-va-su-kien-vcbs/tb-chinh-sach-lai-suat-mo-moi-20260521",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 21,
+      "sources": [
+        "securitiesData.welcomePromo.sourceUrl (Ưu đãi mở mới)",
+        "securitiesData.promoArticles[0] (Thông báo chính sách lãi suất mở mới ưu đãi 8.0%)",
+        "brokersCrawlerList.subTab (Chính sách ưu đãi mở tài khoản eKYC)",
+        "scanReport.subTabsResults (Chính sách ưu đãi mở tài khoản eKYC)",
+        "scanReport.activePromos (Chính sách ưu đãi mở tài khoản eKYC)"
+      ],
+      "brokers": [
+        "VCBS (vcbs)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.vcbs.com.vn/bieu-phi",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 20,
+      "sources": [
+        "securitiesData.promoArticles[2] (Biểu phí dịch vụ khách hàng cá nhân VCBS)",
+        "brokersCrawlerList.subTab (Biểu phí dịch vụ khách hàng cá nhân VCBS)",
+        "scanReport.subTabsResults (Biểu phí dịch vụ khách hàng cá nhân VCBS)",
+        "scanReport.activePromos (Biểu phí dịch vụ khách hàng cá nhân VCBS)"
+      ],
+      "brokers": [
+        "VCBS (vcbs)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.kbsec.com.vn",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 566,
+      "sources": [
+        "securitiesData.website",
+        "brokersCrawlerList.fallbackUrl"
+      ],
+      "brokers": [
+        "KBSV (kbsv)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.kbsec.com.vn/vi/bieu-phi.html",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 514,
+      "sources": [
+        "securitiesData.sourceUrl (Biểu phí chuẩn)",
+        "brokersCrawlerList.url",
+        "brokersCrawlerList.officialSource",
+        "brokersCrawlerList.subTab (Biểu phí giao dịch chính thức)",
+        "scanReport.url",
+        "scanReport.officialSource",
+        "scanReport.subTabsResults (Biểu phí giao dịch chính thức)",
+        "scanReport.activePromos (Biểu phí giao dịch chính thức)"
+      ],
+      "brokers": [
+        "KBSV (kbsv)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.kbsec.com.vn/vi/huong-dan-mo-tai-khoan.html",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 559,
+      "sources": [
+        "securitiesData.accountOpeningUrl (Mở TK eKYC)"
+      ],
+      "brokers": [
+        "KBSV (kbsv)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://kbsec.com.vn/vi/kb-himargin-tang-han-muc-len-20-ty-uu-dai-lai-suat-sieu-canh-tranh.htm",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 516,
+      "sources": [
+        "securitiesData.margin.sourceUrl (Lãi suất margin)",
+        "securitiesData.welcomePromo.sourceUrl (Ưu đãi mở mới)",
+        "securitiesData.promoArticles[0] (KB HiMargin: Tăng hạn mức lên 20 tỷ, ưu đãi lãi suất siêu cạnh tranh 9.9%)",
+        "brokersCrawlerList.subTab (Chính sách & Gói vay Margin)",
+        "scanReport.subTabsResults (Chính sách & Gói vay Margin)",
+        "scanReport.activePromos (Chính sách & Gói vay Margin)"
+      ],
+      "brokers": [
+        "KBSV (kbsv)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://kbsec.com.vn",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 550,
+      "sources": [
+        "securitiesData.promoArticles[1] (Cổng thông tin biểu phí và dịch vụ tài chính KBSV)",
+        "brokersCrawlerList.subTab (Cổng thông tin biểu phí và dịch vụ tài chính KBSV)",
+        "scanReport.subTabsResults (Cổng thông tin biểu phí và dịch vụ tài chính KBSV)",
+        "scanReport.activePromos (Cổng thông tin biểu phí và dịch vụ tài chính KBSV)"
+      ],
+      "brokers": [
+        "KBSV (kbsv)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.vbse.vn",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 276,
+      "sources": [
+        "securitiesData.website"
+      ],
+      "brokers": [
+        "VietinBank Sec (cts)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.vbse.vn/khach-hang-ca-nhan/bieu-phi/",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 265,
+      "sources": [
+        "securitiesData.sourceUrl (Biểu phí chuẩn)",
+        "brokersCrawlerList.url",
+        "brokersCrawlerList.officialSource",
+        "brokersCrawlerList.subTab (Biểu phí giao dịch chính thức)",
+        "scanReport.url",
+        "scanReport.officialSource",
+        "scanReport.subTabsResults (Biểu phí giao dịch chính thức)",
+        "scanReport.activePromos (Biểu phí giao dịch chính thức)"
+      ],
+      "brokers": [
+        "VietinBank Sec (cts)",
+        "VietinBank Sec (CTS) (cts)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.vbse.vn/huong-dan-mo-tai-khoan-chung-khoan-truc-tuyen-qua-webmobi-gia-tang-trai-nghiem-dau-tu-so/",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 298,
+      "sources": [
+        "securitiesData.accountOpeningUrl (Mở TK eKYC)"
+      ],
+      "brokers": [
+        "VietinBank Sec (cts)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.cts.vn/category/danh-muc-margin",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 415,
+      "sources": [
+        "securitiesData.margin.sourceUrl (Lãi suất margin)",
+        "securitiesData.promoArticles[0] (Danh mục và chính sách cho vay Margin VietinBank Sec)",
+        "brokersCrawlerList.subTab (Chính sách & Gói vay Margin)",
+        "scanReport.subTabsResults (Chính sách & Gói vay Margin)",
+        "scanReport.activePromos (Chính sách & Gói vay Margin)"
+      ],
+      "brokers": [
+        "VietinBank Sec (cts)",
+        "VietinBank Sec (CTS) (cts)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.cts.vn/category/tin-tuc",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 286,
+      "sources": [
+        "securitiesData.welcomePromo.sourceUrl (Ưu đãi mở mới)",
+        "securitiesData.promoArticles[2] (Tin tức sự kiện và ưu đãi khách hàng CTS)",
+        "brokersCrawlerList.subTab (Chính sách ưu đãi mở tài khoản eKYC)",
+        "scanReport.subTabsResults (Chính sách ưu đãi mở tài khoản eKYC)",
+        "scanReport.activePromos (Chính sách ưu đãi mở tài khoản eKYC)"
+      ],
+      "brokers": [
+        "VietinBank Sec (cts)",
+        "VietinBank Sec (CTS) (cts)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.cts.vn/bieu-phi",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 356,
+      "sources": [
+        "securitiesData.promoArticles[1] (Biểu phí dịch vụ chứng khoán CTS)",
+        "brokersCrawlerList.subTab (Biểu phí dịch vụ chứng khoán CTS)",
+        "scanReport.subTabsResults (Biểu phí dịch vụ chứng khoán CTS)",
+        "scanReport.activePromos (Biểu phí dịch vụ chứng khoán CTS)"
+      ],
+      "brokers": [
+        "VietinBank Sec (cts)",
+        "VietinBank Sec (CTS) (cts)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.bvsc.com.vn",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 884,
+      "sources": [
+        "securitiesData.website"
+      ],
+      "brokers": [
+        "BVSC (bvsc)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.bvsc.com.vn/danhmuc/dich-vu/khach-hang-ca-nhan/ho-tro/huong-dan-su-dung-dich-vu/bieu-lai-phi-giao-dich/",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 590,
+      "sources": [
+        "securitiesData.sourceUrl (Biểu phí chuẩn)",
+        "brokersCrawlerList.url",
+        "brokersCrawlerList.officialSource",
+        "brokersCrawlerList.subTab (Biểu phí giao dịch chính thức)",
+        "scanReport.url",
+        "scanReport.officialSource",
+        "scanReport.subTabsResults (Biểu phí giao dịch chính thức)",
+        "scanReport.activePromos (Biểu phí giao dịch chính thức)"
+      ],
+      "brokers": [
+        "BVSC (bvsc)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.bvsc.com.vn/danhmuc/dich-vu/khach-hang-ca-nhan/",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 546,
+      "sources": [
+        "securitiesData.accountOpeningUrl (Mở TK eKYC)"
+      ],
+      "brokers": [
+        "BVSC (bvsc)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.bvsc.com.vn/danhsachbaiviet/chung-khoan-bao-viet-bvsc-trien-khai-chuong-trinh-uu-dai-margin-va-mo-tai-khoan-moi-den-het-nam-2026/",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 618,
+      "sources": [
+        "securitiesData.margin.sourceUrl (Lãi suất margin)",
+        "securitiesData.welcomePromo.sourceUrl (Ưu đãi mở mới)",
+        "securitiesData.promoArticles[0] (BVSC triển khai ưu đãi Margin và mở tài khoản mới đến hết năm 2026)",
+        "brokersCrawlerList.subTab (Chính sách & Gói vay Margin)",
+        "scanReport.subTabsResults (Chính sách & Gói vay Margin)",
+        "scanReport.activePromos (Chính sách & Gói vay Margin)"
+      ],
+      "brokers": [
+        "BVSC (bvsc)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://bvsc.com.vn/bang-dich-vu/bieu-lai-phi-giao-dich/",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 665,
+      "sources": [
+        "securitiesData.promoArticles[1] (Biểu phí dịch vụ giao dịch chứng khoán BVSC)",
+        "brokersCrawlerList.subTab (Biểu phí dịch vụ giao dịch chứng khoán BVSC)",
+        "scanReport.subTabsResults (Biểu phí dịch vụ giao dịch chứng khoán BVSC)",
+        "scanReport.activePromos (Biểu phí dịch vụ giao dịch chứng khoán BVSC)"
+      ],
+      "brokers": [
+        "BVSC (bvsc)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://tpbs.com.vn",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 6056,
+      "sources": [
+        "securitiesData.website",
+        "securitiesData.sourceUrl (Biểu phí chuẩn)",
+        "securitiesData.promoArticles[1] (Cổng thông tin biểu phí và dịch vụ tài chính TPS)",
+        "brokersCrawlerList.url",
+        "brokersCrawlerList.fallbackUrl",
+        "brokersCrawlerList.officialSource",
+        "brokersCrawlerList.subTab (Biểu phí giao dịch chính thức)",
+        "scanReport.url",
+        "scanReport.officialSource",
+        "scanReport.subTabsResults (Biểu phí giao dịch chính thức)",
+        "scanReport.activePromos (Biểu phí giao dịch chính thức)"
+      ],
+      "brokers": [
+        "TPS (tps)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://ekyc.tpbs.com.vn",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 246,
+      "sources": [
+        "securitiesData.accountOpeningUrl (Mở TK eKYC)"
+      ],
+      "brokers": [
+        "TPS (tps)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.tpbs.com.vn/vi/thong-tin-tps/thong-bao/thong-bao/gia-han-m7-margin-nang-dong-dau-tu-but-pha?postId=2827",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 3825,
+      "sources": [
+        "securitiesData.margin.sourceUrl (Lãi suất margin)",
+        "securitiesData.welcomePromo.sourceUrl (Ưu đãi mở mới)",
+        "securitiesData.promoArticles[0] (Gia hạn gói M7 Margin năng động đầu tư bứt phá miễn lãi 7 ngày)",
+        "brokersCrawlerList.subTab (Chính sách & Gói vay Margin)",
+        "scanReport.subTabsResults (Chính sách & Gói vay Margin)",
+        "scanReport.activePromos (Chính sách & Gói vay Margin)"
+      ],
+      "brokers": [
+        "TPS (tps)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://yuanta.com.vn",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 356,
+      "sources": [
+        "securitiesData.website",
+        "securitiesData.promoArticles[2] (Biểu phí giao dịch chứng khoán Yuanta Việt Nam)",
+        "brokersCrawlerList.fallbackUrl",
+        "brokersCrawlerList.subTab (Biểu phí giao dịch chứng khoán Yuanta Việt Nam)",
+        "scanReport.subTabsResults (Biểu phí giao dịch chứng khoán Yuanta Việt Nam)",
+        "scanReport.activePromos (Biểu phí giao dịch chứng khoán Yuanta Việt Nam)"
+      ],
+      "brokers": [
+        "Yuanta (yuanta)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://support.yuanta.com.vn/bieu-phi-va-lai-suat/",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 1465,
+      "sources": [
+        "securitiesData.sourceUrl (Biểu phí chuẩn)",
+        "brokersCrawlerList.url",
+        "brokersCrawlerList.officialSource",
+        "brokersCrawlerList.subTab (Biểu phí giao dịch chính thức)",
+        "scanReport.url",
+        "scanReport.officialSource",
+        "scanReport.subTabsResults (Biểu phí giao dịch chính thức)",
+        "scanReport.activePromos (Biểu phí giao dịch chính thức)"
+      ],
+      "brokers": [
+        "Yuanta (yuanta)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://yuanta.com.vn/mo-tai-khoan",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 1234,
+      "sources": [
+        "securitiesData.accountOpeningUrl (Mở TK eKYC)"
+      ],
+      "brokers": [
+        "Yuanta (yuanta)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://yuanta.com.vn/tin-tuc/chi-100-suat-margin-6-8-nam-don-song-nang-hang-margin-loc-phat",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 775,
+      "sources": [
+        "securitiesData.margin.sourceUrl (Lãi suất margin)",
+        "securitiesData.promoArticles[0] (Gói vay Margin Lộc Phát 6.8%/năm đón sóng nâng hạng)",
+        "brokersCrawlerList.subTab (Chính sách & Gói vay Margin)",
+        "scanReport.subTabsResults (Chính sách & Gói vay Margin)",
+        "scanReport.activePromos (Chính sách & Gói vay Margin)"
+      ],
+      "brokers": [
+        "Yuanta (yuanta)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://uudai.yuanta.com.vn/margin-uu-dai",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 207,
+      "sources": [
+        "securitiesData.welcomePromo.sourceUrl (Ưu đãi mở mới)",
+        "securitiesData.promoArticles[1] (Cổng thông tin các gói ưu đãi Margin Yuanta)",
+        "brokersCrawlerList.subTab (Chính sách ưu đãi mở tài khoản eKYC)",
+        "scanReport.subTabsResults (Chính sách ưu đãi mở tài khoản eKYC)",
+        "scanReport.activePromos (Chính sách ưu đãi mở tài khoản eKYC)"
+      ],
+      "brokers": [
+        "Yuanta (yuanta)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://shinhansec.com.vn",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 1209,
+      "sources": [
+        "securitiesData.website",
+        "securitiesData.margin.sourceUrl (Lãi suất margin)",
+        "securitiesData.promoArticles[1] (Cổng thông tin biểu phí và dịch vụ Shinhan Securities)",
+        "brokersCrawlerList.fallbackUrl",
+        "brokersCrawlerList.subTab (Chính sách & Gói vay Margin)",
+        "scanReport.subTabsResults (Chính sách & Gói vay Margin)",
+        "scanReport.activePromos (Chính sách & Gói vay Margin)"
+      ],
+      "brokers": [
+        "Shinhan Sec (shinhan)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://shinhansec.com.vn/vi/ho-tro-khach-hang/phi-giao-dich.html",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 1328,
+      "sources": [
+        "securitiesData.sourceUrl (Biểu phí chuẩn)",
+        "brokersCrawlerList.url",
+        "brokersCrawlerList.officialSource",
+        "brokersCrawlerList.subTab (Biểu phí giao dịch chính thức)",
+        "scanReport.url",
+        "scanReport.officialSource",
+        "scanReport.subTabsResults (Biểu phí giao dịch chính thức)",
+        "scanReport.activePromos (Biểu phí giao dịch chính thức)"
+      ],
+      "brokers": [
+        "Shinhan Sec (shinhan)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://shinhansec.com.vn/vi/ho-tro-khach-hang/chuong-trinh-uu-dai/135/mo-tai-khoan-shinhan-bank-truc-tuyen-ngay-tren-ung-dung-san-xin-ha.html",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 1319,
+      "sources": [
+        "securitiesData.accountOpeningUrl (Mở TK eKYC)",
+        "securitiesData.welcomePromo.sourceUrl (Ưu đãi mở mới)",
+        "securitiesData.promoArticles[0] (Ưu đãi mở tài khoản trực tuyến & miễn giảm phí giao dịch Shinhan)",
+        "brokersCrawlerList.subTab (Chính sách ưu đãi mở tài khoản eKYC)",
+        "scanReport.subTabsResults (Chính sách ưu đãi mở tài khoản eKYC)",
+        "scanReport.activePromos (Chính sách ưu đãi mở tài khoản eKYC)"
+      ],
+      "brokers": [
+        "Shinhan Sec (shinhan)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://agriseco.com.vn",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 434,
+      "sources": [
+        "securitiesData.website",
+        "securitiesData.promoArticles[1] (Cổng thông tin giao dịch tài chính Chứng khoán Agribank)",
+        "brokersCrawlerList.fallbackUrl",
+        "brokersCrawlerList.subTab (Cổng thông tin giao dịch tài chính Chứng khoán Agribank)",
+        "scanReport.subTabsResults (Cổng thông tin giao dịch tài chính Chứng khoán Agribank)",
+        "scanReport.activePromos (Cổng thông tin giao dịch tài chính Chứng khoán Agribank)"
+      ],
+      "brokers": [
+        "Agriseco (agriseco)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://agriseco.com.vn/News/NewsDetail/2057993/vi-VN",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 347,
+      "sources": [
+        "securitiesData.sourceUrl (Biểu phí chuẩn)",
+        "securitiesData.margin.sourceUrl (Lãi suất margin)",
+        "securitiesData.welcomePromo.sourceUrl (Ưu đãi mở mới)",
+        "securitiesData.promoArticles[0] (Công bố biểu phí dịch vụ giao dịch chứng khoán Agriseco)",
+        "brokersCrawlerList.url",
+        "brokersCrawlerList.officialSource",
+        "brokersCrawlerList.subTab (Biểu phí giao dịch chính thức)",
+        "scanReport.url",
+        "scanReport.officialSource",
+        "scanReport.subTabsResults (Biểu phí giao dịch chính thức)",
+        "scanReport.activePromos (Biểu phí giao dịch chính thức)"
+      ],
+      "brokers": [
+        "Agriseco (agriseco)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://agriseco.com.vn/Training/Lesson/A/5/vi-VN",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 441,
+      "sources": [
+        "securitiesData.accountOpeningUrl (Mở TK eKYC)"
+      ],
+      "brokers": [
+        "Agriseco (agriseco)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://hdbs.vn",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 6017,
+      "sources": [
+        "securitiesData.website",
+        "securitiesData.accountOpeningUrl (Mở TK eKYC)",
+        "securitiesData.promoArticles[1] (Cổng giao dịch chứng khoán HDBS)",
+        "brokersCrawlerList.fallbackUrl",
+        "brokersCrawlerList.subTab (Cổng giao dịch chứng khoán HDBS)",
+        "scanReport.subTabsResults (Cổng giao dịch chứng khoán HDBS)",
+        "scanReport.activePromos (Cổng giao dịch chứng khoán HDBS)"
+      ],
+      "brokers": [
+        "HDBS (hdbs)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://hdbs.vn/bieu-phi/",
+      "status": "TIMEOUT",
+      "statusText": "This operation was aborted",
+      "isWorking": false,
+      "category": "TIMEOUT",
+      "latencyMs": 10005,
+      "sources": [
+        "securitiesData.sourceUrl (Biểu phí chuẩn)",
+        "brokersCrawlerList.url",
+        "brokersCrawlerList.officialSource",
+        "brokersCrawlerList.subTab (Biểu phí giao dịch chính thức)",
+        "scanReport.url",
+        "scanReport.officialSource",
+        "scanReport.subTabsResults (Biểu phí giao dịch chính thức)",
+        "scanReport.activePromos (Biểu phí giao dịch chính thức)"
+      ],
+      "brokers": [
+        "HDBS (hdbs)"
+      ],
+      "note": "Timeout sau 10000ms (Máy chủ phản hồi chậm hoặc chặn bot)"
+    },
+    {
+      "url": "https://hdbs.vn/dich-vu-co-phieu-hstock/san-pham-margin/",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 7551,
+      "sources": [
+        "securitiesData.margin.sourceUrl (Lãi suất margin)",
+        "securitiesData.welcomePromo.sourceUrl (Ưu đãi mở mới)",
+        "securitiesData.promoArticles[0] (Sản phẩm Margin HStock và các gói vay tài chính linh hoạt)",
+        "brokersCrawlerList.subTab (Chính sách & Gói vay Margin)",
+        "scanReport.subTabsResults (Chính sách & Gói vay Margin)",
+        "scanReport.activePromos (Chính sách & Gói vay Margin)"
+      ],
+      "brokers": [
+        "HDBS (hdbs)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.dsc.com.vn",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 73,
+      "sources": [
+        "securitiesData.website"
+      ],
+      "brokers": [
+        "DSC (dsc)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.dsc.com.vn/bieu-phi",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 970,
+      "sources": [
+        "securitiesData.sourceUrl (Biểu phí chuẩn)",
+        "brokersCrawlerList.url",
+        "brokersCrawlerList.officialSource",
+        "brokersCrawlerList.subTab (Biểu phí giao dịch chính thức)",
+        "scanReport.url",
+        "scanReport.officialSource",
+        "scanReport.subTabsResults (Biểu phí giao dịch chính thức)",
+        "scanReport.activePromos (Biểu phí giao dịch chính thức)"
+      ],
+      "brokers": [
+        "DSC (dsc)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.dsc.com.vn/kien-thuc/cach-mo-tai-khoan-chung-khoan",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 1477,
+      "sources": [
+        "securitiesData.accountOpeningUrl (Mở TK eKYC)"
+      ],
+      "brokers": [
+        "DSC (dsc)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.dsc.com.vn/kien-thuc/full-margin-la-gi-loi-khuyen-cho-nha-dau-tu-moi",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 1763,
+      "sources": [
+        "securitiesData.margin.sourceUrl (Lãi suất margin)",
+        "securitiesData.promoArticles[0] (Chính sách giao dịch Ký quỹ Margin & Lời khuyên đầu tư)",
+        "brokersCrawlerList.subTab (Chính sách & Gói vay Margin)",
+        "scanReport.subTabsResults (Chính sách & Gói vay Margin)",
+        "scanReport.activePromos (Chính sách & Gói vay Margin)"
+      ],
+      "brokers": [
+        "DSC (dsc)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://dsc.com.vn/bieu-phi",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 542,
+      "sources": [
+        "securitiesData.welcomePromo.sourceUrl (Ưu đãi mở mới)",
+        "securitiesData.promoArticles[1] (Biểu phí giao dịch và dịch vụ tài chính DSC)",
+        "brokersCrawlerList.subTab (Chính sách ưu đãi mở tài khoản eKYC)",
+        "scanReport.subTabsResults (Chính sách ưu đãi mở tài khoản eKYC)",
+        "scanReport.activePromos (Chính sách ưu đãi mở tài khoản eKYC)"
+      ],
+      "brokers": [
+        "DSC (dsc)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.phs.vn",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 187,
+      "sources": [
+        "securitiesData.website"
+      ],
+      "brokers": [
+        "PHS (phs)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.phs.vn/san-pham-dich-vu/bieu-phi-giao-dich-chung-khoan-co-so-26",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 248,
+      "sources": [
+        "securitiesData.sourceUrl (Biểu phí chuẩn)",
+        "brokersCrawlerList.url",
+        "brokersCrawlerList.officialSource",
+        "brokersCrawlerList.subTab (Biểu phí giao dịch chính thức)",
+        "scanReport.url",
+        "scanReport.officialSource",
+        "scanReport.subTabsResults (Biểu phí giao dịch chính thức)",
+        "scanReport.activePromos (Biểu phí giao dịch chính thức)"
+      ],
+      "brokers": [
+        "PHS (phs)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.phs.vn/mo-tai-khoan",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 204,
+      "sources": [
+        "securitiesData.accountOpeningUrl (Mở TK eKYC)"
+      ],
+      "brokers": [
+        "PHS (phs)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.phs.vn/tin-tuc/ra-mat-goi-uu-dai-phs-smart-margin-lai-suat-chi-9-5-nam/6402662",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 4396,
+      "sources": [
+        "securitiesData.margin.sourceUrl (Lãi suất margin)",
+        "securitiesData.welcomePromo.sourceUrl (Ưu đãi mở mới)",
+        "securitiesData.promoArticles[0] (Ra mắt gói ưu đãi PHS Smart Margin lãi suất chỉ 9.5%/năm)",
+        "brokersCrawlerList.subTab (Chính sách & Gói vay Margin)",
+        "scanReport.subTabsResults (Chính sách & Gói vay Margin)",
+        "scanReport.activePromos (Chính sách & Gói vay Margin)"
+      ],
+      "brokers": [
+        "PHS (phs)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://phs.vn",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 257,
+      "sources": [
+        "securitiesData.promoArticles[1] (Dịch vụ và biểu phí giao dịch Chứng khoán Phú Hưng)",
+        "brokersCrawlerList.fallbackUrl",
+        "brokersCrawlerList.subTab (Dịch vụ và biểu phí giao dịch Chứng khoán Phú Hưng)",
+        "scanReport.subTabsResults (Dịch vụ và biểu phí giao dịch Chứng khoán Phú Hưng)",
+        "scanReport.activePromos (Dịch vụ và biểu phí giao dịch Chứng khoán Phú Hưng)"
+      ],
+      "brokers": [
+        "PHS (phs)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.tvsi.com.vn",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 116,
+      "sources": [
+        "securitiesData.website"
+      ],
+      "brokers": [
+        "TVSI (tvsi)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.tvsi.com.vn/fee-stock.html",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 81,
+      "sources": [
+        "securitiesData.sourceUrl (Biểu phí chuẩn)",
+        "brokersCrawlerList.url",
+        "brokersCrawlerList.officialSource",
+        "brokersCrawlerList.subTab (Biểu phí giao dịch chính thức)",
+        "scanReport.url",
+        "scanReport.officialSource",
+        "scanReport.subTabsResults (Biểu phí giao dịch chính thức)",
+        "scanReport.activePromos (Biểu phí giao dịch chính thức)"
+      ],
+      "brokers": [
+        "TVSI (tvsi)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.tvsi.com.vn/help-open-account.html",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 27,
+      "sources": [
+        "securitiesData.accountOpeningUrl (Mở TK eKYC)"
+      ],
+      "brokers": [
+        "TVSI (tvsi)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.tvsi.com.vn/endow/tvsi-margin-increase.html",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 27,
+      "sources": [
+        "securitiesData.margin.sourceUrl (Lãi suất margin)",
+        "securitiesData.welcomePromo.sourceUrl (Ưu đãi mở mới)",
+        "securitiesData.promoArticles[0] (Chương trình ưu đãi tăng sức mua Margin TVSI)",
+        "brokersCrawlerList.subTab (Chính sách & Gói vay Margin)",
+        "scanReport.subTabsResults (Chính sách & Gói vay Margin)",
+        "scanReport.activePromos (Chính sách & Gói vay Margin)"
+      ],
+      "brokers": [
+        "TVSI (tvsi)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.tvsi.com.vn/san-pham-dich-vu/dich-vu-chung-khoan/bieu-phi-dich-vu",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 27,
+      "sources": [
+        "securitiesData.promoArticles[1] (Biểu phí dịch vụ chứng khoán Tân Việt TVSI)",
+        "brokersCrawlerList.subTab (Biểu phí dịch vụ chứng khoán Tân Việt TVSI)",
+        "scanReport.subTabsResults (Biểu phí dịch vụ chứng khoán Tân Việt TVSI)",
+        "scanReport.activePromos (Biểu phí dịch vụ chứng khoán Tân Việt TVSI)"
+      ],
+      "brokers": [
+        "TVSI (tvsi)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.eves.com.vn",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 149,
+      "sources": [
+        "securitiesData.website"
+      ],
+      "brokers": [
+        "EVS (evs)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.eves.com.vn/san-pham-dich-vu/bieu-phi/bieu-phi-dich-vu/",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 122,
+      "sources": [
+        "securitiesData.sourceUrl (Biểu phí chuẩn)",
+        "securitiesData.promoArticles[1] (Biểu phí dịch vụ giao dịch chứng khoán Everest EVS)",
+        "brokersCrawlerList.url",
+        "brokersCrawlerList.officialSource",
+        "brokersCrawlerList.subTab (Biểu phí giao dịch chính thức)",
+        "scanReport.url",
+        "scanReport.officialSource",
+        "scanReport.subTabsResults (Biểu phí giao dịch chính thức)",
+        "scanReport.activePromos (Biểu phí giao dịch chính thức)"
+      ],
+      "brokers": [
+        "EVS (evs)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://trade.eves.com.vn",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 214,
+      "sources": [
+        "securitiesData.accountOpeningUrl (Mở TK eKYC)"
+      ],
+      "brokers": [
+        "EVS (evs)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://www.eves.com.vn/evs-special/tin-evs/lai-vay-linh-hoat-loi-nhuan-toi-da-cung-evs-margin-tplus/",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 26,
+      "sources": [
+        "securitiesData.margin.sourceUrl (Lãi suất margin)",
+        "securitiesData.welcomePromo.sourceUrl (Ưu đãi mở mới)",
+        "securitiesData.promoArticles[0] (Lãi vay linh hoạt, lợi nhuận tối đa cùng EVS Margin T+)",
+        "brokersCrawlerList.subTab (Chính sách & Gói vay Margin)",
+        "scanReport.subTabsResults (Chính sách & Gói vay Margin)",
+        "scanReport.activePromos (Chính sách & Gói vay Margin)"
+      ],
+      "brokers": [
+        "EVS (evs)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://r.jina.ai/https://www.tcbs.com.vn",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 3383,
+      "sources": [
+        "brokersCrawlerList.url",
+        "scanReport.url"
+      ],
+      "brokers": [
+        "TCBS (tcbs)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://r.jina.ai/https://www.ssi.com.vn/khach-hang-ca-nhan/bieu-phi/bieu-gia-dich-vu-giao-dich-chung-khoan",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 2297,
+      "sources": [
+        "brokersCrawlerList.fallbackUrl"
+      ],
+      "brokers": [
+        "SSI (ssi)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://r.jina.ai/https://banggia.vndirect.com.vn",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 9052,
+      "sources": [
+        "brokersCrawlerList.fallbackUrl"
+      ],
+      "brokers": [
+        "VNDIRECT (vndirect)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://r.jina.ai/https://www.vpbanks.com.vn/bieu-phi",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 6804,
+      "sources": [
+        "brokersCrawlerList.fallbackUrl"
+      ],
+      "brokers": [
+        "VPBankS (vpbanks)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://r.jina.ai/https://www.hsc.com.vn/vi/bieu-phi",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 4311,
+      "sources": [
+        "brokersCrawlerList.fallbackUrl"
+      ],
+      "brokers": [
+        "HSC (hsc)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://cts.vn",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 189,
+      "sources": [
+        "brokersCrawlerList.fallbackUrl"
+      ],
+      "brokers": [
+        "VietinBank Sec (CTS) (cts)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://bvsc.com.vn",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 788,
+      "sources": [
+        "brokersCrawlerList.fallbackUrl"
+      ],
+      "brokers": [
+        "BVSC (bvsc)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://dsc.com.vn",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 27,
+      "sources": [
+        "brokersCrawlerList.fallbackUrl"
+      ],
+      "brokers": [
+        "DSC (dsc)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://tvsi.com.vn",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 308,
+      "sources": [
+        "brokersCrawlerList.fallbackUrl"
+      ],
+      "brokers": [
+        "TVSI (tvsi)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    },
+    {
+      "url": "https://eves.com.vn",
+      "status": 200,
+      "statusText": "OK",
+      "isWorking": true,
+      "category": "HTTP_200_OK",
+      "latencyMs": 179,
+      "sources": [
+        "brokersCrawlerList.fallbackUrl"
+      ],
+      "brokers": [
+        "EVS (evs)"
+      ],
+      "note": "Truy cập thành công, phản hồi mã 200 OK."
+    }
+  ]
+}
