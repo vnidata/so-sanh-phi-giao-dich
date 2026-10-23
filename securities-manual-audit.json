@@ -2,11 +2,11 @@
   "metadata": {
     "title": "Cơ Sở Dữ Liệu Hiệu Chỉnh Thủ Công 30 Công Ty Chứng Khoán Việt Nam (Deep Crawl Validated)",
     "version": "2.5.0",
-    "updatedAt": "2026-10-23T04:39:10.843Z",
+    "updatedAt": "2026-10-23T06:44:08.420Z",
     "totalBrokers": 30,
     "accessibleBrokers": 29,
-    "totalTabsScanned": 96,
-    "totalActivePromos": 87,
+    "totalTabsScanned": 95,
+    "totalActivePromos": 86,
     "instruction": "Toàn bộ dữ liệu bài viết ưu đãi và biểu phí được đối soát trong vòng 1 năm gần nhất (10/2025 - 10/2026) và đã qua bộ lọc hiệu lực."
   },
   "overrides": {
@@ -59,7 +59,7 @@
         "isListed": false,
         "listingStatus": "Chưa niêm yết (Thuộc Techcombank)"
       },
-      "sourceUrl": "https://www.tcbs.com.vn",
+      "sourceUrl": "https://help.tcbs.com.vn/bieu-phi-dich-vu-chung-khoan/",
       "accountOpeningUrl": "https://tcinvest.tcbs.com.vn/"
     },
     "vps": {
@@ -137,7 +137,7 @@
         "isListed": true,
         "listingStatus": "Niêm yết HOSE"
       },
-      "sourceUrl": "https://banggia.vndirect.com.vn",
+      "sourceUrl": "https://support.vndirect.com.vn/hc/vi/articles/14623187438873-Bi%E1%BB%83u-ph%C3%AD-giao-d%E1%BB%8Bch-ch%E1%BB%A9ng-kho%C3%A1n-c%C6%A1-s%E1%BB%9F",
       "accountOpeningUrl": "https://accounts.vndirect.com.vn/"
     },
     "mirae-asset": {
@@ -163,7 +163,7 @@
         "isListed": false,
         "listingStatus": "Chưa niêm yết (FDI Hàn Quốc)"
       },
-      "sourceUrl": "https://masvn.com/bieu-phi",
+      "sourceUrl": "https://masvn.com/cate/phi-dich-vu-chung-khoan-co-so-1726",
       "accountOpeningUrl": "https://masvn.com/register"
     },
     "dnse": {
@@ -215,7 +215,7 @@
         "isListed": false,
         "listingStatus": "Chưa niêm yết (Thuộc VPBank)"
       },
-      "sourceUrl": "https://www.vpbanks.com.vn/bieu-phi",
+      "sourceUrl": "https://www.vpbanks.com.vn/san-pham/estock",
       "accountOpeningUrl": "https://hdsd.vpbanks.com.vn/mo-tai-khoan/mo-tai-khoan-ekyc"
     },
     "fpts": {
@@ -293,7 +293,7 @@
         "isListed": true,
         "listingStatus": "Niêm yết HOSE"
       },
-      "sourceUrl": "https://www.vietcap.com.vn/bieu-phi",
+      "sourceUrl": "https://www.vietcap.com.vn/huong-dan-chung/bieu-phi-dich-vu",
       "accountOpeningUrl": "https://www.vietcap.com.vn/mo-tai-khoan"
     },
     "kafi": {
@@ -371,7 +371,7 @@
         "isListed": true,
         "listingStatus": "Niêm yết HNX"
       },
-      "sourceUrl": "https://www.shs.com.vn/Pages/BieuPhiDichVu.aspx",
+      "sourceUrl": "https://www.shs.com.vn/ho-tro/bieu-phi",
       "accountOpeningUrl": "https://www.shs.com.vn/Pages/MoTaiKhoan.aspx"
     },
     "vix": {
@@ -501,7 +501,7 @@
         "isListed": false,
         "listingStatus": "Chưa niêm yết (FDI Hàn Quốc)"
       },
-      "sourceUrl": "https://www.kbsec.com.vn/vi/bieu-phi.html",
+      "sourceUrl": "https://www.kbsec.com.vn/vi/bieu-phi-cac-dich-vu-chung-khoan-cua-kbsv.htm",
       "accountOpeningUrl": "https://www.kbsec.com.vn/vi/huong-dan-mo-tai-khoan.html"
     },
     "cts": {
@@ -579,7 +579,7 @@
         "isListed": true,
         "listingStatus": "Niêm yết HOSE"
       },
-      "sourceUrl": "https://tpbs.com.vn",
+      "sourceUrl": "https://tpbs.com.vn/thong-tin-tps/thong-bao/thong-bao/mm-lo-phi-nha-dau-tu-lo-phi?postId=2632",
       "accountOpeningUrl": "https://ekyc.tpbs.com.vn"
     },
     "yuanta": {
@@ -605,7 +605,7 @@
         "isListed": false,
         "listingStatus": "Chưa niêm yết (FDI Đài Loan)"
       },
-      "sourceUrl": "https://support.yuanta.com.vn/bieu-phi-va-lai-suat/",
+      "sourceUrl": "https://support.yuanta.com.vn/wp-content/uploads/2025/07/Bieu-phi-dich-vu-01082025.pdf",
       "accountOpeningUrl": "https://yuanta.com.vn/mo-tai-khoan"
     },
     "shinhan": {
@@ -842,7 +842,7 @@
       "stockCode": null,
       "isListed": false,
       "listingStatus": "Chưa niêm yết (Thuộc Techcombank)",
-      "sourceUrl": "https://www.tcbs.com.vn",
+      "sourceUrl": "https://help.tcbs.com.vn/bieu-phi-dich-vu-chung-khoan/",
       "scanStatus": "ACCESSIBLE_HTTP_200",
       "httpStatus": 200,
       "totalTabs": 4,
@@ -874,7 +874,7 @@
           "isListed": false,
           "listingStatus": "Chưa niêm yết (Thuộc Techcombank)"
         },
-        "sourceUrl": "https://www.tcbs.com.vn",
+        "sourceUrl": "https://help.tcbs.com.vn/bieu-phi-dich-vu-chung-khoan/",
         "accountOpeningUrl": "https://tcinvest.tcbs.com.vn/"
       }
     },
@@ -886,11 +886,11 @@
       "isListed": false,
       "listingStatus": "Chưa niêm yết",
       "sourceUrl": "https://vps.com.vn/ca-nhan/ho-tro?view=bieu-phi-bieu-mau-va-chinh-sach&nav=bieu-phi--chinh-sach",
-      "scanStatus": "UNSCANNABLE_MANUAL_AUDIT_REQUIRED",
-      "httpStatus": 500,
+      "scanStatus": "ACCESSIBLE_HTTP_200",
+      "httpStatus": 200,
       "totalTabs": 2,
-      "activePromosCount": 0,
-      "unscannableReason": "Chặn bot hoặc máy chủ phản hồi chậm.",
+      "activePromosCount": 2,
+      "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://vps.com.vn/ca-nhan/ho-tro?view=bieu-phi-bieu-mau-va-chinh-sach&nav=bieu-phi--chinh-sach",
       "lastVerified": "Tháng 10/2026",
       "verifiedBy": "Deep Web Scanner & Audit Engine",
@@ -971,7 +971,7 @@
       "stockCode": "VND",
       "isListed": true,
       "listingStatus": "Niêm yết HOSE",
-      "sourceUrl": "https://banggia.vndirect.com.vn",
+      "sourceUrl": "https://support.vndirect.com.vn/hc/vi/articles/14623187438873-Bi%E1%BB%83u-ph%C3%AD-giao-d%E1%BB%8Bch-ch%E1%BB%A9ng-kho%C3%A1n-c%C6%A1-s%E1%BB%9F",
       "scanStatus": "ACCESSIBLE_HTTP_200",
       "httpStatus": 200,
       "totalTabs": 3,
@@ -1003,7 +1003,7 @@
           "isListed": true,
           "listingStatus": "Niêm yết HOSE"
         },
-        "sourceUrl": "https://banggia.vndirect.com.vn",
+        "sourceUrl": "https://support.vndirect.com.vn/hc/vi/articles/14623187438873-Bi%E1%BB%83u-ph%C3%AD-giao-d%E1%BB%8Bch-ch%E1%BB%A9ng-kho%C3%A1n-c%C6%A1-s%E1%BB%9F",
         "accountOpeningUrl": "https://accounts.vndirect.com.vn/"
       }
     },
@@ -1014,7 +1014,7 @@
       "stockCode": null,
       "isListed": false,
       "listingStatus": "Chưa niêm yết (FDI Hàn Quốc)",
-      "sourceUrl": "https://masvn.com/bieu-phi",
+      "sourceUrl": "https://masvn.com/cate/phi-dich-vu-chung-khoan-co-so-1726",
       "scanStatus": "ACCESSIBLE_HTTP_200",
       "httpStatus": 200,
       "totalTabs": 4,
@@ -1046,7 +1046,7 @@
           "isListed": false,
           "listingStatus": "Chưa niêm yết (FDI Hàn Quốc)"
         },
-        "sourceUrl": "https://masvn.com/bieu-phi",
+        "sourceUrl": "https://masvn.com/cate/phi-dich-vu-chung-khoan-co-so-1726",
         "accountOpeningUrl": "https://masvn.com/register"
       }
     },
@@ -1100,10 +1100,10 @@
       "stockCode": null,
       "isListed": false,
       "listingStatus": "Chưa niêm yết (Thuộc VPBank)",
-      "sourceUrl": "https://www.vpbanks.com.vn/bieu-phi",
+      "sourceUrl": "https://www.vpbanks.com.vn/san-pham/estock",
       "scanStatus": "ACCESSIBLE_HTTP_200",
       "httpStatus": 200,
-      "totalTabs": 3,
+      "totalTabs": 4,
       "activePromosCount": 3,
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://www.vpbanks.com.vn/bieu-phi",
@@ -1132,7 +1132,7 @@
           "isListed": false,
           "listingStatus": "Chưa niêm yết (Thuộc VPBank)"
         },
-        "sourceUrl": "https://www.vpbanks.com.vn/bieu-phi",
+        "sourceUrl": "https://www.vpbanks.com.vn/san-pham/estock",
         "accountOpeningUrl": "https://hdsd.vpbanks.com.vn/mo-tai-khoan/mo-tai-khoan-ekyc"
       }
     },
@@ -1190,7 +1190,7 @@
       "scanStatus": "ACCESSIBLE_HTTP_200",
       "httpStatus": 200,
       "totalTabs": 4,
-      "activePromosCount": 1,
+      "activePromosCount": 3,
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://www.hsc.com.vn/vi/bieu-phi",
       "lastVerified": "Tháng 10/2026",
@@ -1229,7 +1229,7 @@
       "stockCode": "VCI",
       "isListed": true,
       "listingStatus": "Niêm yết HOSE",
-      "sourceUrl": "https://www.vietcap.com.vn/bieu-phi",
+      "sourceUrl": "https://www.vietcap.com.vn/huong-dan-chung/bieu-phi-dich-vu",
       "scanStatus": "ACCESSIBLE_HTTP_200",
       "httpStatus": 200,
       "totalTabs": 4,
@@ -1261,7 +1261,7 @@
           "isListed": true,
           "listingStatus": "Niêm yết HOSE"
         },
-        "sourceUrl": "https://www.vietcap.com.vn/bieu-phi",
+        "sourceUrl": "https://www.vietcap.com.vn/huong-dan-chung/bieu-phi-dich-vu",
         "accountOpeningUrl": "https://www.vietcap.com.vn/mo-tai-khoan"
       }
     },
@@ -1319,7 +1319,7 @@
       "scanStatus": "ACCESSIBLE_HTTP_200",
       "httpStatus": 200,
       "totalTabs": 4,
-      "activePromosCount": 4,
+      "activePromosCount": 3,
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://mbs.com.vn/bieu-phi-giao-dich/",
       "lastVerified": "Tháng 10/2026",
@@ -1358,11 +1358,11 @@
       "stockCode": "SHS",
       "isListed": true,
       "listingStatus": "Niêm yết HNX",
-      "sourceUrl": "https://www.shs.com.vn/Pages/BieuPhiDichVu.aspx",
+      "sourceUrl": "https://www.shs.com.vn/ho-tro/bieu-phi",
       "scanStatus": "ACCESSIBLE_HTTP_200",
       "httpStatus": 200,
-      "totalTabs": 2,
-      "activePromosCount": 2,
+      "totalTabs": 3,
+      "activePromosCount": 3,
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://www.shs.com.vn/Pages/BieuPhiDichVu.aspx",
       "lastVerified": "Tháng 10/2026",
@@ -1390,7 +1390,7 @@
           "isListed": true,
           "listingStatus": "Niêm yết HNX"
         },
-        "sourceUrl": "https://www.shs.com.vn/Pages/BieuPhiDichVu.aspx",
+        "sourceUrl": "https://www.shs.com.vn/ho-tro/bieu-phi",
         "accountOpeningUrl": "https://www.shs.com.vn/Pages/MoTaiKhoan.aspx"
       }
     },
@@ -1402,11 +1402,11 @@
       "isListed": true,
       "listingStatus": "Niêm yết HOSE",
       "sourceUrl": "https://vixs.vn/ho-tro/bieu-phi-giao-dich",
-      "scanStatus": "ACCESSIBLE_HTTP_200",
-      "httpStatus": 200,
-      "totalTabs": 3,
-      "activePromosCount": 3,
-      "unscannableReason": null,
+      "scanStatus": "UNSCANNABLE_MANUAL_AUDIT_REQUIRED",
+      "httpStatus": 500,
+      "totalTabs": 2,
+      "activePromosCount": 0,
+      "unscannableReason": "Chặn bot hoặc máy chủ phản hồi chậm.",
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://vixs.vn/ho-tro/bieu-phi-giao-dich",
       "lastVerified": "Tháng 10/2026",
       "verifiedBy": "Deep Web Scanner & Audit Engine",
@@ -1573,7 +1573,7 @@
       "stockCode": null,
       "isListed": false,
       "listingStatus": "Chưa niêm yết (FDI Hàn Quốc)",
-      "sourceUrl": "https://www.kbsec.com.vn/vi/bieu-phi.html",
+      "sourceUrl": "https://www.kbsec.com.vn/vi/bieu-phi-cac-dich-vu-chung-khoan-cua-kbsv.htm",
       "scanStatus": "ACCESSIBLE_HTTP_200",
       "httpStatus": 200,
       "totalTabs": 3,
@@ -1605,7 +1605,7 @@
           "isListed": false,
           "listingStatus": "Chưa niêm yết (FDI Hàn Quốc)"
         },
-        "sourceUrl": "https://www.kbsec.com.vn/vi/bieu-phi.html",
+        "sourceUrl": "https://www.kbsec.com.vn/vi/bieu-phi-cac-dich-vu-chung-khoan-cua-kbsv.htm",
         "accountOpeningUrl": "https://www.kbsec.com.vn/vi/huong-dan-mo-tai-khoan.html"
       }
     },
@@ -1619,8 +1619,8 @@
       "sourceUrl": "https://www.vbse.vn/khach-hang-ca-nhan/bieu-phi/",
       "scanStatus": "ACCESSIBLE_HTTP_200",
       "httpStatus": 200,
-      "totalTabs": 4,
-      "activePromosCount": 4,
+      "totalTabs": 3,
+      "activePromosCount": 3,
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://www.vbse.vn/khach-hang-ca-nhan/bieu-phi/",
       "lastVerified": "Tháng 10/2026",
@@ -1662,8 +1662,8 @@
       "sourceUrl": "https://www.bvsc.com.vn/danhmuc/dich-vu/khach-hang-ca-nhan/ho-tro/huong-dan-su-dung-dich-vu/bieu-lai-phi-giao-dich/",
       "scanStatus": "ACCESSIBLE_HTTP_200",
       "httpStatus": 200,
-      "totalTabs": 3,
-      "activePromosCount": 3,
+      "totalTabs": 2,
+      "activePromosCount": 2,
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://www.bvsc.com.vn/danhmuc/dich-vu/khach-hang-ca-nhan/ho-tro/huong-dan-su-dung-dich-vu/bieu-lai-phi-giao-dich/",
       "lastVerified": "Tháng 10/2026",
@@ -1702,11 +1702,11 @@
       "stockCode": "ORS",
       "isListed": true,
       "listingStatus": "Niêm yết HOSE",
-      "sourceUrl": "https://tpbs.com.vn",
+      "sourceUrl": "https://tpbs.com.vn/thong-tin-tps/thong-bao/thong-bao/mm-lo-phi-nha-dau-tu-lo-phi?postId=2632",
       "scanStatus": "ACCESSIBLE_HTTP_200",
       "httpStatus": 200,
-      "totalTabs": 2,
-      "activePromosCount": 2,
+      "totalTabs": 3,
+      "activePromosCount": 3,
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://tpbs.com.vn",
       "lastVerified": "Tháng 10/2026",
@@ -1734,7 +1734,7 @@
           "isListed": true,
           "listingStatus": "Niêm yết HOSE"
         },
-        "sourceUrl": "https://tpbs.com.vn",
+        "sourceUrl": "https://tpbs.com.vn/thong-tin-tps/thong-bao/thong-bao/mm-lo-phi-nha-dau-tu-lo-phi?postId=2632",
         "accountOpeningUrl": "https://ekyc.tpbs.com.vn"
       }
     },
@@ -1745,7 +1745,7 @@
       "stockCode": null,
       "isListed": false,
       "listingStatus": "Chưa niêm yết (FDI Đài Loan)",
-      "sourceUrl": "https://support.yuanta.com.vn/bieu-phi-va-lai-suat/",
+      "sourceUrl": "https://support.yuanta.com.vn/wp-content/uploads/2025/07/Bieu-phi-dich-vu-01082025.pdf",
       "scanStatus": "ACCESSIBLE_HTTP_200",
       "httpStatus": 200,
       "totalTabs": 4,
@@ -1777,7 +1777,7 @@
           "isListed": false,
           "listingStatus": "Chưa niêm yết (FDI Đài Loan)"
         },
-        "sourceUrl": "https://support.yuanta.com.vn/bieu-phi-va-lai-suat/",
+        "sourceUrl": "https://support.yuanta.com.vn/wp-content/uploads/2025/07/Bieu-phi-dich-vu-01082025.pdf",
         "accountOpeningUrl": "https://yuanta.com.vn/mo-tai-khoan"
       }
     },
@@ -1791,8 +1791,8 @@
       "sourceUrl": "https://shinhansec.com.vn/vi/ho-tro-khach-hang/phi-giao-dich.html",
       "scanStatus": "ACCESSIBLE_HTTP_200",
       "httpStatus": 200,
-      "totalTabs": 3,
-      "activePromosCount": 3,
+      "totalTabs": 4,
+      "activePromosCount": 4,
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://shinhansec.com.vn/vi/ho-tro-khach-hang/phi-giao-dich.html",
       "lastVerified": "Tháng 10/2026",
@@ -1834,8 +1834,8 @@
       "sourceUrl": "https://agriseco.com.vn/News/NewsDetail/2057993/vi-VN",
       "scanStatus": "ACCESSIBLE_HTTP_200",
       "httpStatus": 200,
-      "totalTabs": 2,
-      "activePromosCount": 2,
+      "totalTabs": 1,
+      "activePromosCount": 1,
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://agriseco.com.vn/News/NewsDetail/2057993/vi-VN",
       "lastVerified": "Tháng 10/2026",
@@ -1963,8 +1963,8 @@
       "sourceUrl": "https://www.phs.vn/san-pham-dich-vu/bieu-phi-giao-dich-chung-khoan-co-so-26",
       "scanStatus": "ACCESSIBLE_HTTP_200",
       "httpStatus": 200,
-      "totalTabs": 3,
-      "activePromosCount": 3,
+      "totalTabs": 2,
+      "activePromosCount": 2,
       "unscannableReason": null,
       "manualCheckInstruction": "Truy cập trực tiếp liên kết chính thức: https://www.phs.vn/san-pham-dich-vu/bieu-phi-giao-dich-chung-khoan-co-so-26",
       "lastVerified": "Tháng 10/2026",
