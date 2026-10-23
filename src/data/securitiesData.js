@@ -188,7 +188,7 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://www.tcbs.com.vn",
-    "sourceUrl": "https://www.tcbs.com.vn",
+    "sourceUrl": "https://help.tcbs.com.vn/bieu-phi-dich-vu-chung-khoan/",
     "promoArticles": [
       {
         "title": "Chương trình Ưu đãi Gom Cổ Về Nhà lãi suất Margin từ 7.89%/năm",
@@ -204,7 +204,7 @@ export const SECURITIES_COMPANIES = [
       },
       {
         "title": "Chính sách Zero-Fee miễn 100% phí giao dịch cổ phiếu trọn đời",
-        "url": "https://help.tcbs.com.vn/",
+        "url": "https://help.tcbs.com.vn/bieu-phi-dich-vu-chung-khoan/",
         "type": "fee",
         "badge": "Biểu Phí Zero-Fee"
       }
@@ -483,7 +483,7 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://www.vndirect.com.vn",
-    "sourceUrl": "https://banggia.vndirect.com.vn",
+    "sourceUrl": "https://support.vndirect.com.vn/hc/vi/articles/14623187438873-Bi%E1%BB%83u-ph%C3%AD-giao-d%E1%BB%8Bch-ch%E1%BB%A9ng-kho%C3%A1n-c%C6%A1-s%E1%BB%9F",
     "promoArticles": [
       {
         "title": "Công bố biểu phí dịch vụ giao dịch và khung lãi suất Margin VNDIRECT",
@@ -577,7 +577,7 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://masvn.com",
-    "sourceUrl": "https://masvn.com/bieu-phi",
+    "sourceUrl": "https://masvn.com/cate/phi-dich-vu-chung-khoan-co-so-1726",
     "promoArticles": [
       {
         "title": "Chương trình Margin 8.88% – Phát mạnh sức mua, bứt phá vị thế",
@@ -737,7 +737,7 @@ export const SECURITIES_COMPANIES = [
       "standardRate90d": 11.8,
       "standardRateDisplay": "11.5% - 12.5%/năm (Chuẩn 90 ngày)",
       "isShortTermDealOnly": false,
-      "sourceUrl": "https://www.vpbanks.com.vn/dich-vu-tai-chinh"
+      "sourceUrl": "https://www.vpbanks.com.vn/san-pham/emargin"
     },
     "derivativesFee": {
       "feePerContract": 500,
@@ -751,7 +751,7 @@ export const SECURITIES_COMPANIES = [
       "duration": "90 ngày đầu",
       "giftBonus": "Liên kết tài khoản VPBank NEO & hoàn tiền giao dịch",
       "note": "Tiềm lực vốn lớn từ ngân hàng mẹ VPBank.",
-      "sourceUrl": "https://www.vpbanks.com.vn/khuyen-mai"
+      "sourceUrl": "https://s3.vpbanks.com.vn/vpbanks/TH%E1%BB%82%20L%E1%BB%86%20CH%C3%8DNH%20S%C3%81CH%200%20PH%C3%8D%200%20MARGIN%20(5).pdf"
     },
     "promotions": [
       "Miễn phí giao dịch cổ phiếu cho khách hàng mở tài khoản eKYC",
@@ -775,23 +775,23 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://www.vpbanks.com.vn",
-    "sourceUrl": "https://www.vpbanks.com.vn/bieu-phi",
+    "sourceUrl": "https://www.vpbanks.com.vn/san-pham/estock",
     "promoArticles": [
       {
         "title": "Dịch vụ tài chính và các gói hỗ trợ Margin VPBankS",
-        "url": "https://www.vpbanks.com.vn/dich-vu-tai-chinh",
+        "url": "https://www.vpbanks.com.vn/san-pham/emargin",
         "type": "margin",
         "badge": "Gói Vay Margin"
       },
       {
         "title": "Kho chương trình khuyến mại & ưu đãi mở mới tài khoản",
-        "url": "https://www.vpbanks.com.vn/khuyen-mai",
+        "url": "https://s3.vpbanks.com.vn/vpbanks/TH%E1%BB%82%20L%E1%BB%86%20CH%C3%8DNH%20S%C3%81CH%200%20PH%C3%8D%200%20MARGIN%20(5).pdf",
         "type": "promo",
         "badge": "Ưu Đãi Mở Mới"
       },
       {
         "title": "Biểu phí dịch vụ chứng khoán & giao dịch trực tuyến",
-        "url": "https://www.vpbanks.com.vn/bieu-phi",
+        "url": "https://www.vpbanks.com.vn/san-pham/estock",
         "type": "fee",
         "badge": "Biểu Phí Chuẩn"
       }
@@ -1070,7 +1070,7 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://www.vietcap.com.vn",
-    "sourceUrl": "https://www.vietcap.com.vn/bieu-phi",
+    "sourceUrl": "https://www.vietcap.com.vn/huong-dan-chung/bieu-phi-dich-vu",
     "promoArticles": [
       {
         "title": "Gói vay ưu đãi Margin V23 theo giá trị giao dịch",
@@ -1086,7 +1086,7 @@ export const SECURITIES_COMPANIES = [
       },
       {
         "title": "Dịch vụ giao dịch Margin tiêu chuẩn Vietcap",
-        "url": "https://www.vietcap.com.vn/san-pham-tai-chinh/huong-dan-chung-khoan-co-so/dich-vu-margin",
+        "url": "https://www.vietcap.com.vn/huong-dan-chung/bieu-phi-dich-vu",
         "type": "margin",
         "badge": "Chính Sách Vay"
       }
@@ -1365,7 +1365,7 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://www.shs.com.vn",
-    "sourceUrl": "https://www.shs.com.vn/Pages/BieuPhiDichVu.aspx",
+    "sourceUrl": "https://www.shs.com.vn/ho-tro/bieu-phi",
     "promoArticles": [
       {
         "title": "Giải bài toán chi phí vốn cùng Margin S30 lãi suất từ 9.9%/năm",
@@ -1375,7 +1375,7 @@ export const SECURITIES_COMPANIES = [
       },
       {
         "title": "Biểu phí dịch vụ và lãi suất chứng khoán SHS",
-        "url": "https://www.shs.com.vn/Pages/BieuPhiDichVu.aspx",
+        "url": "https://www.shs.com.vn/ho-tro/bieu-phi",
         "type": "fee",
         "badge": "Biểu Phí Chuẩn"
       }
@@ -1465,10 +1465,10 @@ export const SECURITIES_COMPANIES = [
         "badge": "Ưu Đãi Lãi Suất"
       },
       {
-        "title": "Cổng thông tin giao dịch chính thức Chứng khoán VIX",
-        "url": "https://vixs.vn",
-        "type": "promo",
-        "badge": "Website Gốc"
+        "title": "Biểu phí giao dịch dịch vụ chứng khoán niêm yết VIX",
+        "url": "https://vixs.vn/ho-tro/bieu-phi-giao-dich",
+        "type": "fee",
+        "badge": "Biểu Phí Chuẩn"
       }
     ]
   },
@@ -1556,10 +1556,10 @@ export const SECURITIES_COMPANIES = [
         "badge": "Margin K T+"
       },
       {
-        "title": "Cổng thông tin dịch vụ & biểu phí giao dịch KIS Vietnam",
-        "url": "https://kisvn.vn",
+        "title": "Biểu phí dịch vụ và giao dịch chứng khoán KIS Vietnam",
+        "url": "https://kisvn.vn/bieu-phi-giao-dich",
         "type": "fee",
-        "badge": "Dịch Vụ KIS"
+        "badge": "Biểu Phí Chuẩn"
       }
     ]
   },
@@ -1648,7 +1648,7 @@ export const SECURITIES_COMPANIES = [
       },
       {
         "title": "Biểu phí giao dịch và lãi suất cho vay ký quỹ ACBS",
-        "url": "https://acbs.com.vn/bieu-phi",
+        "url": "https://acbs.com.vn/bieu-phi-giao-dich-chung-khoan-niem-yet",
         "type": "fee",
         "badge": "Biểu Phí Chuẩn"
       }
@@ -1826,7 +1826,7 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://www.kbsec.com.vn",
-    "sourceUrl": "https://www.kbsec.com.vn/vi/bieu-phi.html",
+    "sourceUrl": "https://www.kbsec.com.vn/vi/bieu-phi-cac-dich-vu-chung-khoan-cua-kbsv.htm",
     "promoArticles": [
       {
         "title": "KB HiMargin: Tăng hạn mức lên 20 tỷ, ưu đãi lãi suất siêu cạnh tranh 9.9%",
@@ -1835,10 +1835,10 @@ export const SECURITIES_COMPANIES = [
         "badge": "KB HiMargin"
       },
       {
-        "title": "Cổng thông tin biểu phí và dịch vụ tài chính KBSV",
-        "url": "https://kbsec.com.vn",
+        "title": "KB Zero Fee - Miễn phí giao dịch 90 ngày",
+        "url": "https://www.kbsec.com.vn/vi/kb-zero-fee-mien-phi-giao-dich-90-ngay.htm",
         "type": "fee",
-        "badge": "Website KBSV"
+        "badge": "KB Zero Fee"
       }
     ]
   },
@@ -1880,7 +1880,7 @@ export const SECURITIES_COMPANIES = [
       "standardRate90d": 12,
       "standardRateDisplay": "11.5% - 13.0%/năm (Chuẩn 90 ngày)",
       "isShortTermDealOnly": false,
-      "sourceUrl": "https://www.cts.vn/category/danh-muc-margin"
+      "sourceUrl": "https://www.vbse.vn/category/danh-muc-margin/"
     },
     "derivativesFee": {
       "feePerContract": 1000,
@@ -1894,7 +1894,7 @@ export const SECURITIES_COMPANIES = [
       "duration": "Gói ưu đãi mở mới",
       "giftBonus": "Tích hợp ngân hàng VietinBank iPay & tư vấn tài chính",
       "note": "Nguồn vốn ngân hàng quốc doanh VietinBank dồi dào.",
-      "sourceUrl": "https://www.cts.vn/category/tin-tuc"
+      "sourceUrl": "https://www.vbse.vn/category/tin-tuc/"
     },
     "promotions": [
       "Ưu đãi kết nối luồng tiền với VietinBank iPay",
@@ -1921,19 +1921,19 @@ export const SECURITIES_COMPANIES = [
     "promoArticles": [
       {
         "title": "Danh mục và chính sách cho vay Margin VietinBank Sec",
-        "url": "https://www.cts.vn/category/danh-muc-margin",
+        "url": "https://www.vbse.vn/category/danh-muc-margin/",
         "type": "margin",
         "badge": "Chính Sách Margin"
       },
       {
         "title": "Biểu phí dịch vụ chứng khoán CTS",
-        "url": "https://www.cts.vn/bieu-phi",
+        "url": "https://www.vbse.vn/khach-hang-ca-nhan/bieu-phi/",
         "type": "fee",
         "badge": "Biểu Phí Chuẩn"
       },
       {
         "title": "Tin tức sự kiện và ưu đãi khách hàng CTS",
-        "url": "https://www.cts.vn/category/tin-tuc",
+        "url": "https://www.vbse.vn/category/tin-tuc/",
         "type": "promo",
         "badge": "Tin Tức Ưu Đãi"
       }
@@ -2024,7 +2024,7 @@ export const SECURITIES_COMPANIES = [
       },
       {
         "title": "Biểu phí dịch vụ giao dịch chứng khoán BVSC",
-        "url": "https://bvsc.com.vn/bang-dich-vu/bieu-lai-phi-giao-dich/",
+        "url": "https://www.bvsc.com.vn/danhmuc/dich-vu/khach-hang-ca-nhan/ho-tro/huong-dan-su-dung-dich-vu/bieu-lai-phi-giao-dich/",
         "type": "fee",
         "badge": "Biểu Phí Chuẩn"
       }
@@ -2105,7 +2105,7 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://tpbs.com.vn",
-    "sourceUrl": "https://tpbs.com.vn",
+    "sourceUrl": "https://tpbs.com.vn/thong-tin-tps/thong-bao/thong-bao/mm-lo-phi-nha-dau-tu-lo-phi?postId=2632",
     "promoArticles": [
       {
         "title": "Gia hạn gói M7 Margin năng động đầu tư bứt phá miễn lãi 7 ngày",
@@ -2114,10 +2114,10 @@ export const SECURITIES_COMPANIES = [
         "badge": "Miễn Lãi M7"
       },
       {
-        "title": "Cổng thông tin biểu phí và dịch vụ tài chính TPS",
-        "url": "https://tpbs.com.vn",
+        "title": "Biểu phí giao dịch MM+ lo phí - Nhà đầu tư lo phi",
+        "url": "https://tpbs.com.vn/thong-tin-tps/thong-bao/thong-bao/mm-lo-phi-nha-dau-tu-lo-phi?postId=2632",
         "type": "fee",
-        "badge": "Website TPS"
+        "badge": "Ưu Đãi Phí"
       }
     ]
   },
@@ -2197,7 +2197,7 @@ export const SECURITIES_COMPANIES = [
     ],
     "lastUpdated": "2026-09-01",
     "website": "https://yuanta.com.vn",
-    "sourceUrl": "https://support.yuanta.com.vn/bieu-phi-va-lai-suat/",
+    "sourceUrl": "https://support.yuanta.com.vn/wp-content/uploads/2025/07/Bieu-phi-dich-vu-01082025.pdf",
     "promoArticles": [
       {
         "title": "Gói vay Margin Lộc Phát 6.8%/năm đón sóng nâng hạng",
@@ -2213,7 +2213,7 @@ export const SECURITIES_COMPANIES = [
       },
       {
         "title": "Biểu phí giao dịch chứng khoán Yuanta Việt Nam",
-        "url": "https://yuanta.com.vn",
+        "url": "https://support.yuanta.com.vn/wp-content/uploads/2025/07/Bieu-phi-dich-vu-01082025.pdf",
         "type": "fee",
         "badge": "Biểu Phí Chuẩn"
       }
@@ -2257,7 +2257,7 @@ export const SECURITIES_COMPANIES = [
       "standardRate90d": 11.2,
       "standardRateDisplay": "11.0% - 12.0%/năm (Chuẩn 90 ngày)",
       "isShortTermDealOnly": false,
-      "sourceUrl": "https://shinhansec.com.vn"
+      "sourceUrl": "https://shinhansec.com.vn/vi/ho-tro-khach-hang/chuong-trinh-uu-dai/145/thong-bao-cap-nhat-thoi-gian-uu-dai-lai-vay-ky-quy-margin-ap-dung-cho-khach-hang-moi.html"
     },
     "derivativesFee": {
       "feePerContract": 1000,
@@ -2303,10 +2303,10 @@ export const SECURITIES_COMPANIES = [
         "badge": "Ưu Đãi eKYC"
       },
       {
-        "title": "Cổng thông tin biểu phí và dịch vụ Shinhan Securities",
-        "url": "https://shinhansec.com.vn",
-        "type": "fee",
-        "badge": "Biểu Phí Shinhan"
+        "title": "Dịch vụ tài chính và các gói hỗ trợ giao dịch ký quỹ Shinhan",
+        "url": "https://shinhansec.com.vn/vi/san-pham-dich-vu/moi-gioi-chung-khoan/dich-vu-tai-chinh.html",
+        "type": "margin",
+        "badge": "Dịch Vụ Ký Quỹ"
       }
     ]
   },
@@ -2395,7 +2395,7 @@ export const SECURITIES_COMPANIES = [
       },
       {
         "title": "Cổng thông tin giao dịch tài chính Chứng khoán Agribank",
-        "url": "https://agriseco.com.vn",
+        "url": "https://agriseco.com.vn/News/NewsDetail/2057993/vi-VN",
         "type": "promo",
         "badge": "Website Agriseco"
       }
@@ -2453,7 +2453,7 @@ export const SECURITIES_COMPANIES = [
       "duration": "90 ngày đầu",
       "giftBonus": "Hệ sinh thái HDBank, Sovico & hoàn phí giao dịch",
       "note": "Hậu thuẫn tài chính từ Ngân hàng HDBank.",
-      "sourceUrl": "https://hdbs.vn/dich-vu-co-phieu-hstock/san-pham-margin/"
+      "sourceUrl": "https://hdbs.vn/uu-dai-hap-dan-tu-hds-giao-dich-cuc-da-voi-goi-margin-chi-7-5-nam-danh-rieng-cho-khach-hang-moi/"
     },
     "promotions": [
       "Tích hợp điểm thưởng và tài khoản ngân hàng HDBank",
@@ -2485,10 +2485,10 @@ export const SECURITIES_COMPANIES = [
         "badge": "Gói Vay HStock"
       },
       {
-        "title": "Cổng giao dịch chứng khoán HDBS",
-        "url": "https://hdbs.vn",
-        "type": "fee",
-        "badge": "Website HDBS"
+        "title": "Ưu đãi hấp dẫn gói Margin chỉ 7.5%/năm cho khách hàng mới",
+        "url": "https://hdbs.vn/uu-dai-hap-dan-tu-hds-giao-dich-cuc-da-voi-goi-margin-chi-7-5-nam-danh-rieng-cho-khach-hang-moi/",
+        "type": "margin",
+        "badge": "Margin 7.5%"
       }
     ]
   },
@@ -2667,10 +2667,10 @@ export const SECURITIES_COMPANIES = [
         "badge": "PHS Smart Margin"
       },
       {
-        "title": "Dịch vụ và biểu phí giao dịch Chứng khoán Phú Hưng",
-        "url": "https://phs.vn",
+        "title": "Biểu phí giao dịch và lãi suất ký quỹ chứng khoán cơ sở PHS",
+        "url": "https://www.phs.vn/san-pham-dich-vu/bieu-phi-giao-dich-chung-khoan-co-so-26",
         "type": "fee",
-        "badge": "Website PHS"
+        "badge": "Biểu Phí PHS"
       }
     ]
   },
