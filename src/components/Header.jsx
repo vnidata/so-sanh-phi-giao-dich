@@ -21,6 +21,8 @@ export default function Header({
   darkMode, 
   setDarkMode, 
   scrollToSection, 
+  activeTab = 'existing',
+  onSelectTab,
   onOpenFeedback, 
   onOpenDataManager,
   onOpenCrawler,
@@ -57,36 +59,82 @@ export default function Header({
         </div>
 
         {/* Desktop Navigation links */}
-        <nav className="hidden md:flex items-center gap-2 lg:gap-3 xl:gap-5 text-xs lg:text-sm font-semibold text-slate-600 dark:text-slate-300 shrink-0">
+        <nav className="hidden md:flex items-center gap-1.5 lg:gap-2.5 xl:gap-3 text-xs lg:text-sm font-semibold text-slate-600 dark:text-slate-300 shrink-0">
           <button
-            onClick={() => scrollToSection('ai-advisor-section')}
-            className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors flex items-center gap-1.5 whitespace-nowrap py-1 px-1.5"
-          >
-            <Sparkles className="h-3.5 w-3.5 text-amber-500 shrink-0" />
-            <span>Gợi Ý AI</span>
-          </button>
-
-          <button
-            onClick={() => scrollToSection('comparison-table')}
-            className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors flex items-center gap-1.5 whitespace-nowrap py-1 px-1.5"
+            type="button"
+            onClick={() => onSelectTab ? onSelectTab('existing') : scrollToSection('comparison-table')}
+            className={`transition-all flex items-center gap-1.5 whitespace-nowrap py-1.5 px-2.5 rounded-xl font-bold ${
+              activeTab === 'existing'
+                ? 'bg-blue-50 text-blue-700 dark:bg-blue-950/70 dark:text-blue-300 shadow-2xs ring-1 ring-blue-200 dark:ring-blue-800'
+                : 'hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800/60'
+            }`}
           >
             <Award className="h-3.5 w-3.5 text-blue-500 shrink-0" />
-            <span>Bảng So Sánh</span>
+            <span>So Sánh</span>
           </button>
 
           <button
-            onClick={() => scrollToSection('calculator-section')}
-            className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors flex items-center gap-1.5 whitespace-nowrap py-1 px-1.5"
+            type="button"
+            onClick={() => onSelectTab ? onSelectTab('short_term_margin') : scrollToSection('comparison-table')}
+            className={`transition-all flex items-center gap-1 whitespace-nowrap py-1.5 px-2.5 rounded-xl font-bold ${
+              activeTab === 'short_term_margin'
+                ? 'bg-amber-50 text-amber-700 dark:bg-amber-950/70 dark:text-amber-300 shadow-2xs ring-1 ring-amber-200 dark:ring-amber-800'
+                : 'hover:text-amber-600 dark:hover:text-amber-400 hover:bg-slate-100 dark:hover:bg-slate-800/60'
+            }`}
           >
-            <Calculator className="h-3.5 w-3.5 text-emerald-500 shrink-0" />
+            <span className="text-amber-500 font-black">⚡</span>
+            <span>Margin T+</span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => onSelectTab ? onSelectTab('promotions_summary') : scrollToSection('comparison-table')}
+            className={`transition-all flex items-center gap-1.5 whitespace-nowrap py-1.5 px-2.5 rounded-xl font-bold ${
+              activeTab === 'promotions_summary'
+                ? 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950/70 dark:text-emerald-300 shadow-2xs ring-1 ring-emerald-200 dark:ring-emerald-800'
+                : 'hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-slate-100 dark:hover:bg-slate-800/60'
+            }`}
+          >
+            <span className="rounded-full bg-emerald-500 text-white text-[9px] px-1 font-black">CSV</span>
+            <span>Tổng Hợp Ưu Đãi</span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => onSelectTab ? onSelectTab('calculator') : scrollToSection('calculator-section')}
+            className={`transition-all flex items-center gap-1.5 whitespace-nowrap py-1.5 px-2.5 rounded-xl font-bold ${
+              activeTab === 'calculator'
+                ? 'bg-teal-50 text-teal-700 dark:bg-teal-950/70 dark:text-teal-300 shadow-2xs ring-1 ring-teal-200 dark:ring-teal-800'
+                : 'hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800/60'
+            }`}
+          >
+            <Calculator className="h-3.5 w-3.5 text-teal-500 shrink-0" />
             <span>Mô Phỏng Chi Phí</span>
           </button>
 
           <button
-            onClick={() => scrollToSection('faq-section')}
-            className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors flex items-center gap-1.5 whitespace-nowrap py-1 px-1.5"
+            type="button"
+            onClick={() => onSelectTab ? onSelectTab('ai_insights') : scrollToSection('ai-advisor-section')}
+            className={`transition-all flex items-center gap-1.5 whitespace-nowrap py-1.5 px-2.5 rounded-xl font-bold ${
+              activeTab === 'ai_insights'
+                ? 'bg-purple-50 text-purple-700 dark:bg-purple-950/70 dark:text-purple-300 shadow-2xs ring-1 ring-purple-200 dark:ring-purple-800'
+                : 'hover:text-purple-600 dark:hover:text-purple-400 hover:bg-slate-100 dark:hover:bg-slate-800/60'
+            }`}
           >
-            <ShieldCheck className="h-3.5 w-3.5 text-amber-500 shrink-0" />
+            <Sparkles className="h-3.5 w-3.5 text-purple-500 shrink-0" />
+            <span>Gợi Ý AI</span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => onSelectTab ? onSelectTab('guide') : scrollToSection('faq-section')}
+            className={`transition-all flex items-center gap-1.5 whitespace-nowrap py-1.5 px-2.5 rounded-xl font-bold ${
+              activeTab === 'guide'
+                ? 'bg-slate-200 text-slate-800 dark:bg-slate-800 dark:text-slate-100 shadow-2xs'
+                : 'hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800/60'
+            }`}
+          >
+            <ShieldCheck className="h-3.5 w-3.5 text-slate-500 shrink-0" />
             <span>Tiêu Chí</span>
           </button>
 

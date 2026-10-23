@@ -1,7 +1,16 @@
 import React from 'react';
-import { Search, TrendingDown, ArrowRight, Shield, Zap, Sparkles, CheckCircle2 } from 'lucide-react';
+import { Search, TrendingDown, ArrowRight, Shield, Zap, Sparkles, FileSpreadsheet } from 'lucide-react';
 
-export default function HeroSection({ searchQuery, setSearchQuery, scrollToSection }) {
+export default function HeroSection({ searchQuery, setSearchQuery, scrollToSection, onSelectTab }) {
+  const handleNavigate = (tabId, sectionId) => {
+    if (onSelectTab) {
+      onSelectTab(tabId);
+    }
+    if (scrollToSection) {
+      scrollToSection(sectionId || 'main-workspace');
+    }
+  };
+
   return (
     <section className="relative w-full max-w-full overflow-hidden pt-6 pb-8 sm:pt-8 sm:pb-10 lg:pb-12 border-b border-slate-200 dark:border-slate-800/60 bg-gradient-to-b from-blue-50/50 via-white to-slate-50 dark:from-slate-900/50 dark:via-slate-950 dark:to-slate-950">
       {/* Background glow effects */}
@@ -13,7 +22,7 @@ export default function HeroSection({ searchQuery, setSearchQuery, scrollToSecti
           {/* Badge */}
           <div className="inline-flex max-w-full items-center gap-1.5 sm:gap-2 rounded-full border border-blue-200/80 bg-blue-50/90 px-3 sm:px-3.5 py-1 text-[11px] sm:text-xs font-semibold text-blue-700 dark:border-blue-900/60 dark:bg-blue-950/60 dark:text-blue-300 mb-3 sm:mb-4 shadow-xs backdrop-blur-sm">
             <Sparkles className="h-3.5 w-3.5 text-blue-600 dark:text-blue-400 shrink-0" />
-            <span>Chuẩn Hóa &amp; Minh Bạch Chi Phí 30 CTCK</span>
+            <span>Chuẩn Hóa &amp; Minh Bạch Chi Phí 30 CTCK Việt Nam</span>
           </div>
 
           {/* Heading */}
@@ -50,8 +59,9 @@ export default function HeroSection({ searchQuery, setSearchQuery, scrollToSecti
                 className="w-full rounded-2xl border-0 bg-transparent py-2.5 sm:py-3 pl-9 sm:pl-11 pr-20 sm:pr-24 text-xs sm:text-sm text-slate-900 placeholder:text-slate-400 focus:outline-hidden dark:text-white"
               />
               <button
-                onClick={() => scrollToSection('comparison-table')}
-                className="absolute right-1.5 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 px-3 sm:px-4 py-1.5 text-[11px] sm:text-xs font-bold text-white shadow-xs hover:from-blue-700 hover:to-indigo-700 transition-all touch-manipulation"
+                type="button"
+                onClick={() => handleNavigate('existing', 'comparison-table')}
+                className="absolute right-1.5 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 px-3 sm:px-4 py-1.5 text-[11px] sm:text-xs font-bold text-white shadow-xs hover:from-blue-700 hover:to-indigo-700 transition-all touch-manipulation cursor-pointer"
               >
                 Tìm Kiếm
               </button>
@@ -70,8 +80,12 @@ export default function HeroSection({ searchQuery, setSearchQuery, scrollToSecti
               ].map((item) => (
                 <button
                   key={item.label}
-                  onClick={() => setSearchQuery(item.val)}
-                  className="rounded-lg bg-white dark:bg-slate-800 px-2 py-0.5 font-medium text-slate-600 dark:text-slate-300 border border-slate-200/80 dark:border-slate-700/80 hover:bg-blue-50 hover:text-blue-600 hover:border-blue-200 dark:hover:bg-slate-700 dark:hover:text-blue-300 transition-all shadow-2xs"
+                  type="button"
+                  onClick={() => {
+                    setSearchQuery(item.val);
+                    handleNavigate('existing', 'comparison-table');
+                  }}
+                  className="rounded-lg bg-white dark:bg-slate-800 px-2 py-0.5 font-medium text-slate-600 dark:text-slate-300 border border-slate-200/80 dark:border-slate-700/80 hover:bg-blue-50 hover:text-blue-600 hover:border-blue-200 dark:hover:bg-slate-700 dark:hover:text-blue-300 transition-all shadow-2xs cursor-pointer"
                 >
                   {item.label}
                 </button>
@@ -80,55 +94,81 @@ export default function HeroSection({ searchQuery, setSearchQuery, scrollToSecti
           </div>
 
           {/* Quick CTA buttons */}
-          <div className="mt-5 flex flex-col sm:flex-row items-center justify-center gap-2.5">
+          <div className="mt-5 flex flex-wrap items-center justify-center gap-2 sm:gap-2.5">
             <button
-              onClick={() => scrollToSection('calculator-section')}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 px-6 py-2.5 text-xs sm:text-sm font-bold text-white shadow-md shadow-emerald-600/20 hover:from-emerald-700 hover:to-teal-700 transition-all touch-manipulation"
+              type="button"
+              onClick={() => handleNavigate('existing', 'comparison-table')}
+              className="inline-flex items-center justify-center gap-1.5 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 px-5 py-2.5 text-xs sm:text-sm font-bold text-white shadow-md shadow-blue-600/20 hover:from-blue-700 hover:to-indigo-700 transition-all touch-manipulation cursor-pointer"
             >
-              <span>Dự tính chi phí giao dịch của bạn</span>
+              <span>Xem Bảng So Sánh (30 CTCK)</span>
               <ArrowRight className="h-4 w-4" />
             </button>
             <button
-              onClick={() => scrollToSection('comparison-table')}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-5 py-2.5 text-xs sm:text-sm font-semibold text-slate-700 shadow-xs hover:bg-slate-50 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200 dark:hover:bg-slate-700 transition-all touch-manipulation"
+              type="button"
+              onClick={() => handleNavigate('promotions_summary', 'promotions-summary')}
+              className="inline-flex items-center justify-center gap-1.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 px-4 sm:px-5 py-2.5 text-xs sm:text-sm font-bold text-white shadow-md shadow-emerald-600/20 hover:from-emerald-700 hover:to-teal-700 transition-all touch-manipulation cursor-pointer"
             >
-              <span>Xem bảng so sánh chi tiết</span>
+              <FileSpreadsheet className="h-4 w-4" />
+              <span>Tổng Hợp Ưu Đãi (Xuất CSV)</span>
+            </button>
+            <button
+              type="button"
+              onClick={() => handleNavigate('calculator', 'calculator-section')}
+              className="inline-flex items-center justify-center gap-1.5 rounded-xl border border-slate-300 bg-white px-4 sm:px-5 py-2.5 text-xs sm:text-sm font-semibold text-slate-700 shadow-xs hover:bg-slate-50 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200 dark:hover:bg-slate-700 transition-all touch-manipulation cursor-pointer"
+            >
+              <span>Dự Tính Chi Phí Của Bạn</span>
             </button>
           </div>
 
           {/* Value highlights */}
           <div className="mt-6 grid grid-cols-2 gap-2.5 sm:grid-cols-4 sm:gap-3">
-            <div className="rounded-2xl border border-slate-200/80 bg-white/80 p-3.5 text-left shadow-xs backdrop-blur-sm dark:border-slate-800 dark:bg-slate-900/60 hover:-translate-y-0.5 transition-transform duration-200">
+            <button
+              type="button"
+              onClick={() => handleNavigate('existing', 'comparison-table')}
+              className="rounded-2xl border border-slate-200/80 bg-white/80 p-3.5 text-left shadow-xs backdrop-blur-sm dark:border-slate-800 dark:bg-slate-900/60 hover:-translate-y-0.5 hover:border-blue-300 dark:hover:border-blue-700 transition-all cursor-pointer"
+            >
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-100 text-blue-600 dark:bg-blue-950 dark:text-blue-400 mb-2">
                 <Zap className="h-4 w-4" />
               </div>
               <div className="text-xl font-extrabold text-slate-900 dark:text-white">30 CTCK</div>
               <div className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 font-medium leading-tight">Top tổng tài sản lớn nhất</div>
-            </div>
+            </button>
 
-            <div className="rounded-2xl border border-slate-200/80 bg-white/80 p-3.5 text-left shadow-xs backdrop-blur-sm dark:border-slate-800 dark:bg-slate-900/60 hover:-translate-y-0.5 transition-transform duration-200">
+            <button
+              type="button"
+              onClick={() => handleNavigate('existing', 'comparison-table')}
+              className="rounded-2xl border border-slate-200/80 bg-white/80 p-3.5 text-left shadow-xs backdrop-blur-sm dark:border-slate-800 dark:bg-slate-900/60 hover:-translate-y-0.5 hover:border-emerald-300 dark:hover:border-emerald-700 transition-all cursor-pointer"
+            >
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-100 text-emerald-600 dark:bg-emerald-950 dark:text-emerald-400 mb-2">
                 <TrendingDown className="h-4 w-4" />
               </div>
               <div className="text-xl font-extrabold text-slate-900 dark:text-white">Từ 0.03%</div>
               <div className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 font-medium leading-tight">Gồm phí Sở (Zero-Fee môi giới)</div>
-            </div>
+            </button>
 
-            <div className="rounded-2xl border border-slate-200/80 bg-white/80 p-3.5 text-left shadow-xs backdrop-blur-sm dark:border-slate-800 dark:bg-slate-900/60 hover:-translate-y-0.5 transition-transform duration-200">
+            <button
+              type="button"
+              onClick={() => handleNavigate('short_term_margin', 'comparison-table')}
+              className="rounded-2xl border border-slate-200/80 bg-white/80 p-3.5 text-left shadow-xs backdrop-blur-sm dark:border-slate-800 dark:bg-slate-900/60 hover:-translate-y-0.5 hover:border-amber-300 dark:hover:border-amber-700 transition-all cursor-pointer"
+            >
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-amber-100 text-amber-600 dark:bg-amber-950 dark:text-amber-400 mb-2">
                 <Sparkles className="h-4 w-4" />
               </div>
               <div className="text-xl font-extrabold text-slate-900 dark:text-white">Từ 5.99%</div>
               <div className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 font-medium leading-tight">Lãi vay Margin ưu đãi/năm</div>
-            </div>
+            </button>
 
-            <div className="rounded-2xl border border-slate-200/80 bg-white/80 p-3.5 text-left shadow-xs backdrop-blur-sm dark:border-slate-800 dark:bg-slate-900/60 hover:-translate-y-0.5 transition-transform duration-200">
+            <button
+              type="button"
+              onClick={() => handleNavigate('guide', 'faq-section')}
+              className="rounded-2xl border border-slate-200/80 bg-white/80 p-3.5 text-left shadow-xs backdrop-blur-sm dark:border-slate-800 dark:bg-slate-900/60 hover:-translate-y-0.5 hover:border-purple-300 dark:hover:border-purple-700 transition-all cursor-pointer"
+            >
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-purple-100 text-purple-600 dark:bg-purple-950 dark:text-purple-400 mb-2">
                 <Shield className="h-4 w-4" />
               </div>
               <div className="text-xl font-extrabold text-slate-900 dark:text-white">100% Khách quan</div>
               <div className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 font-medium leading-tight">Mã nguồn mở, dữ liệu minh bạch</div>
-            </div>
+            </button>
           </div>
         </div>
       </div>
